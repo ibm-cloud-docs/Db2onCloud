@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-10-08"
+lastupdated: "2019-11-18"
 
 keywords: 
 
@@ -35,7 +35,5 @@ The following examples are helpful use cases for using a copy of a database:
 ## Prerequisites
 {: #cp_prereqs}
 
-To use the Copy Database feature in the {{site.data.keyword.Db2_on_Cloud_short}} service, the {{site.data.keyword.Db2_on_Cloud_short}} service instance must be in a resource group. If your {{site.data.keyword.Db2_on_Cloud_short}} service instance is a Cloud Foundry service, see [Migrating Cloud Foundry service instances and apps to a resource group](/docs/resources?topic=resources-migrate#migrate) for information about the migration.
-
-
+The Copy Database feature in the {{site.data.keyword.Db2_on_Cloud_short}} service copies a database from once service instance to another, overwriting everything on the target service instance. In order to use the feature, both the source and target {{site.data.keyword.Db2_on_Cloud_short}} service instances must already exist and be in a resource group. In addition, if your {{site.data.keyword.Db2_on_Cloud_short}} service instance is a Cloud Foundry service, you must migrate your service instance and apps to a resource group. For information about the migration, see [Migrating Cloud Foundry service instances and apps to a resource group](/docs/resources?topic=resources-migrate#migrate).
 
