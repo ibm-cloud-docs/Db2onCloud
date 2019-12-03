@@ -2,9 +2,9 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-09-11"
+lastupdated: "2019-12-03"
 
-keywords: 
+keywords: Lite, plan, Lite plan, free plan, availability, restrictions, installation
 
 subcollection: Db2onCloud
 
@@ -32,7 +32,7 @@ There is no time limit on the Lite plan, but users must re-extend their Lite pla
 Only community support is available. 
  
 ## Architecture
-{: #architecture}
+{: #fp_architecture}
 
 Unlike other {{site.data.keyword.Db2_on_Cloud_short}} plans, the free {{site.data.keyword.Db2_on_Cloud_short}} Lite plan runs on a multi-tenant system. The Flex and Precise Performance plans run on their own single-tenant virtual machines or bare metal servers.
  
@@ -40,14 +40,20 @@ The Lite plan uses one database schema.
 
 For more information about the free {{site.data.keyword.Db2_on_Cloud_short}} Lite plan, see the [FAQ](https://ibm.biz/db2oc_free_plan_faq){:external}.
 
-## Using the Lite plan outside continental North America
+<!-- ## Using the Lite plan outside continental North America
 {: #outside_na}
 
 The Lite plan is accessible without a credit card for continental North America. Outside of continental North America, customers must add a credit card to their IBM Cloud account and then select the "US South - Dallas" region for the Lite plan to be visible for selection.
 
 The Lite plan is always free and your credit card will not be charged.
+-->
 
-## Lite plan restrictions
+## Regional availability
+{: #fp_availability}
+
+The Lite plan is available in the Dallas and London regions. If you do not see the Lite plan listed in the catalog, select either Dallas or London region.
+
+## Restrictions
 {: #fp_restrictions}
 
 It is recommended that you use an enterprise-level service plan rather than a Lite service plan for mission-critical or performance-sensitive workloads. 
