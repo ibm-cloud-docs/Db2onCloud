@@ -25,7 +25,7 @@ Db2 on Cloud
     Security
         iam.md
         user_mgmt.md
-        [Security compliances](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/compliances_summary.html)
+        sec_comp_sum.md
         key_protect.md
 
     {: .topicgroup}
