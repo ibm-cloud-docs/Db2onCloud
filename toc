@@ -62,12 +62,6 @@ Db2 on Cloud
         dcw.md
         migration.md
 
-    {: .topicgroup}
-    Amazon Web Services
-        aws_overview.md
-        gs.md
-        feat_specs.md
-
     maintenance.md
     local_dev_env.md
     communities.md    
