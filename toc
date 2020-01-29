@@ -2,7 +2,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="Db2onCloud" category="databases" audience="service" arm="1920570" href="/docs/services/Db2onCloud?topic=Db2onCloud-getting-started" path="services/Db2onCloud"}
+{: .toc subcollection="Db2onCloud" category="databases" audience="service" href="/docs/Db2onCloud?topic=Db2onCloud-getting-started" path="Db2onCloud"}
 Db2 on Cloud
 
     {: .navgroup id="learn"}
