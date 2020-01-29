@@ -88,7 +88,7 @@ These instructions explain how to create a connection from IBM® SPSS® Statisti
 ### Prerequisites
 {: #prereq11}
 
-Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 ### Procedure
 {: #proc11}
@@ -103,11 +103,11 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 
    b. On the Create New Data Source window, select the driver that is named **IBM DB2 ODBC DRIVER** and click **Finish**.
 
-   Be sure that the driver that you select is not a driver with a similar name such as `IBM DB2® ODBC DRIVER - DB2COPY`. If the driver does not appear in the list, exit SPSS Statistics, then download and install the driver. See [Driver package](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-dr_pkg#dr_pkg).
+   Be sure that the driver that you select is not a driver with a similar name such as `IBM DB2® ODBC DRIVER - DB2COPY`. If the driver does not appear in the list, exit SPSS Statistics, then download and install the driver. See [Driver package](/docs/Db2onCloud/connecting?topic=Db2onCloud-dr_pkg#dr_pkg).
         
    c. In the ODBC IBM Driver - Add window, enter a data source name (usually the name of the database you are connecting to), and click **Add**.
         
-   d. From the CLI/ODBC Settings window, on the **Data Source** tab, enter the user ID and password from the [connection information](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-db_details_cxn_creds#db_details_cxn_creds) that you collected beforehand.
+   d. From the CLI/ODBC Settings window, on the **Data Source** tab, enter the user ID and password from the [connection information](/docs/Db2onCloud/connecting?topic=Db2onCloud-db_details_cxn_creds#db_details_cxn_creds) that you collected beforehand.
         
    e. On the Advanced Settings page, for each of the following parameters, click **Add** to open the Add CLI Parameter window to begin the step, and click **OK** to return to the Advanced Settings page:
             
@@ -138,7 +138,7 @@ These instructions explain how to create a connection from SAS to a {{site.data.
 ### Prerequisites
 {: #prereq12}
 
-Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 ### Procedure
 {: #proc12}
@@ -155,7 +155,7 @@ Instead of using the RStudio® environment that is integrated within IBM Watson 
 ### Prerequisites
 {: #prereq13}
 
-Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 ### Procedure
 {: #proc13}
@@ -172,7 +172,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
         
    b. Open your locally installed R development environment.
         
-   c. At the R prompt, enter the following statements to create the connection. Replace the placeholders with the [connection information](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-db_details_cxn_creds#db_details_cxn_creds) that you collected beforehand.
+   c. At the R prompt, enter the following statements to create the connection. Replace the placeholders with the [connection information](/docs/Db2onCloud/connecting?topic=Db2onCloud-db_details_cxn_creds#db_details_cxn_creds) that you collected beforehand.
 
    - If your locally installed R development environment runs in the {{site.data.keyword.Db2_on_Cloud_short}} database:
 

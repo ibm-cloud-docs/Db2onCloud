@@ -30,7 +30,7 @@ To connect local applications and tools to your {{site.data.keyword.Db2_on_Cloud
 ## Prerequisites
 {: #prereq21}
 
-Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 <!-- 1. Install the Db2 driver package for your operating system.
 

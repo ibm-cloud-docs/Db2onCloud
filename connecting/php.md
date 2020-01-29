@@ -30,7 +30,7 @@ Define a connection between a PHP application and a {{site.data.keyword.Db2_on_C
 ## Prerequisites
 {: #prereq101}
 
-Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -43,7 +43,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 ### Scenario 1: Connecting from outside {{site.data.keyword.Bluemix_notm}}:
 {: #scen1}
 
-1. Download the [Db2 driver package](/docs/services/Db2onCloud?topic=Db2onCloud-dr_pkg#dr_pkg) from the web console, and then install the driver package on the machine where your PHP application will run.
+1. Download the [Db2 driver package](/docs/Db2onCloud?topic=Db2onCloud-dr_pkg#dr_pkg) from the web console, and then install the driver package on the machine where your PHP application will run.
                 
 2. Use the [`odbc_connect` function](http://php.net/manual/en/function.odbc-connect.php){:external} to connect to the BLUDB database.
     

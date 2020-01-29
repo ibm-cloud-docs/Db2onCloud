@@ -31,7 +31,7 @@ In addition to standard backups, you can use the [Time Travel Query](https://dev
  
 For information about point-in-time restores, see [Point-in-time restore](#point-in-time).
 
-All paid plans typically make use of IBM Cloud Object Storage (COS) to keep backups offsite in three different data centers. However, Sydney and certain smaller data centers might not support offsite replication with IBM COS at this time. Check the [IBM COS documentation](/docs/services/cloud-object-storage/basics?topic=cloud-object-storage-endpoints#endpoints) for your region to determine which regions support offsite replication.
+All paid plans typically make use of IBM Cloud Object Storage (COS) to keep backups offsite in three different data centers. However, Sydney and certain smaller data centers might not support offsite replication with IBM COS at this time. Check the [IBM COS documentation](/docs/cloud-object-storage/basics?topic=cloud-object-storage-endpoints#endpoints) for your region to determine which regions support offsite replication.
 
 You can also use [IBM Lift CLI](https://www.lift-cli.cloud.ibm.com/){:external} to import data into {{site.data.keyword.Db2_on_Cloud_short}}.
 

@@ -30,7 +30,7 @@ You can install the {{site.data.keyword.Db2_on_Cloud_short}} driver package on W
 ## Prerequisites
 {: #prereq51}
 
-Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 <!-- Download the driver package for your operating system from the web console and install it. -->
 
@@ -45,4 +45,4 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 ## What's next?
 {: #wn51}
 
-To be able to connect your local applications or client tools to your {{site.data.keyword.Db2_on_Cloud_short}} database, [configure your local environment](/docs/services/Db2onCloud?topic=Db2onCloud-cfg_loc_env#cfg_loc_env).
+To be able to connect your local applications or client tools to your {{site.data.keyword.Db2_on_Cloud_short}} database, [configure your local environment](/docs/Db2onCloud?topic=Db2onCloud-cfg_loc_env#cfg_loc_env).

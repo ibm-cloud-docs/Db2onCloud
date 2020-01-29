@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 # IBM Key Protect
 {: #key-protect}
 
-With integration of the [IBM Key Protect](/docs/services/key-protect?topic=key-protect-getting-started-tutorial) service, you can have direct control over the data in your database and backups. You can manage your own keys in the Key Protect service on {{site.data.keyword.Bluemix_notm}} and you can use your key to control the encryption and decryption of the data in your {{site.data.keyword.Db2_on_Cloud_long}} database. 
+With integration of the [IBM Key Protect](/docs/key-protect?topic=key-protect-getting-started-tutorial) service, you can have direct control over the data in your database and backups. You can manage your own keys in the Key Protect service on {{site.data.keyword.Bluemix_notm}} and you can use your key to control the encryption and decryption of the data in your {{site.data.keyword.Db2_on_Cloud_long}} database. 
 {: shortdesc}
 
 Upon instance creation, your database instance is set to encrypt its data at rest by using the Advanced Encryption Standard (AES) in Cipher-Block Chaining (CBC) mode with a 256-bit data encryption key (DEK). This DEK is then encrypted by a master key that is stored in a PKCS#12 keystore. A password is required to open the keystore. With Key Protect integration, the password is encrypted by a Key Protect root key. You must create a root key in Key Protect and grant your specific {{site.data.keyword.Db2_on_Cloud_short}} instance (resource) `Reader` access to that root key. In the {{site.data.keyword.Db2_on_Cloud_short}} web console, you specify the Key Protect instance and the root key to be used. After the association is complete, the specified root key is then used by {{site.data.keyword.Db2_on_Cloud_short}} to encrypt and decrypt the keystore password. The root key never leaves Key Protect.
@@ -56,7 +56,7 @@ Key Protect is a cloud-based security service that provides lifecycle management
 
 1. Log in to {{site.data.keyword.Bluemix_notm}}.
 
-2. In the {{site.data.keyword.Bluemix_notm}} catalog, open the [Key Protect](https://cloud.ibm.com/catalog/services/key-protect){:external} service page and create an instance of the service.
+2. In the {{site.data.keyword.Bluemix_notm}} catalog, open the [Key Protect](https://cloud.ibm.com/catalog/key-protect){:external} service page and create an instance of the service.
 
    ![Screen capture of Key Protect service catalog page.](images/kp_1.png "Key Protect service catalog page"){: caption="Figure 1. Key Protect service catalog page" caption-side="bottom"}
 
@@ -70,19 +70,19 @@ Key Protect is a cloud-based security service that provides lifecycle management
 #### Procedure
 {: #kp_proc_2}
 
-The Key Protect service supports two key types, root keys and standard keys, for the advanced encryption and management of data. For more information, see [Key types](/docs/services/key-protect?topic=key-protect-envelope-encryption#key-types).
+The Key Protect service supports two key types, root keys and standard keys, for the advanced encryption and management of data. For more information, see [Key types](/docs/key-protect?topic=key-protect-envelope-encryption#key-types).
 
 You can create keys or import existing keys by using the following methods:
 
    - GUI
 
-     - [Root key](/docs/services/key-protect?topic=key-protect-create-root-keys#create-root-key-gui)
-     - [Standard key](/docs/services/key-protect?topic=key-protect-create-standard-keys#create-standard-key-gui)
+     - [Root key](/docs/key-protect?topic=key-protect-create-root-keys#create-root-key-gui)
+     - [Standard key](/docs/key-protect?topic=key-protect-create-standard-keys#create-standard-key-gui)
 
    - [API](https://cloud.ibm.com/apidocs/key-protect){:external}
 
-     - [Root key](/docs/services/key-protect?topic=key-protect-create-root-keys#create-root-key-api)
-     - [Standard key](/docs/services/key-protect?topic=key-protect-create-standard-keys#create-standard-key-api)
+     - [Root key](/docs/key-protect?topic=key-protect-create-root-keys#create-root-key-api)
+     - [Standard key](/docs/key-protect?topic=key-protect-create-standard-keys#create-standard-key-api)
 
 For the {{site.data.keyword.Db2_on_Cloud_short}} service, a root key is required. The following example shows how to create a root key by using the GUI:
 

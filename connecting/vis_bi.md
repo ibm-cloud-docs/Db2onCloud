@@ -56,7 +56,7 @@ These instructions explain how to connect Tableau to a {{site.data.keyword.Db2_o
 ### Prerequisites
 {: #prereq8}
 
-Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 ### Procedure
 {: #proc8}
@@ -86,7 +86,7 @@ These instructions explain how to connect Microsoft Excel <!--2010-->to a {{site
 ### Prerequisites
 {: #prereq9}
 
-Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 You must have the Db2 driver package or the IBM® Data Server Driver Package installed on your local computer. 
 
@@ -127,14 +127,14 @@ You can connect Esri ArcGIS for Desktop <!--version 10.3.1 -->to a {{site.data.k
 ### Prerequisites
 {: #prereq10}
 
-Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 You must have the Db2 driver package or the IBM® Data Server Driver Package installed on your computer.
 
 ### Procedure
 {: #proc10}
 
-1. Determine your ODBC DSN data from the [connection information](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-db_details_cxn_creds#db_details_cxn_creds) that you collected beforehand.
+1. Determine your ODBC DSN data from the [connection information](/docs/Db2onCloud/connecting?topic=Db2onCloud-db_details_cxn_creds#db_details_cxn_creds) that you collected beforehand.
 
 2. Create a new connection:
       

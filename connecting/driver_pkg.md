@@ -57,9 +57,9 @@ In the {{site.data.keyword.Db2_on_Cloud_short}} web console, select **Connect > 
 {: #instlng}
 
 Install the driver package for your operating system:
-- [Installing on Linux or PowerLinux](/docs/services/Db2onCloud?topic=Db2onCloud-install_dr_pkg_linux#install_dr_pkg_linux)
-- [Installing on Mac OS X](/docs/services/Db2onCloud?topic=Db2onCloud-install_dr_pkg_mac#install_dr_pkg_mac)
-- [Installing on Windows](/docs/services/Db2onCloud?topic=Db2onCloud-install_dr_pkg_windows#install_dr_pkg_windows)
+- [Installing on Linux or PowerLinux](/docs/Db2onCloud?topic=Db2onCloud-install_dr_pkg_linux#install_dr_pkg_linux)
+- [Installing on Mac OS X](/docs/Db2onCloud?topic=Db2onCloud-install_dr_pkg_mac#install_dr_pkg_mac)
+- [Installing on Windows](/docs/Db2onCloud?topic=Db2onCloud-install_dr_pkg_windows#install_dr_pkg_windows)
 
 <!-- ## Configuring
 

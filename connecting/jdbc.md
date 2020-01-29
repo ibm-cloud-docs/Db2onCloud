@@ -30,7 +30,7 @@ Define a connection between a Java™ application and the {{site.data.keyword.Db
 ## Prerequisites
 {: #prereq61}
 
-Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 <!-- Before you can connect to your database, you must perform the following steps:
 

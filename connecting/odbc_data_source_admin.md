@@ -30,7 +30,7 @@ Use the Microsoft ODBC Data Source Administrator tool to define a connection bet
 ## Prerequisites
 {: #prereq91}
 
-Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -40,7 +40,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 ## Procedure
 {: #proc91}
 
-1. Install the [Db2 driver package](/docs/services/Db2onCloud?topic=Db2onCloud-dr_pkg#dr_pkg).
+1. Install the [Db2 driver package](/docs/Db2onCloud?topic=Db2onCloud-dr_pkg#dr_pkg).
 
 2. Open ODBC Data Source Administrator and create either a User DSN or System DSN for the Db2 driver package.
     

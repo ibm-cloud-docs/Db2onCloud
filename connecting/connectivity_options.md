@@ -68,7 +68,7 @@ The easiest way to connect to your data is by way of the public host name that w
 
 If you have an application that is deployed on your {{site.data.keyword.cloud_notm}} account and want to connect it to your database without the database traffic to flow over any public networks, you can use the **{{site.data.keyword.cloud_notm}} Service Endpoint** option when ordering your database. You are provided with a private host name at the time that the service is provisioned and you can connect to it only from within your {{site.data.keyword.cloud_notm}} account.  
 
-To learn more about the {{site.data.keyword.cloud_notm}} Service Endpoint option, see [Service Endpoint: About](/docs/services/service-endpoint?topic=service-endpoint-about#about).
+To learn more about the {{site.data.keyword.cloud_notm}} Service Endpoint option, see [Service Endpoint: About](/docs/service-endpoint?topic=service-endpoint-about#about).
 
 
 ### How to connect to a private endpoint with IBM Cloud Service Endpoint
@@ -76,7 +76,7 @@ To learn more about the {{site.data.keyword.cloud_notm}} Service Endpoint option
 
 Private network and endpoint communication happens by way of the {{site.data.keyword.cloud_notm}} Service Endpoint service. The Service Endpoint service makes it easy to quickly and securely route network traffic between different {{site.data.keyword.cloud_notm}} services and your database over the {{site.data.keyword.cloud_notm}} private network backplane. This network routing ensures that your data never goes out to the public internet. 
 
-To get started with Service Endpoint, your {{site.data.keyword.cloud_notm}} account must be enabled for virtual routing and forwarding (VRF). To get your account enabled, see [Enabling your account for using Service Endpoint by using IBM Cloud CLI](/docs/services/service-endpoint?topic=service-endpoint-getting-started#cs_cli_install_steps).
+To get started with Service Endpoint, your {{site.data.keyword.cloud_notm}} account must be enabled for virtual routing and forwarding (VRF). To get your account enabled, see [Enabling your account for using Service Endpoint by using IBM Cloud CLI](/docs/service-endpoint?topic=service-endpoint-getting-started#cs_cli_install_steps).
 
 After your account is VRF enabled and the Service Endpoint is enabled, follow the instructions that were provided in your welcome letter.
 

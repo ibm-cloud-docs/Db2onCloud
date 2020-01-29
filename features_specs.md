@@ -36,8 +36,8 @@ subcollection: Db2onCloud
 | BLU in-memory | Y | Default is row, specify `CREATE TABLE..AS COL` for BLU |
 | Activity Tracker | [In roadmap](https://ibm.biz/db2oncloud-roadmap){:external} | - |
 | Root access provided | N | Use Db2 Hosted if root access is required |
-| Copy Database | Y | [Copy Database](/docs/services/Db2onCloud?topic=Db2onCloud-cp_db) |
-| Resource controller support | Y | [Resource controller (RC)](/docs/services/Db2onCloud?topic=Db2onCloud-rc) |
+| Copy Database | Y | [Copy Database](/docs/Db2onCloud?topic=Db2onCloud-cp_db) |
+| Resource controller support | Y | [Resource controller (RC)](/docs/Db2onCloud?topic=Db2onCloud-rc) |
 {: class="simple-tab-table"}
 {: caption="Table 1. General" caption-side="top"}
 {: #simpletabtable1}
@@ -107,7 +107,7 @@ subcollection: Db2onCloud
 | Feature | Supported? | Comments |
 |---------|------------|----------|
 | Daily backups | Y | 14 days of daily backups |
-| Point-in-time self-serve recovery | Available Nov 15, 2018 | [Point-in-time restore](/docs/services/Db2onCloud?topic=Db2onCloud-bnr#point-in-time) |
+| Point-in-time self-serve recovery | Available Nov 15, 2018 | [Point-in-time restore](/docs/Db2onCloud?topic=Db2onCloud-bnr#point-in-time) |
 | Backups kept offsite | On request | As of Dec 1, 2018, offsite is default  |
 | Keep backup up to 10 yrs | On request | As of Dec 1, 2018. Requires support ticket. |
 | Query old data without restore | Y | Must set up [Time Travel Query](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:external} |
@@ -125,7 +125,7 @@ subcollection: Db2onCloud
 | On-disk encryption | Y | -  |
 | SSL/TLS connections | Y | -  |
 | IP whitelisting | Some | Available at Db2 user level. For network level, consider ICIAE or similar.  |
-| Key Protect (bring your own key) | Y | [IBM Key Protect](/docs/services/Db2onCloud?topic=Db2onCloud-key-protect) |
+| Key Protect (bring your own key) | Y | [IBM Key Protect](/docs/Db2onCloud?topic=Db2onCloud-key-protect) |
 | MIS / Interconnected service | [In roadmap](https://ibm.biz/db2oncloud-roadmap){:external} | - |
 | Maximum concurrent connection limit: **Free Lite plan** | Y | Max: 5 connections  |
 | Maximum concurrent connection limit: **Paid plans** | N | Unlimited number of connections  |
@@ -143,7 +143,7 @@ subcollection: Db2onCloud
 | Available on Hybrid Data Management Platform (HDMP) | Y | Flex plan only. [Details about HDMP](https://www.ibm.com/ca-en/marketplace/hybrid-data-management-platform){:external}|
 | Daily billing | Y | Billing for Flex plans is based on peak daily usage. For example, if you scale up from 2 to 8 cores for one hour of a day, you are billed for 8 cores for only that day, and 2 cores for all of the other days of the month. |
 | Hourly billing | [In roadmap](https://ibm.biz/db2oncloud-roadmap){:external} | - | 
-| Main pricing metric | Monthly | Prices are stated in monthly terms (for example, $189 USD per month). A prorated monthly price is based on the number of days of activated service during the month in which the service was terminated. [Examples](/docs/services/Db2onCloud?topic=Db2onCloud-plans_pricing#examples) |
+| Main pricing metric | Monthly | Prices are stated in monthly terms (for example, $189 USD per month). A prorated monthly price is based on the number of days of activated service during the month in which the service was terminated. [Examples](/docs/Db2onCloud?topic=Db2onCloud-plans_pricing#examples) |
 {: class="simple-tab-table"}
 {: caption="Table 8. Pricing & purchasing" caption-side="top"}
 {: #simpletabtable8}
