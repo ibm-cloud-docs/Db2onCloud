@@ -66,8 +66,6 @@ Db2 on Cloud
     local_dev_env.md
     communities.md    
 
-    [Walk-through video](https://www.youtube.com/watch?v=abmWJYe7Kcc)
-	
     [What's new](https://www.ibm.com/support/pages/whats-new-ibm-db2-cloud)
     [Frequently asked questions](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/managed_service.html)
     [IBM Developer Answers](https://developer.ibm.com/answers/index.html)
