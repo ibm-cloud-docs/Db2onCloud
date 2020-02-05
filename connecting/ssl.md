@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2019
-lastupdated: "2019-09-09"
+  years: 2014, 2020
+lastupdated: "2020-02-05"
 
 keywords:
 
@@ -35,7 +35,12 @@ Secure Sockets Layer (SSL) is a security protocol that provides communication pr
 
 Configuring your applications to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database with SSL depends on your company policy. Both the standard and the SSL protocols that you can use to connect to the database transmit user names and passwords as encrypted data. If you want to ensure complete end-to-end security, transmit all database information, including sensitive data and metadata, through an SSL connection. 
 
-SSL connections to {{site.data.keyword.Db2_on_Cloud_short}} are enforced by default. To enable a non-SSL port on your {{site.data.keyword.cloud_notm}} system, open a [support case](https://cloud.ibm.com/unifiedsupport/cases/add){:external} to make that request.
+<!-- SSL connections to {{site.data.keyword.Db2_on_Cloud_short}} are enforced by default. To enable a non-SSL port on your {{site.data.keyword.cloud_notm}} system, open a [support case](https://cloud.ibm.com/unifiedsupport/cases/add){:external} to make that request.
 {: important}
+-->
+
+To enforce SSL connections, log in to the {{site.data.keyword.Db2_on_Cloud_short}} web console as an administrator, navigate to the **About** page, and select the **Enforce SSL connections** setting.
+{: important}
+
 
 
