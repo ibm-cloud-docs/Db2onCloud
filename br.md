@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2019
-lastupdated: "2019-09-30"
+  years: 2014, 2020
+lastupdated: "2020-02-05"
 
 keywords: 
 
@@ -27,7 +27,7 @@ subcollection: Db2onCloud
 For paid plans, encrypted backups of the database are done daily. A daily backup is kept for each of the last 14 days.
 {: shortdesc}
 
-In addition to standard backups, you can use the [Time Travel Query](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:external} to keep historical data for other purposes, such as instantly querying old data or simplified auditing. You can also do your own exports by using IBM Data Studio or any Db2 tool.
+<!-- In addition to standard backups, you can use the [Time Travel Query](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:external} to keep historical data for other purposes, such as instantly querying old data or simplified auditing. You can also do your own exports by using IBM Data Studio or any Db2 tool. -->
  
 For information about point-in-time restores, see [Point-in-time restore](#point-in-time).
 

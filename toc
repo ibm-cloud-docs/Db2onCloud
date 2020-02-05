@@ -6,84 +6,71 @@
 Db2 on Cloud
 
     {: .navgroup id="learn"}
-    getting-started.md
-
-    {: .topicgroup}
-    Features & specs
-        [Features and advantages](https://ibm.biz/db2oncloud-features)
-        flex_scaling.md
-        br.md
-        ha.md
-        copy_db.md
-        audit.md
-        rc.md
-        
+    about.md
     free_plan.md
-    plans_pricing.md
-
-    {: .topicgroup}
-    Security
-        iam.md
-        user_mgmt.md
-        sec_comp_sum.md
-        key_protect.md
+    getting-started.md
 
     {: .topicgroup}
     Connecting
         connecting/connecting.md
         connecting/connectivity_options.md
         connecting/credentials.md
-        connecting/driver_pkg.md
-        connecting/install_linux.md
-        connecting/install_mac.md
-        connecting/install_win.md
-        connecting/driver_pkg_cfg.md
         connecting/ssl.md
-        connecting/jdbc.md
-        connecting/net_apps.md
-        connecting/odbc_cli.md
-        connecting/odbc_data_source_admin.md
-        connecting/php.md
+        connecting/driver_pkg.md
+        connecting/connect_programmatically.md
+        connecting/connect_ibm_tools.md
+        connecting/connect_3rd_party_tools.md
         connecting/rest_api.md
-
-    {: .topicgroup}
-    Integrations
-        connecting/data.md
-        connecting/vis_bi.md
-        connecting/data_sci.md
-
-    {: .topicgroup}
-    Connecting to another Db2 database
-        federation.md
-        cdc.md
 
     {: .topicgroup}
     Loading your data
         dcw.md
         migration.md
 
-    maintenance.md
-    local_dev_env.md
+    {: .topicgroup}
+    Administration
+        interfaces.md
+        advanced_admin.md
+        flex_scaling.md
+        copy_db.md
+        cdc.md
+        rc.md
+        br.md
+        ha.md
+        log_mon.md
+        maintenance.md
+        federation.md
+        local_dev_env.md
+
+    {: .topicgroup}
+    Security
+        iam.md
+        user_mgmt.md
+        rcac.md
+        auditing.md
+        sec_comp_sum.md
+        key_protect.md
+
+    {: .topicgroup}
+    Amazon Web Services
+        aws_overview.md
+
     communities.md    
 
     [What's new](https://www.ibm.com/support/pages/whats-new-ibm-db2-cloud)
     [Frequently asked questions](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/managed_service.html)
     [IBM Developer Answers](https://developer.ibm.com/answers/index.html)
-    [Db2 on Cloud Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
     {: .navgroup-end}
 
 	{: .navgroup id="howto"}
-    [Guided demo: Complete common tasks through the web console](https://www.ibm.com/cloud/garage/demo/try-db2-on-cloud)
-    [Tutorial: Time travel query to access historical data](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html)
-    [Tutorial: Develop apps with Jupyter Notebooks and REST API](https://www.ibm.com/cloud/garage/tutorials/ibm-db2-on-cloud/exploring-the-capabilities-of-db-2-on-cloud)
-    [Video: Using RESTful API](https://www.youtube.com/watch?v=PSNBDwgf9ts)
-    [Video: Integrating Jupyter notebooks](https://www.youtube.com/watch?v=bNfH0Wzx3is)
-	
+    [IBM Demos: Tutorials, videos, and hands-on labs](https://www.ibm.com/demos/collection/Db2-on-Cloud/)
     {: .navgroup-end}
 
 	{: .navgroup id="reference"}
-    [REST API](https://cloud.ibm.com/apidocs/db2-on-cloud)
+    [Database management API](https://cloud.ibm.com/apidocs/db2-on-cloud)
+    [Database resource scaling API](https://cloud.ibm.com/apidocs/db2-on-cloud/db2oc_scale_exp)
     [SQL reference](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.sql.ref.doc/doc/c0004100.html)
+    [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
 	{: .navgroup-end}
 
 	{: .navgroup id="help"}
