@@ -44,6 +44,7 @@ Db2 on Cloud
 
     {: .topicgroup}
     Security
+        encryption.md
         iam.md
         user_mgmt.md
         rcac.md
