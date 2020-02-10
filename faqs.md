@@ -89,7 +89,7 @@ You can find pricing information and deploy a {{site.data.keyword.Db2_on_Cloud_s
 {: faq}
 {: support}
 
-For information about posting questions on a forum or opening a support ticket, see [Help & support](/docs/Db2onCloud?topic=Db2onCloud-help_support){: external}
+For information about posting questions on a forum or opening a support ticket, see [Help & support](/docs/Db2onCloud?topic=Db2onCloud-help_support).
 
 Only community support is available for the free Lite plan.
 
