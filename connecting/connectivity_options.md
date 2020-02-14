@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2019
-lastupdated: "2019-06-25"
+  years: 2014, 2020
+lastupdated: "2020-02-14"
 
 keywords:
 
@@ -30,7 +30,7 @@ subcollection: Db2onCloud
 ## Connecting to a public endpoint (default option)
 {: #pub_endpt}
 
-As with any public cloud service, you can connect your application by way of a public host name that is provided to you at the time that your service is provisioned. Access to your data is protected by strong authentication, vast Db2 authorization options and access controls, encryption over the wire and at rest, and IBM security and compliance practices for development and operations. Optional IP whitelisting is offered. Create an IBM Support case if you want to enable IP whitelisting.
+As with any public cloud service, you can connect your application by way of a public host name that is provided to you at the time that your service is provisioned. Access to your data is protected by strong authentication, vast Db2 authorization options and access controls, encryption over the wire and at rest, and IBM security and compliance practices for development and operations. 
 
 ### How to connect to a public endpoint:
 {: #pub_endpt_steps}
@@ -63,10 +63,14 @@ The easiest way to connect to your data is by way of the public host name that w
 
    ![Public network access to {{site.data.keyword.cloud_notm}}](images/public_connection.png "Graphical view of user to cloud connection"){: caption="Figure 1. Public network access to {{site.data.keyword.cloud_notm}}" caption-side="bottom"}
 
+Non-admin users can also use whitelisting available in the {{site.data.keyword.Db2_on_Cloud_short}} web console under **Settings > Manage Users**.
+
 ## Connecting to a private endpoint: IBM Cloud Service Endpoint
 {: #priv_endpt}
 
-If you have an application that is deployed on your {{site.data.keyword.cloud_notm}} account and want to connect it to your database without the database traffic to flow over any public networks, you can use the **{{site.data.keyword.cloud_notm}} Service Endpoint** option when ordering your database. You are provided with a private host name at the time that the service is provisioned and you can connect to it only from within your {{site.data.keyword.cloud_notm}} account.  
+If you have an application that is deployed on your {{site.data.keyword.cloud_notm}} account and want to connect it to your database without the database traffic to flow over any public networks, you can use the **{{site.data.keyword.cloud_notm}} Service Endpoint** option when ordering your database. You are provided with a private host name at the time that the service is provisioned and you can connect to it only from within your {{site.data.keyword.cloud_notm}} account.
+
+Optional IP whitelisting is offered as well with this option. Create an IBM Support case if you want to enable IP whitelisting with CSE.
 
 To learn more about the {{site.data.keyword.cloud_notm}} Service Endpoint option, see [Service Endpoint: About](/docs/service-endpoint?topic=service-endpoint-about#about).
 
