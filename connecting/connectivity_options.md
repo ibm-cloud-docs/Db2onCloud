@@ -70,7 +70,7 @@ Non-admin users can also use whitelisting available in the {{site.data.keyword.D
 
 If you have an application that is deployed on your {{site.data.keyword.cloud_notm}} account and want to connect it to your database without the database traffic to flow over any public networks, you can use the **{{site.data.keyword.cloud_notm}} Service Endpoint** option when ordering your database. You are provided with a private host name at the time that the service is provisioned and you can connect to it only from within your {{site.data.keyword.cloud_notm}} account.
 
-Optional IP whitelisting is offered as well with this option. Create an IBM Support case if you want to enable IP whitelisting with CSE.
+Optional IP whitelisting is offered as well with this option. Create an [IBM Support case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} if you want to enable IP whitelisting with CSE.
 
 To learn more about the {{site.data.keyword.cloud_notm}} Service Endpoint option, see [Service Endpoint: About](/docs/service-endpoint?topic=service-endpoint-about#about).
 
