@@ -49,7 +49,7 @@ You can provision an instance of {{site.data.keyword.Db2_on_Cloud_short}} direct
 {: support}
 
 1. Log into [IBM Cloud](https://cloud.ibm.com){: external}.
-2. Navigate to your **Resource list** by selecting **View resources**. [Direct link](https://cloud.ibm.com/resources){: external}.
+2. Open your [**Resource list**](https://cloud.ibm.com/resources){: external}.
 3. Under **Services** or **Cloud Foundry services**, locate your {{site.data.keyword.Db2_on_Cloud_short}} instance and click on the service name.  
    - Services - This list includes all instances that were created under a resource group or that were migrated into a resource group.
    - Cloud Foundry services - This list includes all instances that were created under a Cloud Foundry organization and space, and were not migrated into a resource group.
