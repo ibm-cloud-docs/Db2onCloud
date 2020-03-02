@@ -167,7 +167,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
      - [Configuring access to Db2 databases](https://www.ibm.com/support/knowledgecenter/en/SSZJPZ_11.7.0/com.ibm.swg.im.iis.conn.common.usage.doc/topics/t_configuring_db2conn.html){:external}
 
 ### Lift
-{: #lift}
+{: #tools_lift}
 
 Use Lift to migrate your data into {{site.data.keyword.Db2_on_Cloud_short}}.
 

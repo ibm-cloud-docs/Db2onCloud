@@ -46,7 +46,7 @@ Prices are stated in monthly terms (for example, $189 USD per month) for an acti
 If the activated service is terminated before the month ends, the monthly price reflects the portion of the month during which the service remained activated.
 
 ### Billing examples
-{: #examples}
+{: #billing_examples}
 
 In the following billing examples, an example plan charge of $189 USD per month is used.
 
