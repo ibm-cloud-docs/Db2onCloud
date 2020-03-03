@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2019
-lastupdated: "2019-07-05"
+  years: 2014, 2020
+lastupdated: "2020-03-03"
 
 keywords: 
 
@@ -66,7 +66,7 @@ curl -k -X POST \
   --header "Accept: application/json" \
   --data-urlencode "grant_type=urn:ibm:params:oauth:grant-type:apikey" \
   --data-urlencode "apikey=<apikey>" \
-  "https://iam.bluemix.net/identity/token"
+  "https://iam.cloud.ibm.com/identity/token"
 ```
 
 An access token identifies an IBMid user or a service ID to the database. The database server verifies the validity of the access token before accepting it. This is the best method if the application needs to connect to more than one database service instance or other {{site.data.keyword.Bluemix_notm}} service instances because it minimizes the communication to the IAM service to validate the access token.
