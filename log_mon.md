@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-01-31"
+lastupdated: "2020-03-04"
 
 keywords: 
 
@@ -26,7 +26,7 @@ subcollection: Db2onCloud
 
 Monitoring and logging is part of the service. However, it is not directly displayed to the user. Instead, the infrastructure is used by IBM operational staff to address issues.  
 
-For availability of the Activity Tracker, see [roadmap](https://ibm.biz/db2oncloud-roadmap){:external}.
+<!-- For availability of the Activity Tracker, see [roadmap](https://ibm.biz/db2oncloud-roadmap){:external}. -->
 
 You can connect with a Db2 command-line client, such as CLPPlus, to access detailed information and diagnostics.
 
