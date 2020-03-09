@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-02-14"
+lastupdated: "2020-03-09"
 
 keywords:
 
@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 # Connectivity options
 {: #connect_options}
 
-{{site.data.keyword.Db2_on_Cloud_long}} offers multiple secure connectivity options depending on your application connection requirements.  
+{{site.data.keyword.Db2_on_Cloud_long}} offers multiple secure connectivity options that depend on your application connection requirements.  
 {: shortdesc}
 
 ## Connecting to a public endpoint (default option)
@@ -72,7 +72,7 @@ If you have an application that is deployed on your {{site.data.keyword.cloud_no
 
 Optional IP whitelisting is offered as well with this option. Create an [IBM Support case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} if you want to enable IP whitelisting with CSE.
 
-To learn more about the {{site.data.keyword.cloud_notm}} Service Endpoint option, see [Service Endpoint: About](/docs/service-endpoint?topic=service-endpoint-about#about).
+To learn more about the {{site.data.keyword.cloud_notm}} Service Endpoint option, see [Secure access to services using service endpoints](/docs/resources?topic=resources-service-endpoints).
 
 
 ### How to connect to a private endpoint with IBM Cloud Service Endpoint
@@ -80,7 +80,7 @@ To learn more about the {{site.data.keyword.cloud_notm}} Service Endpoint option
 
 Private network and endpoint communication happens by way of the {{site.data.keyword.cloud_notm}} Service Endpoint service. The Service Endpoint service makes it easy to quickly and securely route network traffic between different {{site.data.keyword.cloud_notm}} services and your database over the {{site.data.keyword.cloud_notm}} private network backplane. This network routing ensures that your data never goes out to the public internet. 
 
-To get started with Service Endpoint, your {{site.data.keyword.cloud_notm}} account must be enabled for virtual routing and forwarding (VRF). To get your account enabled, see [Enabling your account for using Service Endpoint by using IBM Cloud CLI](/docs/service-endpoint?topic=service-endpoint-getting-started#cs_cli_install_steps).
+To get started with Service Endpoint, your {{site.data.keyword.cloud_notm}} account must be enabled for virtual routing and forwarding (VRF). To get your account enabled, see [Setting up service endpoints](/docs/resources?topic=resources-private-network-endpoints).
 
 After your account is VRF enabled and the Service Endpoint is enabled, follow the instructions that were provided in your welcome letter.
 
