@@ -52,10 +52,6 @@ Db2 on Cloud
         sec_comp_sum.md
         key_protect.md
 
-    {: .topicgroup}
-    Amazon Web Services
-        aws_overview.md
-
     communities.md    
 
     [What's new](https://www.ibm.com/support/pages/whats-new-ibm-db2-cloud)
