@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-03-09"
+lastupdated: "2020-04-14"
 
 keywords:
 
@@ -65,6 +65,30 @@ The easiest way to connect to your data is by way of the public host name that w
 
 Non-admin users can also use whitelisting available in the {{site.data.keyword.Db2_on_Cloud_short}} web console under **Settings > Manage Users**.
 
+## Connecting to a private endpoint: IBM Cloud service endpoint
+{: #priv_endpt}
+
+{{site.data.keyword.Db2_on_Cloud_short}} supports private connectivity through an [{{site.data.keyword.cloud_notm}} service endpoint](/docs/resources?topic=resources-service-endpoints). {{site.data.keyword.cloud_notm}} service endpoints securely route network traffic between different {{site.data.keyword.cloud_notm}} services through the {{site.data.keyword.cloud_notm}} private backplane network. When you configure your {{site.data.keyword.Db2_on_Cloud_short}} instance with {{site.data.keyword.cloud_notm}} service endpoint connectivity, traffic between your cloud database and applications deployed on your {{site.data.keyword.cloud_notm}} account will not traverse any public networks.
+
+### How to configure IBM Cloud service endpoint connectivity
+{: #cfg_endpt}
+
+Complete the following steps to enable {{site.data.keyword.cloud_notm}} service endpoint connectivity for your {{site.data.keyword.Db2_on_Cloud_short}} instance:
+
+1. Enable your {{site.data.keyword.cloud_notm}} account to use virtual routing and forwarding (VRF) and {{site.data.keyword.cloud_notm}} service endpoints. To enable both of these items, see [Setting up service endpoints](/docs/resources?topic=resources-private-network-endpoints).
+
+2. Configure your {{site.data.keyword.Db2_on_Cloud_short}} instance for service endpoint connectivity.
+
+   - **If you provisioned your {{site.data.keyword.Db2_on_Cloud_short}} instance through the {{site.data.keyword.cloud_notm}} catalog**: [Create a case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} to request the configuration of your {{site.data.keyword.Db2_on_Cloud_short}} instance for {{site.data.keyword.cloud_notm}} service endpoint connectivity. After this is complete, your {{site.data.keyword.Db2_on_Cloud_short}} instance will be served on a new, non-internet-routable IP address. Information about how to access your {{site.data.keyword.Db2_on_Cloud_short}} instance by using this newly configured private endpoint will be sent to you.
+
+   - **If you purchased your {{site.data.keyword.Db2_on_Cloud_short}} instance through IBM Sales**: If you requested private endpoint connectivity, your {{site.data.keyword.Db2_on_Cloud_short}} instance will be provisioned with {{site.data.keyword.cloud_notm}} service endpoint connectivity. No further action is required.
+
+After you've configured {{site.data.keyword.cloud_notm}} service endpoint connectivity for your {{site.data.keyword.Db2_on_Cloud_short}} instance, it will only be accessible through a private endpoint. You will not be able to access your instance through a public endpoint.
+{: note}
+
+To learn more about the {{site.data.keyword.cloud_notm}} service endpoint service, see [Secure access to services using service endpoints](/docs/resources?topic=resources-service-endpoints).
+
+<!--
 ## Connecting to a private endpoint: IBM Cloud Service Endpoint
 {: #priv_endpt}
 
@@ -85,6 +109,7 @@ To get started with Service Endpoint, your {{site.data.keyword.cloud_notm}} acco
 After your account is VRF enabled and the Service Endpoint is enabled, follow the instructions that were provided in your welcome letter.
 
 Now, it’s time to connect to your {{site.data.keyword.Db2_on_Cloud_short}} instance from within your {{site.data.keyword.cloud_notm}} account by way of the private network address that was provided in your welcome letter.
+-->
 
 ## Connecting to a virtual private network (VPN) endpoint
 {: #vpn}
