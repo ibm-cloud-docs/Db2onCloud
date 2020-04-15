@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-02-13"
+lastupdated: "2020-04-15"
 
 keywords:
 
@@ -33,7 +33,7 @@ However, if your application has its own driver, you might need to download the 
 
 Secure Sockets Layer (SSL) is a security protocol that provides communication privacy. SSL enables client and server applications to communicate in a way that is designed to prevent eavesdropping, tampering, and message forgery. SSL-enabled client applications use standard encryption techniques to help ensure secure communication.
 
-Configuring your applications to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database with SSL depends on your company policy. Both the standard and the SSL protocols that you can use to connect to the database transmit user names and passwords as encrypted data. If you want to ensure complete end-to-end security, transmit all database information, including sensitive data and metadata, through an SSL connection. 
+Configuring your applications to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database with SSL is strongly recommended. You should use only non-SSL connections if your are using legacy applications that cannot connect using an SSL connection.
 
 To enforce SSL connections, log in to the {{site.data.keyword.Db2_on_Cloud_short}} web console as an administrator, navigate to the **About** page, and select the **Enforce SSL connections** setting.
 {: important}
