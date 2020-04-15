@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-02-03"
+lastupdated: "2020-04-15"
 
 keywords:
 
@@ -46,7 +46,9 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
   - Add entries to the driver configuration file, `db2dsdriver.cfg`, for your database.
   - Secure Sockets Layer (SSL)
 
-    You can choose to connect with or without SSL. Connection details, such as which port to use and the connection string, depend on whether you use SSL connections.
+    Connection details, such as which port to use and the connection string, depend on whether you use SSL connections. Using SSL is strongly recommended because of the stronger security it provides.
+
+    <!-- You can choose to connect with or without SSL. Connection details, such as which port to use and the connection string, depend on whether you use SSL connections. -->
 
     To use SSL connections, you need a CA certificate:
     - If you use the most recent {{site.data.keyword.Db2_on_Cloud_short}} driver package, the certificate file is bundled with the package and is used for connections.
