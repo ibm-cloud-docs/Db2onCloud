@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-03-10"
+lastupdated: "2020-04-22"
 
 keywords: 
 
@@ -27,6 +27,9 @@ subcollection: Db2onCloud
 Identity and access management (IAM) enables you to securely authenticate users for platform services and control access to resources consistently across the {{site.data.keyword.Bluemix_notm}} platform. For example, with only a single login to {{site.data.keyword.Bluemix_notm}} with your IBMid, you have access to any of your service consoles and their applications without having to log in to each of them separately.
 {: shortdesc}
 
+IAM is enabled for all {{site.data.keyword.Db2_on_Cloud_short}} plans except for **Lite** plan instances.
+
+<!--
 ## Is IAM enabled on your instance?
 {: #enabled}
 
@@ -38,6 +41,7 @@ SELECT CASE WHEN VALUE = 'IBMIAMauth' THEN 1 ELSE 0 END AS IAM_ENABLED FROM SYSI
 {:codeblock}
 
 If the returned value of **IAM_ENABLED** is 1, then IAM is enabled on your instance.
+-->
 
 ## Features of {{site.data.keyword.Bluemix_notm}} IAM
 {: #features}
