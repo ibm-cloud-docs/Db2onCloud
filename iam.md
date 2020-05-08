@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-05-06"
+lastupdated: "2020-05-08"
 
 keywords: 
 
@@ -320,7 +320,7 @@ The {{site.data.keyword.Db2_on_Cloud_short}} REST API was enhanced to also accep
   ```
   {: codeblock}
 
-  The `<userid>` value for `"id"` and `"ibmid"` do not have to be the same. The two different IDs are not linked together in any way.
+  The userid value for `"id"` cannot match the full email ID. It can match the first part of the email ID, but that is not necessary. The two different IDs are not linked together in any way. For example, if your `"ibmid"` is `abc@us.ibm.com`, then you could specify `abc` as the ID, or you could specify `def` for example, but you cannot specify `abc@us.ibm.com`.
   {: note}
 
 * To migrate an existing non-IBMid database user (for example, `abcuser`) and make them an IBMid user, first delete the non-IBMid user ID by running the following example API call:
