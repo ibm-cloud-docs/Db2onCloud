@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-04-15"
+lastupdated: "2020-06-11"
 
 keywords:
 
@@ -34,19 +34,19 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 
 - Collect database details and credentials
 
-   To connect to your database, you need database details (such as the host name), and credentials (such as a user ID and password.) You can collect this connection information from the {{site.data.keyword.Db2_on_Cloud_short}} web console.
+   To connect to your database, you need database details (such as the host name), and credentials (such as a user ID and password.) You can collect this connection information from the **Service Credentials** table of the {{site.data.keyword.Db2_on_Cloud_short}} service instance or from the {{site.data.keyword.Db2_on_Cloud_short}} web console.
 
 - Verify that a supported driver is installed
 
    - If your application or tool already contains the Db2 v11.1 IBM Data Server Driver Package, then your application or tool is able to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database by using that driver.
-   - Otherwise, install the Db2 driver package, which you can download from the {{site.data.keyword.Db2_on_Cloud_short}} web console.
+   - Otherwise, install the Db2 driver package, which you can download from [here](https://www.ibm.com/support/pages/node/387577){: external}.
 
 - Configure your environment
 
   - Add entries to the driver configuration file, `db2dsdriver.cfg`, for your database.
   - Secure Sockets Layer (SSL)
 
-    Connection details, such as which port to use and the connection string, depend on whether you use SSL connections. Using SSL is strongly recommended because of the stronger security it provides.
+    Connection details, such as which port to use and the connection string, depend on whether you use SSL connections. For legacy plans, using SSL is strongly recommended because of the stronger security it provides. For current plans, SSL is the default connection method.
 
     <!-- You can choose to connect with or without SSL. Connection details, such as which port to use and the connection string, depend on whether you use SSL connections. -->
 
@@ -56,7 +56,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 
 - Confirm that ports are available
 
-   If your network is behind a firewall, confirm that communications are permitted on port number `50000` for standard protocols or port number `50001` for SSL connections.
+   If your network is behind a firewall, confirm that communications are permitted on the port that is needed to connect to the {{site.data.keyword.Db2_on_Cloud_short}} service. For legacy plans, the connections will occur on port number `50000` for standard protocols or port number `50001` for SSL connections. For current plans, the port number can be found in the connection information from the **Service Credentials** table of the {{site.data.keyword.Db2_on_Cloud_short}} service instance or from the {{site.data.keyword.Db2_on_Cloud_short}} web console.
 
 <!-- Before you can connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you completed downloading and installing the necessary components on the prerequisites checklist: 
 
@@ -118,7 +118,7 @@ You can also connect external applications and tools to {{site.data.keyword.Db2_
 - Connect your {{site.data.keyword.Bluemix_short}} applications that need an analytics database.
 - [DataStage](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ibm#datastage)
 <!-- - [Informatica](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_3rd_party#informatica) -->
-- [Lift](https://www.lift-cli.cloud.ibm.com/#docs){:external}
+- Only for legacy plans: [Lift](https://www.lift-cli.cloud.ibm.com/#docs){:external}
 - [InfoSphere Data Replication](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ibm#idr)
 - [Segment](https://segment.com/docs/destinations/db2/){:external}
 - [Data Studio](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ibm#data_studio)
