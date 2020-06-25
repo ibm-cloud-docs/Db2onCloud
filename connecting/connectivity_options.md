@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-04-14"
+lastupdated: "2020-06-24"
 
 keywords:
 
@@ -43,6 +43,50 @@ The easiest way to connect to your data is by way of the public host name that w
 4. After the credentials are created, under the `Actions` column, click **View credentials**.
 5. In the following JSON document example, note the contents of the hostname, password, and username fields. You use these three components to make the public endpoint connection:
 
+#### Current plans connection string breakdown
+{: #pub_endpt_current}
+
+##### Db2 on Cloud section
+
+The "postgres" section contains information that is suited to applications that make connections to {{site.data.keyword.Db2_on_Cloud_short}}.
+
+| Field Name | Index | Description |
+|----------|--------|-----------|
+| `Type` | | Type of connection - "URI" |
+| `Scheme` | | Scheme for a URI - "{{site.data.keyword.Db2_on_Cloud_short}}" |
+| `Path` | | Path for a URI - Database name. The default is `ibmclouddb`. |
+| `Authentication` | `Username` | The user name that you use to connect |
+| `Authentication` | `Password` | A password for the user - might be shown as `$PASSWORD` |
+| `Authentication` | `Method` | How authentication takes place; "direct" authentication is handled by the driver |
+| `Hosts` | `0...` | A host name and port to connect to |
+| `Composed` | `0...` | A URI combining Scheme, Authentication, Host, and Path |
+| `Certificate` | `Name` | The allocated name for the self-signed certificate for database deployment |
+| `Certificate` | Base64 | A base64 encoded version of the certificate |
+| `Host_ROS` | | A host name and port to connect to read on standby |
+{: caption="Table 1. Db2 on Cloud / URI connection information" caption-side="top"}
+
+`0...` indicates that there might be one or more of these entries in an array.
+
+##### CLI section
+
+The "CLI" section contains information that is suited for connecting with `psql`.
+
+| Field Name | Index | Description |
+|----------|--------|-----------|
+| `Bin` | | The recommended binary to create a connection; in this case it is `psql` |
+| `Composed` | | A formatted command to establish a connection to your deployment. The command combines the `Bin` executable, `Environment` variable settings, and uses `Arguments` as command line parameters. |
+| `Environment` | | A list of key/values you set as environment variables |
+| `Arguments` | `0...` | The information that is passed as arguments to the command shown in the Bin field |
+| `Certificate` | Base64 | A self-signed certificate that is used to confirm that an application is connecting to the appropriate server. It is base64 encoded. |
+| `Certificate` | Name | The allocated name for the self-signed certificate |
+| `Type` | | The type of package that uses this connection information; in this case `cli` |
+{: caption="Table 2. psql / cli connection information" caption-side="top"}
+
+`0...` indicates that there might be one or more of these entries in an array.
+
+#### Legacy plans
+{: #pub_endpt_legacy}
+
    ```
    {
      "hostname": "dashdb-enterprise-xxxxxxx.services.dal.bluemix.net",
@@ -63,7 +107,7 @@ The easiest way to connect to your data is by way of the public host name that w
 
    ![Public network access to {{site.data.keyword.cloud_notm}}](images/public_connection.png "Graphical view of user to cloud connection"){: caption="Figure 1. Public network access to {{site.data.keyword.cloud_notm}}" caption-side="bottom"}
 
-Non-admin users can also use whitelisting available in the {{site.data.keyword.Db2_on_Cloud_short}} web console under **Settings > Manage Users**.
+Non-admin users can also use allowlisting available in the {{site.data.keyword.Db2_on_Cloud_short}} web console under **Settings > Manage Users**.
 
 ## Connecting to a private endpoint: IBM Cloud service endpoint
 {: #priv_endpt}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-01-31"
+lastupdated: "2020-06-24"
 
 keywords: 
 
@@ -23,6 +23,54 @@ subcollection: Db2onCloud
 
 # About
 {: #about}
+
+{{site.data.keyword.Db2_on_Cloud_long}} is a fully managed public cloud service on {{site.data.keyword.cloud_notm}}. As a relational database, it delivers fast query processing with enterprise-level performance and capabilities for online transactional processing (OLTP). The new Enterprise High Availability plan runs the powerful Db2 11.5 engine, and also provides multizone region support in a three HA node configuration to ensure ultimate redundancy.
+
+## Key features
+{: #ab_key_features}
+
+### Scalable and elastic cloud service
+
+{{site.data.keyword.Db2_on_Cloud_short}} is an elastic service, and allows you to independently scale compute and storage through an intuitive UI or REST API.
+
+### Expertly managed and highly secure
+
+Day-to-day operations for {{site.data.keyword.Db2_on_Cloud_short}}, including database monitoring, uptime checks and failovers, are fully automated. Operations are supplemented by a DevOps team that are on call to handle unexpected system failures. Data is encrypted at rest and in motion by default. Administrators can also restrict access to sensitive data through data masking, row permissions, and role-based security, and can utilize database audit utilities to maintain audit trails for their database. IBM Key Protect and {{site.data.keyword.cloud_notm}} service endpoint are also supported.
+
+### Run your own apps
+
+In addition to the integrated tools, you can connect many popular third-party BI and visualization apps that you might already be using. For example, connect IBM InfoSphere Data Architect to design and deploy your database schema, or connect SQL-based tools such as Watson Analytics and Cognos Analytics to manipulate or analyze your data. For the managed service, you can connect other {{site.data.keyword.cloud_notm}} applications.
+
+### Graphical user interface or command line
+
+You can use the web console to perform many key tasks, such as loading data, working with tables, run SQL, and monitoring. Alternatively, you can use the command-line user interface CLPPlus to define, edit, and run statements, scripts, and commands.
+
+## Plans and configurations
+{: #ab_plans_cfgs}
+
+### Current plans
+{: #ab_current}
+
+#### Enterprise High Availability plan
+
+- Base instances start at 4 vCPU x 16 GB RAM x 20 GB storage on dedicated compute slices
+- Runs the latest release of Db2, version 11.5
+- Three high-availability nodes spanning multiple availability zones
+- 10 TB of free backup storage for up to 14 days of backups
+- Self-service managed backup with point-in-time restore
+
+Coming soon: The Enterprise non-HA plan and Standard (both HA and non-HA) plans.
+
+### Legacy plans
+{: #ab_legacy}
+
+- A Flex plan in which you can independently scale RAM, storage, and compute resources
+- Precise Performance plans that provide fixed resources and bare metal servers
+
+Stay tuned for information about migrating your legacy plan to one of the current plans.
+
+
+<!--
 
 ## Plans and configurations
 {: #plans_cfgs}
@@ -61,4 +109,5 @@ Billing for Flex plans is based on peak daily usage. For example, if you scale u
 **Example 3: Prorated billing**
 
 If an activated service with a monthly charge of $189 USD per month was used for 20 days out of the 30 days in the month before the service was terminated, the bill for the usage would be $189 USD x 20/30 = $126 USD.
+-->
 
