@@ -195,6 +195,6 @@ To establish a VPN connection to your cloud database behind a public endpoint, [
   * **DH-Group** (if using PF-Secrecy): Group 5
   * **Security Association Lifetime (seconds)**: 3600 seconds
 
-After receipt of your request, {{site.data.keyword.cloud_notm}} technicians will open the appropriate firewall ports and whitelist the provided IP address. Communication and resolution to the request will be made through the {{site.data.keyword.cloud_notm}} Support case ticket.
+After receipt of your request, {{site.data.keyword.cloud_notm}} technicians will open the appropriate firewall ports and allowlist the provided IP address. Communication and resolution to the request will be made through the {{site.data.keyword.cloud_notm}} Support case ticket.
 
 ![Public network access to {{site.data.keyword.cloud_notm}} through a VPN](images/public_connection_vpn.png "Graphical view of user to cloud connection"){: caption="Figure 2. Public network access to {{site.data.keyword.cloud_notm}} through a VPN" caption-side="bottom"}

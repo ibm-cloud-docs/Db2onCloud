@@ -70,7 +70,7 @@ The following table lists the events that get sent to Activity Tracker from {{si
 | `<service_id>.user.delete`| A user was deleted. A "-failure" flag is included in the message if the attempt to delete a user failed. |
 | `<service_id>.backup.restore`| A restore from backup was created. If the attempted restore failed, a "-failure" flag is included in the message. |
 | `<service_id>.resources.scale`| A scaling operation was performed. If the scaling operation failed, a "-failure" flag is included in the message. |
-| `<service_id>.whitelisted-ips-list.update`| The whitelist was modified. A "-failure" flag is included in the message if the attempt to modify the whitelist failed. |
+| `<service_id>.whitelisted-ips-list.update`| The allowlist was modified. A "-failure" flag is included in the message if the attempt to modify the allowlist failed. |
 | `<service_id>.serviceendpoints.update`| A change has been made to the service endpoints configuration. If the operation failed, a "-failure" flag is included in the message. |
 {: caption="Table 2. List of events and event descriptions" caption-side="top"}
 
