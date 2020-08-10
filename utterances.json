@@ -1,0 +1,68 @@
+{
+    "q_sign": [
+        "sign up for Db2 on Cloud",
+        "DB2 sign up",
+        "provision an instance of Db2",
+        "provisioning an instance of Db2",
+        "signing up for DB2 on Cloud",
+        "get started with Db2",
+        "provisioning a free Lite instance of Db2",
+        "get db2 for free",
+        "provision a Lite instance for Db2"
+    ],
+    "q_choose_plan": [
+        "help choosing the right Db2 on Cloud plan",
+        "all about Db2 on cloud",
+        "different plans for Db2",
+        "besp pan for me on Db2",
+        "which Db2 configurations meet the workload requirements",
+        "which Db2 configuration to meet the workload",
+        "can I scale Db2",
+        "scale Db2 to meet workload"
+    ],
+    "q_creds": [
+        "generate credentials for my Db2 instance",
+        "generate credential for Db2",
+        "View credentials for Db2",
+        "viewing Db2 credentials",
+		    "what are my DB2 credentials",
+		    "DB2 credentials",
+        "create credentials for Db2 on Cloud",
+        "updating credentials within Db2",
+        "creating Db2 credentials for Db2"
+    ],
+    "q_access": [
+        "how to access Db2 on Cloud instance",
+        "accessing Db2 on cloud",
+        "need to access Db2",
+	    	"accessing Db2",
+		    "want to access Db2",
+		    "db2 connection",
+        "how to connect to DB2",
+        "create a connection to Db2",
+        "access DB2 instance"
+    ],
+    "q_managed": [
+        "whats managed for me with Db2 on Cloud",
+        "what does IBM manage in Db2",
+        "health monitoring in Db2",
+        "do I need to backup Db2",
+        "do you handle Db2 backup",
+	     	"Db2 operating system updates",
+        "do I have to perform Db2 operating system updates",
+        "health monitoring of the database managed in Db2",
+        "backup Db2 management"
+    ],
+    "q_info": [
+        "more information about Db2 on Cloud",
+        "additional recources for Db2",
+        "information about the underlying Db2 engine",
+        "information about Db2 engine",
+        "how much is Db2",
+        "pricing plans for Db2",
+        "how much does Db2 cost",
+        "cost of Db2",
+        "price for Db2",
+        "how much will DB2 cost"
+    ]
+}
