@@ -39,7 +39,7 @@ Key Protect provides regional support only. If the region that hosts your key be
 ## Prerequisites
 {: #kp_prereqs}
 
-To integrate the Key Protect feature into the {{site.data.keyword.Db2_on_Cloud_short}} service, the {{site.data.keyword.Db2_on_Cloud_short}} service instance must be in a resource group. If your {{site.data.keyword.Db2_on_Cloud_short}} service instance is a Cloud Foundry service, see [Migrating Cloud Foundry service instances and apps to a resource group](/docs/resources?topic=resources-migrate#migrate) for information about the migration<!--, the advantages of migrating the instance to a resource group, and instructions to conduct the migration-->.
+To integrate the Key Protect feature into the {{site.data.keyword.Db2_on_Cloud_short}} service, the {{site.data.keyword.Db2_on_Cloud_short}} service instance must be in a resource group. If your {{site.data.keyword.Db2_on_Cloud_short}} service instance is a Cloud Foundry service, see [Migrating Cloud Foundry service instances and apps to a resource group](/docs/account?topic=account-migrate) for information about the migration<!--, the advantages of migrating the instance to a resource group, and instructions to conduct the migration-->.
 
 ## Getting started
 {: #kp_gs}
