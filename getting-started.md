@@ -25,6 +25,7 @@ subcollection: Db2onCloud
 {:note: .note}
 {:deprecated: .deprecated}
 {:pre: .pre}
+{:video: .video}
 
 # Getting started with {{site.data.keyword.Db2_on_Cloud_short}}
 {: #getting-started}
@@ -32,7 +33,7 @@ subcollection: Db2onCloud
 {{site.data.keyword.Db2_on_Cloud_long}} is an SQL database that is provisioned for you in the cloud. You can use {{site.data.keyword.Db2_on_Cloud_short}} just as you would use any database software, but without the time and expense of hardware setup or software installation and maintenance. 
 {: shortdesc}
 
-Create credentials. For those of you new to IBM Cloud and after creating the service, you must create a user name and password by clicking the **Create Credentials** button when you start the service. Technically, you can log in to the web console without credentials, but you need the user name and password to use many of the Db2 tools. To retrieve your service credentials, select the **Service credentials** tab from your service page, click the **New credential** button, then select **View credentials**.
+Create credentials. For those of you new to {{site.data.keyword.cloud}} and after creating the service, you must create a user name and password by clicking the **Create Credentials** button when you start the service. Technically, you can log in to the web console without credentials, but you need the user name and password to use many of the Db2 tools. To retrieve your service credentials, select the **Service credentials** tab from your service page, click the **New credential** button, then select **View credentials**.
 {: important}
 
 You can also install a local Db2 database by using the [free Db2 Developer Edition download](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:external}. It rapidly installs a ready-to-go developer edition of Db2 with tools inside a Docker container (Docker not required; it automatically installs any necessary components). 
@@ -42,7 +43,10 @@ You can also install a local Db2 database by using the [free Db2 Developer Editi
 
 Watch this video to see an introductory tutorial about {{site.data.keyword.Db2_on_Cloud_short}}.
 
-<iframe id="youtubeplayer1" title="Introduction to {{site.data.keyword.Db2_on_Cloud_short}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/k1Wj2Sc5Ing?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<!-- <iframe id="youtubeplayer1" title="Introduction to {{site.data.keyword.Db2_on_Cloud_short}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/k1Wj2Sc5Ing?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe> -->
+
+![Introduction to {{site.data.keyword.Db2_on_Cloud_short}}](https://www.youtube.com/embed/k1Wj2Sc5Ing?rel=0){: video output="iframe" data-script="none" id="youtubeplayer1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
+
 
 <!--
 ## Video: Using REST API to communicate with Db2 on Cloud

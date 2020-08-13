@@ -20,6 +20,7 @@ subcollection: Db2onCloud
 {:note: .note}
 {:deprecated: .deprecated}
 {:pre: .pre}
+{:video: .video}
 
 # Free Lite plan
 {: #free_plan}
@@ -88,5 +89,7 @@ The following table contains {{site.data.keyword.Db2_on_Cloud_short}} Lite plan 
 
 Watch this video to see how easy it is to install the free {{site.data.keyword.Db2_on_Cloud_short}} Lite plan.
 
-<iframe class="embed-responsive-item" id="youtubeplayer1" title="Installation of the free {{site.data.keyword.Db2_on_Cloud_short}} Lite plan" type="text/html" width="640" height="390" src="//www.youtube.com/embed/YuMRRnl1bkE?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<!-- <iframe class="embed-responsive-item" id="youtubeplayer1" title="Installation of the free {{site.data.keyword.Db2_on_Cloud_short}} Lite plan" type="text/html" width="640" height="390" src="//www.youtube.com/embed/YuMRRnl1bkE?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe> -->
+
+![Installation of the free {{site.data.keyword.Db2_on_Cloud_short}} Lite plan](https://www.youtube.com/embed/YuMRRnl1bkE?rel=0){: video output="iframe" data-script="none" id="youtubeplayer1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
 
