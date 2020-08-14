@@ -39,7 +39,7 @@ You can provision an instance of {{site.data.keyword.Db2_on_Cloud_short}} direct
 
 Watch the following video that walks you through provisioning a free Lite instance of {{site.data.keyword.Db2_on_Cloud_short}}.
 
-[Introducing {{site.data.keyword.Db2_on_Cloud_long}}](https://www.youtube.com/embed/F_ylk44_WOg?rel=0){: video output="iframe" data-script="none" id="youtubeplayer1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
+![Introducing {{site.data.keyword.Db2_on_Cloud_long}}](https://www.youtube.com/embed/F_ylk44_WOg?rel=0){: video output="iframe" data-script="none" id="youtubeplayer1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
 
 ## How do I choose the Db2 on Cloud plan that's right for me?
 {: #q_choose_plan}
