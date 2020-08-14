@@ -35,7 +35,7 @@ This is a collection of frequently asked questions (FAQ) about the {{site.data.k
 {: faq}
 {: support}
 
-You can provision an instance of {{site.data.keyword.Db2_on_Cloud_short}} directly through the {{site.data.keyword.cloud}} catalog. You can [create a free {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/registration?target=%2Fcatalog%2Fservices%2Fdb2-warehouse){: external} and get an {{site.data.keyword.cloud_notm}} credit of $200 that you can use towards an enterprise {{site.data.keyword.Db2_on_Cloud_short}} plan. Or, you an sign up for a free Lite plan. 
+You can provision an instance of {{site.data.keyword.Db2_on_Cloud_short}} directly through the {{site.data.keyword.cloud}} catalog. You can [create a free {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/registration?target=%2Fcatalog%2Fservices%2Fdb2-warehouse){: external} and get an {{site.data.keyword.cloud_notm}} credit of $200 that you can use towards an enterprise {{site.data.keyword.Db2_on_Cloud_short}} plan. Or, you can sign up for a free Lite plan. 
 
 Watch the following video that walks you through provisioning a free Lite instance of {{site.data.keyword.Db2_on_Cloud_short}}.
 
