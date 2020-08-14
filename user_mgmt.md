@@ -29,7 +29,7 @@ subcollection: Db2onCloud
 
 Access to {{site.data.keyword.Db2_on_Cloud_long}} service instances for users in your account is controlled by [Identity and access management (IAM) on IBM Cloud](/docs/Db2onCloud?topic=Db2onCloud-iam) and database access is provided by standard access controls provided by the database. 
 
-For more information about IAM, see [Getting started with IAM tutorial](/docs/account?topic=account-getstarted).
+For more information about IAM, see [What is IBM Cloud Identity and Access Management?](/docs/account?topic=account-iamoverview).
 
 ### User types
 {: #um_user_types}

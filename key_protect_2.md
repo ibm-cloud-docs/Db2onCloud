@@ -26,7 +26,7 @@ subcollection: Db2onCloud
 
 The data that you store in Db2 when using the Enterprise plan is encrypted by default by using randomly generated keys. If you need to control the encryption keys, you can use [{{site.data.keyword.keymanagementservicelong_notm}}](/docs/key-protect?topic=key-protect-integrate-services) to create, add, and manage encryption keys. Then, you can associate those keys with your {{site.data.keyword.databases-for}} deployment to encrypt your Db2 databases.
 
-To get started, you need [{{site.data.keyword.keymanagementserviceshort}}](https://%7BDomainName%7D/catalog/services/key-protect){: external} provisioned on your {{site.data.keyword.cloud_notm}} account.
+To get started, you need [{{site.data.keyword.keymanagementserviceshort}}](https://cloud.ibm.com/catalog/services/key-protect){: external} provisioned on your {{site.data.keyword.cloud_notm}} account.
 
 ## Creating or adding a key in {{site.data.keyword.keymanagementserviceshort}}
 {: #kp-create-add}

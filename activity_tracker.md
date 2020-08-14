@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-06-22"
+lastupdated: "2020-08-14"
 
 keywords: 
 
@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 # Activity Tracker integration
 {: #activity-tracker}
 
-{{site.data.keyword.Db2_on_Cloud_long}} deployments are integrated with Activity Tracker events in [IBM Cloud Activity Tracker with LogDNA](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-getting-started), so you can view service-level events.
+{{site.data.keyword.Db2_on_Cloud_long}} deployments are integrated with Activity Tracker events in [IBM Cloud Activity Tracker with LogDNA](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-getting-started), so you can view service-level events.
 
 Currently, Activity Tracker with LogDNA integration is available for {{site.data.keyword.Db2_on_Cloud_short}} deployments in the regions according to the following table: 
 
@@ -50,12 +50,12 @@ You can access Activity Tracker with LogDNA through the **Observability** tab of
 
 After the event activity is forwarded to the service, each event can be expanded to a detailed view by clicking the arrow to the left of the time stamp.
 
-The LogDNA service offers [searching](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step6), [filtering](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step5), and [export](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-export#export) of events so you can customize retention for your use case. You can also use it to configure [alerts](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-alerts).
+The LogDNA service offers [searching](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step6), [filtering](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step5), and [export](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-export#export) of events so you can customize retention for your use case. You can also use it to configure [alerts](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-alerts).
 
 ## Event fields
 {: #at_ev_fields}
 
-A description of the common fields for an Activity Tracker event is on the [Event fields](/docs/Activity-Tracker-with-LogDNA?topic=logdnaat-event) page.
+A description of the common fields for an Activity Tracker event is on the [Event fields](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-event) page.
 
 ## List of events
 {: #at_list_ev}
