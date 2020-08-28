@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-08-14"
+lastupdated: "2020-08-28"
 
 keywords: 
 
@@ -30,7 +30,12 @@ Currently, Activity Tracker with LogDNA integration is available for {{site.data
 
 | Deployment region | Activity Tracker region |
 |----------|-----------|
-| us-south | us-south |
+| Dallas | us-south |
+| Washington | us-east |
+| Frankfurt | eu-de |
+| London | eu-gb |
+| Sydney | au-syd |
+| Tokyo | jp-tok |
 {: caption="Table 1. Activity Tracker regions" caption-side="top"}
 
 
