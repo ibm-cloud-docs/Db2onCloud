@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-07-28"
+lastupdated: "2020-08-31"
 
 keywords: 
 
@@ -59,6 +59,14 @@ You can use the web console to perform many key tasks, such as loading data, wor
 - 1 TB of free backup storage for up to 14 days of backups
 - Self-service managed backup with point-in-time restore
 
+#### Enterprise non-High Availability plan
+
+- Base instances start at 4 vCPU x 16 GB RAM x 20 GB storage on dedicated compute slices
+- Runs the latest release of Db2, version 11.5
+- Single node in one availability zone
+- 1 TB of free backup storage for up to 14 days of backups
+- Self-service managed backup with point-in-time restore
+
 #### Standard High Availability plan
 
 - Base instances start at 8 GB RAM x 20 GB storage on shared compute slices
@@ -67,8 +75,13 @@ You can use the web console to perform many key tasks, such as loading data, wor
 - 100 GB of free backup storage for up to 14 days of backups
 - Self-service managed backup with point-in-time restore
 
-Coming soon: The Enterprise and Standard non-HA plans.
-{: note}
+#### Standard non-High Availability plan
+
+- Base instances start at 8 GB RAM x 20 GB storage on shared compute slices
+- Runs the latest release of Db2, version 11.5
+- Single node in one availability zone
+- 100 GB of free backup storage for up to 14 days of backups
+- Self-service managed backup with point-in-time restore
 
 ### Legacy plans
 {: #ab_legacy}
