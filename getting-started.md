@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-02-03"
+lastupdated: "2020-09-01"
 
 keywords: 
 
@@ -38,14 +38,15 @@ Create credentials. For those of you new to {{site.data.keyword.cloud}} and afte
 
 You can also install a local Db2 database by using the [free Db2 Developer Edition download](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:external}. It rapidly installs a ready-to-go developer edition of Db2 with tools inside a Docker container (Docker not required; it automatically installs any necessary components). 
 
+<!--
 ## Video: Introducing Db2 on Cloud
 {: #intro_vid}
 
-Watch this video to see an introductory tutorial about {{site.data.keyword.Db2_on_Cloud_short}}.
+Watch this video to see an introductory tutorial about {{site.data.keyword.Db2_on_Cloud_short}}. -->
 
 <!-- <iframe id="youtubeplayer1" title="Introduction to {{site.data.keyword.Db2_on_Cloud_short}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/k1Wj2Sc5Ing?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe> -->
 
-![Introduction to {{site.data.keyword.Db2_on_Cloud_short}}](https://www.youtube.com/embed/k1Wj2Sc5Ing?rel=0){: video output="iframe" data-script="none" id="youtubeplayer1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
+<!-- ![Introduction to {{site.data.keyword.Db2_on_Cloud_short}}](https://www.youtube.com/embed/k1Wj2Sc5Ing?rel=0){: video output="iframe" data-script="none" id="youtubeplayer1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen} -->
 
 
 <!--
