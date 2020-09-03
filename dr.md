@@ -31,7 +31,7 @@ High availability disaster recovery (HADR) provides a high availability solution
 ## Legacy Flex plans
 {: #dr_legacy}
 
-{{site.data.keyword.Db2_on_Cloud_short}} Legacy Flex plans feature disaster recovery (DR) capabilities, where users can add a DR node by using Db2's High Availability Disaster Recovery (HADR) technology. Promoting to the recovery site gives users the ability to recover data affected by unpredictable circumstances.
+{{site.data.keyword.Db2_on_Cloud_short}} Legacy Flex plans feature disaster recovery (DR) capabilities, where users can add a DR node, which resides in a different region, by using Db2's High Availability Disaster Recovery (HADR) technology. Promoting to the recovery site gives users the ability to recover data affected by unpredictable circumstances. The Recovery site is always in a different region than the Primary site.
 
 In a case of a disaster, the failover to the recovery site will not be initiated by IBM. For the DR failover, you must initiate the takeover from the UI. In case of a failure in the primary site, it is important to remember that you will not have access to the primary system to initiate the takeover. 
 
