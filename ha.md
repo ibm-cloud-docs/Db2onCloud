@@ -2,9 +2,9 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-06-09"
+lastupdated: "2020-09-03"
 
-keywords: 
+keywords: HA, Legacy Flex, legacy, Flex, high availability
 
 subcollection: Db2onCloud
 
@@ -27,44 +27,44 @@ subcollection: Db2onCloud
 {{site.data.keyword.Db2_on_Cloud_short}} high availability plans have excellent availability characteristics with a 99.99% SLA. 
 {: shortdesc}
 
-The standard high availability plans without a disaster recovery (DR) node provide seamless failover and rolling updates. They are managed for you by using automatic client reroute (ACR) and portable IPs.
+## Standard and Enterprise plans
+{: #ha_v2_ha}
 
-In addition, you can add a Geo-Replicated Disaster Recovery Node. This offsite DR node option gives you the ability to rapidly synchronize your data in real time to a database node in an offsite {{site.data.keyword.Bluemix_notm}} data center of your choice. 
+High availability on {{site.data.keyword.Db2_on_Cloud_short}} Enterprise and Standard plans is provided by leveraging the support of native Db2 HADR. 
 
-{{site.data.keyword.Db2_on_Cloud_short}} uses the Db2 High Availability Disaster Recovery (HADR) technology in `ASYNC` mode to achieve the offsite DR node capability and provides `Read on Standby` on the DR node.
+- Each HA system consists of 3 nodes located in different independent availability zones.  
 
-Key Protect provides regional support only. If the region that hosts your key becomes unavailable, you will not be able to manually fail over to your disaster recovery (DR) node, or access data on the DR node without failing over. For this reason, it is recommended that you not use Key Protect and the disaster recovery feature together on the same instance.
-{: important}
+![Schematic view of the 3 nodes in different availability zones](images/ha_AZ_small.png "Schematic view of the 3 nodes in different availability zones"){: caption="Figure 1. Schematic view of the 3 nodes in different availability zones" caption-side="bottom"}
 
-## **Brazil: Supplementary Rule 14** (applies to systems provisioned for the Brazilian federal government)
-{: #rule_14}
+- The primary node processes read and write transactions and the standby nodes can provide read-only query capability. One of the standby nodes is replicated synchronously, which means each transaction is committed on at least 2 nodes before it is successful. This standby node is ready to take over write processing as well should any failure or maintenance event occur. The other standby node is asynchronously replicated and assumes the role of the synchronous node during a failure or maintenance event. Even in the case of an entire data center failure or maintenance event, you still have an HA system that is replicated between the surviving data centers.
 
-At this time, the disaster recovery (DR) option for Db2 on Cloud offerings is not available in Brazil for the federal government due to Supplementary Rule 14.
+![Schematic view of primary node failover](images/ha_failure.png "Schematic view of primary node failover"){: caption="Figure 2. Schematic view of primary node failover" caption-side="bottom"}
 
-## How to add a Geo-Replicated Disaster Recovery Node
-{: #add_dr}
+- During failover events, you can expect between 10-20 seconds during which transactions are restricted. Your client can seamlessly fail over by using [automatic client reroute (ACR)](https://www.ibm.com/support/knowledgecenter/SSEPGG_11.5.0/com.ibm.db2.luw.admin.ha.doc/doc/r0023392.html){: external} along with appropriate retry logic for any failed transactions.
 
-For existing {{site.data.keyword.Db2_on_Cloud_short}} users:
- * You can add an on-demand DR node to existing {{site.data.keyword.Db2_on_Cloud_short}} instances. After clicking your instance in the {{site.data.keyword.Bluemix_notm}} dashboard, you will see an option that is called **Manage Disaster Recovery**. You can add a Geo-Replicated Disaster Recovery Node from there.
- * If you purchased {{site.data.keyword.Db2_on_Cloud_short}} on contract through a sales representative and do not have an {{site.data.keyword.Bluemix_notm}} subscription, contact your IBM representative to add a DR node.
+### Managing high availability nodes
+{: #ha_v2_manage}
 
-If you are currently not a {{site.data.keyword.Db2_on_Cloud_short}} user:
- * Order {{site.data.keyword.Db2_on_Cloud_short}} through {{site.data.keyword.Bluemix_notm}}, or speak to your sales representative.
- * You can then add a DR node by using **Manage Disaster Recovery** in the console.
-<!--- Through the web console, you can also add a disaster recovery (DR) node located in a datacenter of your choice. -->
+For Enterprise and Standard HA plans, the failover is managed for you by IBM. IBM monitors the health of your server, fail over and fail back as needed, including rolling updates and scaling to keep uptime as high as possible.
 
-## Managing high availability and disaster recovery nodes
-{: #manage_ha_dr}
+## Legacy Flex plans
+{: #ha_legacy}
 
-For standard HA nodes, which are not offsite, the failover is managed for you by IBM. IBM monitors the health of your server, failover, and failing back as needed, including rolling updates and scaling to keep uptime as high as possible.
+High availability on {{site.data.keyword.Db2_on_Cloud_short}} Legacy Flex plans is provided by leveraging the support of native Db2 HADR.
 
-For Geo-Replicated Disaster Recovery (HADR), you must manually fail over by using **Manage Disaster Recovery** in the console.
+- Each HA system consists of 2 nodes. 
 
-## FAQ
-{: #faq}
+![Schematic view of the 2 nodes](images/legacy_ha_small.png "Schematic view of the 2 nodes"){: caption="Figure 1. Schematic view of the 2 nodes" caption-side="bottom"}
 
-### What are the changes required for an application using Db2 to work with the DR node after takeover? Does the DNS name or the IP address change after takeover?
+- The primary node processes read and write transactions while the standby node is replicated synchronously, which means each transaction is committed on at least 2 nodes before it is successful. This standby node is ready to take over write processing as well should any failure or maintenance event occur. 
 
-**A**: No. You are given 2 resolvable host names. If your app is configured to use Db2 ACR (Active Connection Reroute), then your app gets rerouted to the new primary node.
+![Schematic view of primary node failover](images/legacy_ha_fail.png "Schematic view of primary node failover"){: caption="Figure 2. Schematic view of primary node failover" caption-side="bottom"}
 
-<!-- For more information about the Geo-Replicated Disaster Recovery Node, click [here](https://developer.ibm.com/answers/questions/458385/frequently-asked-questions-for-db2-on-cloud-hadr-g.html){:external}. -->
+The standard high availability plans without a disaster recovery (DR) node provide seamless failover and rolling updates. They are managed for you by using [automatic client reroute (ACR)](https://www.ibm.com/support/knowledgecenter/SSEPGG_11.5.0/com.ibm.db2.luw.admin.ha.doc/doc/r0023392.html){: external} and portable IPs.
+
+### Managing high availability nodes
+{: #ha_manage}
+
+For standard HA nodes, which are not offsite, the failover is managed for you by IBM. IBM monitors the health of your server, fail over and fail back as needed, including rolling updates and scaling to keep uptime as high as possible.
+
+

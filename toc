@@ -37,7 +37,8 @@ Db2 on Cloud
         cdc.md
         rc.md
         br.md
-        ha_v2.md
+        ha.md
+        dr.md
         log_mon.md
         maintenance.md
         federation.md
