@@ -35,7 +35,7 @@ The following document describes the process to upgrade from the Legacy Flex {{s
 
 Before starting the Legacy Flex plan upgrade process, you'll need to complete the following items:
 - Retrieve the Cloud Resource Name (CRN) of your source {{site.data.keyword.Db2_on_Cloud_short}} plan. The CRN can be retrieved from the source plan on {{site.data.keyword.cloud_notm}}. For more information, see [Cloud Resource Names](/docs/account?topic=account-crn).
-- If your source plan is still in Cloud Foundry, you'll need to migrate to Resource Controller. See [Resource controller (RC)](/docs/Db2onCloud?topic=Db2onCloud-rc). After you migrate a plan instance to Resource Controller, you can no longer use Cloud Foundry CLI commands to manage it.
+- If your source plan is still in Cloud Foundry, you must migrate your source plan to Resource Controller. See [Resource controller (RC)](/docs/Db2onCloud?topic=Db2onCloud-rc). After you migrate a plan instance to Resource Controller, you can no longer use Cloud Foundry CLI commands to manage it.
 
   Additional information:
   - [Managing resource groups](/docs/account?topic=account-rgs#adding-resources-to-a-resource-group)
