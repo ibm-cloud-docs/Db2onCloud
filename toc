@@ -34,6 +34,7 @@ Db2 on Cloud
         flex_scaling.md
         copy_db.md
         deleting_db.md
+        upgrade.md
         cdc.md
         rc.md
         br.md
