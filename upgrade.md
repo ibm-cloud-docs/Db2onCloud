@@ -30,6 +30,8 @@ subcollection: Db2onCloud
 The following document describes the process to upgrade from the Legacy Flex {{site.data.keyword.Db2_on_Cloud_short}} plans to the current **Standard** and **Enterprise** plans. Henceforth, the existing Legacy Flex plan instance is referred to as the "source" and the newly provisioned Standard or Enterprise plan instance for the upgrade is referred to as the "target".
 {: shortdesc}
 
+For more information about this upgrade process, see [Deprecation of the Db2 on Cloud Legacy Plans and Availability of New Replacement Plans](https://www.ibm.com/cloud/blog/announcements/deprecation-of-the-db2-on-cloud-legacy-plans-and-availability-of-new-replacement-plans){: external}.
+
 ## Prerequisites
 {: #upgrade_prereqs}
 
