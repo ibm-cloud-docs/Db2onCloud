@@ -27,8 +27,19 @@ subcollection: Db2onCloud
 # Upgrading {{site.data.keyword.Db2_on_Cloud_short}} plans
 {: #upgrade_plans}
 
-The following document describes the flow for the {{site.data.keyword.Db2_on_Cloud_short}} plan upgrades. Henceforth, the existing Legacy plan instance is referred to as the source and the newly provisioned Standard or Enterprise plan instance for the upgrade is referred to as the target.
+The following document describes the process to upgrade from the Legacy Flex {{site.data.keyword.Db2_on_Cloud_short}} plans to the current **Standard** and **Enterprise** plans. Henceforth, the existing Legacy Flex plan instance is referred to as the "source" and the newly provisioned Standard or Enterprise plan instance for the upgrade is referred to as the "target".
 {: shortdesc}
+
+## Prerequisites
+{: #upgrade_prereqs}
+
+Before starting the Legacy Flex plan upgrade process, you'll need to complete the following items:
+- Retrieve the Cloud Resource Name (CRN) of your source {{site.data.keyword.Db2_on_Cloud_short}} plan. The CRN can be retrieved from the source plan on {{site.data.keyword.cloud_notm}}. For more information, see [Cloud Resource Names](/docs/account?topic=account-crn).
+- If your source plan is still in Cloud Foundry, you'll need to migrate to Resource Controller. See [Resource controller (RC)](/docs/Db2onCloud?topic=Db2onCloud-rc). After you migrate a plan instance to Resource Controller, you can no longer use Cloud Foundry CLI commands to manage it.
+
+  Additional information:
+  - [Managing resource groups](/docs/account?topic=account-rgs#adding-resources-to-a-resource-group)
+  - [General {{site.data.keyword.cloud_notm}} CLI (ibmcloud) commands](/docs/cli?topic=cli-ibmcloud_cli)
 
 ## Ordering from the {{site.data.keyword.cloud_notm}} Catalog
 {: #ug_catalog}
@@ -39,9 +50,7 @@ The following document describes the flow for the {{site.data.keyword.Db2_on_Clo
    - Flex
    - Precise Performance 500
    - Precise Performance 1400 
-
-   The CRN can be retrieved from the source plan on {{site.data.keyword.cloud_notm}}. For more information, see [Cloud Resource Names](/docs/account?topic=account-crn).
-
+   
 ## Tracking the upgrade
 {: #ug_track}
 
@@ -51,7 +60,7 @@ The following document describes the flow for the {{site.data.keyword.Db2_on_Clo
 ## Upgrade phases
 {: #ug_phases}
 
-The upgrade from the legacy {{site.data.keyword.Db2_on_Cloud_short}} plans to the current **Standard** and **Enterprise** plans is a self-service and online process. It is initiated the moment a target plan is ordered along with a source CRN input. The upgrade goes through multiple phases and for a majority of them no user action is required.
+The upgrade from the Legacy Flex {{site.data.keyword.Db2_on_Cloud_short}} plans to the current **Standard** and **Enterprise** plans is a self-service and online process. It is initiated the moment a target plan is ordered along with a source CRN input. The upgrade goes through multiple phases and for a majority of them no user action is required.
 
 ### Phase 0 - Provisioning target
 {: #ug_prov_tgt}
@@ -173,7 +182,7 @@ Standard and Enterprise plans provide automated redundancy across 3 different da
 {: faq}
 {: support}
 
-Yes, you'll need to migrate to Resource Controller. See [Migrating Cloud Foundry service instances and apps to a resource group](/docs/account?topic=account-migrate).
+Yes, you'll need to migrate to Resource Controller. See [Resource controller (RC)](/docs/Db2onCloud?topic=Db2onCloud-rc).
 
 After you migrate a plan instance to Resource Controller, you can no longer use Cloud Foundry CLI commands to manage it.
 
@@ -238,6 +247,20 @@ If you are having difficulty, [create a case](https://cloud.ibm.com/unifiedsuppo
 {: support}
 
 You must delete your Legacy plan instance from the {{site.data.keyword.cloud_notm}} dashboard or contact Customer Support. We are moving all plans to the new Standard and Enterprise plans because of the upcoming **End of Support** of a key component in our Legacy plans. <!-- For this reason we have no exception process for retaining your V1 legacy instance beyond November. If you have a business reason for needing an additional week or two after the **October 15, 2020** deadline, we will consider the request. The reason that we give a deadline of October 15 is because on this day we will start initiating the upgrade for all remaining instances (i.e. for any instance where the owner did not initiate it themselves). -->
+
+### What if I previously created a new Standard or Enterprise plan instance and I want to migrate to it?
+{: #q_previous_v2}
+{: faq}
+{: support}
+
+You cannot migrate to an existing Standard or Enterprise plan instance after it's been previously created. You must delete your existing Standard or Enterprise plan instance and follow the steps outlined here to initiate the upgrade to a target to which you can migrate.
+
+### What if I'm not receiving emails related to this Legacy Flex plan upgrade?
+{: #q_no_emails}
+{: faq}
+{: support}
+
+The owner of your {{site.data.keyword.cloud_notm}} account that is associated with the Legacy Flex {{site.data.keyword.Db2_on_Cloud_short}} plan instance must [create a case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} to add additional email addresses to the {{site.data.keyword.cloud_notm}} account.
 
 ### How can I learn more?
 {: #q_learn_more}
