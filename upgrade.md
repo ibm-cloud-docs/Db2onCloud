@@ -32,6 +32,8 @@ The following document describes the process to upgrade from the Legacy Flex {{s
 
 For more information about the affected legacy plans and the new replacement plans, see [Deprecation of the Db2 on Cloud Legacy Plans and Availability of New Replacement Plans](https://www.ibm.com/cloud/blog/announcements/deprecation-of-the-db2-on-cloud-legacy-plans-and-availability-of-new-replacement-plans){: external}.
 
+See the [What's New in IBM Db2 on Cloud](https://www.ibm.com/support/pages/node/739537){: external} where the new plans and features were announced. Along with the (6) available data centers in Dallas, Frankfurt, Tokyo, London, Sydney, and Washington, we plan to add Amsterdam, Paris, Milan, and Toronto by **September 30, 2020**. For those of you with a **HIPAA** requirement, the new systems are targeted to be ready by **September 30,2020**. Also, legacy-style disaster recovery (DR) is planned to be supported by **November 30, 2020**. However, [read more](#q_leverage_ha) about the high-availability nodes spanning multiple zones now available with the new plans to determine if this satisfies your DR requirements.
+
 ## Prerequisites
 {: #upgrade_prereqs}
 
@@ -165,6 +167,13 @@ Prices are detailed by plan in the [{{site.data.keyword.cloud_notm}} catalog](ht
 
 After you begin the upgrade, you have 14 days to move to the new plan. The upgrade timeline starts when you provision a {{site.data.keyword.Db2_on_Cloud_short}} Standard or Enterprise plan and provide your CRN from your Legacy plan in the upgrade details on the **Service create** page in the {{site.data.keyword.cloud_notm}} catalog. If you don't complete the upgrade during that 14 day period, you will be charged for both source and target plans.
 
+### Can I leverage the new HA feature in the new plans in place of our existing DR node solution in the legacy plans? 
+{: #q_leverage_ha}
+{: faq}
+{: support}
+
+The new plans offer a High Availability (HA) feature with 3 nodes located in different independent availability zones and the failover is managed for you by IBM. This feature avoids any service disruption caused by a data center disaster, failure, or maintenance. HA is also well suited as a disaster recovery (DR) option for those of you with requirements that are satisfied by it. If you have strict requirements for a cross-region DR node, you can leverage such a feature by **November 30, 2020**.
+
 ### I have a non-HA plan, but want to upgrade to HA (or vice versa). Can I do that?
 {: #q_noha_ha}
 {: faq}
@@ -177,7 +186,7 @@ Yes, you can move from any Legacy plan (Flex, Small, and Large) to any {{site.da
 {: faq}
 {: support}
 
-Standard and Enterprise plans provide automated redundancy across 3 different data centers with the HA options. These data centers are physically isolated from each other and do not share any infrastructure. The reference design for different data centers within an MZR is that they are separated by at least 10 km. This is a significant improvement from our Legacy plans in which you can only have 2 nodes which are in a single data center. In addition, Standard and Enterprise plans also provide `Read on standby` capability. Db2 also provide backups, which can be restored to a completely new region should all data centers be unrecoverable. These backups, as well as archive logs, are geo-replicated across several regions (more than 250 miles away from the MZR), protecting you from even the worst natural disasters. In many cases, this will suffice instead of having a DR node in a different region. If not, we do intend to provide a DR option and timelines are being finalized.
+Standard and Enterprise plans provide automated redundancy across 3 different data centers with the HA options. These data centers are physically isolated from each other and do not share any infrastructure. The reference design for different data centers within an MZR is that they are separated by at least 10 km or 6 mi. This is a significant improvement from our Legacy plans in which you can have only 2 nodes which are in a single data center. In addition, Standard and Enterprise HA plans also provide `Read on standby` capability. {{site.data.keyword.Db2_on_Cloud_short}} also provides backups, which can be restored to a completely new region should all data centers be unrecoverable. These backups, as well as archive logs, are geo-replicated across several regions (more than 400 km or 250 mi away from the MZR), protecting you from even the worst natural disasters. In many cases, this will suffice instead of having a DR node in a different region. If not, we do intend to provide a DR option and timelines are being finalized.
 
 ### My plan instance is still on Cloud Foundry. Do I need to migrate it to Resource Controller before I upgrade to a Standard or Enterprise plan?
 {: #q_rc}
