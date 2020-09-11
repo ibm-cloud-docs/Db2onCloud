@@ -32,7 +32,7 @@ The following document describes the process to upgrade from the legacy {{site.d
 
 For more information about the affected legacy plans and the new replacement plans, see [Deprecation of the Db2 on Cloud Legacy Plans and Availability of New Replacement Plans](https://www.ibm.com/cloud/blog/announcements/deprecation-of-the-db2-on-cloud-legacy-plans-and-availability-of-new-replacement-plans){: external}.
 
-See the [What's New in IBM Db2 on Cloud](https://www.ibm.com/support/pages/node/739537){: external} where the new plans and features were announced. 
+You can also refer to the [What's New in IBM Db2 on Cloud](https://www.ibm.com/support/pages/node/739537){: external} where the new plans and features were announced. 
 
 The legacy plan upgrade is currently available in the following data centers:
 - Dallas
