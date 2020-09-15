@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-09-11"
+lastupdated: "2020-09-15"
 
 keywords: upgrade, Db2 on Cloud, Standard plan, Enterprise plan, legacy
 
@@ -36,6 +36,7 @@ You can also refer to the [What's New in IBM Db2 on Cloud](https://www.ibm.com/s
 
 The legacy plan upgrade is currently available in the following data centers:
 - Dallas
+- Frankfurt
 - London
 - Sydney
 - Tokyo
@@ -43,7 +44,6 @@ The legacy plan upgrade is currently available in the following data centers:
 
 The legacy plan upgrade will be available in the following data centers before or by **September 30, 2020**:
 - Amsterdam
-- Frankfurt (soon)
 - Milan
 - Paris
 - Toronto
