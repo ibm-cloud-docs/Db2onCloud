@@ -42,7 +42,7 @@ The legacy plan upgrade is currently available in the following data centers:
 - Tokyo
 - Washington
 
-The legacy plan upgrade will be available in the following data centers before or by **September 30, 2020**:
+The legacy plan upgrade will be available in the following data centers on or before **September 30, 2020**:
 - Amsterdam
 - Milan
 - Paris
