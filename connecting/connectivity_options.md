@@ -168,15 +168,6 @@ The "cli" section contains information that is suited for connecting with `db2`.
       "type": "uri"
     }
   },
-  "iam_apikey_description": "Auto-generated for key ec542ca2-340b-4a7e-8b45-e5550da20d4a",
-  "iam_apikey_name": "Service credentials-1",
-  "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
-  "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/a8a1951114b2d2eda72f6a05759d2d01::serviceid:ServiceId-4e7660c6-ac8a-492a-bb21-8fffeb9zzzz",
-  "instance_administration_api": {
-    "deployment_id": "crn:v1:bluemix:public:dashdb-for-transactions:us-south:a/a8a1951114b2d2eda72f6a05759d2d01:a1d53ce7-166c-42d1-af26-7809dexxxxxx::",
-    "instance_id": "crn:v1:bluemix:public:dashdb-for-transactions:us-south:a/a8a1951114b2d2eda72f6a05759d2d01:a1d53ce7-166c-42d1-af26-7809dexxxxxx::",
-    "root": "https://api.us-south.db2.cloud.ibm.com/v4/ibm"
-  }
 }
 ```
 
