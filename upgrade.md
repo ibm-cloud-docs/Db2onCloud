@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-09-15"
+lastupdated: "2020-09-21"
 
 keywords: upgrade, Db2 on Cloud, Standard plan, Enterprise plan, legacy
 
@@ -125,7 +125,10 @@ The upgrade is complete. The target plan is now available to use. Any further tr
 ## Upgrade features and recommendations
 {: #ug_feat_recom}
 
-- The upgrade process is a self-service and online process
+The upgrade process can be initiated only one time per source. After the new {{site.data.keyword.Db2_on_Cloud_short}} instance is created, you must be prepared to complete all of the upgrade phases. If the target instance is deleted after the upgrade is started and before all of the upgrade phases are completed, the source cannot be upgraded a second time.
+{: important}
+
+- The upgrade process is a self-service, online process
 - Users can continue to use their source plan while the upgrade proceeds
 - Every upgrade is monitored by the {{site.data.keyword.Db2_on_Cloud_short}} Operations team who are available 24x7x365
 - The data replication is unidirectional - from the source to the target
