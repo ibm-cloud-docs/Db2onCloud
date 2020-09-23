@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-09-21"
+lastupdated: "2020-09-23"
 
 keywords: upgrade, Db2 on Cloud, Standard plan, Enterprise plan, legacy
 
@@ -120,7 +120,7 @@ Certain post-migration tasks are run on the target during this phase. No user ac
 ### Phase 6 - Transition and upgrade complete
 {: #ug_trans_inprog_cmplt}
 
-The upgrade is complete. The target plan is now available to use. Any further transactions on the source will NOT be replicated on the target.
+The upgrade is complete. The transition button will now be greyed out. The target plan is now available to use. Any further transactions on the source will NOT be replicated on the target.
 
 ## Upgrade features and recommendations
 {: #ug_feat_recom}
