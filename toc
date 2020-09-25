@@ -34,7 +34,12 @@ Db2 on Cloud
         flex_scaling.md
         copy_db.md
         deleting_db.md
-        upgrade.md
+
+        {: .topicgroup}
+        Upgrading
+            upgrade.md
+            auto_upgrade.md
+        
         cdc.md
         rc.md
         br.md
