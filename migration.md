@@ -62,7 +62,7 @@ For IBM Cloud Object Storage, to create HMAC credentials when creating new servi
 ## Migrating large amounts of data from on-premises system
 {: #onprem}
 
-To migrate 25 TB of data and greater: [IBM Cloud Mass Data Migration](#mdms)
+To migrate 25 TB of data and greater: see [IBM Cloud Mass Data Migration](#mdms)
 
 <!--
 To migrate your data from an on-premises system, choose one of the following methods depending on the size of your data set:
