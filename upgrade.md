@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-09-23"
+lastupdated: "2020-09-25"
 
 keywords: upgrade, Db2 on Cloud, Standard plan, Enterprise plan, legacy
 
@@ -69,9 +69,10 @@ Before starting the legacy plan upgrade process, you'll need to complete the fol
 1. Log in to the {{site.data.keyword.cloud_notm}} account where the existing source {{site.data.keyword.Db2_on_Cloud_short}} plan was provisioned.
 1. Navigate to the [{{site.data.keyword.Db2_on_Cloud_short}} catalog page](https://cloud.ibm.com/catalog/services/db2){: external}
 1. Choose the **Enterprise** or **Standard** plan and input the CRN of the source {{site.data.keyword.Db2_on_Cloud_short}} plan. The {{site.data.keyword.Db2_on_Cloud_short}} Lite plan is not eligible for the upgrade. The source plan must belong to one of the following legacy plans: 
-   - Flex
-   - Precise Performance 500
-   - Precise Performance 1400 
+   - IBM Db2 on Cloud Flex
+   - IBM Db2 on Cloud Precise Performance 2.8.500
+   - IBM Db2 on Cloud Precise Performance 12.128.1400
+   - IBM Db2 on Cloud Precise Performance 48.1000.10000 
    
 ## Tracking the upgrade
 {: #ug_track}
