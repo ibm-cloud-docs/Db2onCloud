@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-02-21"
+lastupdated: "2020-09-25"
 
 keywords: 
 
@@ -59,9 +59,11 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
 For IBM Cloud Object Storage, to create HMAC credentials when creating new service credentials, specify {"HMAC:true"} in the *Add Inline Configuration Parameters* field.
 {: note}
 
-## Migrating data from on-premises system
+## Migrating large amounts of data from on-premises system
 {: #onprem}
 
+To migrate 25 TB of data and greater: [IBM Cloud Mass Data Migration](#mdms)
+<!--
 To migrate your data from an on-premises system, choose one of the following methods depending on the size of your data set:
 * Less than 25 TB of data: [IBM Lift CLI](#lift)
 * 25 TB of data and greater: [IBM Cloud Mass Data Migration](#mdms)
@@ -82,6 +84,7 @@ The Lift CLI is an application that you can use without charge to migrate your d
 To download and install Lift CLI, see: [Download Lift CLI](https://www.lift-cli.cloud.ibm.com/#download){:external}.
 
 For step-by-step instructions about migrating your data to the {{site.data.keyword.Bluemix_notm}} by using Lift CLI, see: [Migrate data to {{site.data.keyword.Db2_on_Cloud_long_notm}}](https://www.lift-cli.cloud.ibm.com/#docs){:external}.
+-->
 
 ### IBM Cloud Mass Data Migration
 {: #mdms}
