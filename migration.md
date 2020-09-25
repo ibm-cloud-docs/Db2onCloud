@@ -62,26 +62,7 @@ For IBM Cloud Object Storage, to create HMAC credentials when creating new servi
 ## Migrating data from on-premises system
 {: #onprem}
 
-To migrate your data from an on-premises system, choose one of the following methods depending on the size of your data set:
-* Less than 25 TB of data: [IBM Lift CLI](#lift)
-* 25 TB of data and greater: [IBM Cloud Mass Data Migration](#mdms)
-
-### Lift CLI
-{: #lift}
-
-The Lift CLI is an application that you can use without charge to migrate your data to the {{site.data.keyword.Bluemix_notm}} from the various data sources listed in Table 1. 
-
-| Target database on IBM Cloud | Data source |
-|------------------------------|-------------|
-| {{site.data.keyword.Db2_on_Cloud_long_notm}}   | IBM Db2 |
-|                              | Oracle Database |
-|                              | Microsoft SQL Server |
-|                              | CSV file format |
-{: caption="Table 1. Migration data sources" caption-side="top"}
-
-To download and install Lift CLI, see: [Download Lift CLI](https://www.lift-cli.cloud.ibm.com/#download){:external}.
-
-For step-by-step instructions about migrating your data to the {{site.data.keyword.Bluemix_notm}} by using Lift CLI, see: [Migrate data to {{site.data.keyword.Db2_on_Cloud_long_notm}}](https://www.lift-cli.cloud.ibm.com/#docs){:external}.
+To migrate 25 TB of data and greater: [IBM Cloud Mass Data Migration](#mdms)
 
 ### IBM Cloud Mass Data Migration
 {: #mdms}
