@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-09-25"
+lastupdated: "2020-10-01"
 
 keywords: upgrade, Db2 on Cloud, Standard plan, Enterprise plan, legacy
 
@@ -42,13 +42,13 @@ The legacy plan upgrade is currently available in the following data centers:
 - Tokyo
 - Washington
 
-The legacy plan upgrade will be available in the following data centers on or before **mid-October, 2020**:
+The legacy plan upgrade will be available in the following data centers by **October 15, 2020**:
 - Amsterdam
 - Milan
 - Paris
 - Toronto
 
-For those of you with a **HIPAA** requirement, the new systems are targeted to be ready by **September 30,2020**. 
+For those of you with a **HIPAA** requirement, the new systems are targeted to be ready by **October 15, 2020**. 
 
 Legacy-style disaster recovery (DR) is planned to be supported by **November 30, 2020**. However, [read more](#q_leverage_ha) about the high-availability nodes spanning multiple zones now available with the new plans to determine if this satisfies your DR requirements.
 
@@ -219,6 +219,17 @@ Yes, you can move from any legacy plan (Flex, Small, and Large) to any {{site.da
 
 Standard and Enterprise plans provide automated redundancy across 3 different data centers with the HA options. These data centers are physically isolated from each other and do not share any infrastructure. The reference design for different data centers within an MZR is that they are separated by at least 10 km or 6 mi. This is a significant improvement from our legacy plans in which you can have only 2 nodes which are in a single data center. In addition, Standard and Enterprise HA plans also provide `Read on standby` capability. {{site.data.keyword.Db2_on_Cloud_short}} also provides backups, which can be restored to a completely new region should all data centers be unrecoverable. These backups, as well as archive logs, are geo-replicated across several regions (more than 400 km or 250 mi away from the MZR), protecting you from even the worst natural disasters. In many cases, this will suffice instead of having a DR node in a different region. If not, we do intend to provide a DR option and timelines are being finalized.
 
+### How can we meet the published upgrade timeline if we require a key feature that isn't currently available?
+{: #q_feat_not_avail}
+{: faq}
+{: support}
+
+{{site.data.keyword.Db2_on_Cloud_short}} Standard and Enterprise plans will provide support for data centers in Amsterdam, Milan, Paris, and Toronto. However, these data centers are not currently available; we expect to support these by **October 15, 2020**. In addition, HIPAA and legacy-style disaster recovery (DR) are also targeted to be available by **October 15** and **November 30, 2020**, respectively.
+
+If any of these features remain a hard requirement for your new system, you must [create a support case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} to obtain an extension beyond the published deadlines for initiating upgrades (**October 15, 2020**) and completing the transition (**November 1, 2020**). Our team will work with you to extend the deadlines, ensure that there is no service disruption on **November 2, 2020**, and provide additional time to complete the upgrade. All upgrades must be completed by **November 30, 2020**. We'll provide more instructions in the support case to coordinate the upgrade for the specific hostnames that are impacted. 
+
+It remains important that you schedule time to complete upgrades within the published extension timeline and not delay. Even if your support case granted an extension under this scenario, your systems will be blocked and automatic upgrading will begin on **December 1, 2020** if the upgrade has not completed by **November 30, 2020**. If there is a further delay for us to deliver any of these features beyond **November 30, 2020**, we'll seek an exception for you to continue using your legacy system until we delivery that feature. 
+
 ### My plan instance is still on Cloud Foundry. Do I need to migrate it to Resource Controller before I upgrade to a Standard or Enterprise plan?
 {: #q_rc}
 {: faq}
@@ -260,7 +271,7 @@ We will send out notifications starting in **early August**. As we finish the pr
 {: faq}
 {: support}
 
-If you don't initiate the upgrade from your {{site.data.keyword.Db2_on_Cloud_short}} legacy plan by **October 15, 2020**, we will start the upgrade on your behalf by creating a new {{site.data.keyword.Db2_on_Cloud_short}} plan instance, moving your data, DDL, and users into your new plan. Your legacy plan instance will remain in your dashboard list of resources and you will continue to be billed for this legacy plan instance, but, under the covers, your instance will be a Standard or Enterprise plan. It is strongly recommended that you complete the plan upgrade to the new {{site.data.keyword.Db2_on_Cloud_short}} Standard or Enterprise plan. In most cases, the upgrade will lower your monthly costs.
+If you don't initiate the upgrade from your {{site.data.keyword.Db2_on_Cloud_short}} legacy plan by **October 15, 2020**, we will start the [upgrade](/docs/Db2onCloud?topic=Db2onCloud-auto_upgrade_plans){: external} on your behalf by creating a new {{site.data.keyword.Db2_on_Cloud_short}} plan instance, moving your data, DDL, and users into your new plan. Your legacy plan instance will remain in your dashboard list of resources and you will continue to be billed for this legacy plan instance, but, under the covers, your instance will be a Standard or Enterprise plan. It is strongly recommended that you complete the plan upgrade to the new {{site.data.keyword.Db2_on_Cloud_short}} Standard or Enterprise plan. In most cases, the upgrade will lower your monthly costs.
 
 <!--More details about how you can connect to your auto-upgraded plan and how you will be billed will be provided in the near future.-->
 
