@@ -43,8 +43,8 @@ There are important database details that are needed for connecting applications
 
 There are three types of credentials:
 
-- *IBMid* - If you use {{site.data.keyword.Bluemix_notm}}, this is the ID that you would use to log in to {{site.data.keyword.Bluemix_notm}}. Only the IBMID can be used to manage users by accessing **User Management** in the Console. This is not what you use to connect applications or tools to your {{site.data.keyword.Db2_on_Cloud_short}} database.
-- *Db2 database credentials* - These credentials are generated when you create **New Credentials** under **Service Credentials for the Service** in {{site.data.keyword.Bluemix_notm}}.
+- *IBMid* - If you use {{site.data.keyword.Bluemix_notm}}, this is the ID that you would use to log in to {{site.data.keyword.Bluemix_notm}}. Only the IBMID can be used to manage users by accessing **User Management** in the web console. This is not what you use to connect applications or tools to your {{site.data.keyword.Db2_on_Cloud_short}} database.
+- *Db2 database credentials* - These credentials are generated when you create **New credential** under **Service credentials** for the service in {{site.data.keyword.Bluemix_notm}}.
 - *IBMid-created users* - These IBMid-created user IDs and passwords can be used to log directly into the web console URL and to connect to the Db2 database from applications or tools.
 
 ## Where to find database details and connection credentials
