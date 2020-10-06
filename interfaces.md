@@ -59,12 +59,12 @@ With {{site.data.keyword.Db2_on_Cloud_short}} service plans, you can do tasks th
 Configure your local environment to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database by completing the following steps:
 {: shortdesc}
 
-1. Download the [driver package](/docs/Db2onCloud/connecting?topic=Db2onCloud-dr_pkg) from the {{site.data.keyword.Db2_on_Cloud_short}} web console.
+1. Download the [driver package](/docs/Db2onCloud/connecting?topic=Db2onCloud-drvr_pkg) from the {{site.data.keyword.Db2_on_Cloud_short}} web console.
 2. Install the driver package on the computer where your apps or tools are running:
-   - [Installing on Linux or PowerLinux](/docs/Db2onCloud/connecting?topic=Db2onCloud-dr_pkg#install_dr_pkg_linux)
-   - [Installing on Mac OS X](/docs/Db2onCloud/connecting?topic=Db2onCloud-dr_pkg#install_dr_pkg_mac)
-   - [Installing on Windows](/docs/Db2onCloud/connecting?topic=Db2onCloud-dr_pkg#install_dr_pkg_windows)
-3. [Configure the driver files](/docs/Db2onCloud/connecting?topic=Db2onCloud-dr_pkg#cfg_loc_env) for your {{site.data.keyword.Db2_on_Cloud_short}} database.
+   - [Installing on Linux or PowerLinux](/docs/Db2onCloud/connecting?topic=Db2onCloud-drvr_pkg#drvr_install_linux)
+   - [Installing on Mac OS X](/docs/Db2onCloud/connecting?topic=Db2onCloud-drvr_pkg#drvr_install_mac)
+   - [Installing on Windows](/docs/Db2onCloud/connecting?topic=Db2onCloud-drvr_pkg#drvr_install_windows)
+3. [Configure the driver files](/docs/Db2onCloud/connecting?topic=Db2onCloud-drvr_pkg#drvr_cfg_loc_env) for your {{site.data.keyword.Db2_on_Cloud_short}} database.
 
 ## Use Db2 Warehouse on Cloud as a data source for your {{site.data.keyword.Bluemix_notm}} apps or services
 {: #data_src}

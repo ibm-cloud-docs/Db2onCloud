@@ -70,15 +70,15 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 ### Downloading and installing driver package
 {: #dl_install}
 
-- [Download driver package](/docs/Db2onCloud/connecting?topic=Db2onCloud-dr_pkg)
-- [Installing on Linux or PowerLinux](/docs/Db2onCloud/connecting?topic=Db2onCloud-dr_pkg#install_dr_pkg_linux)
-- [Installing on Mac OS X](/docs/Db2onCloud/connecting?topic=Db2onCloud-dr_pkg#install_dr_pkg_mac)
-- [Installing on Windows](/docs/Db2onCloud/connecting?topic=Db2onCloud-dr_pkg#install_dr_pkg_windows)
+- [Download driver package](/docs/Db2onCloud/connecting?topic=Db2onCloud-drvr_pkg)
+- [Installing on Linux or PowerLinux](/docs/Db2onCloud/connecting?topic=Db2onCloud-drvr_pkg#drvr_install_linux)
+- [Installing on Mac OS X](/docs/Db2onCloud/connecting?topic=Db2onCloud-drvr_pkg#drvr_install_mac)
+- [Installing on Windows](/docs/Db2onCloud/connecting?topic=Db2onCloud-drvr_pkg#drvr_install_windows)
 
 ### Configuring your environment
 {: #cfg_env}
 
-- [Configuring your environment](/docs/Db2onCloud/connecting?topic=Db2onCloud-dr_pkg#cfg_loc_env)
+- [Configuring your environment](/docs/Db2onCloud/connecting?topic=Db2onCloud-drvr_pkg#drvr_cfg_loc_env)
 - [SSL connectivity](/docs/Db2onCloud/connecting?topic=Db2onCloud-ssl_support)
 
 ## Connectivity options

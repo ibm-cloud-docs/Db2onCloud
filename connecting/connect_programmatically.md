@@ -252,7 +252,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 ### Procedure
 {: #proc91}
 
-1. Install the [Db2 driver package](/docs/Db2onCloud?topic=Db2onCloud-dr_pkg#dr_pkg).
+1. Install the [Db2 driver package](/docs/Db2onCloud?topic=Db2onCloud-drvr_pkg).
 
 2. Open ODBC Data Source Administrator and create either a User DSN or System DSN for the Db2 driver package.
     
@@ -286,7 +286,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 #### Scenario 1: Connecting from outside {{site.data.keyword.Bluemix_notm}}:
 {: #scen1}
 
-1. Download the [Db2 driver package](/docs/Db2onCloud?topic=Db2onCloud-dr_pkg#dr_pkg) from the web console, and then install the driver package on the machine where your PHP application will run.
+1. Download the [Db2 driver package](/docs/Db2onCloud?topic=Db2onCloud-drvr_pkg) from the web console, and then install the driver package on the machine where your PHP application will run.
                 
 2. Use the [`odbc_connect` function](http://php.net/manual/en/function.odbc-connect.php){:external} to connect to the BLUDB database.
     

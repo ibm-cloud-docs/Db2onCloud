@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2019
-lastupdated: "2020-02-03"
+  years: 2014, 2020
+lastupdated: "2020-10-06"
 
 keywords:
 
@@ -22,13 +22,13 @@ subcollection: Db2onCloud
 {:pre: .pre}
 
 # Driver package
-{: #dr_pkg}
+{: #drvr_pkg}
 
 The {{site.data.keyword.Db2_on_Cloud_short}} driver package contains software for connecting client applications to a {{site.data.keyword.Db2_on_Cloud_short}} database. 
 {: shortdesc}
 
 ## About
-{: #abt}
+{: #drvr_abt}
 
 - The driver package contains client interface tools, such as CLPPlus.
 - The driver package also contains the following drivers: 
@@ -42,33 +42,33 @@ The {{site.data.keyword.Db2_on_Cloud_short}} driver package contains software fo
   - And more ...
 
 ## Already installed?
-{: #alrdy_instld}
+{: #drvr_alrdy_instld}
 
 To verify that the driver package is already on your computer so that you can skip installing it again, or to determine the version number, you can use the [**db2level**](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.admin.cmd.doc/doc/r0009195.html){:external} command.
 
 ## Downloading
-{: #dwnldng}
+{: #drvr_dwnldng}
 
 You can download the driver package for your operating system from the {{site.data.keyword.Db2_on_Cloud_short}} web console. From your {{site.data.keyword.Bluemix_notm}} dashboard, open your {{site.data.keyword.Db2_on_Cloud_short}} service. Log in to your {{site.data.keyword.Db2_on_Cloud_short}} web console.
 
 In the {{site.data.keyword.Db2_on_Cloud_short}} web console, select **Connect > Connection info**. Select the tile that represents your operating system to download the appropriate driver.
 
 ## Installing
-{: #instlng}
+{: #drvr_instlng}
 
 Install the driver package for your operating system:
-- [Installing on Linux or PowerLinux](#install_dr_pkg_linux)
-- [Installing on Mac OS X](#install_dr_pkg_mac)
-- [Installing on Windows](#install_dr_pkg_windows)
+- [Installing on Linux or PowerLinux](#install_drvr_pkg_linux)
+- [Installing on Mac OS X](#install_drvr_pkg_mac)
+- [Installing on Windows](#install_drvr_pkg_windows)
 
 ### Installing the driver package on Linux or PowerLinux
-{: #install_dr_pkg_linux}
+{: #drvr_install_linux}
 
 You can install the {{site.data.keyword.Db2_on_Cloud_short}} driver package on Linux or PowerLinux by using `installDSDriver`. 
 {: shortdesc}
 
 #### Prerequisites
-{: #prereq31}
+{: #drvr_prereq31}
 
 Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
@@ -84,7 +84,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
    `sudo dpkg -iG *.deb` 
 
 #### Procedure
-{: #proc31}
+{: #drvr_proc31}
 
 1. Decompress the compressed driver package file that you downloaded earlier.
 
@@ -107,25 +107,25 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
    - **C shell**: `source db2cshrc`
 
 #### What's next?
-{: #wn}
+{: #drvr_wn}
 
 To be able to connect your local applications or client tools to your {{site.data.keyword.Db2_on_Cloud_short}} database, [configure your local environment](#cfg_loc_env).   
 
 ### Installing the driver package on Mac OS X
-{: #install_dr_pkg_mac}
+{: #drvr_install_mac}
 
 You can install the {{site.data.keyword.Db2_on_Cloud_short}} driver package on Mac OS X by using the `installDSDriver.sh` script. 
 {: shortdesc}
 
 #### Prerequisites
-{: #prereq41}
+{: #drvr_prereq41}
 
 Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 <!-- Download the Db2 driver package for your operating system from the web console and install it. -->
 
 #### Procedure
-{: #proc41}
+{: #drvr_proc41}
 
 - **For a new installation**
 
@@ -159,25 +159,25 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
      Copy the `db2cli.ini` and `db2dsdriver.cfg` files that you saved from Step 1 to the `/Applications/dsdriver/cfg` folder.
 
 #### What's next?
-{: #wn41}
+{: #drvr_wn41}
 
 To be able to connect your local applications or client tools to your {{site.data.keyword.Db2_on_Cloud_short}} database, [configure your local environment](#cfg_loc_env).
 
 ### Installing the driver package on Windows
-{: #install_dr_pkg_windows}
+{: #drvr_install_windows}
 
 You can install the {{site.data.keyword.Db2_on_Cloud_short}} driver package on Windows by using the installer. 
 {: shortdesc}
 
 #### Prerequisites
-{: #prereq51}
+{: #drvr_prereq51}
 
 Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 <!-- Download the driver package for your operating system from the web console and install it. -->
 
 #### Procedure
-{: #proc51}
+{: #drvr_proc51}
 
 1. Run the downloaded executable file as an administrator.
 
@@ -185,7 +185,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 2. (*Optional*): Add the `bin` subdirectory of the driver package installation directory to your `%PATH%` environment variable (so you can run the **db2cli** command without specifying the full path to the command executable.)
 
 #### What's next?
-{: #wn51}
+{: #drvr_wn51}
 
 To be able to connect your local applications or client tools to your {{site.data.keyword.Db2_on_Cloud_short}} database, [configure your local environment](#cfg_loc_env).
 
@@ -195,13 +195,13 @@ To be able to connect your local applications or client tools to your {{site.dat
 To connect local applications or client tools to your {{site.data.keyword.Db2_on_Cloud_short}} database, [configure your environment for your Db2 database](driver_pkg_cfg.html). -->
 
 ## Configuring your local environment
-{: #cfg_loc_env}
+{: #drvr_cfg_loc_env}
 
 To connect local applications and tools to your {{site.data.keyword.Db2_on_Cloud_short}} database, you need to configure your environment.  
 {: shortdesc}
 
 ### Prerequisites
-{: #prereq21}
+{: #drvr_prereq21}
 
 Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
@@ -214,7 +214,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 3. Collect database details and connect credentials, including the host name of your server, and your database user ID and password. -->
 
 ### Procedure
-{: #proc21}
+{: #drvr_proc21}
 
 1. Add entries to the driver configuration file, `db2dsdriver.cfg`, for your database.
 
@@ -224,29 +224,32 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 
    To connect your applications and tools to your database by using SSL, enter the following commands in a command shell on Linux operating systems, at the Windows command prompt, or in a DB2 command window: 
 
-   `db2cli writecfg add -database BLUDB -host <hostname> -port 50001`
+   `db2cli writecfg add -database BLUDB -host <hostname> -port <port>`
 
-   `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50001`
+   `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port <port>`
 
-   `db2cli writecfg add -database BLUDB -host <hostname> -port 50001 -parameter "SecurityTransportMode=SSL"`
+   `db2cli writecfg add -database BLUDB -host <hostname> -port <port> -parameter "SecurityTransportMode=SSL"`
 
     where:
 
    - `<hostname>` is the host name of your server.
    - `<alias>` is an alias that you choose. The alias cannot be the same as the database name, `BLUDB`. If you want to have spaces in the alias, surround the alias with double quotation marks.
+   - `<port>` is the port number assigned to your server.
 
    **Without SSL**
 
    To connect your applications and tools to your database without using SSL, enter the following commands in a command shell on Linux operating systems, at the Windows command prompt, or in a DB2 command window: 
 
-   `db2cli writecfg add -database BLUDB -host <hostname> -port 50000`
+   `db2cli writecfg add -database BLUDB -host <hostname> -port <port>`
 
-   `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50000`
+   `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port <port>`
 
     where:
 
    - `<hostname>` is the host name of your server.
    - `<alias>` is an alias that you choose. The alias cannot be the same as the database name, `BLUDB`. If you want to have spaces in the alias, surround the alias with double quotation marks.
+   - `<port>` is the port number assigned to your server.
+
 
 2. Test connecting by issuing the **db2cli validate** command from the command prompt:
 

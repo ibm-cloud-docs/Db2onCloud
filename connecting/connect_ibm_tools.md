@@ -672,7 +672,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 
    b. On the Create New Data Source window, select the driver that is named **IBM DB2 ODBC DRIVER** and click **Finish**.
 
-   Be sure that the driver that you select is not a driver with a similar name such as `IBM DB2® ODBC DRIVER - DB2COPY`. If the driver does not appear in the list, exit SPSS Statistics, then download and install the driver. See [Driver package](/docs/Db2onCloud/connecting?topic=Db2onCloud-dr_pkg).
+   Be sure that the driver that you select is not a driver with a similar name such as `IBM DB2® ODBC DRIVER - DB2COPY`. If the driver does not appear in the list, exit SPSS Statistics, then download and install the driver. See [Driver package](/docs/Db2onCloud/connecting?topic=Db2onCloud-drvr_pkg).
         
    c. In the ODBC IBM Driver - Add window, enter a data source name (usually the name of the database you are connecting to), and click **Add**.
         
