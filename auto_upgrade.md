@@ -42,7 +42,7 @@ The deadline to self-initiate the upgrade through the {{site.data.keyword.cloud_
 
 The auto-upgrade process is initiated on the back end by the {{site.data.keyword.Db2_on_Cloud_short}} team. This auto upgrade is an online process similar to the self-initiated upgrade process that is currently available. If your instance is undergoing the auto-upgrade process, you can still continue to use the source legacy instance. For more information about this phase, see [Upgrade features and recommendations](/docs/Db2onCloud?topic=Db2onCloud-upgrade_plans#ug_feat_recom){: external}.
 
-## Deadline to initiate transition
+## Deadline to self-initiate transition
 {: #auto_ug_trans_deadline}
 
 The deadline to initiate the transition to the new plan instance applies only if you self-initiated the upgrade on or before **October 15, 2020**. The deadline to self-initiate the transition from the legacy instance is **November 1, 2020, 8 PM ET**. The option to self-initiate the transition will not be available beyond the November 1, 2020 date, so make sure to do so before the deadline. Any {{site.data.keyword.Db2_on_Cloud_short}} legacy plan instances for which the transition was not self-initiated before the deadline will be automatically transitioned starting on **November 2, 2020**.
