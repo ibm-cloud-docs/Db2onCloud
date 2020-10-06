@@ -33,14 +33,76 @@ However, if your application has its own driver, you might need to download the 
 
 Secure Sockets Layer (SSL) is a security protocol that provides communication privacy. SSL enables client and server applications to communicate in a way that is designed to prevent eavesdropping, tampering, and message forgery. SSL-enabled client applications use standard encryption techniques to help ensure secure communication.
 
-Configuring your applications to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database with SSL is strongly recommended. You should use only non-SSL connections if your are using legacy applications that cannot connect using an SSL connection.
-
-To enforce SSL connections, log in to the {{site.data.keyword.Db2_on_Cloud_short}} web console as an administrator, navigate to the **About** page, and select the **Enforce SSL connections** setting.
-{: important}
 
 <!-- SSL connections to {{site.data.keyword.Db2_on_Cloud_short}} are enforced by default. To enable a non-SSL port on your {{site.data.keyword.cloud_notm}} system, open a [support case](https://cloud.ibm.com/unifiedsupport/cases/add){:external} to make that request. -->
 
+     
 ## Configuring your Db2 client
+
+GSkit ships with Db2 release 9.5 and above. (https://www.ibm.com/support/pages/gskit-versions-shipped-db2).
+
+However if GSKit needs to be downloaded and configured please follow Configuring GSKit below < Rimas can this be a link to the Configuring GSKit below>
+
+1. Download the SSL Certificate from the Console into a new directory
+   ```
+   db2inst1@macing1:/home/db2inst1> mkdir SSL
+   db2inst1@macing1:/home/db2inst1> cd SSL
+   db2inst1@macing1:/home/db2inst1/SSL>
+   ```
+
+2. Create keystore in the above directory. The following example command pertains to Linux:
+   ```
+   gsk8capicmd_64 -keydb -create -db "mykeystore.kdb" -pw "passw0rd" -stash
+   ```
+   {: codeblock}
+
+   You must have the ability to write to the directory or you will get an error.
+   {: note}
+
+3. Add SSL certificate to the keystore. The following example command pertains to Windows:
+   ```
+   gsk8capicmd_64 -cert -add -db "mykeystore.kdb" -pw "passw0rd" -label ACIBLUDB_SSL -file /home/db2inst1/SSL/DigiCertGlobalRootCA.crt
+   ```
+   {: codeblock}
+
+4. Update the Db2 database manager. The following example command pertains to Windows: 
+   ```
+   db2 update dbm cfg using SSL_CLNT_KEYDB /home/db2inst1/SSL/mykeystore.kdb
+   db2 update dbm cfg using SSL_CLNT_STASH /home/db2inst1/SSL/mykeystore.sth
+   ```
+   {: codeblock}
+
+## Connecting to your database
+{: #ssl_conn_db}
+
+The hostname, port, user_name and password of the BLUDB_database_server can be found in the Service Credentials for the service in IBM CLoud.  (https://cloud.ibm.com/docs/Db2onCloud?topic=Db2onCloud-connect_options)
+
+2. Catalog the node and database. The following example commands pertain to Windows:
+   ```
+   db2 catalog tcpip node ACICLD_S remote <hostname_of_BLUDB_database_server> server <port_of_BLUDB_database_server> security SSL
+   ```
+   {: codeblock}
+
+   ```
+   db2 catalog db BLUDB as ACIBLU_S at node ACICLD_S
+   ```
+   {: codeblock}
+
+3. Connect to your database with an SSL connection. The following example commands pertain to Windows:
+   ```
+   db2 terminate
+   ```
+   {: codeblock}
+
+   ```
+   db2 connect to ACIBLU_S user <user_name> using <password>
+   ```
+   {: codeblock}
+ 
+ For more information, see [Configuring Secure Sockets Layer (SSL) support in non-Java Db2 clients](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.admin.sec.doc/doc/t0053518.html){: external}.
+
+
+## Configuring GSKit
 {: #ssl_cfg_client}
 
 1. [Download the IBM Global Security Kit (GSKit)](https://www-945.ibm.com/support/fixcentral/swg/selectFixes?parent=Security+Systems&product=ibm/Tivoli/IBM+Global+Security+Kit&release=All&platform=All&function=fixId&fixids=8.0.*&source=fc){: external} by selecting the GSKit appropriate for your operating system (OS).
@@ -71,57 +133,5 @@ To enforce SSL connections, log in to the {{site.data.keyword.Db2_on_Cloud_short
      `<installation_directory>\gsk8\bin`
      `<installation_directory>\gsk8\lib`  (`lib64` for GSKit 64-bit)
 
-5. Create keystore. The following example command pertains to Windows:
-   ```
-   gsk8capicmd_64 -keydb -create -db "mykeystore.kdb" -pw "passw0rd" -stash
-   ```
-   {: codeblock}
 
-   You must have the ability to write to the directory or you will get an error.
-   {: note}
-
-6. Add SSL certificate to the keystore. The following example command pertains to Windows:
-   ```
-   gsk8capicmd_64 -cert -add -db “mykeystore.kdb” -pw “passw0rd” -label ACIBLUDB_SSL -file c:\ssl\ACI_DigiCertGlobalRootCA.crt
-   ```
-   {: codeblock}
-
-7. Update the Db2 database manager. The following example command pertains to Windows: 
-   ```
-   db2 update dbm cfg using SSL_CLNT_KEYDB c:\PROGRA~1\IBM\gsk8\mykeystore.kdb
-   ```
-   {: codeblock}
-
-   On Windows, `Program Files` must use `PROGRA~1`.
-   {: note}
-
-## Connecting to your database
-{: #ssl_conn_db}
-
-1. [Optional] If you use Data Studio, you can now connect to the database by selecting port `50001` and `sslConnection=true`.
-
-2. Catalog the node and database. The following example commands pertain to Windows:
-   ```
-   db2 catalog tcpip node ACICLD_S remote <IP_address_of_BLUDB_database_server> server 50001 security SSL
-   ```
-   {: codeblock}
-
-   ```
-   db2 catalog db BLUDB as ACIBLU_S at node ACICLD_S
-   ```
-   {: codeblock}
-
-3. Connect to your database with an SSL connection. The following example commands pertain to Windows:
-   ```
-   db2 terminate
-   ```
-   {: codeblock}
-
-   ```
-   db2 connect to ACIBLU_S user <user_name>
-   ```
-   {: codeblock}
-
-
-For more information, see [Configuring Secure Sockets Layer (SSL) support in non-Java Db2 clients](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.admin.sec.doc/doc/t0053518.html){: external}.
 
