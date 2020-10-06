@@ -224,28 +224,30 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 
    To connect your applications and tools to your database by using SSL, enter the following commands in a command shell on Linux operating systems, at the Windows command prompt, or in a DB2 command window: 
 
-   `db2cli writecfg add -database BLUDB -host <hostname> -port 50001`
+   `db2cli writecfg add -database BLUDB -host <hostname> -port <port>`
 
-   `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50001`
+   `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port <port>`
 
-   `db2cli writecfg add -database BLUDB -host <hostname> -port 50001 -parameter "SecurityTransportMode=SSL"`
+   `db2cli writecfg add -database BLUDB -host <hostname> -port <port> -parameter "SecurityTransportMode=SSL"`
 
     where:
 
    - `<hostname>` is the host name of your server.
+   - `<port>` is the port number assigned to the server.
    - `<alias>` is an alias that you choose. The alias cannot be the same as the database name, `BLUDB`. If you want to have spaces in the alias, surround the alias with double quotation marks.
 
    **Without SSL**
 
    To connect your applications and tools to your database without using SSL, enter the following commands in a command shell on Linux operating systems, at the Windows command prompt, or in a DB2 command window: 
 
-   `db2cli writecfg add -database BLUDB -host <hostname> -port 50000`
+   `db2cli writecfg add -database BLUDB -host <hostname> -port <port>`
 
-   `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50000`
+   `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port <port>`
 
     where:
 
    - `<hostname>` is the host name of your server.
+   - `<port>` is the port number assigned to the server.
    - `<alias>` is an alias that you choose. The alias cannot be the same as the database name, `BLUDB`. If you want to have spaces in the alias, surround the alias with double quotation marks.
 
 2. Test connecting by issuing the **db2cli validate** command from the command prompt:
