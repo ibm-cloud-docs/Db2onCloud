@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-08-31"
+lastupdated: "2020-10-08"
 
 keywords: 
 
@@ -51,15 +51,15 @@ You can use the web console to perform many key tasks, such as loading data, wor
 ### Current plans
 {: #ab_current}
 
-#### Enterprise High Availability plan
+#### Enterprise High Availability Disaster Recovery (HADR) plan
 
 - Base instances start at 4 vCPU x 16 GB RAM x 20 GB storage on dedicated compute slices
 - Runs the latest release of Db2, version 11.5
-- Three high-availability nodes spanning multiple availability zones
+- Three HADR nodes spanning multiple availability zones
 - 1 TB of free backup storage for up to 14 days of backups
 - Self-service managed backup with point-in-time restore
 
-#### Enterprise non-High Availability plan
+#### Enterprise non-High Availability Disaster Recovery (non-HADR) plan
 
 - Base instances start at 4 vCPU x 16 GB RAM x 20 GB storage on dedicated compute slices
 - Runs the latest release of Db2, version 11.5
@@ -67,15 +67,15 @@ You can use the web console to perform many key tasks, such as loading data, wor
 - 1 TB of free backup storage for up to 14 days of backups
 - Self-service managed backup with point-in-time restore
 
-#### Standard High Availability plan
+#### Standard High Availability Disaster Recovery (HADR) plan
 
 - Base instances start at 8 GB RAM x 20 GB storage on shared compute slices
 - Runs the latest release of Db2, version 11.5
-- Three high-availability nodes spanning multiple availability zones
+- Three HADR nodes spanning multiple availability zones
 - 100 GB of free backup storage for up to 14 days of backups
 - Self-service managed backup with point-in-time restore
 
-#### Standard non-High Availability plan
+#### Standard non-High Availability Disaster Recovery (non-HADR) plan
 
 - Base instances start at 8 GB RAM x 20 GB storage on shared compute slices
 - Runs the latest release of Db2, version 11.5

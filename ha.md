@@ -2,9 +2,9 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-09-03"
+lastupdated: "2020-10-08"
 
-keywords: HA, Legacy Flex, legacy, Flex, high availability
+keywords: HADR, Legacy Flex, legacy, Flex, high availability disaster recovery
 
 subcollection: Db2onCloud
 
@@ -30,9 +30,9 @@ subcollection: Db2onCloud
 ## Standard and Enterprise plans
 {: #ha_v2_ha}
 
-High availability on {{site.data.keyword.Db2_on_Cloud_short}} Enterprise and Standard plans is provided by leveraging the support of native Db2 HADR. 
+High availability disaster recovery (HADR) on {{site.data.keyword.Db2_on_Cloud_short}} Enterprise and Standard plans is provided by leveraging the support of native Db2 HADR. 
 
-- Each HA system consists of 3 nodes located in different independent availability zones.  
+- Each HADR system consists of 3 nodes located in different independent availability zones.  
 
 ![Schematic view of the 3 nodes in different availability zones](images/ha_AZ_small.png "Schematic view of the 3 nodes in different availability zones"){: caption="Figure 1. Schematic view of the 3 nodes in different availability zones" caption-side="bottom"}
 
@@ -42,10 +42,10 @@ High availability on {{site.data.keyword.Db2_on_Cloud_short}} Enterprise and Sta
 
 - During failover events, you can expect between 10-20 seconds during which transactions are restricted. Your client can seamlessly fail over by using [automatic client reroute (ACR)](https://www.ibm.com/support/knowledgecenter/SSEPGG_11.5.0/com.ibm.db2.luw.admin.ha.doc/doc/r0023392.html){: external} along with appropriate retry logic for any failed transactions.
 
-### Managing high availability nodes
+### Managing HADR nodes
 {: #ha_v2_manage}
 
-For Enterprise and Standard HA plans, the failover is managed for you by IBM. IBM monitors the health of your server, fail over and fail back as needed, including rolling updates and scaling to keep uptime as high as possible.
+For Enterprise and Standard HADR plans, the failover is managed for you by IBM. IBM monitors the health of your server, fail over and fail back as needed, including rolling updates and scaling to keep uptime as high as possible.
 
 ## Legacy Flex plans
 {: #ha_legacy}

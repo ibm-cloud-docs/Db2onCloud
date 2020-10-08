@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-09-03"
+lastupdated: "2020-10-08"
 
 keywords: DR, HADR, disaster recovery, legacy, Flex, Db2 on Cloud, failover
 
@@ -53,8 +53,8 @@ To enable the DR failover, complete the following steps:
 ## Standard and Enterprise plans
 {: #dr_stan_ent}
 
-Coming soon!
-{: note}
+HADR is available. See [How is the high availability disaster recovery (HADR) feature done in Standard and Enterprise plans?](/docs/Db2onCloud?topic=Db2onCloud-upgrade_plans#q_dr){: external}.
+
 
 
 

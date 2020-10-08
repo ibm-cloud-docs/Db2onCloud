@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-10-01"
+lastupdated: "2020-10-08"
 
 keywords: upgrade, Db2 on Cloud, Standard plan, Enterprise plan, legacy
 
@@ -198,33 +198,35 @@ Prices are detailed by plan in the [{{site.data.keyword.cloud_notm}} catalog](ht
 
 After you begin the upgrade, you have 14 days to move to the new plan. The upgrade timeline starts when you provision a {{site.data.keyword.Db2_on_Cloud_short}} Standard or Enterprise plan and provide your CRN from your legacy plan in the upgrade details on the **Service create** page in the {{site.data.keyword.cloud_notm}} catalog. If you don't complete the upgrade during that 14 day period, you will be charged for both source and target plans.
 
-### Can I leverage the new HA feature in the new plans in place of our existing DR node solution in the legacy plans? 
+### Can I leverage the new HADR feature in the new plans in place of our existing DR node solution in the legacy plans? 
 {: #q_leverage_ha}
 {: faq}
 {: support}
 
-The new plans offer a High Availability (HA) feature with 3 nodes located in different independent availability zones and the failover is managed for you by IBM. This feature avoids any service disruption caused by a data center disaster, failure, or maintenance. HA is also well suited as a disaster recovery (DR) option for those of you with requirements that are satisfied by it. If you have strict requirements for a cross-region DR node, you can leverage such a feature by **November 30, 2020**.
+The new plans offer a High Availability Disaster Recovery (HADR) feature with 3 nodes located in different independent availability zones and the failover is managed for you by IBM. This feature avoids any service disruption caused by a data center disaster, failure, or maintenance. For more information about {{site.data.keyword.cloud_notm}} Multi-Zone Regions (MZR), see [Why Deploy Applications on IBM Cloud Availability Zones?](https://www.ibm.com/cloud/blog/why-deploy-applications-on-ibm-cloud-availability-zones){: external}.
 
-### I have a non-HA plan, but want to upgrade to HA (or vice versa). Can I do that?
+<!-- HA is also well suited as a disaster recovery (DR) option for those of you with requirements that are satisfied by it. If you have strict requirements for a cross-region DR node, you can leverage such a feature by **November 30, 2020**.-->
+
+### I have a non-HA plan, but want to upgrade to Standard or Enterprise HADR (or vice versa). Can I do that?
 {: #q_noha_ha}
 {: faq}
 {: support}
 
-Yes, you can move from any legacy plan (Flex, Small, and Large) to any {{site.data.keyword.Db2_on_Cloud_short}} Standard and Enterprise plan. You can move from non-HA to HA, or from HA to non-HA. If you have a DR node, be aware there are changes to DR in Standard and Enterprise plans. See the following question about DR changes in Standard and Enterprise plans.
+Yes, you can move from any legacy plan (Flex, Small, and Large) to any {{site.data.keyword.Db2_on_Cloud_short}} Standard and Enterprise plan. You can move from non-HA to HADR, or from HA to non-HADR. See the following question about HADR information in Standard and Enterprise plans.
 
-### How is disaster recovery (DR) changing in Standard and Enterprise plans?
+### How is the high availability disaster recovery (HADR) feature done in Standard and Enterprise plans?
 {: #q_dr}
 {: faq}
 {: support}
 
-Standard and Enterprise plans provide automated redundancy across 3 different data centers with the HA options. These data centers are physically isolated from each other and do not share any infrastructure. The reference design for different data centers within an MZR is that they are separated by at least 10 km or 6 mi. This is a significant improvement from our legacy plans in which you can have only 2 nodes which are in a single data center. In addition, Standard and Enterprise HA plans also provide `Read on standby` capability. {{site.data.keyword.Db2_on_Cloud_short}} also provides backups, which can be restored to a completely new region should all data centers be unrecoverable. These backups, as well as archive logs, are geo-replicated across several regions (more than 400 km or 250 mi away from the MZR), protecting you from even the worst natural disasters. In many cases, this will suffice instead of having a DR node in a different region. If not, we do intend to provide a DR option and timelines are being finalized.
+Standard and Enterprise plans provide automated redundancy across 3 different data centers with the HADR option. These data centers are physically isolated from each other and do not share any infrastructure. The reference design for different data centers within a multi-zone region (MZR) is that they are separated by at least 10 km or 6 mi. This is a significant improvement from our legacy plans in which you can have only 2 nodes which are in a single data center. In addition, Standard and Enterprise HADR plans also provide `Read on standby` capability. {{site.data.keyword.Db2_on_Cloud_short}} also provides backups, which can be restored to a completely new region should all data centers be unrecoverable. These backups, as well as archive logs, are geo-replicated across several regions (more than 400 km or 250 mi away from the MZR), protecting you from even the worst natural disasters. In many cases, this will suffice instead of having a DR node in a different region. If not, there is an upcoming Cross-Region DR feature. [create a support case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} and have a conversation with our Development Operations team if you require this Cross-Region DR-specific feature.
 
 ### How can we meet the published upgrade timeline if we require a key feature that isn't currently available?
 {: #q_feat_not_avail}
 {: faq}
 {: support}
 
-{{site.data.keyword.Db2_on_Cloud_short}} Standard and Enterprise plans will provide support for data centers in Amsterdam, Milan, Paris, and Toronto. However, these data centers are not currently available; we expect to support these by **October 15, 2020**. In addition, HIPAA and legacy-style disaster recovery (DR) are also targeted to be available by **October 15** and **November 30, 2020**, respectively.
+{{site.data.keyword.Db2_on_Cloud_short}} Standard and Enterprise plans will provide support for data centers in Amsterdam, Milan, Paris, and Toronto. However, these data centers are not currently available; we expect to support these by **October 15, 2020**. In addition, HIPAA and Cross-Region DR are also targeted to be available by **October 15** and **November 30, 2020**, respectively.
 
 If any of these features remain a hard requirement for your new system, you must [create a support case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} to obtain an extension beyond the published deadlines for initiating upgrades (**October 15, 2020**) and completing the transition (**November 1, 2020**). Our team will work with you to extend the deadlines, ensure that there is no service disruption on **November 2, 2020**, and provide additional time to complete the upgrade. All upgrades must be completed by **November 30, 2020**. We'll provide more instructions in the support case to coordinate the upgrade for the specific hostnames that are impacted. 
 
