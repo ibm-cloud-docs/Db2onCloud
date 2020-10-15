@@ -42,13 +42,13 @@ The legacy plan upgrade is currently available in the following data centers:
 - Tokyo
 - Washington
 
-The legacy plan upgrade will be available in the following data centers by **October 15, 2020**:
+The legacy plan upgrade will be available in the following data centers by **October 30, 2020**:
 - Amsterdam
 - Milan
 - Paris
 - Toronto
 
-For those of you with a **HIPAA** requirement, the new systems are targeted to be ready by **October 15, 2020**. 
+For those of you with a **HIPAA** requirement, the new systems are targeted to be ready by **October 30, 2020**. 
 
 Legacy-style disaster recovery (DR) is planned to be supported by **November 30, 2020**. However, [read more](#q_leverage_ha) about the high-availability nodes spanning multiple zones now available with the new plans to determine if this satisfies your DR requirements.
 
@@ -226,7 +226,7 @@ Standard and Enterprise plans provide automated redundancy across 3 different da
 {: faq}
 {: support}
 
-{{site.data.keyword.Db2_on_Cloud_short}} Standard and Enterprise plans will provide support for data centers in Amsterdam, Milan, Paris, and Toronto. However, these data centers are not currently available; we expect to support these by **October 15, 2020**. HIPAA and Cross-Region DR are targeted to be available by **October 15** and **November 30, 2020**, respectively. EU Cloud compliance certification will be available by **February, 2021**.
+{{site.data.keyword.Db2_on_Cloud_short}} Standard and Enterprise plans will provide support for data centers in Amsterdam, Milan, Paris, and Toronto. However, these data centers are not currently available; we expect to support these by **October 30, 2020**. HIPAA and Cross-Region DR are targeted to be available by **October 30** and **November 30, 2020**, respectively. EU Cloud compliance certification will be available by **February, 2021**.
 
 If any of these features remain a hard requirement for your new system, you must [create a support case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} to obtain an extension beyond the published deadlines for initiating upgrades (**October 15, 2020**) and completing the transition (**November 1, 2020**). Our team will work with you to extend the deadlines, ensure that there is no service disruption on **November 2, 2020**, and provide additional time to complete the upgrade. All upgrades must be completed by **November 30, 2020**. We'll provide more instructions in the support case to coordinate the upgrade for the specific hostnames that are impacted. 
 
