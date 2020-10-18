@@ -21,7 +21,7 @@ subcollection: Db2onCloud
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Data virtualization (federation)
+# Legacy Plan Data virtualization (federation)
 {: #data_virt_fed}
 
 Db2 data virtualization (also known as federation) is supported by {{site.data.keyword.Db2_on_Cloud_short}}. Data virtualization gives you single-query access to all of your data that is on multiple distributed databases anywhere in your organization. You can access data that is on any of your Db2 or Informix data sources, both in the cloud and on premises. 
@@ -134,10 +134,10 @@ From the {{site.data.keyword.Db2_on_Cloud_short}} console:
    `create server db2server type dashdb version 11 wrapper drda authorization "admin2" password "YYYY" options (host 'targetdotcom', port '50000', dbname 'bludb')`
 
 2. Create the user mapping for admin2:<br/>
-   `create user mapping for <admin_user> server db2server options (remote_authid '<admin_user_on_target>', remote_password '<admin_password_on_target>')`
+   `create user mapping for user server db2server options (remote_authid '<admin_user_on_target>', remote_password '<admin_password_on_target>')`
 
    For example:<br/>
-   `create user mapping for admin1 server db2server options (remote_authid 'admin2', remote_password 'YYYY')`
+   `create user mapping for user server db2server options (remote_authid 'admin2', remote_password 'YYYY')`
 
 3. Create a nickname for the database:<br/>
    `create nickname <nickname> for <server_name>.<schema_name>.<table_name>`
