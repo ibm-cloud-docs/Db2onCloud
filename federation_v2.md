@@ -62,7 +62,7 @@ Service/Port Number:    30850
 User:                   <remote_user>
 Password:               <remote_password>
 Database Name:          BLUDB
-Schema Name:            DB2INST1
+Schema Name:            TESTDB
 Table Name:             TEST1
 ```
 
@@ -146,7 +146,7 @@ DB20000I  The SQL command completed successfully.
 Create a server to host the remote database by running the following command:
 
 ```
-db2 "create server fed_server type DB2/UDB version 11 wrapper drdawrapper authorization \"<remote_user>\" PASSWORD \"<remote_password>\" options(host '<remote_host_name>', port '30850', dbname 'bludb', security 'SSL', password 'y')"
+db2 "create server fed_server type DB2/UDB version 11 wrapper drdawrapper authorization \"<remote_user>\" PASSWORD \"<remote_password>\" options(host '<remote_host_name>', port '<port>', dbname 'bludb', security 'SSL', password 'y')"
 ```
 {: codeblock}
 
@@ -161,7 +161,7 @@ DB20000I  The SQL command completed successfully.
 Create the user mapping by running the following command:
 
 ```
-db2 "create user mapping for db2inst1 server fed_server OPTIONS (remote_authid '<remote_user>', remote_password '<remote_password>')"
+db2 "create user mapping for user server fed_server OPTIONS (remote_authid '<remote_user>', remote_password '<remote_password>')"
 ```
 {: codeblock}
 
@@ -185,7 +185,7 @@ DB20000I  The SQL command completed successfully.
 ```
 
 ```
-db2 "select * from db2inst1.test1"
+db2 "select * from testdb.test1"
 ```
 {: codeblock}
 
@@ -212,7 +212,7 @@ DB20000I  The SQL command completed successfully.
 
 Create a nickname for the remote database and test the nickname by running the following commands:
 ```
-db2 "create nickname db2inst1.rmttest1 FOR fed_server.db2inst1.test1"
+db2 "create nickname rmttest1 FOR fed_server.testdb.test1"
 ```
 {: codeblock}
 
@@ -221,7 +221,7 @@ DB20000I  The SQL command completed successfully.
 ```
 
 ```
-db2 "select * from db2inst1.rmttest1"
+db2 "select * from rmttest1"
 ```
 {: codeblock}
 
