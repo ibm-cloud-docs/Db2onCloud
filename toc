@@ -30,6 +30,7 @@ Db2 on Cloud
     {: .topicgroup}
     Administration
         interfaces.md
+        endpoints.md
         advanced_admin.md
         flex_scaling.md
         copy_db.md
@@ -47,8 +48,13 @@ Db2 on Cloud
         dr.md
         log_mon.md
         maintenance.md
-        federation.md
-        federation_v2.md
+
+        {: .topicgroup}
+        Federation
+            federation.md
+            federation_v2.md
+            fed_v2_cloud_to_cloud.md
+
         local_dev_env.md
 
     {: .topicgroup}
