@@ -37,7 +37,7 @@ The Standard and Enterprise plans offer the choice of Public, Private, or both P
 
 At the time of instance creation, you can select your choice of endpoint from the **Service Endpoints** box on {{site.data.keyword.cloud_notm}}.
 
-![Instance Creation Endpoints](images/creation_endpoint.png "Endpoint choice"){: caption="Figure 1. Endpoint choice at instance creation" caption-side="bottom"}
+![Instance creation endpoints](images/creation_endpoint.png "Endpoint choice"){: caption="Figure 1. Endpoint choice at instance creation" caption-side="bottom"}
 
 ### Changing endpoints after creation
 {: #ep_chg_epts}
