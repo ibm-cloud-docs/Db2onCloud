@@ -70,6 +70,19 @@ Console access is controlled by IAM. An IAM user can be assigned access by IAM i
 | Non-IAM, but autheticate with JDBC | Only "Change password" | Yes | No | No | Yes |
 {: caption="Table 1. Roles and console permissions" caption-side="top"} 
 
+#### Service Action Mapping
+
+Service Action access is also controlled by IAM Roles.  An IAM user can be assigned access by IAM interface to all Db2 service instances, all Db2 service instances in a resource group, or a specific service instance. Within these parameters, IAM users can be assigned or revoked access from specific service actions.
+
+
+| Role                          | manage-users | scale | restore | settings | backup | monitor | view-settings
+| ----------------------------- |:------------:| -----:| -------:| --------:| ------:| -------:| -------------:|
+| IAM - Platform - Operator     | No           |  Yes  | Yes     | Yes      | Yes    |  Yes    | Yes           |
+| IAM - Platform - Viewer       | No           |  No   | No      | No       | no     |  Yes    | Yes           |
+| IAM - Platform - Administraor | Yes          |  Yes  | Yes     | Yes      | Yes    |  Yes    | Yes           |
+| IAM - Platform - Editor       | No           |  Yes  | Yes     | Yes      | Yes    |  Yes    | Yes           |
+{: caption="Table 2. Roles and Service Actions" caption-side="top"} 
+
 ## Legacy plans
 {: #um_legacy_plans}
 
