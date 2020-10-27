@@ -137,6 +137,7 @@ The upgrade process can be initiated only one time per source. After the new {{s
 - Any DDL changes on the source DURING or AFTER the upgrade process might not be replicated on the target. It is recommended that no DDL changes are attempted on the source after the upgrade is initiated.
 - It is recommended that users do not insert, update or delete any data on the target during the upgrade. Any read operation is possible and can be used to verify the data migration
 - Users can continue using the source until transition is initiated. The average transition period is about two minutes. In case the transition has not completed even after 30 minutes, you are recommended to continue using the source. The {{site.data.keyword.Db2_on_Cloud_short}} Operations team will be alerted if there is an issue with the transition and will re-enable the button when it is possible to transition again.
+- After the upgrade and transition to the new instance has completed, you should delete your legacy system. This is a final step that you should initiate, otherwise, after instances are blocked on **November 2, 2020**, legacy instances will be decommissioned in November if upgrades were successfully completed; unless a support case has been opened to request an extension.
 
 ## Billing during the upgrade
 {: #ug_billing}
