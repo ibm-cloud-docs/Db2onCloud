@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-10-19"
+lastupdated: "2020-10-27"
 
 keywords: upgrade, Db2 on Cloud, Standard plan, Enterprise plan, legacy
 
@@ -322,9 +322,9 @@ The owner of your {{site.data.keyword.cloud_notm}} account that is associated wi
 {: faq}
 {: support}
 
-If you are following the upgrade instructions and timeline in this document, there is no change with the existing information that describes key dates and upgrade steps. We hope that you were able to initiate upgrades through the cloud catalog and had a positive experience. **October 15, 2020** was an important milestone after which self-initiated upgrades are no longer available unless an extension was granted as a [feature availability gap](#q_feat_not_avail) or you experienced a technical issue; either situation would require a [support case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} where we will coordinate with you on the next steps.
+This is a generic alert on all legacy dashboards to provide another channel of communications for this required upgrade. If you are following the upgrade instructions and timeline in this document, there is no change with the existing information that describes key dates and upgrade steps. We hope that you were able to initiate upgrades through the cloud catalog and had a positive experience. **October 15, 2020** was an important milestone after which self-initiated upgrades were no longer available unless an extension was granted as a [feature availability gap](#q_feat_not_avail) or you experienced a technical issue or business impact; either situation would require a [support case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} where we will coordinate with you on the next steps and, if needed, extend downstream timelines.
 
-Access to legacy systems will not be available after **November 1, 2020**. Instructions to recover your instance(s) to quickly get up and running under a new Standard or Enterprise plan will be available starting **November 2, 2020**. It's important to IBM that this upgrade not impact your business. If the alert and related timeline comes as a surprise, we urge you to review all of the information in this document and, if needed, open a [support case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} to request an extension on the access restriction prior to **November 1, 2020**. Otherwise, the upgrade timeline will apply and you'll need to follow the recovery steps for [auto-upgraded instances](/docs/Db2onCloud?topic=Db2onCloud-auto_upgrade_plans){: external}.
+In general, access to legacy systems will not be available after **November 1, 2020**. If you have an upgrade underway, which does not complete by November 1, 2020 or if you have an open support case to resolve technical or business issues, your instance will not be auto-transitioned and we'll coordinate through the support case or grant an additional 5 business days after sync is ready. Instructions to recover your instance(s) to quickly get up and running under a new Standard or Enterprise plan will be available starting **November 2, 2020**. It's important to IBM that this upgrade not impact your business. If the alert and related timeline comes as a surprise, we urge you to review all of the information in this document and, if needed, open a [support case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} to request an extension on the access restriction prior to **November 1, 2020**. Otherwise, the upgrade timeline will apply and you'll need to follow the recovery steps for [auto-upgraded instances](/docs/Db2onCloud?topic=Db2onCloud-auto_upgrade_plans){: external}.
 
 ### How can I learn more?
 {: #q_learn_more}
