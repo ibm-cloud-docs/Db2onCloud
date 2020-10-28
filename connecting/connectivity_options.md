@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-09-18"
+lastupdated: "2020-10-28"
 
 keywords:
 
@@ -98,8 +98,10 @@ The "cli" section contains information that is suited for connecting with `db2`.
 
 `0...` indicates that there might be one or more of these entries in an array.
 
-#### Enterprise and Standard Plans
+#### Enterprise and Standard plans
 {: #pub_endpt_ent_stand}
+
+The following VCAP Services json file can be used to make connections to your Enterprise and Standard plans database instances:
 
 ```
 {
@@ -174,25 +176,26 @@ The "cli" section contains information that is suited for connecting with `db2`.
 #### Legacy plans
 {: #pub_endpt_legacy}
 
-   ```
-   {
-     "hostname": "dashdb-enterprise-xxxxxxx.services.dal.bluemix.net",
-     "password": "<password>",
-     "https_url": "https://dashdb-enterprise-xxxxxxx.services.dal.bluemix.net",
-     "port": 50000,
-     "ssldsn": "DATABASE=BLUDB;HOSTNAME=dashdb-enterprise-xxxxxx.services.dal.bluemix.net;PORT=50001;PROTOCOL=TCPIP;UID=bluadmin;PWD=DTPY7KXWxhp_pKtjLSt;Security=SSL;",
-     "host": "dashdb-enterprise-xxxxxxx.services.dal.bluemix.net",
-     "jdbcurl": "jdbc:db2://dashdb-enterprise-xxxxxxx.services.dal.bluemix.net:50000/BLUDB",
-     "uri": "db2://bluadmin:DTPY7KXx1p_pKtjLSt@dashdb-enterprise-xxxxxxx.services.dal.bluemix.net:50000/BLUDB",
-     "db": "BLUDB",
-     "dsn": "DATABASE=BLUDB;HOSTNAME=dashdb-enterprise-xxxxxxx.services.dal.bluemix.net;PORT=50000;PROTOCOL=TCPIP;UID=bluadmin;PWD=DTPYZunlWxhp_pKtjLSt;",
-     "username": "bluadmin",
-     "ssljdbcurl": "jdbc:db2://dashdb-enterprise-xxxxxxx.services.dal.bluemix.net:50001/BLUDB:sslConnection=true;"
-   }
+The following VCAP Services json file can be used to make connections to your legacy plan database instances:
 
-   ```
+```
+{
+  "hostname": "dashdb-enterprise-xxxxxxx.services.dal.bluemix.net",
+  "password": "<password>",
+  "https_url": "https://dashdb-enterprise-xxxxxxx.services.dal.bluemix.net",
+  "port": 50000,
+  "ssldsn": "DATABASE=BLUDB;HOSTNAME=dashdb-enterprise-xxxxxx.services.dal.bluemix.net;PORT=50001;PROTOCOL=TCPIP;UID=bluadmin;PWD=DTPY7KXWxhp_pKtjLSt;Security=SSL;",
+  "host": "dashdb-enterprise-xxxxxxx.services.dal.bluemix.net",
+  "jdbcurl": "jdbc:db2://dashdb-enterprise-xxxxxxx.services.dal.bluemix.net:50000/BLUDB",
+  "uri": "db2://bluadmin:DTPY7KXx1p_pKtjLSt@dashdb-enterprise-xxxxxxx.services.dal.bluemix.net:50000/BLUDB",
+  "db": "BLUDB",
+  "dsn": "DATABASE=BLUDB;HOSTNAME=dashdb-enterprise-xxxxxxx.services.dal.bluemix.net;PORT=50000;PROTOCOL=TCPIP;UID=bluadmin;PWD=DTPYZunlWxhp_pKtjLSt;",
+  "username": "bluadmin",
+  "ssljdbcurl": "jdbc:db2://dashdb-enterprise-xxxxxxx.services.dal.bluemix.net:50001/BLUDB:sslConnection=true;"
+}
+```
 
-   ![Public network access to {{site.data.keyword.cloud_notm}}](images/public_connection.png "Graphical view of user to cloud connection"){: caption="Figure 1. Public network access to {{site.data.keyword.cloud_notm}}" caption-side="bottom"}
+![Public network access to {{site.data.keyword.cloud_notm}}](images/public_connection.png "Graphical view of user to cloud connection"){: caption="Figure 1. Public network access to {{site.data.keyword.cloud_notm}}" caption-side="bottom"}
 
 Non-admin users can also use allowlisting available in the {{site.data.keyword.Db2_on_Cloud_short}} web console under **Settings > Manage Users**.
 

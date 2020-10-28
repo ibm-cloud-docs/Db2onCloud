@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-10-27"
+lastupdated: "2020-10-28"
 
 keywords: upgrade, Db2 on Cloud, Standard plan, Enterprise plan, legacy
 
@@ -138,6 +138,9 @@ The upgrade process can be initiated only one time per source. After the new {{s
 - It is recommended that users do not insert, update or delete any data on the target during the upgrade. Any read operation is possible and can be used to verify the data migration
 - Users can continue using the source until transition is initiated. The average transition period is about two minutes. In case the transition has not completed even after 30 minutes, you are recommended to continue using the source. The {{site.data.keyword.Db2_on_Cloud_short}} Operations team will be alerted if there is an issue with the transition and will re-enable the button when it is possible to transition again.
 - After the upgrade and transition to the new instance has completed, you should delete your legacy system. This is a final step that you should initiate, otherwise, after instances are blocked on **November 2, 2020**, legacy instances will be decommissioned in November if upgrades were successfully completed; unless a support case has been opened to request an extension.
+
+The current Standard and Enterprise plans VCAP Services json file is different from that of the legacy plans. Any of your applications that consume the legacy plan VCAP Services json file must be changed to handle the current Standard and Enterprise plan json file. For more information about the Standard and Enterprise VCAP Services json file, see [Connectivity options](https://cloud.ibm.com/docs/Db2onCloud?topic=Db2onCloud-connect_options){: external}.
+{: important}
 
 ## Billing during the upgrade
 {: #ug_billing}
