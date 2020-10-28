@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-06-22"
+lastupdated: "2020-10-26"
 
 keywords: 
 
@@ -58,17 +58,30 @@ IAM authentication is performed as the authentication mechanism. Permissions are
 #### Console access
 {: #um_console_access}
 
-Console access is controlled by IAM. An IAM user can be assigned access by IAM interface to all Db2 service instances, all Db2 service instances in a resource group, or a specific service instance. Within these parameters, they can be assigned platform and service-level access.
+Console access is controlled by IAM. An IAM user can be assigned access by the IAM interface to all Db2 service instances, all Db2 service instances in a resource group, or a specific service instance. Within these parameters, IAM users can be assigned platform and service-level access.
 
 
 | Role         | User mgmt | SQL editor/tables | Monitoring info | Settings (includes scale, backup, etc.) | Info panels |
-| ------------ |-----------------| -------------------------| -----------------------| ----------------| ------------------|
-| IAM - Platform - Operator     | No | No (unless mapped to db2 user) | Yes | Yes | Yes |
-| IAM - Platform - Viewer       | No | No (unless mapped to db2 user) | Yes | No  | Yes |
-| IAM - Platform - Administraor | Yes | No (unless mapped to db2 user) | Yes | Yes | Yes |
-| IAM - Platform - Editor       | No | No (unless mapped to db2 user) | Yes | Yes | Yes |
+|--------------|-----------|-------------------|-----------------|-----------------------------------------|-------------|
+| IAM - Platform - Operator     | No | No (unless mapped to Db2 user) | Yes | Yes | Yes |
+| IAM - Platform - Viewer       | No | No (unless mapped to Db2 user) | Yes | No  | Yes |
+| IAM - Platform - Administraor | Yes | No (unless mapped to Db2 user) | Yes | Yes | Yes |
+| IAM - Platform - Editor       | No | No (unless mapped to Db2 user) | Yes | Yes | Yes |
 | Non-IAM, but autheticate with JDBC | Only "Change password" | Yes | No | No | Yes |
-{: caption="Table 1. Roles and console permissions" caption-side="top"} 
+{: caption="Table 1. Roles and console permissions" caption-side="top"}
+
+#### Service action mapping
+{: @um_serv_act_map}
+
+Service action access is also controlled by IAM Roles. An IAM user can be assigned access by the IAM interface to all Db2 service instances, all Db2 service instances in a resource group, or a specific service instance. Within these parameters, IAM users can be assigned or revoked access from specific service actions.
+
+| Role                          | Manage-users | Scale | Restore | Settings | Backup | Monitor | View settings |
+|-------------------------------|--------------|-------|---------|----------|--------|---------|---------------|
+| IAM - Platform - Operator     | No           |  Yes  | Yes     | Yes      | Yes    |  Yes    | Yes           |
+| IAM - Platform - Viewer       | No           |  No   | No      | No       | No     |  Yes    | Yes           |
+| IAM - Platform - Administraor | Yes          |  Yes  | Yes     | Yes      | Yes    |  Yes    | Yes           |
+| IAM - Platform - Editor       | No           |  Yes  | Yes     | Yes      | Yes    |  Yes    | Yes           |
+{: caption="Table 2. Roles and service actions" caption-side="top"} 
 
 #### Service Action Mapping
 
