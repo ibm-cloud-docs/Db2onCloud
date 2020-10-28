@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-05-08"
+lastupdated: "2020-10-28"
 
 keywords: 
 
@@ -57,6 +57,14 @@ Users with an IBMid must be added to each database service instance by the datab
 {: #iam_serviceid}
 
 A service ID identifies a service or application similar to how a user ID identifies a user. The service IDs are IDs that can be used by applications to authenticate with an {{site.data.keyword.Bluemix_notm}} service. A service ID represents a separate entity from the owning IBMid. Therefore, different authorities and permissions can be granted specific to the service ID within the database. Service IDs do not have passwords. An API key must be created for each service ID for the service ID to connect to the database service instance. For more information about service IDs, see: [Introducing {{site.data.keyword.Bluemix_notm}} IAM Service IDs and API Keys](https://www.ibm.com/blogs/bluemix/2017/10/introducing-ibm-cloud-iam-service-ids-api-keys/){:external} and [Increase Information Security for Db2 on IBM Cloud](https://www.ibm.com/cloud/blog/increase-information-security-for-db2-on-ibm-cloud){:external}.
+
+## Roles and actions
+{: #iam_roles_actions}
+
+Every user that accesses the {{site.data.keyword.Db2_on_Cloud_short}} service in your account must be assigned an access policy with an IAM role. The access policy that you assign to users in your account determines what actions a user can perform within the context of the service or specific instance that you select. The allowable actions are customized and defined by {{site.data.keyword.Db2_on_Cloud_short}} as operations that are allowed to be performed on the service. Each action is mapped to an IAM platform or service role that you can assign to a user. If a specific role and its actions don't fit the use case that you're looking to address, you can [create a custom role](/docs/account?topic=account-custom-roles#custom-access-roles){: external} and pick the actions to include.
+
+For information about the exact actions mapped to each role, see [IAM roles and actions](/docs/account?topic=account-iam-service-roles-actions){: external} and [Db2](/docs/account?topic=account-iam-service-roles-actions#db2){: external}. 
+{: tip}
 
 ## Prerequisites
 {: #iam_prereqs}
