@@ -74,8 +74,12 @@ Before starting the legacy plan upgrade process, you'll need to complete the fol
    - IBM Db2 on Cloud Precise Performance 12.128.1400
    - IBM Db2 on Cloud Precise Performance 48.1000.10000 
 
-Additional information:
-  - [Video](https://video.ibm.com/recorded/128386612){: external} showing you how to upgrade from the legacy {{site.data.keyword.Db2_on_Cloud_short}} plans to the current Standard and Enterprise plans.
+<!--Additional information:
+  - [Video](https://video.ibm.com/recorded/128386612){: external} showing you how to upgrade from the legacy {{site.data.keyword.Db2_on_Cloud_short}} plans to the current Standard and Enterprise plans.-->
+
+Watch this video to see how to upgrade from the legacy {{site.data.keyword.Db2_on_Cloud_short}} plans to the current Standard and Enterprise plans.
+
+![Upgrade your Db2 on Cloud plan](https://video.ibm.com/embed/channel/23952663/video/db2-upgrade){: video output="iframe" data-script="none" id="watsonmediaplayer" width="560" height="315" scrolling="no" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0" style="border: 0 none transparent;"}
 
 ## Tracking the upgrade
 {: #ug_track}
