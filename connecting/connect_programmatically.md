@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-02-03"
+lastupdated: "2020-10-29"
 
 keywords:
 
@@ -46,6 +46,18 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 ### Procedure
 {: #proc61}
 
+#### Enterprise and Standard plans
+{: #conxn_ent_std}
+
+In each Java application, specify the user ID and password by including the **DriverManager.getConnection** method, and then include one of the following JDBC URL strings:
+
+- For a connection with SSL:
+
+  `jdbc:db2://<host_name>:<port>/bludb:user=<userid>;password=<your_password>;sslConnection=true;`
+
+#### Legacy plans
+{: #conxn_legacy}
+
 In each Java application, specify the user ID and password by including the **DriverManager.getConnection** method, and then include one of the following JDBC URL strings:
 
 - For a connection with SSL:
@@ -78,26 +90,46 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 The following steps show you how to connect your application to the database with .NET.
 
 1. From a command prompt, enter the following commands. These commands create new entries in the driver configuration file (`db2dsdriver.cfg`) on your computer and set the connection attributes. You need to do this step only one time.
-        
-   - For a connection with SSL:
 
-     `db2cli writecfg add -database BLUDB -host <hostname> -port 50001`
+   - Enterprise and Standard plans
 
-     `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50001`
+     - For a connection with SSL:
 
-     `db2cli writecfg add -database BLUDB -host <hostname> -port 50001 -parameter "SecurityTransportMode=SSL"`
+       `db2cli writecfg add -database BLUDB -host <hostname> -port <port>`
 
-     where:
+       `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port <port>`
 
-     `<hostname>`: The host name of the server.
-    
-     `<alias>`: The name for a DSN alias that you want to use to establish the .NET connection. Choose a name that is meaningful to you; for example, `analytics`. 
+       `db2cli writecfg add -database BLUDB -host <hostname> -port <port> -parameter "SecurityTransportMode=SSL"`
 
-   - For a connection without SSL:
+       where:
 
-     `db2cli writecfg add -database BLUDB -host <hostname> -port 50000`
+       `<hostname>`: The host name of the server
 
-     `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50000`
+       `<port>`: The port number of the server
+
+       `<alias>`: The name for a DSN alias that you want to use to establish the .NET connection. Choose a name that is meaningful to you; for example, `analytics`.
+
+   - Legacy plans
+
+     - For a connection with SSL:
+
+       `db2cli writecfg add -database BLUDB -host <hostname> -port 50001`
+
+       `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50001`
+
+       `db2cli writecfg add -database BLUDB -host <hostname> -port 50001 -parameter "SecurityTransportMode=SSL"`
+
+       where:
+
+       `<hostname>`: The host name of the server
+
+       `<alias>`: The name for a DSN alias that you want to use to establish the .NET connection. Choose a name that is meaningful to you; for example, `analytics`. 
+
+     - For a connection without SSL:
+
+       `db2cli writecfg add -database BLUDB -host <hostname> -port 50000`
+
+       `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50000`
 
 2. (*Optional*): To verify the .NET connection to the database, enter the following command at a command prompt:
 
@@ -194,24 +226,42 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 1. In a command shell on Linux operating systems, at the Windows command prompt, or in the Db2 command window on Windows operating systems, enter the following commands:
 
    **Note**: These commands create new entries in the driver configuration file (`db2dsdriver.cfg`) on your computer and set the connection attributes. You need to do this step only one time.
-   
-   - For a connection with SSL:
 
-     `db2cli writecfg add -database BLUDB -host <hostname> -port 50001 -parameter "SecurityTransportMode=SSL"`
+   - Enterprise and Standard plans
 
-     `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50001`
+     - For a connection with SSL:
 
-   - For a connection without SSL:
+       `db2cli writecfg add -database BLUDB -host <hostname> -port <port> -parameter "SecurityTransportMode=SSL"`
 
-     `db2cli writecfg add -database BLUDB -host <hostname> -port 50000`
+       `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port <port>`
 
-     `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50000`
+       where:
 
-   where:
+       `<hostname>`: The host name of the server
 
-   `<hostname>` is the host name of the server
+       `<port>`: The port number of the server
 
-   `<alias>` is a DSN alias that you choose
+       `<alias>`: The DSN alias that you choose
+
+   - Legacy plans
+
+     - For a connection with SSL:
+
+       `db2cli writecfg add -database BLUDB -host <hostname> -port 50001 -parameter "SecurityTransportMode=SSL"`
+
+       `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50001`
+
+     - For a connection without SSL:
+
+       `db2cli writecfg add -database BLUDB -host <hostname> -port 50000`
+
+       `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50000`
+
+       where:
+
+       `<hostname>`: The host name of the server
+
+       `<alias>`: The DSN alias that you choose
     
 2. (*Optional*): To test the connection to the database, run this command from the command prompt:
 
@@ -294,12 +344,12 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 
    ```
    <?php
-   $database = "BLUDB";        # Get these database details from
-   $hostname = "<Host-name>";  # the web console
-   $user     = "<User-ID >";   #
-   $password = "<Password>";   #
-   $port     = 50000;          #
-   $ssl_port = 50001;          #
+   $database = "BLUDB";          # Get these database details from
+   $hostname = "<Host-name>";    # the web console
+   $user     = "<User-ID >";     #
+   $password = "<Password>";     #
+   $port     = "<non-ssl_port>"; #
+   $ssl_port = "<port>";         #
    # Build the connection string
    #
    $driver  = "DRIVER={IBM DB2 ODBC DRIVER};";
