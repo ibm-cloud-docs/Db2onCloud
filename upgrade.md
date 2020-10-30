@@ -149,9 +149,6 @@ The upgrade process can be initiated only one time per source. After the new {{s
 - Users can continue using the source until transition is initiated. The average transition period is about two minutes. In case the transition has not completed even after 30 minutes, you are recommended to continue using the source. The {{site.data.keyword.Db2_on_Cloud_short}} Operations team will be alerted if there is an issue with the transition and will re-enable the button when it is possible to transition again.
 - After the upgrade and transition to the new instance has completed, you should delete your legacy system. This is a final step that you should initiate, otherwise, the upgraded legacy instances will be blocked after **November 9, 2020**, and decommissioned in November if upgrades were successfully completed; unless a support case has been opened to request an extension.
 
-The current Standard and Enterprise plans VCAP Services json file is different from that of the legacy plans. Any of your applications that consume the legacy plan VCAP Services json file must be changed to handle the current Standard and Enterprise plan json file. For more information about the Standard and Enterprise VCAP Services json file, see [Connectivity options](https://cloud.ibm.com/docs/Db2onCloud?topic=Db2onCloud-connect_options){: external}.
-{: important}
-
 ## Billing during the upgrade
 {: #ug_billing}
 
@@ -272,6 +269,12 @@ You must be a platform admin user on both source and target plan instances.
 {: support}
 
 We'll move your data, DDL, and all of your database users. All that you must do is update your applications to use a new hostname and port.
+
+The current Standard and Enterprise plans VCAP Services json file is different from that of the legacy plans. Any of your applications that consume the legacy plan VCAP Services json file must be changed to handle the current Standard and Enterprise plan json file. For more information about the Standard and Enterprise VCAP Services json file, see [Connectivity options](https://cloud.ibm.com/docs/Db2onCloud?topic=Db2onCloud-connect_options){: external}.
+{: important}
+
+Because {{site.data.keyword.Db2_on_Cloud_short}} Standard and Enterprise plans do not run with the `DB2_WORKLOAD=ANALYTICS` registry parameter, the behavior of the COUNT aggregate function has changed. COUNT now returns an **INTEGER**, not a DECIMAL value. For more information, see [COUNT aggregate function](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000759.html){: external}.
+{: important}
 
 <!--
 ### What is the V2 upgrade timeline?
