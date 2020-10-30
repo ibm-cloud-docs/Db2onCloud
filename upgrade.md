@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-10-29"
+lastupdated: "2020-10-30"
 
 keywords: upgrade, Db2 on Cloud, Standard plan, Enterprise plan, legacy
 
@@ -30,6 +30,9 @@ subcollection: Db2onCloud
 The following document describes the process to upgrade from the legacy {{site.data.keyword.Db2_on_Cloud_short}} plans to the current **Standard** and **Enterprise** plans. Henceforth, the existing legacy plan instance is referred to as the "source" and the newly provisioned Standard or Enterprise plan instance for the upgrade is referred to as the "target".
 {: shortdesc}
 
+Effective **28-Oct-2020**, the timeline originally communicated has been extended. The dates currently noted in these instructions now reflect an extended timeline for key milestones. The adjustment is to help customers avoid business impact and resolve any technical issues. The new timeline allows self-initiated upgrades to continue until **November 5, 2020** instead of the prior cutoff of October 15, 2020. Auto-upgrades for instances that have not taken any action have also been delayed from October 16, 2020 to **November 9, 2020**.   Self-transition must complete by **November 15, 2020**. After November 9, 2020 instances with no action will be upgraded in batches through to **November 17, 2020** and access will be restricted to legacy instances as the batches are auto-upgraded; then you'll be notified that recovery is available.
+{: important}
+
 For more information about the affected legacy plans and the new replacement plans, see [Deprecation of the Db2 on Cloud Legacy Plans and Availability of New Replacement Plans](https://www.ibm.com/cloud/blog/announcements/deprecation-of-the-db2-on-cloud-legacy-plans-and-availability-of-new-replacement-plans){: external}.
 
 You can also refer to the [What's New in IBM Db2 on Cloud](https://www.ibm.com/support/pages/node/739537){: external} where the new plans and features were announced. 
@@ -42,13 +45,13 @@ The legacy plan upgrade is currently available in the following data centers:
 - Tokyo
 - Washington
 
-The legacy plan upgrade will be available in the following data centers by **October 30, 2020**:
+The legacy plan upgrade will be available in the **Montréal** data center by **November 16, 2020** and in the following data centers by **November 6, 2020**:
 - Amsterdam
 - Milan
 - Paris
 - Toronto
 
-For those of you with a **HIPAA** requirement, the new systems are targeted to be ready by **October 30, 2020**. 
+For those of you with a **HIPAA** requirement, the new systems were made available on **October 20, 2020**. 
 
 Legacy-style disaster recovery (DR) is planned to be supported by **November 30, 2020**. However, [read more](#q_leverage_ha) about the high-availability nodes spanning multiple zones now available with the new plans to determine if this satisfies your DR requirements.
 
@@ -144,7 +147,7 @@ The upgrade process can be initiated only one time per source. After the new {{s
 - Any DDL changes on the source DURING or AFTER the upgrade process might not be replicated on the target. It is recommended that no DDL changes are attempted on the source after the upgrade is initiated.
 - It is recommended that users do not insert, update or delete any data on the target during the upgrade. Any read operation is possible and can be used to verify the data migration
 - Users can continue using the source until transition is initiated. The average transition period is about two minutes. In case the transition has not completed even after 30 minutes, you are recommended to continue using the source. The {{site.data.keyword.Db2_on_Cloud_short}} Operations team will be alerted if there is an issue with the transition and will re-enable the button when it is possible to transition again.
-- After the upgrade and transition to the new instance has completed, you should delete your legacy system. This is a final step that you should initiate, otherwise, after instances are blocked on **November 2, 2020**, legacy instances will be decommissioned in November if upgrades were successfully completed; unless a support case has been opened to request an extension.
+- After the upgrade and transition to the new instance has completed, you should delete your legacy system. This is a final step that you should initiate, otherwise, the upgraded legacy instances will be blocked after **November 9, 2020**, and decommissioned in November if upgrades were successfully completed; unless a support case has been opened to request an extension.
 
 The current Standard and Enterprise plans VCAP Services json file is different from that of the legacy plans. Any of your applications that consume the legacy plan VCAP Services json file must be changed to handle the current Standard and Enterprise plan json file. For more information about the Standard and Enterprise VCAP Services json file, see [Connectivity options](https://cloud.ibm.com/docs/Db2onCloud?topic=Db2onCloud-connect_options){: external}.
 {: important}
@@ -153,7 +156,7 @@ The current Standard and Enterprise plans VCAP Services json file is different f
 {: #ug_billing}
 
 - You are NOT billed for the target during the upgrade. You will be billed for the source as usual.
-- If you do not initiate transition after a period of 2 weeks since the option was available, you will be billed for the target
+- If you do not initiate transition after a period of 2 weeks since the option was available and you have 2 active systems, you might be billed for the target
 - After the upgrade is complete, you will be billed for the target and will NOT be billed for the source
 - If you do not delete the source plan prior to the end of the 2 week grace period following completion of the upgrade, you will then be billed for the source again
 
@@ -163,7 +166,7 @@ The current Standard and Enterprise plans VCAP Services json file is different f
 This is a collection of frequently asked questions (FAQ) about upgrading the {{site.data.keyword.Db2_on_Cloud_long}} plans. We'll add more questions over time. [Create a case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} if you have any questions about the upgrade and migration.
 {: shortdesc}
 
-Email notifications are being sent to customers associated with existing {{site.data.keyword.Db2_on_Cloud_short}} legacy plan instances. If you have not been receiving email notifications, ensure that account email addresses for {{site.data.keyword.Db2_on_Cloud_short}} plans are up to date. Many of you received an email alerting you to our new Standard and Enterprise plans, and the need for you to upgrade your legacy plans to our new plans via our online upgrade process, because we are deprecating support for our legacy plans. Upgrades will start in **August**. You have until **October 15, 2020** to initiate your upgrade and until **October 30, 2020** to complete testing and connect to your new system. Access to legacy systems will not be available after **November 1, 2020** and these systems will be decommissioned during November.
+Email notifications are being sent to customers associated with existing {{site.data.keyword.Db2_on_Cloud_short}} legacy plan instances. If you have not been receiving email notifications, ensure that account email addresses for {{site.data.keyword.Db2_on_Cloud_short}} plans are up to date. Many of you received an email alerting you to our new Standard and Enterprise plans, and the need for you to upgrade your legacy plans to our new plans via our online upgrade process, because we are deprecating support for our legacy plans. Upgrades will start in **August**. You have until **November 5, 2020** to initiate your upgrade and until **November 15, 2020** to complete testing and transition to your new system. After **November 9, 2020**, instances with no action will be upgraded in batches through to **November 17, 2020** and access will be restricted to legacy instances as the batches are auto-upgraded; then you'll be notified that recovery is available.
 {: important}
 
 ### How long will the upgrade take from Phase 0 to Phase 4 (Transition Ready)?
@@ -237,9 +240,9 @@ Standard and Enterprise plans provide automated redundancy across 3 different da
 {: faq}
 {: support}
 
-{{site.data.keyword.Db2_on_Cloud_short}} Standard and Enterprise plans will provide support for data centers in Amsterdam, Milan, Paris, and Toronto. However, these data centers are not currently available; we expect to support these by **October 30, 2020**. HIPAA and Cross-Region DR are targeted to be available by **October 30** and **November 30, 2020**, respectively. EU Cloud compliance certification will be available by **February, 2021**.
+{{site.data.keyword.Db2_on_Cloud_short}} Standard and Enterprise plans will provide support for data centers in Amsterdam, Milan, Paris, and Toronto. However, these data centers are not currently available; we expect to support these by **November 6, 2020**. Cross-Region DR is targeted to be available by **November 30, 2020**. EU Cloud compliance certification will be available by **February, 2021**.
 
-If any of these features remain a hard requirement for your new system, you must [create a support case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} to obtain an extension beyond the published deadlines for initiating upgrades (**October 15, 2020**) and completing the transition (**November 1, 2020**). Our team will work with you to extend the deadlines, ensure that there is no service disruption on **November 2, 2020**, and provide additional time to complete the upgrade. All upgrades must be completed by **November 30, 2020**. We'll provide more instructions in the support case to coordinate the upgrade for the specific hostnames that are impacted. 
+If any of these features remain a hard requirement for your new system, you must [create a support case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} (include the affected hostnames) to obtain an extension beyond the published deadlines for initiating upgrades (**November 5, 2020**) and completing the transition (**November 15, 2020**). Our team will work with you to extend the deadlines, ensure that there is no service disruption on **November 9, 2020**, and provide additional time to complete the upgrade. All upgrades must be completed by **November 30, 2020**. We'll provide more instructions in the support case to coordinate the upgrade for the specific hostnames that are impacted. 
 
 It remains important that you schedule time to complete upgrades within the published extension timeline and not delay. Even if your support case granted an extension under this scenario, your systems will be blocked and automatic upgrading will begin on **December 1, 2020** if the upgrade has not completed by **November 30, 2020**. If there is a further delay for us to deliver any of these features beyond **November 30, 2020**, we'll seek an exception for you to continue using your legacy system until we delivery that feature. 
 
@@ -284,7 +287,7 @@ We will send out notifications starting in **early August**. As we finish the pr
 {: faq}
 {: support}
 
-If you don't initiate the upgrade from your {{site.data.keyword.Db2_on_Cloud_short}} legacy plan by **October 15, 2020**, we will start the [upgrade](/docs/Db2onCloud?topic=Db2onCloud-auto_upgrade_plans){: external} on your behalf by creating a new {{site.data.keyword.Db2_on_Cloud_short}} plan instance, moving your data, DDL, and users into your new plan. Your legacy plan instance will remain in your dashboard list of resources and you will continue to be billed for this legacy plan instance, but, under the covers, your instance will be a Standard or Enterprise plan. It is strongly recommended that you complete the plan upgrade to the new {{site.data.keyword.Db2_on_Cloud_short}} Standard or Enterprise plan. In most cases, the upgrade will lower your monthly costs.
+If you don't initiate the upgrade from your {{site.data.keyword.Db2_on_Cloud_short}} legacy plan by **November 5, 2020**, we will start the [upgrade](/docs/Db2onCloud?topic=Db2onCloud-auto_upgrade_plans){: external} on your behalf by creating a new {{site.data.keyword.Db2_on_Cloud_short}} plan instance, moving your data, DDL, and users into your new plan. Your legacy plan instance will remain in your dashboard list of resources and you will continue to be billed for this legacy plan instance until we restrict access. It is strongly recommended that you complete the plan upgrade to the new {{site.data.keyword.Db2_on_Cloud_short}} Standard or Enterprise plan. In most cases, the upgrade will lower your monthly costs.
 
 <!--More details about how you can connect to your auto-upgraded plan and how you will be billed will be provided in the near future.-->
 
@@ -333,9 +336,9 @@ The owner of your {{site.data.keyword.cloud_notm}} account that is associated wi
 {: faq}
 {: support}
 
-This is a generic alert on all legacy dashboards to provide another channel of communications for this required upgrade. If you are following the upgrade instructions and timeline in this document, there is no change with the existing information that describes key dates and upgrade steps. We hope that you were able to initiate upgrades through the cloud catalog and had a positive experience. **October 15, 2020** was an important milestone after which self-initiated upgrades were no longer available unless an extension was granted as a [feature availability gap](#q_feat_not_avail) or you experienced a technical issue or business impact; either situation would require a [support case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} where we will coordinate with you on the next steps and, if needed, extend downstream timelines.
+This is a generic alert on all legacy dashboards to provide another channel of communications for this required upgrade. This alert was published before the timeline was extended on October 28, 2020 - so the alert is incorrect at this point - you can rely on the information in this document as up-to-date and accurate. If you are following the upgrade instructions and timeline in this document, there is no change with the existing information that describes key dates and upgrade steps. We hope that you were able to initiate upgrades through the cloud catalog and had a positive experience. **November 5, 2020** is an important milestone after which self-initiated upgrades are no longer available unless an extension was granted as a [feature availability gap](#q_feat_not_avail) or you experienced a technical issue or business impact; either situation would require a [support case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} where we will coordinate with you on the next steps and, if needed, extend downstream timelines.
 
-In general, access to legacy systems will not be available after **November 1, 2020**. If you have an upgrade underway, which does not complete by November 1, 2020 or if you have an open support case to resolve technical or business issues, your instance will not be auto-transitioned and we'll coordinate through the support case or grant an additional 5 business days after sync is ready. Instructions to recover your instance(s) to quickly get up and running under a new Standard or Enterprise plan will be available starting **November 2, 2020**. It's important to IBM that this upgrade not impact your business. If the alert and related timeline comes as a surprise, we urge you to review all of the information in this document and, if needed, open a [support case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} to request an extension on the access restriction prior to **November 1, 2020**. Otherwise, the upgrade timeline will apply and you'll need to follow the recovery steps for [auto-upgraded instances](/docs/Db2onCloud?topic=Db2onCloud-auto_upgrade_plans){: external}.
+In general, we must restrict access to legacy systems with no upgrade activity so that our operations team can have enough time to auto-upgrade remaining systems prior to the End of Life occurring on **November 30, 2020**. Therefore, after **November 9, 2020**, instances with no action will be upgraded in batches through to **November 17, 2020** and access will be restricted to legacy instances as the batches are auto-upgraded; then you'll be notified that recovery is available. If you have an upgrade underway, which does not complete by **November 15, 2020** or if you have an open support case to resolve technical or business issues, your instance will not be auto-transitioned and we'll coordinate through the support case or grant an additional 5 business days after sync is ready. Instructions to recover your instance(s) to quickly get up and running under a new Standard or Enterprise plan will be available starting **November 9, 2020**. It's important to IBM that this upgrade not impact your business. If the alert and related timeline comes as a surprise, we urge you to review all of the information in this document and, if needed, open a [support case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} to request an extension on the access restriction prior to **November 5, 2020**. Otherwise, the upgrade timeline will apply and you'll need to follow the recovery steps for [auto-upgraded instances](/docs/Db2onCloud?topic=Db2onCloud-auto_upgrade_plans){: external}.
 
 ### How can I learn more?
 {: #q_learn_more}
