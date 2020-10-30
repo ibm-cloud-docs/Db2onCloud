@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-10-26"
+lastupdated: "2020-10-30"
 
 keywords: 
 
@@ -63,10 +63,10 @@ Console access is controlled by IAM. An IAM user can be assigned access by the I
 
 | Role         | User mgmt | SQL editor/tables | Monitoring info | Settings (includes scale, backup, etc.) | Info panels |
 |--------------|-----------|-------------------|-----------------|-----------------------------------------|-------------|
-| IAM - Platform - Operator     | No | No (unless mapped to Db2 user) | Yes | Yes | Yes |
 | IAM - Platform - Viewer       | No | No (unless mapped to Db2 user) | Yes | No  | Yes |
-| IAM - Platform - Administraor | Yes | No (unless mapped to Db2 user) | Yes | Yes | Yes |
+| IAM - Platform - Operator     | No | No (unless mapped to Db2 user) | Yes | Yes | Yes |
 | IAM - Platform - Editor       | No | No (unless mapped to Db2 user) | Yes | Yes | Yes |
+| IAM - Platform - Administrator | Yes | No (unless mapped to Db2 user) | Yes | Yes | Yes |
 | Non-IAM, but autheticate with JDBC | Only "Change password" | Yes | No | No | Yes |
 {: caption="Table 1. Roles and console permissions" caption-side="top"}
 
@@ -77,10 +77,10 @@ Service action access is also controlled by IAM Roles. An IAM user can be assign
 
 | Role                          | Manage-users | Scale | Restore | Settings | Backup | Monitor | View settings |
 |-------------------------------|--------------|-------|---------|----------|--------|---------|---------------|
-| IAM - Platform - Operator     | No           |  Yes  | Yes     | Yes      | Yes    |  Yes    | Yes           |
 | IAM - Platform - Viewer       | No           |  No   | No      | No       | No     |  Yes    | Yes           |
-| IAM - Platform - Administraor | Yes          |  Yes  | Yes     | Yes      | Yes    |  Yes    | Yes           |
+| IAM - Platform - Operator     | No           |  Yes  | Yes     | Yes      | Yes    |  Yes    | Yes           |
 | IAM - Platform - Editor       | No           |  Yes  | Yes     | Yes      | Yes    |  Yes    | Yes           |
+| IAM - Platform - Administrator | Yes          |  Yes  | Yes     | Yes      | Yes    |  Yes    | Yes           |
 {: caption="Table 2. Roles and service actions" caption-side="top"} 
 
 ## Legacy plans
