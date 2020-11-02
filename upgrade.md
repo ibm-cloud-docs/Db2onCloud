@@ -43,7 +43,7 @@ The legacy plan upgrade is currently available in the following data centers:
 - London
 - Sydney
 - Tokyo
-- Washington
+- Washington, DC
 
 The legacy plan upgrade will be available in the **Montréal** data center by **November 16, 2020** and in the following data centers by **November 6, 2020**:
 - Amsterdam
