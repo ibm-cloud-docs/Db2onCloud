@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-10-08"
+lastupdated: "2020-11-02"
 
 keywords: 
 
@@ -25,6 +25,7 @@ subcollection: Db2onCloud
 {: #about}
 
 {{site.data.keyword.Db2_on_Cloud_long}} is a fully managed public cloud service on {{site.data.keyword.cloud_notm}}. As a relational database, it delivers fast query processing with enterprise-level performance and capabilities for online transactional processing (OLTP). The new Enterprise High Availability plan runs the powerful Db2 11.5 engine, and also provides multizone region support in a three HA node configuration to ensure ultimate redundancy.
+{: shortdesc}
 
 ## Key features
 {: #ab_key_features}
@@ -89,8 +90,18 @@ You can use the web console to perform many key tasks, such as loading data, wor
 - A Flex plan in which you can independently scale RAM, storage, and compute resources
 - Precise Performance plans that provide fixed resources and bare metal servers
 
-Stay tuned for information about migrating your legacy plan to one of the current plans.
+For more information about migrating your legacy plan to one of the current Standard and Enterprise plans, see [Upgrading {{site.data.keyword.Db2_on_Cloud_short}} plans](/docs/Db2onCloud?topic=Db2onCloud-upgrade_plans){: external}.
 
+## Supported datacenters
+{: #ab_sup_dcs}
+
+The Standard and Enterprise plans are supported in the following geographies:
+- Dallas
+- Frankfurt
+- London
+- Sydney
+- Tokyo
+- Washington
 
 <!--
 
