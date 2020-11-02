@@ -89,7 +89,19 @@ You can use the web console to perform many key tasks, such as loading data, wor
 - A Flex plan in which you can independently scale RAM, storage, and compute resources
 - Precise Performance plans that provide fixed resources and bare metal servers
 
-Stay tuned for information about migrating your legacy plan to one of the current plans.
+For more information on migrating your legacy plan to one of the current plan, click on [Upgarding to the current plan](https://cloud.ibm.com/docs/Db2onCloud?topic=Db2onCloud-upgrade_plans)
+
+## Supported DataCenters
+
+The Enterprise and Standard Plans are supported in the following geographies:
+  - Dallas
+  - Washington DC
+  - London
+  - Frankfurt
+  - Tokyo
+  - Sydney
+
+
 
 
 <!--
