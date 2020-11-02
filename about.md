@@ -92,7 +92,7 @@ You can use the web console to perform many key tasks, such as loading data, wor
 
 For more information about migrating your legacy plan to one of the current Standard and Enterprise plans, see [Upgrading {{site.data.keyword.Db2_on_Cloud_short}} plans](/docs/Db2onCloud?topic=Db2onCloud-upgrade_plans){: external}.
 
-## Supported datacenters
+## Supported data centers
 {: #ab_sup_dcs}
 
 The Standard and Enterprise plans are supported in the following geographies:
