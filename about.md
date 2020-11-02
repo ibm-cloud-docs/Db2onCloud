@@ -95,7 +95,7 @@ For more information about migrating your legacy plan to one of the current Stan
 ## Supported data centers
 {: #ab_sup_dcs}
 
-The Standard and Enterprise plans are supported in the following geographies:
+The Standard and Enterprise plans are supported in the following data center geographies:
 - Dallas
 - Frankfurt
 - London
