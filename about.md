@@ -101,7 +101,7 @@ The Standard and Enterprise plans are supported in the following geographies:
 - London
 - Sydney
 - Tokyo
-- Washington
+- Washington, DC
 
 <!--
 
