@@ -108,7 +108,7 @@ DB20000I  The SQL command completed successfully.
 Test the connection to the new server by running the following commands from the console of the target database instance:
 
 ```
-db2 "set passthru fed_server"
+set passthru fed_server
 ```
 {: codeblock}
 
@@ -117,7 +117,7 @@ DB20000I  The SQL command completed successfully.
 ```
 
 ```
-db2 "select * from testdb.test1"
+select * from testdb.test1
 ```
 {: codeblock}
 
@@ -130,7 +130,7 @@ C1          C2
 ```
 
 ```
-db2 "SET PASSTHRU RESET"
+SET PASSTHRU RESET
 ```
 {: codeblock}
 
@@ -144,7 +144,7 @@ DB20000I  The SQL command completed successfully.
 
 Create a nickname for the remote database and test the nickname by running the following commands from the console of the target database instance:
 ```
-db2 "create nickname rmttest1 FOR fed_server.testdb.test1"
+create nickname rmttest1 FOR fed_server.testdb.test1
 ```
 {: codeblock}
 
@@ -153,7 +153,7 @@ DB20000I  The SQL command completed successfully.
 ```
 
 ```
-db2 "select * from testdb.rmttest1"
+select * from rmttest1
 ```
 {: codeblock}
 
