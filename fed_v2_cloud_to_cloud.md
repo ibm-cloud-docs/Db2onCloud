@@ -153,7 +153,7 @@ DB20000I  The SQL command completed successfully.
 ```
 
 ```
-db2 "select * from testdb.rmttest1"
+db2 "select * from rmttest1"
 ```
 {: codeblock}
 
