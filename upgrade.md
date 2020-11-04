@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-10-30"
+lastupdated: "2020-11-04"
 
 keywords: upgrade, Db2 on Cloud, Standard plan, Enterprise plan, legacy
 
@@ -45,10 +45,12 @@ The legacy plan upgrade is currently available in the following data centers:
 - Tokyo
 - Washington, DC
 
-The legacy plan upgrade will be available in the **Montréal** data center by **November 16, 2020** and in the following data centers by **November 6, 2020**:
+The legacy plan upgrade will be available in the following data centers by **November 16, 2020**:
 - Amsterdam
 - Milan
+- Montréal
 - Paris
+- Sao Paulo
 - Toronto
 
 For those of you with a **HIPAA** requirement, the new systems were made available on **October 20, 2020**. 
