@@ -35,5 +35,37 @@ The following examples are helpful use cases for using a copy of a database:
 ## Prerequisites
 {: #cp_prereqs}
 
-The Copy Database feature in the {{site.data.keyword.Db2_on_Cloud_short}} service copies a database from one service instance to another, overwriting everything on the target service instance. To use the feature, both the source and target {{site.data.keyword.Db2_on_Cloud_short}} service instances must exist and be in a resource group. In addition, if your {{site.data.keyword.Db2_on_Cloud_short}} service instance is a Cloud Foundry service, you must migrate your service instance and apps to a resource group. For more information about the migration, see [Migrating Cloud Foundry service instances and apps to a resource group](/docs/account?topic=account-migrate).
+The Copy Database feature in the {{site.data.keyword.Db2_on_Cloud_short}} service copies a database from one service instance to a new service instance. To use this feature, a backup of the current database must exist.
 
+## Copying a running instance
+
+### Select a backup
+To copy your instance to a new service instance
+1. select `Administration` from the menu on the left
+2. select `Backup` from the tab on the top
+3. select a backup to copy to a new instance
+4. click on `Clone`
+
+![Select a backup to Copy](images/cloning_select.png "Select a backup to copy"){: caption="Figure 1. Select a backup to copy to a new instance" caption-side="bottom"}
+
+### Creating the new copy instance
+Enter information for the new copy instance
+1. select the datacenter for the new copy instance under `Datacenter location`
+2. enter a name for under `Service name`
+3. select the resource group of the new instance under `Resource group`
+4. pick `High availibity configuration`
+5. select a `Pricing plan`
+6. click on `Clone`
+
+
+![Create the new copy](images/cloning_new_instance.png "Create the new copy"){: caption="Figure 2. Create a new copy instance" caption-side="bottom"}
+
+### Progress
+The notifications icon on the top right of the console will show the progress of the copy
+
+![Copy rogress](images/cloning_progress.png "Copy progress"){: caption="Figure 3. Copy progress" caption-side="bottom"}
+
+### Copy Success
+Once the copy has successfully completed, the notifications icon will display a success message.
+
+![Copy success](images/cloning_success.png "Copy success"){: caption="Figure 4. Copy success" caption-side="bottom"}
