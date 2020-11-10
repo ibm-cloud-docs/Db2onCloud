@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2019
-lastupdated: "2019-11-18"
+  years: 2014, 2020
+lastupdated: "2020-11-06"
 
 keywords: 
 
@@ -35,5 +35,46 @@ The following examples are helpful use cases for using a copy of a database:
 ## Prerequisites
 {: #cp_prereqs}
 
-The Copy Database feature in the {{site.data.keyword.Db2_on_Cloud_short}} service copies a database from one service instance to another, overwriting everything on the target service instance. To use the feature, both the source and target {{site.data.keyword.Db2_on_Cloud_short}} service instances must exist and be in a resource group. In addition, if your {{site.data.keyword.Db2_on_Cloud_short}} service instance is a Cloud Foundry service, you must migrate your service instance and apps to a resource group. For more information about the migration, see [Migrating Cloud Foundry service instances and apps to a resource group](/docs/account?topic=account-migrate).
+The Copy Database feature in the {{site.data.keyword.Db2_on_Cloud_short}} service copies a database from one service instance to a new service instance. To use this feature, a backup of the current database must exist.
+
+## Copying a running instance
+{: #cp_running_inst}
+
+### Select a backup
+{: #cp_bkup}
+
+To copy your instance to a new service instance:
+1. Select **Administration** from the left menu.
+1. Select the **Backups** tab.
+1. Select a backup to copy to a new instance.
+1. Click **Clone**.
+
+![Select a backup to Copy](images/cloning_select.png "Select a backup to copy"){: caption="Figure 1. Select a backup to copy to a new instance" caption-side="bottom"}
+
+### Creating the copy instance
+{: #cp_create_inst}
+
+Enter information for the new copy instance:
+1. Select the data center location for the new copy instance under **Datacenter location**.
+1. Enter a name under **Service name**.
+1. Select the resource group of the new instance under **Resource group**.
+1. Select **Yes** for **High availibity configuration**.
+1. Select a **Pricing plan**.
+1. Click **Clone**.
+
+![Create the new copy](images/cloning_new_instance.png "Create the new copy"){: caption="Figure 2. Create a new copy instance" caption-side="bottom"}
+
+### Progress
+{: #cp_prog}
+
+The **Notifications** icon of the console shows the progress of the copy process.
+
+![Copy progress](images/cloning_progress.png "Copy progress"){: caption="Figure 3. Copy progress" caption-side="bottom"}
+
+### Copy completion
+{: #cp_fin}
+
+After successful completion of the copy process, the **Notifications** icon displays a success message.
+
+![Copy successfully completed](images/cloning_success.png "Copy success"){: caption="Figure 4. Copy successfully completed" caption-side="bottom"}
 

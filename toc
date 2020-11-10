@@ -48,6 +48,7 @@ Db2 on Cloud
         dr.md
         log_mon.md
         maintenance.md
+        self_serve_update.md
 
         {: .topicgroup}
         Federation
