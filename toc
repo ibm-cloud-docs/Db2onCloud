@@ -38,10 +38,10 @@ Db2 on Cloud
 
         {: .topicgroup}
         Upgrading
-            wn.md
             upgrade.md
             auto_upgrade.md
             recovery.md
+            wn.md
         
         cdc.md
         rc.md
