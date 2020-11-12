@@ -30,6 +30,9 @@ subcollection: Db2onCloud
 
 Enterprise and Standard plans give you the ability to apply system updates to your instances at a time of your choosing. 
 
+The update process can be disruptive, especially for single node instances, so it's advisable to run the update during a maintenance window.
+{: important}
+
 ### Notification
 {: #ssu_notif}
 
@@ -43,9 +46,6 @@ Clicking **View details** brings up the **System update** information window tha
 
 ### Updating
 {: #ssu_updating}
-
-The update process can be disruptive, especially for single node instances, so it's advisable to run the update during a maintenance window.
-{: important}
 
 You can click **Update now** to initiate the update when you're ready. 
 
