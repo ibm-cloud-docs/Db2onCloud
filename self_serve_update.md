@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-11-05"
+lastupdated: "2020-11-12"
 
 keywords: self-serve, system update, plan
 
@@ -44,7 +44,10 @@ Clicking **View details** brings up the **System update** information window tha
 ### Updating
 {: #ssu_updating}
 
-You can click **Update now** to initiate the update when you're ready. The update process can be disruptive, especially for single node instances, so it's advisable to run the update during a maintenance window.
+The update process can be disruptive, especially for single node instances, so it's advisable to run the update during a maintenance window.
+{: important}
+
+You can click **Update now** to initiate the update when you're ready. 
 
 With the update initiated, a progress window is presented under the **Notifications** icon.
 
