@@ -46,7 +46,7 @@ If you have not started the upgrade process from your legacy plan, you will be a
 
    ![Copy the legacy plan CRN](images/recovery_CRN_blur.png "Copy the legacy plan CRN"){: caption="Figure 4. Copy the legacy plan CRN" caption-side="bottom"}
 
-4. Order a Standard or Enterprise instance, specifing the legacy plan CRN in the recovery field to start the recovery process.
+4. Order a Standard or Enterprise instance, specifying the legacy plan CRN in the recovery field to start the recovery process.
 
    ![Intiate the recovery](images/recovery_v2.png "Initiate the recovery"){: caption="Figure 5. Initiate the recovery" caption-side="bottom"}
 
