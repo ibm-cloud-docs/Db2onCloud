@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-11-11"
+lastupdated: "2020-11-13"
 
 keywords: upgrade, Db2 on Cloud, Standard plan, Enterprise plan, legacy
 
@@ -87,9 +87,7 @@ Before starting the legacy plan upgrade process, you'll need to complete the fol
 
    ![Copy the legacy plan CRN](images/recovery_CRN_blur.png "Copy the legacy plan CRN"){: caption="Figure 4. Copy the legacy plan CRN" caption-side="bottom"}
 
-4. Order a Standard or Enterprise instance, specifing the legacy plan CRN in the recovery field to start the recovery process.
-
-   ![Intiate the upgrade](images/recovery_v2.png "Initiate the upgrade"){: caption="Figure 5. Initiate the upgrade" caption-side="bottom"}
+4. Order a Standard or Enterprise instance, specifying the legacy plan CRN in the **Upgrade** field to start the upgrade process.
 
 5. The new {{site.data.keyword.Db2_on_Cloud_short}} service instance is visible under **Services**. You can read the data on the target system while the upgrade occurs, but do not update or delete any data on the target.
 
@@ -98,6 +96,8 @@ Before starting the legacy plan upgrade process, you'll need to complete the fol
 Watch this video to see how to upgrade from the legacy {{site.data.keyword.Db2_on_Cloud_short}} plans to the current Standard and Enterprise plans.
 
 ![Upgrade your Db2 on Cloud plan](https://video.ibm.com/embed/channel/23952663/video/db2-upgrade){: video output="iframe" data-script="none" id="watsonmediaplayer" width="560" height="315" scrolling="no" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0" style="border: 0 none transparent;"}
+
+<!-- ![Intiate the upgrade](images/recovery_v2.png "Initiate the upgrade"){: caption="Figure 5. Initiate the upgrade" caption-side="bottom"} -->
 
 <!--
 ## Tracking the self-initiated upgrade
