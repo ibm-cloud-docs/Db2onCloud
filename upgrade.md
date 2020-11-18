@@ -211,12 +211,12 @@ The legacy plan upgrade is currently available in the following data centers:
 - London
 - Milan
 - Montréal
+- Paris
 - Sao Paulo
 - Sydney
 - Tokyo
 - Toronto
 - Washington, DC
-<!-- - Paris -->
 
 <!--
 The legacy plan upgrade will be available in the following data centers by **November 16, 2020**:
