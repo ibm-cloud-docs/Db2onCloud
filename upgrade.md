@@ -285,7 +285,7 @@ You must be a platform admin user on both source and target plan instances.
 {: faq}
 {: support}
 
-See [Differences between legacy and current plans](/docs/Db2onCloud?topic=Db2onCloud-wn){: external}.
+See [Differences between legacy and current plans](/docs/Db2onCloud?topic=Db2onCloud-plan_diffs){: external}.
 
 <!--
 The current Standard and Enterprise plans VCAP Services json file is different from that of the legacy plans. Any of your applications that consume the legacy plan VCAP Services json file must be changed to handle the current Standard and Enterprise plan json file. For more information about the Standard and Enterprise VCAP Services json file, see [Connectivity options](https://cloud.ibm.com/docs/Db2onCloud?topic=Db2onCloud-connect_options){: external}.
