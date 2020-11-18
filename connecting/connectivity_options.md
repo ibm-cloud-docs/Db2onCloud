@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-10-28"
+lastupdated: "2020-11-18"
 
 keywords:
 
@@ -137,8 +137,8 @@ The following VCAP Services json file can be used to make connections to your En
     "db2": {
       "authentication": {
         "method": "direct",
-        "password": "e2haTt1FJ7m3UQXY",
-        "username": "ipa8emxc"
+        "password": "<password>",
+        "username": "<user_name>"
       },
       "certificate": {
         "certificate_base64": "<certificate_code>",
