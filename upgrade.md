@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-11-13"
+lastupdated: "2020-11-18"
 
 keywords: upgrade, Db2 on Cloud, Standard plan, Enterprise plan, legacy
 
@@ -205,21 +205,28 @@ Lite plan instances do not require an upgrade. Lite plan instance names contain 
 {: support}
 
 The legacy plan upgrade is currently available in the following data centers:
+- Amsterdam
 - Dallas
 - Frankfurt
 - London
+- Milan
+- Montréal
+- Sao Paulo
 - Sydney
 - Tokyo
+- Toronto
 - Washington, DC
+<!-- - Paris -->
 
+<!--
 The legacy plan upgrade will be available in the following data centers by **November 16, 2020**:
 - Amsterdam
 - Milan
-- Montréal
+- Montréal -->
 <!-- - Paris -->
-- Sao Paulo
+<!-- - Sao Paulo
 - Toronto
-
+-->
 We will also support **EU-Cloud compliant** instances in Frankfurt at a later date. [Create a support case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} if you have questions.
 
 ### How long will the upgrade take from Phase 0 to Phase 4 (Transition Ready)?
