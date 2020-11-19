@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 # Recovery steps after auto upgrade
 {: #recovery}
 
-If you did not start the upgrade process from your legacy plan, you will be automatically upgraded in a rolling fashion starting **November 11, 2020**. The following instructions describe the workflow to recover the upgraded system after the auto-upgrade process was initiated.
+If you did not start the upgrade process from your legacy plan or there were technical issues with the self-initiated upgrade, you will be automatically upgraded in a rolling fashion starting **November 11, 2020**. The following instructions describe the workflow to recover the upgraded system after the auto-upgrade process was initiated.
 {: shortdesc}
 
 These steps can be run on an instance only after the initiation of the auto-upgrade by the {{site.data.keyword.Db2_on_Cloud_short}} team. If your legacy instance is still online and available, then the auto-upgrade was not initiated and you must not run the following recovery procedure steps.
