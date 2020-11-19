@@ -90,12 +90,12 @@ If the Db2 web console does not load or returns an error message, try the follow
 * Try using the direct URL to open the console to check for errors. Select the **Service credentials** tab from your service page and expand the credentials that you want to view. If there are no existing credentials, click **New credential**. Use the values in the `https_url`, `username`, and `password` to open the web console.
 * If needed, use the **Forgot Password** link at the direct URL to request a password reset. For Lite plans, note that you can only reset your password once within 24 hours.
 * When you create a Lite instance, be sure to provide an email address so you receive reactivation notices and password reset notices. 
-* If your use of {{site.data.keyword.Db2_on_Cloud_short}} exceeds the purpose provided by a Lite account with free support, upgrade to a paid account with [basic, advanced, or premium support](/docs/get-support?topic=get-support-support-plans) to open cases for technical issues. 
+* If your use of {{site.data.keyword.Db2_on_Cloud_short}} exceeds the purpose provided by a Lite account with free support, upgrade to a paid account with [basic, advanced, or premium support](/docs/get-support?topic=get-support-support-plans){: external} to open cases for technical issues. 
 
 ## What options do I have for community support?
 {: #fp_faq_support}
 {: faq}
 {: support}
 
-The free Lite plan for {{site.data.keyword.Db2_on_Cloud_short}}, intended for prototyping and demoing applications, has community support. If you need help with a Db2 usage question, for example, query optimization or syntax error, review the available [Communities](/docs/Db2onCloud?topic=Db2onCloud-communities) and the list of [{{site.data.keyword.Db2_on_Cloud_short}} Resources](https://www.ibm.com/cloud/db2-on-cloud/resources).
+The free Lite plan for {{site.data.keyword.Db2_on_Cloud_short}}, intended for prototyping and demoing applications, has community support. If you need help with a Db2 usage question, for example, query optimization or syntax error, review the available [Communities](/docs/Db2onCloud?topic=Db2onCloud-communities){: external} and the list of [{{site.data.keyword.Db2_on_Cloud_short}} Resources](https://www.ibm.com/cloud/db2-on-cloud/resources){: external}.
 
