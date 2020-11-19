@@ -7,7 +7,12 @@ Db2 on Cloud
 
     {: .navgroup id="learn"}
     about.md
-    free_plan.md
+    
+    {: .topicgroup}
+    Free plan
+        free_plan.md
+        faqs_lite.md
+
     getting-started.md
 
     {: .topicgroup}

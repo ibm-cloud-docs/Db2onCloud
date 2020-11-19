@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-11-18"
+lastupdated: "2020-11-19"
 
 keywords: 
 
@@ -36,17 +36,13 @@ You can determine the status of the {{site.data.keyword.Db2_on_Cloud_long}} serv
 ## Getting help and support for Db2 on Cloud
 {: #gettinghelp}
 
-If you have problems or questions when using {{site.data.keyword.Db2_on_Cloud_short}}, you can get help by searching for information or by asking questions through a forum. You can also open a support ticket.
+If you have problems or questions when using {{site.data.keyword.Db2_on_Cloud_short}}, you can get help by searching for information or by asking questions through a forum. You can also open a support case.
 {: shortdesc}
 
-When using the forums to ask a question, tag your question so that it is seen by the {{site.data.keyword.Bluemix}} development teams.
+You can review [Stack Overflow](https://stackoverflow.com/search?q=ibm-cloud){: external} to see whether other users ran into the same problem. When using the forum to ask a question, tag your question with `ibm-cloud` and `db2` so that it is seen by the {{site.data.keyword.Bluemix}} development teams.
 
-* If you have technical questions about developing or deploying an app with {{site.data.keyword.Db2_on_Cloud_short}}, post your question on [Stack Overflow](https://stackoverflow.com/questions/ask/advice?){:external} and tag your question with "bluemix" and "db2oncloud".
-* For questions about the service and getting started instructions, use the [IBM developerWorks® dW Answers](https://developer.ibm.com/answers/questions/ask/?smartspace=bluemix){:external} forum. Include the "bluemix" and "db2oncloud" tags.
+See [Getting help](/docs/get-support?topic=get-support-using-avatar#asking-a-question){:external} for more details about using the forums.
 
-See [Getting help](/docs/get-support?topic=get-support-using-avatar#using-avatar){:external} for more details about using the forums.
-
-For information about opening an IBM support ticket, or about support levels and ticket severities, see: [Working with support cases](/docs/get-support?topic=get-support-open-case#open-case){:external}.
-
+For information about opening an IBM support case, or about support levels and case severities, see: [Working with support cases](/docs/get-support?topic=get-support-open-case#open-case){:external}.
 
 
