@@ -40,7 +40,7 @@ At the time of instance creation, you can select your choice of endpoint from th
 ![Instance creation endpoints](images/creation_endpoint.png "Endpoint choice"){: caption="Figure 1. Endpoint choice at instance creation" caption-side="bottom"}
 
 ### Changing endpoints after creation
-{: #ep_chg_epts}
+{: #ep_chg_epts_after_creation}
 
 You can change endpoints at any time after creating an instance of a Standard or Enterprise plan.
 
@@ -54,8 +54,8 @@ To change endpoints, complete the following steps:
 
 ![Change endpoints](images/change_endpoint.png "Endpoint choice"){: caption="Figure 2. Change endpoint after instance creation" caption-side="bottom"}
 
-### View Endpoints
-{: #ep_view}
+### View endpoints
+{: #ep_view_endpoints}
 
 To view your endpoints:
 - Select your Db2 service from {{site.data.keyword.cloud_notm}}.
