@@ -38,7 +38,6 @@ These instructions explain how to define a connection without SSL between IBM® 
 {: shortdesc}
 
 #### Prerequisites
-{: #prereq1}
 
 It is advised that you update DataStage to the most recent version so that you can take advantage of external tables to load your data into {{site.data.keyword.Db2_on_Cloud_short}}.
 {: important}
@@ -60,7 +59,6 @@ To make connections with the SSL protocol, download and install the 32-bit GSKit
 Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 #### Procedure
-{: #proc1}
 
 - To create a connection with SSL, complete the following steps:
 
@@ -181,14 +179,12 @@ You can connect IBM® InfoSphere® Data Replication <!--version 11.3.3.3-36 or l
 {: shortdesc}
 
 #### Overview
-{: #overview2}
 
 Ideally, when you connect IBM InfoSphere Data Replication to {{site.data.keyword.Db2_on_Cloud_short}}, IBM InfoSphere Data Replication is in the same {{site.data.keyword.Bluemix_notm}} Data Center as {{site.data.keyword.Db2_on_Cloud_short}} or is colocated with {{site.data.keyword.Db2_on_Cloud_short}}. IBM InfoSphere Data Replication connects from a local server to the remote {{site.data.keyword.Db2_on_Cloud_short}} instance.
 
 When you use {{site.data.keyword.Db2_on_Cloud_short}} as a connection target, the performance of IBM InfoSphere Data Replication partly depends on the bandwidth of the network that separates its target engine from the {{site.data.keyword.Db2_on_Cloud_short}} instance. Physical distance also affects performance: ideally, IBM InfoSphere Data Replication is as close as possible to the {{site.data.keyword.Db2_on_Cloud_short}} instance. Network topology also affects performance. For example, ideally, the IBM InfoSphere Data Replication target engine runs on a VM in the same VPN (security domain) as the target instance. The fewer the network nodes (for example, firewalls or routers) to traverse, the better. 
 
 #### Prerequisites
-{: #prereq2}
 
 If you intend to connect by using the SSL protocol, download and install GSKit V8. See [GSKit V8 - Install, Uninstall and Upgrade instructions](http://www.ibm.com/support/docview.wss?uid=swg21631462){:external}. Click the operating system tab that applies to your client machine’s operating system. If you are installing the GSKit on a Windows computer, ensure that you specify the GSKit installation directory path (`<installation_directory>\gsk8\bin`) for the **`PATH`** environment variable.
 
@@ -197,7 +193,6 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 If you intend to connect by using the SSL protocol, download the `DigiCertGlobalRootCA.crt` SSL certificate from the web console to a directory on the client machine. To download the certificate, click **Connection > Connection Information** and then click the **Connection with SSL** tab.
 
 #### Procedure
-{: #proc2}
 
 1. Choose one of the following approaches to make your connection:
 
@@ -339,12 +334,10 @@ These instructions explain how to create a connection from IBM® Data Studio <!-
 {: shortdesc}
 
 #### Prerequisites
-{: #prereq3}
 
 Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 #### Procedure
-{: #proc3}
 
 1. In Data Studio, click **All Databases > New Connection to a database**.
 
@@ -368,12 +361,10 @@ A connection between your IBM® Data Server Manager and your {{site.data.keyword
 {: shortdesc}
 
 #### Prerequisites
-{: #prereq4}
 
 Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 #### Procedure
-{: #proc4}
 
 <!--The connection procedure was tested on Data Server Manager version 1.1. The same procedure applies to all of the other versions of the Data Server Manager software.
 -->
@@ -410,12 +401,10 @@ These instructions explain how to create a connection from InfoSphere® Data Arc
 {: shortdesc}
 
 #### Prerequisites
-{: #prereq5}
 
 Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 #### Procedure
-{: #proc5}
 
 1. In the Data Source Explorer view of InfoSphere Data Architect, right-click **Database Connections**, then select **New**.
     
@@ -440,7 +429,6 @@ Command line processor plus (CLPPlus) is included in the Db2 driver package. CLP
 {: shortdesc}
 
 #### Prerequisites
-{: #prereq7}
 
 Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
@@ -450,7 +438,6 @@ To use CLPPlus, ensure that a software development kit (SDK) or a Java runtime e
 - The `PATH` environment variable setting includes the `bin` subdirectory of the Java installation directory on your computer.
 
 #### Procedure
-{: #proc7}
 
 1. In a command shell on Linux operating systems, at the Windows command prompt, or in the DB2 command window on Windows operating systems, run the following commands:
 
@@ -503,7 +490,6 @@ To use CLPPlus, ensure that a software development kit (SDK) or a Java runtime e
 ```
 
 #### Results
-{: #results7}
 
 You can now enter CLPPlus commands or SELECT statements and run scripts to work with the data in the database.
 
@@ -655,12 +641,10 @@ These instructions explain how to create a connection from IBM® SPSS® Statisti
 {: shortdesc}
 
 #### Prerequisites
-{: #prereq11}
 
 Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 #### Procedure
-{: #proc11}
 
 1. In SPSS Statistics, click **File > Open Database > New Query**.
     

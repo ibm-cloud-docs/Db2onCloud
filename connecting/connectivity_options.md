@@ -232,7 +232,7 @@ After you've configured {{site.data.keyword.cloud_notm}} private endpoint connec
 To learn more about the {{site.data.keyword.cloud_notm}} endpoint service, see [Secure access to services using service endpoints](/docs/account?topic=account-service-endpoints-overview).
 
 ## Connecting to a virtual private network (VPN) endpoint
-{: #vpn}
+{: #priv_endpt_vpn}
 
 If you have an application that is deployed on a private network that is outside of the {{site.data.keyword.cloud_notm}} without access to the public internet and you want to connect it to your database over a virtual private network (VPN) connection, you can make the request at the time that you order the service or by opening an IBM Support case. IBM network engineers will assist your network engineers to set up the VPN tunnel between your private network and the {{site.data.keyword.cloud_notm}}.
 
