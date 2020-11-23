@@ -83,19 +83,19 @@ Db2 on Cloud
     [IBM Developer Answers](https://developer.ibm.com/answers/index.html)
     {: .navgroup-end}
 
-	{: .navgroup id="howto"}
+    {: .navgroup id="howto"}
     [IBM Demos: Tutorials, videos, and hands-on labs](https://www.ibm.com/demos/collection/Db2-on-Cloud/)
     {: .navgroup-end}
 
-	{: .navgroup id="reference"}
+    {: .navgroup id="reference"}
     [Database management API](https://cloud.ibm.com/apidocs/db2-on-cloud)
     [Database resource scaling API](https://cloud.ibm.com/apidocs/db2-on-cloud/db2oc_scale_exp)
     [SQL reference](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.sql.ref.doc/doc/c0004100.html)
     [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
-	{: .navgroup-end}
+    {: .navgroup-end}
 
-	{: .navgroup id="help"}
+    {: .navgroup id="help"}
     faqs.md
-	help.md
-	{: .navgroup-end}
+    help.md
+    {: .navgroup-end}
 	
