@@ -90,10 +90,12 @@ These instructions explain how to connect Tableau to a {{site.data.keyword.Db2_o
 {: shortdesc}
 
 #### Prerequisites
+{: prereq_1}
 
 Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 #### Procedure
+{: procedure_1}
 
 1. In Tableau Desktop, open the window or page in your tool that is used to define a database connection.
 2. From the start page, click **Connect to data**.
@@ -117,6 +119,7 @@ These instructions explain how to connect Microsoft Excel <!--2010-->to a {{site
 {: shortdesc}
 
 #### Prerequisites
+{: prereq_2}
 
 Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
@@ -125,6 +128,7 @@ You must have the Db2 driver package or the IBM® Data Server Driver Package ins
 **Restriction**: Connections between Excel and {{site.data.keyword.Db2_on_Cloud_short}} are supported on only the Windows operating system.
 
 #### Procedure
+{: procedure_2}
 
 1. In the web console, go to the **Run SQL** page.    
 2. Type one or more SELECT statements in the editor text box.
@@ -136,6 +140,7 @@ You must have the Db2 driver package or the IBM® Data Server Driver Package ins
 8. Ensure that the connection mode is `Share`, and then click **OK**.
 
 #### Results
+{: results_2}
 
 The query results are displayed in an Excel spreadsheet. These results are the same results that are displayed in the Results viewer. Now you can generate charts and reports and analyze your data by using Excel. For more information about how to generate charts and reports and how to run SQL queries on your data from the web console, see: 
 - [Tutorial: Generating charts and reports by using Excel](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.analytics.doc/doc/explore_excel_reports.html){:external}
@@ -199,10 +204,12 @@ These instructions explain how to create a connection from SAS to a {{site.data.
 {: shortdesc}
 
 #### Prerequisites
+{: prereq_3}
 
 Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 #### Procedure
+{: procedure_3}
 
 For steps on how to connect from SAS to a {{site.data.keyword.Db2_on_Cloud_short}} database, see the SAS documentation:
 - [SAS/ACCESS Interface to DB2 under UNIX and PC Hosts](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:external}
