@@ -50,7 +50,8 @@ You can access your web console in the following ways:
 {: #int_api}
 
 With {{site.data.keyword.Db2_on_Cloud_short}} service plans, you can do tasks that are related to file management, loading data, and resource scaling by using one of the following REST APIs:
-- [Database management API](https://cloud.ibm.com/apidocs/db2-on-cloud){:external}
+- [Database management API (Legacy)](https://cloud.ibm.com/apidocs/db2-on-cloud){:external}
+- [Database management API (Standard and Enterprise)](https://cloud.ibm.com/apidocs/db2-on-cloud/db2-on-cloud-v4){: external}
 - [Database resource scaling API](https://cloud.ibm.com/apidocs/db2-on-cloud/db2oc_scale_exp){:external}
 
 ## Connect applications or your favorite tools from your local computer

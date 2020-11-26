@@ -88,7 +88,8 @@ Db2 on Cloud
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [Database management API](https://cloud.ibm.com/apidocs/db2-on-cloud/db2-on-cloud-v4)
+    [Database management API (Legacy)](https://cloud.ibm.com/apidocs/db2-on-cloud)
+    [Database management API (Standard and Enterprise)](https://cloud.ibm.com/apidocs/db2-on-cloud/db2-on-cloud-v4)
     [Database resource scaling API](https://cloud.ibm.com/apidocs/db2-on-cloud/db2oc_scale_exp)
     [SQL reference](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.sql.ref.doc/doc/c0004100.html)
     [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
