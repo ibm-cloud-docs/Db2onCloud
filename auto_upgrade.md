@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-11-11"
+lastupdated: "2020-11-26"
 
 keywords: upgrade, Db2 on Cloud, Standard plan, Enterprise plan, legacy, automatic
 
@@ -37,10 +37,5 @@ For more information about the recovery process, see [Recovery steps after auto 
 ## Automatic transitions
 {: #auto_transitions}
 
-The deadline to initiate the transition to a new plan instance applies only if you self-initiated the upgrade on or before **November 5, 2020**. The deadline to self-initiate the transition from the legacy instance is **November 15, 2020, 8 PM ET**. Any {{site.data.keyword.Db2_on_Cloud_short}} legacy plan instances for which the transition was not self-initiated before the deadline will be automatically transitioned starting on **November 16, 2020**, unless you [created a support case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} to request an extension.
-
-
-
-
-
+The deadline to initiate the transition to a new plan instance applies only if you self-initiated the upgrade on or before **November 5, 2020**. The deadline to self-initiate the transition from the legacy instance is **November 15, 2020, 8 PM ET**. Any {{site.data.keyword.Db2_on_Cloud_short}} legacy plan instances for which the transition was not self-initiated before the deadline will be automatically transitioned starting on **November 16, 2020**, unless you [created a support case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} to request an extension. On **November 30, 2020**, all legacy plan instances that do not have an approved extension in place will be deleted.
 
