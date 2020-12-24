@@ -21,7 +21,7 @@ subcollection: Db2onCloud
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Data security & encryption
+# Data security and encryption
 {: #encryption}
 
 The {{site.data.keyword.Db2_on_Cloud_long}} service has security built into all levels of its architecture.
