@@ -16,6 +16,9 @@
         "create a db2 lite",
         "create a IBM Db2 Lite plan",
         "trying to create a new service (Db2 Lite)",
+        "create a DB2 lite plan for my Coursera coursework",
+        "creating a DB2 plan",
+        "provision Db2 lite plan instance",
         "create a new DB2 instance",
         "would like to use Lite plan for DB2",
         "how do i provision an instance of ibm db2 lite",
@@ -208,6 +211,11 @@
         "why I cannot open DB2 console",
         "have 502 error on my db2 console",
         "Try to open console in db2 but failed",
+        "added db2 lite free plan but not able to access resources in Console",
+        "code:'authentication_failure','message':'HWCSEC0016E: Authentication failed for SSO. This may caused by failed to generate access token in console side using existing credentials",
+        "This may caused by failed to generate access token in console side using existing credentials",
+        "HWCSEC0016E: Authentication failed for SSO",
+        "click on Open Console using the IBM DB2 resource, I get error {trace:9b7e798640a915af4b1c9f7a574d3ea3,errors:[{code:authentication_failure,message:HWCSEC0016E", 
         "bad gateway problem when I click open console of DB2",
         "issue opening the Db2 console"
       ]
