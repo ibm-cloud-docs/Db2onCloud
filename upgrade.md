@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2020
-lastupdated: "2020-11-19"
+  years: 2014, 2021
+lastupdated: "2021-01-04"
 
 keywords: upgrade, Db2 on Cloud, Standard plan, Enterprise plan, legacy
 
@@ -303,7 +303,7 @@ Because {{site.data.keyword.Db2_on_Cloud_short}} Standard and Enterprise plans d
 
 The new plans offer a High Availability Disaster Recovery (HADR) feature with 3 nodes that are located in different independent availability zones and the failover is managed for you by IBM. This feature avoids any service disruption that is caused by a data center disaster, failure, or maintenance. For more information about {{site.data.keyword.cloud_notm}} Multi-Zone Regions (MZR), see [Why Deploy Applications on IBM Cloud Availability Zones?](https://www.ibm.com/cloud/blog/why-deploy-applications-on-ibm-cloud-availability-zones){: external}.
 
-A few of you might require legacy-style disaster recovery (DR) instead of the new HADR feature. Legacy-style disaster recovery (DR) is planned to be supported by **November 30, 2020**. [Create a support case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} and have a conversation with our Development Operations team if you require this Cross-Region DR-specific feature.
+A few of you might require legacy-style disaster recovery (DR) instead of the new HADR feature. Legacy-style disaster recovery (DR) is planned to be supported by **January 31, 2021**. [Create a support case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} and have a conversation with our Development Operations team if you require this Cross-Region DR-specific feature.
 
 <!-- HA is also well suited as a disaster recovery (DR) option for those of you with requirements that are satisfied by it. If you have strict requirements for a cross-region DR node, you can leverage such a feature by **November 30, 2020**.-->
 
