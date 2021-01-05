@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2020
-lastupdated: "2020-02-04"
+  years: 2014, 2021
+lastupdated: "2021-01-05"
 
 keywords:
 
@@ -22,7 +22,7 @@ subcollection: Db2onCloud
 {:pre: .pre}
 {:video: .video}
 
-# Connecting to third-party tools
+# Connecting with third-party tools
 {: #connect_3rd_party}
 
 You can connect third-party command-line interfaces, applications, and tools to your {{site.data.keyword.Db2_on_Cloud_short}} database. 
