@@ -99,8 +99,12 @@ The Standard and Enterprise plans are supported in the following data center geo
 - Dallas
 - Frankfurt
 - London
+- Milan
+- Montreal
+- Sao Paulo
 - Sydney
 - Tokyo
+- Toronto
 - Washington, DC
 
 <!--
