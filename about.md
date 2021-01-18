@@ -96,17 +96,20 @@ For more information about migrating your legacy plan to one of the current Stan
 {: #ab_sup_dcs}
 
 The Standard and Enterprise plans are supported in the following data center geographies:
-- Amsterdam
-- Dallas
-- Frankfurt
-- London
-- Milan
-- Montréal
-- Sao Paulo
-- Sydney
-- Tokyo
-- Toronto
-- Washington, DC
+- Multi-zone Regions
+  - Dallas
+  - Frankfurt
+  - London
+  - Sydney
+  - Tokyo
+  - Washington, DC
+  
+- Single-zone Regions
+  - Amsterdam
+  - Milan
+  - Montréal
+  - Sao Paulo
+  - Toronto
 
 <!--
 
