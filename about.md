@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2020
-lastupdated: "2020-11-02"
+  years: 2014, 2021
+lastupdated: "2021-01-18"
 
 keywords: 
 
@@ -96,11 +96,16 @@ For more information about migrating your legacy plan to one of the current Stan
 {: #ab_sup_dcs}
 
 The Standard and Enterprise plans are supported in the following data center geographies:
+- Amsterdam
 - Dallas
 - Frankfurt
 - London
+- Milan
+- Montréal
+- Sao Paulo
 - Sydney
 - Tokyo
+- Toronto
 - Washington, DC
 
 <!--
