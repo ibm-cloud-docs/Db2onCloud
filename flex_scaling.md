@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2021
-lastupdated: "2021-01-18"
+lastupdated: "2021-01-19"
 
 keywords: 
 
@@ -82,6 +82,7 @@ To scale cores/memory and storage from within the console, complete the followin
 
 <!--These dynamic adjustments typically take less than 20 minutes to complete. You can also scale CPU and RAM without any downtime by following these [guidelines](https://developer.ibm.com/answers/questions/381931/how-can-i-scale-cpu-up-and-down-without-downtime-o.html){:external}.-->
 
+<!--
 ## Legacy plans
 {: #fs_legacy_plans}
 
@@ -90,3 +91,4 @@ Independent scaling of RAM, storage, and compute cores.
 Your Flex plan initially deploys with 1 core, 4 GB of RAM and 2 GB of disk space. You can then scale your plan up or down with slider bars.
 
 These dynamic adjustments typically take less than 20 minutes to complete. You can even scale CPU and RAM without any downtime by following these [guidelines](https://developer.ibm.com/answers/questions/381931/how-can-i-scale-cpu-up-and-down-without-downtime-o.html){:external}.
+-->

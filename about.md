@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2021
-lastupdated: "2021-01-18"
+lastupdated: "2021-01-19"
 
 keywords: 
 
@@ -49,8 +49,10 @@ You can use the web console to perform many key tasks, such as loading data, wor
 ## Plans and configurations
 {: #ab_plans_cfgs}
 
+<!--
 ### Current plans
 {: #ab_current}
+-->
 
 #### Enterprise High Availability Disaster Recovery (HADR) plan
 
@@ -84,6 +86,7 @@ You can use the web console to perform many key tasks, such as loading data, wor
 - 100 GB of free backup storage for up to 14 days of backups
 - Self-service managed backup with point-in-time restore
 
+<!--
 ### Legacy plans
 {: #ab_legacy}
 
@@ -91,25 +94,36 @@ You can use the web console to perform many key tasks, such as loading data, wor
 - Precise Performance plans that provide fixed resources and bare metal servers
 
 For more information about migrating your legacy plan to one of the current Standard and Enterprise plans, see [Upgrading {{site.data.keyword.Db2_on_Cloud_short}} plans](/docs/Db2onCloud?topic=Db2onCloud-upgrade_plans){: external}.
+-->
 
 ## Supported data centers
 {: #ab_sup_dcs}
 
 The Standard and Enterprise plans are supported in the following data center geographies:
-- Amsterdam
+
+### Multi-zone region (MZR) 
 - Dallas
 - Frankfurt
 - London
+- Sydney
+- Tokyo
+- Washington, DC
+
+MZRs support 3 node HA in 3 different data centers
+{: note}
+
+### Single-zone region (SZR)
+- Amsterdam
 - Milan
 - Montréal
 - Sao Paulo
-- Sydney
-- Tokyo
 - Toronto
-- Washington, DC
+
+SZRs support 3 node HA in a single data center
+{: note}
+
 
 <!--
-
 ## Plans and configurations
 {: #plans_cfgs}
 

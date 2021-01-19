@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2020
-lastupdated: "2020-10-08"
+  years: 2014, 2021
+lastupdated: "2021-01-19"
 
 keywords: HADR, Legacy Flex, legacy, Flex, high availability disaster recovery
 
@@ -27,8 +27,10 @@ subcollection: Db2onCloud
 {{site.data.keyword.Db2_on_Cloud_short}} high availability plans have excellent availability characteristics with a 99.99% SLA. 
 {: shortdesc}
 
+<!--
 ## Standard and Enterprise plans
 {: #ha_v2_ha}
+-->
 
 High availability disaster recovery (HADR) on {{site.data.keyword.Db2_on_Cloud_short}} Enterprise and Standard plans is provided by leveraging the support of native Db2 HADR. 
 
@@ -47,6 +49,7 @@ High availability disaster recovery (HADR) on {{site.data.keyword.Db2_on_Cloud_s
 
 For Enterprise and Standard HADR plans, the failover is managed for you by IBM. IBM monitors the health of your server, fail over and fail back as needed, including rolling updates and scaling to keep uptime as high as possible.
 
+<!--
 ## Legacy Flex plans
 {: #ha_legacy}
 
@@ -66,5 +69,5 @@ The standard high availability plans without a disaster recovery (DR) node provi
 {: #ha_manage}
 
 For standard HA nodes, which are not offsite, the failover is managed for you by IBM. IBM monitors the health of your server, fail over and fail back as needed, including rolling updates and scaling to keep uptime as high as possible.
-
+-->
 
