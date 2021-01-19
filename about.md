@@ -49,11 +49,6 @@ You can use the web console to perform many key tasks, such as loading data, wor
 ## Plans and configurations
 {: #ab_plans_cfgs}
 
-<!--
-### Current plans
-{: #ab_current}
--->
-
 #### Enterprise High Availability Disaster Recovery (HADR) plan
 
 - Base instances start at 4 vCPU x 16 GB RAM x 20 GB storage on dedicated compute slices
@@ -85,17 +80,6 @@ You can use the web console to perform many key tasks, such as loading data, wor
 - Single node in one availability zone
 - 100 GB of free backup storage for up to 14 days of backups
 - Self-service managed backup with point-in-time restore
-
-<!--
-### Legacy plans
-{: #ab_legacy}
-
-- A Flex plan in which you can independently scale RAM, storage, and compute resources
-- Precise Performance plans that provide fixed resources and bare metal servers
-
-For more information about migrating your legacy plan to one of the current Standard and Enterprise plans, see [Upgrading {{site.data.keyword.Db2_on_Cloud_short}} plans](/docs/Db2onCloud?topic=Db2onCloud-upgrade_plans){: external}.
--->
-
 
 ## Supported data centers
 {: #ab_sup_dcs}
