@@ -34,6 +34,7 @@ All data is encrypted at rest to ensure data is protected at all times using enc
 ## When is the data deleted
 {: #del_db_when}
 
+### Legacy Plan
 There is a soft data deletion period of up to 9 days before all stored data is deleted irrecoverably.
 
 ## Using your own encryption keys to delete data
