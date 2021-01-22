@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2020
-lastupdated: "2020-06-22"
+  years: 2014, 2021
+lastupdated: "2021-01-20"
 
 keywords: 
 
@@ -33,6 +33,8 @@ All data is encrypted at rest to ensure data is protected at all times using enc
 
 ## When is the data deleted
 {: #del_db_when}
+
+### Legacy plans
 
 There is a soft data deletion period of up to 9 days before all stored data is deleted irrecoverably.
 
