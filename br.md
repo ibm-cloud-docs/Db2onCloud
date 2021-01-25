@@ -53,7 +53,7 @@ The following are a selected example of screen captures of the point-in-time res
 3. Select a point-in-time date to which you want to restore the database. The point-in-time restore process selects the backup closest to your requested point-in-time date out of the pool of retained backups made during the previous 14 days.
 
    The point-in-time restore process invalidates any of the previously retained backups with dates after the selected point-in-time date because of a resultant divergence in the timeline.
-    {: note} 
+   {: note} 
 
    ![View of date and time selection for point-in-time restore](images/pit_restore_date_v2.png "Backup and restore console page"){: caption="Figure 2. View of date and time selection for point-in-time restore" caption-side="bottom"}
 
