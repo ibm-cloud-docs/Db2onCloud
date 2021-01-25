@@ -31,9 +31,9 @@ For paid plans, encrypted backups of the database are done daily. A daily backup
  
 For information about point-in-time restores, see [Point-in-time restore](#point-in-time).
 
-All paid plans typically make use of IBM Cloud Object Storage (COS) to keep backups offsite in three different data centers. However, Sydney and certain smaller data centers might not support offsite replication with IBM COS at this time. Check the [IBM COS documentation](/docs/cloud-object-storage/basics?topic=cloud-object-storage-endpoints#endpoints) for your region to determine which regions support offsite replication.
+All paid plans make use of IBM Cloud Object Storage (COS) to keep backups offsite.  <!-- However, Sydney and certain smaller data centers might not support offsite replication with IBM COS at this time. Check the [IBM COS documentation](/docs/cloud-object-storage/basics?topic=cloud-object-storage-endpoints#endpoints) for your region to determine which regions support offsite replication. -->
 
-You can also use [IBM Lift CLI](https://www.lift-cli.cloud.ibm.com/){:external} to import data into {{site.data.keyword.Db2_on_Cloud_short}}.
+<!-- You can also use [IBM Lift CLI](https://www.lift-cli.cloud.ibm.com/){:external} to import data into {{site.data.keyword.Db2_on_Cloud_short}}. -->
 
 ## Point-in-time restore
 {: #point-in-time}
@@ -41,6 +41,30 @@ You can also use [IBM Lift CLI](https://www.lift-cli.cloud.ibm.com/){:external} 
 {{site.data.keyword.Db2_on_Cloud_short}} added a point-in-time restore capability for systems in {{site.data.keyword.Bluemix_notm}} Public. You can restore to an exact point in time from your backups. 
 
 The following are a selected example of screen captures of the web console UI in which the point-in-time restore operation is initiated and its progress is indicated:
+
+### Enterprise and Standard Plans
+
+1. Click on **Administration** on the Left Menu and then select the **Backup** tab on the top menu 
+2. Click on the Down Arrow besides the **Backup** button 
+
+
+   ![View of the highlighted selection of the point-in-time restore option](images/pit_restore_pick_v2.png "Backup and restore console page"){: caption="Figure 1. View of the selection of the point-in-time restore option" caption-side="bottom"}
+
+3. Select a point-in-time date to which you want to restore the database. The point-in-time restore process selects the backup closest to your requested point-in-time date out of the pool of retained backups made during the previous 14 days.
+
+    The point-in-time restore process invalidates any of the previously retained backups with dates after the selected point-in-time date because of a resultant divergence in the timeline.
+   {: note} 
+
+   ![View of date and time selection for point-in-time restore](images/pit_restore_date_v2.png "Backup and restore console page"){: caption="Figure 1. View of date adn time selection for point-in-time restore" caption-side="bottom"}
+
+4. Restoring the database to the selected point in time.
+   ![View of the point-in-time restore initialization](images/pit_restore_progress_v2.png "Initialization of point-in-time restoration"){: caption="Figure 3. View of the point-in-time restore initialization" caption-side="bottom"}
+
+5. The restore operation completed successfully.
+   ![View of the successful completion of the restoration](images/pit_restore_successful_v2.png "Successful completion"){: caption="Figure 6. View of the successful completion of the restoration" caption-side="bottom"}
+
+
+### Legacy Plans
 
 1. Select the **Point in Time** restore strategy and select a point-in-time date to which you want to restore the database. The point-in-time restore process selects the backup closest to your requested point-in-time date out of the pool of retained backups made during the previous 14 days. 
 
