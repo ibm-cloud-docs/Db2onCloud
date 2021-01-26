@@ -24,16 +24,60 @@ subcollection: Db2onCloud
 # Backup and restore
 {: #bnr}
 
+## Backup
 For paid plans, encrypted backups of the database are done daily. A daily backup is kept for each of the last 14 days.
 {: shortdesc}
 
+
+The following is an example of the manual backup operation in the web console UI:
+
+### Enterprise and Standard Plans
+
+1. Click **Administration** on the left menu and select the **Backup** tab. Click on the **Run Backup** button
+   ![View of the highlighted selection of the backup option](images/backup_v2.png) "Backup and restore console page"){: caption="Figure 1. Selection of the backup option" caption-side="bottom"}
+
+2. Click on **Run** from the Run Backup Screen to run a manual backup
+   ![View of Run Backup screen option](images/backup_run_v2.png "Backup and restore console page"){: caption="Figure 2. View of the Run Backup Screen" caption-side="bottom"}
+
+3. When the backup has started, some features may not be available until the backup is completed
+   ![View of the backup being intiated](images/backup_initiated_v2.png "Backup and restore console page"){: caption="Figure 3. View of the backup being initated" caption-side="bottom"}
+
+4. Once the backup has completed, there will be a new backup entry with a **Full (Manual)** type in the list of backups.  The new backup will be in an available state.
+   ![View of completed backup](images/backup_completed_v2.png "Backup and restore console page"){: caption="Figure 4. View of a completed backup" caption-side="bottom"}
+
+
 <!-- In addition to standard backups, you can use the [Time Travel Query](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:external} to keep historical data for other purposes, such as instantly querying old data or simplified auditing. You can also do your own exports by using IBM Data Studio or any Db2 tool. -->
- 
+
+## Restore
+
+All paid plans allow the ability to restore backups to either end-of-backups or to a point-in-time.  
 For information about point-in-time restores, see [Point-in-time restore](#point-in-time).
 
 All paid plans make use of IBM Cloud Object Storage (COS) to keep backups offsite. <!-- However, Sydney and certain smaller data centers might not support offsite replication with IBM COS at this time. Check the [IBM COS documentation](/docs/cloud-object-storage/basics?topic=cloud-object-storage-endpoints#endpoints) for your region to determine which regions support offsite replication. -->
 
 <!-- You can also use [IBM Lift CLI](https://www.lift-cli.cloud.ibm.com/){:external} to import data into {{site.data.keyword.Db2_on_Cloud_short}}. -->
+
+## End-of-backup restore
+
+
+### Enterprise and Standard Plans
+The following is an example of the end-of-backup restore operation in the web console UI:
+
+1. Click **Administration** on the left menu and select the **Backup** tab.  Select a backup that you want to restore to end-of-backup and click on **Restore**
+   ![View of the highlighted selection of the end-of-backup restore option](images/eobrestore_selection_v2.png "Backup and restore console page"){: caption="Figure 1. View of the selection of the end-of-backup restore option" caption-side="bottom"}
+
+2. Click on **Restore** from the Restore backup screen to initiate the restore
+   ![View of Restore backup screen option](images/eobrestore_restore_backup_v2.png "Backup and restore console page"){: caption="Figure 2. View of the Restore ackup Screen" caption-side="bottom"}
+
+3. An information messages shows up in the top right corner when restore has started.  Some features maybe unavailable until restore is completed.
+   ![Start of the end-of-backup restore](images/eobrestore_started_v2.png "Backup and restore console page"){: caption="Figure 3. Start of the end-of-backup restore" caption-side="bottom"}
+
+4. A progress bar will indicate the progress of the restore process
+   ![Progress of the end-of-backup restore](images/eobrestore_progress_v2.png "Backup and restore console page"){: caption="Figure 4. Progress of the end-of-backup restore" caption-side="bottom"}
+
+5. Notifications will show a **Restore Successful** message once restore is completed.
+   ![Successful completion of end-of-backup restore](images/eobrestore_success_v2.png "Backup and restore console page"){: caption="Figure 5. Successful completion of end-of-backup restore" caption-side="bottom"}
+
 
 ## Point-in-time restore
 {: #point-in-time}
@@ -45,7 +89,7 @@ The following are a selected example of screen captures of the point-in-time res
 ### Enterprise and Standard plans
 {: #br_ent_std}
 
-1. Click **Administration** in the left menu and select the **Backup** tab. 
+1. Click **Administration** on the left menu and select the **Backup** tab. 
 
 2. Click the down arrow beside the **Run backup** button. Select **Restore (point-in-time)**.
 ![View of the highlighted selection of the point-in-time restore option](images/pit_restore_pick_v2.png "Backup and restore console page"){: caption="Figure 1. View of the selection of the point-in-time restore option" caption-side="bottom"}
