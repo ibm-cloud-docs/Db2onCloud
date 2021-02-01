@@ -154,6 +154,8 @@
         "unable to add a database to Db2 ",
         "unable to add a DB2 database",
         "cannot create a new table nor schema on DB2",
+        "error message when trying to load a new table in Db2",
+        "error message when loading a new table in Db2",
         "unable to create a new table or schema on DB2",
         "cannot create a new table nor schema on DB2 for a new project due to lack of authorization",
         "want to create a database db2  with Lite plan, but i got an error",
@@ -226,6 +228,13 @@
         "HWCSEC0016E: Authentication failed for SSO",
         "click on Open Console using the IBM DB2 resource, I get error {trace:9b7e798640a915af4b1c9f7a574d3ea3,errors:[{code:authentication_failure,message:HWCSEC0016E", 
         "bad gateway problem when I click open console of DB2",
+        "can't connect to DB2 server  - console error",
+        "cannot create database connection",
+        "Connection authorization failure occurred. Reason: User ID or Password invalid. ERRORCODE=-4214",
+        "my db2 show ERRORCODE=-4214",
+        "when i try to the console for my ibm db2 lite error occurs",
+        "when i tried to open Console from IBM cloud DB2. The page is errored out",
+        "I have problems with using a Db2 when i wanna open console",
         "issue opening the Db2 console"
       ]
 }
