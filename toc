@@ -54,7 +54,6 @@ Db2 on Cloud
         ha.md
         dr.md
         log_mon.md
-        maintenance.md
         self_serve_update.md
 
         {: .topicgroup}
