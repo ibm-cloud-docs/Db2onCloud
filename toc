@@ -44,7 +44,6 @@ Db2 on Cloud
         {: .topicgroup}
         Upgrading
             upgrade.md
-            auto_upgrade.md
             recovery.md
             wn.md
         
