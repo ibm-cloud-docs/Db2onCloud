@@ -72,7 +72,6 @@ Db2 on Cloud
         auditing.md
         activity_tracker.md
         sec_comp_sum.md
-        key_protect.md
         key_protect_2.md
 
     communities.md    
