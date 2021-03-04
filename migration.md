@@ -73,7 +73,25 @@ To migrate your data from an on-premises system, choose one of the following met
 ### Lift CLI
 {: #lift}
 
-Lift CLI support coming soon.
+Lift CLI support coming soon.  
+
+The following workaround can be used to perform the function as a Lift PUT
+
+```
+This is an example code snippet which uses curl and jq:
+url = {YOUR CONSOLE URL}
+crn = {SERVICE INSTANCE CRN}
+user = {DB2 USER}
+password = {DB2 PASSWORD}
+
+1. Retrieve your token
+token=`curl -s -X POST https://$url/dbapi/v4/auth/tokens -H 'content-type: application/json' -H "x-deployment-id: $crn" -d "{\"userid\": \"$user\", \"password\": \"$password\"}" | jq -r '.token'`
+
+2. If you have a file test.csv on your local path and you want to upload it to the Db2 on Cloud server
+curl -s -X POST https://$url/dbapi/v4/home_content/ -H "authorization: Bearer $token" -H "x-deployment-id: $crn" -H "Content-Type: multipart/form-data" -F 'test.csv=@test.csv'
+Examples in Java, Python etc are provided here - https://cloud.ibm.com/apidocs/db2-on-cloud/db2-on-cloud-v4#introduction
+
+```
 
 <!--
 The Lift CLI is an application that you can use without charge to migrate your data to the {{site.data.keyword.Bluemix_notm}} from the various data sources listed in Table 1. 
