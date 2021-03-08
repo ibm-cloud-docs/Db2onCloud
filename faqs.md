@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 {:faq: data-hd-content-type='faq'}
 {:video: .video}
 
-# FAQs
+# FAQs - General
 {: #faq_db2oc}
 
 This is a collection of frequently asked questions (FAQ) about the {{site.data.keyword.Db2_on_Cloud_long}} service.
@@ -88,7 +88,6 @@ In addition to the {{site.data.keyword.cloud_notm}} documentation site, there is
 
 You can find pricing information and deploy a {{site.data.keyword.Db2_on_Cloud_short}} instance through the {{site.data.keyword.cloud_notm}} [catalog](https://cloud.ibm.com/catalog/services/db2){: external} page for {{site.data.keyword.cloud_notm}}. To learn more, contact [IBM Sales](https://www.ibm.com/contact/us/en/){: external}.
 
-
 ## Where can I find help for a problem that I'm having?
 {: #q_issues}
 {: faq}
@@ -98,4 +97,4 @@ For information about posting questions on a forum or opening a support ticket, 
 
 Only community support is available for the free Lite plan.
 
-
+## 
