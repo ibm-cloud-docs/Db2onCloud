@@ -28,7 +28,9 @@ subcollection: Db2onCloud
 ## Enterprise and Standard plans
 {: #ssu_plans}
 
-Enterprise and Standard plans give you the ability to apply system updates to your instances at a time of your choosing. 
+Many updates on your Db2 on Cloud Enterprise or Standard system are offered as self-serve updates, which means you have the ability to apply system updates to your instances at a time of your choosing. No email notifications are sent for this type of update; you'll be notified through your console. There may be a time limit within which you must apply the update, typically 30 days, before it is applied to your system for you.
+
+Some updates, however, impact all customers sharing common infrastructure, or are required immediately to keep your system secure, and therefore can't be scheduled by customers. Additional details will soon be published covering this type of update.
 
 The update process can be disruptive, especially for single node instances, so it's advisable to run the update during a maintenance window.
 {: important}
