@@ -28,7 +28,10 @@ subcollection: Db2onCloud
 {{site.data.keyword.Db2_on_Cloud_short}} leverages Db2 HADR technology and gives you the ability to add a DR node, on demand, in an offsite data center of your choice. In an unlikely event that the primary data server is affected by external circumstances such as a natural disaster, you can failover to your Geo-Replicated Disaster Recovery node with a few clicks. You can also fail back to your primary site just as easily.
 {: shortdesc}
 
-Admin functionality is not available on the DR node. Any admin functions must be run on the primary instance while it's **Active**.
+
+-  Admin functionality is not available on the DR node. Any admin functions must be run on the primary instance while it's **Active**.{: important}
+-  DR nodes are currently available for Enterprise and Standard HADR plans only. DR nodes are currently not supported in single node plans or in EU-Cloud.{: important}
+-  Failover to the DR site is not automatic, it must be initiated by the customer.
 {: important}
 
 <!--High availability disaster recovery (HADR) provides a high availability solution for both partial and complete site failures. HADR protects against data loss by replicating data changes from a source database, called the primary database, to the target databases, called the standby databases.
@@ -43,8 +46,6 @@ With the introduction of Geo-Replicated Disaster Recovery nodes, you are now abl
 
 ## Enterprise and Standard HADR plans
 {: #dr_ent_std_plans}
-
-DR nodes are now available for Enterprise and Standard HADR plans only. DR nodes are currently not supported in single node plans or in EU-Cloud.  
 
 ### Creating a DR node
 {: #dr_create_dr_node}
