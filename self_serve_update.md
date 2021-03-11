@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2020
-lastupdated: "2020-11-12"
+  years: 2014, 2021
+lastupdated: "2021-03-11"
 
 keywords: self-serve, system update, plan
 
@@ -28,7 +28,12 @@ subcollection: Db2onCloud
 ## Enterprise and Standard plans
 {: #ssu_plans}
 
-Enterprise and Standard plans give you the ability to apply system updates to your instances at a time of your choosing. 
+Many updates on your {{site.data.keyword.Db2_on_Cloud_short}} Enterprise or Standard instance are offered as self-serve updates, which means you have the ability to apply system updates to your instances at a time of your choosing. No email notifications are sent for this type of update. You'll be notified through your console. There might be a time limit within which you must apply the update, typically 30 days, before it is automatically applied to your instance.
+
+Some updates, however, impact all of the users sharing a common infrastructure, or are required immediately to keep your system secure. You can't schedule these updates. Additional details about these types of updates are coming soon.
+
+<!--
+Enterprise and Standard plans give you the ability to apply system updates to your instances at a time of your choosing. -->
 
 The update process can be disruptive, especially for single node instances, so it's advisable to run the update during a maintenance window.
 {: important}
@@ -36,7 +41,7 @@ The update process can be disruptive, especially for single node instances, so i
 ### Notification
 {: #ssu_notif}
 
-You are notified of an instance system update through the **Notifications** icon in the upper right of the console. New notifications are indicated by a number in a red ellipse.
+For self-serve updates, you are notified of an instance system update through the **Notifications** icon in the upper right of the console. New notifications are indicated by a number in a red ellipse.
 
 ![Update notification](images/ss_notification.png "Self-serve update notification"){: caption="Figure 1. Self-serve update notification" caption-side="bottom"}
 
