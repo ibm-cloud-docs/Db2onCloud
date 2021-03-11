@@ -30,7 +30,7 @@ subcollection: Db2onCloud
 
 Many updates on your {{site.data.keyword.Db2_on_Cloud_short}} Enterprise or Standard instance are offered as self-serve updates, which means you have the ability to apply system updates to your instances at a time of your choosing. No email notifications are sent for this type of update. You'll be notified through your console. There might be a time limit within which you must apply the update, typically 30 days, before it is automatically applied to your instance.
 
-Some updates, however, impact all of the users sharing a common infrastructure, or are required immediately to keep your system secure. You can't schedule these updates. Additional details about these types of updates are coming soon.
+However, some updates impact all of the users sharing a common infrastructure, or are required immediately to keep your system secure. You can't schedule these updates. Additional details about these types of updates are coming soon.
 
 <!--
 Enterprise and Standard plans give you the ability to apply system updates to your instances at a time of your choosing. -->
