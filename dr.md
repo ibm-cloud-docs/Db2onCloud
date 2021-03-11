@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2021
-lastupdated: "2021-03-09"
+lastupdated: "2021-03-11"
 
 keywords: DR, HADR, disaster recovery, Enterprise, Standard, Db2 on Cloud, failover, failback
 
@@ -29,6 +29,12 @@ subcollection: Db2onCloud
 {: shortdesc}
 
 Admin functionality is not available on the DR node. Any admin functions must be run on the primary instance while it's **Active**.
+{: important}
+
+DR nodes are currently available for only Enterprise and Standard HADR plans. DR nodes are currently not supported in single node plans or in EU-Cloud.
+{: important}
+
+Failover to the DR site is not automatic. You must initiate the failover.
 {: important}
 
 <!--High availability disaster recovery (HADR) provides a high availability solution for both partial and complete site failures. HADR protects against data loss by replicating data changes from a source database, called the primary database, to the target databases, called the standby databases.
