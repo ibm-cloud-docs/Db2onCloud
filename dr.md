@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2021
-lastupdated: "2021-03-09"
+lastupdated: "2021-03-17"
 
 keywords: DR, HADR, disaster recovery, Enterprise, Standard, Db2 on Cloud, failover, failback
 
@@ -31,6 +31,21 @@ subcollection: Db2onCloud
 Admin functionality is not available on the DR node. Any admin functions must be run on the primary instance while it's **Active**.
 {: important}
 
+DR nodes are currently available for only Enterprise and Standard HADR plans. DR nodes are currently not supported in single node plans or in EU-Cloud.
+{: important}
+
+Failover to the DR site is not automatic. You must initiate the failover.
+{: important}
+
+Deleting a DR configuration is currently not supported on the {{site.data.keyword.cloud_notm}} dashboard. To delete the DR configuration, you must open a support ticket. Deleting a DR configuration removes both the primary and DR sites.
+{: important}
+ 
+[Creating a DR node](#dr_create_dr_node)
+
+[Forcing a failover to the DR site](#dr_force_failover)
+
+[Forcing a failback to the primary site](#dr_force_failback)
+
 <!--High availability disaster recovery (HADR) provides a high availability solution for both partial and complete site failures. HADR protects against data loss by replicating data changes from a source database, called the primary database, to the target databases, called the standby databases.
 -->
 
@@ -58,10 +73,10 @@ DR nodes are now available for Enterprise and Standard HADR plans only. DR nodes
 3. The new DR node is displayed on the **Disaster recovery** page along with a notification indicating a successful deployment.
    ![DR Deployed](images/dr_3_v2.jpg  "Recovery node created"){: caption="Figure 3. Recovery node sucessfully created" caption-side="bottom"}
 
-### Forcing failover to DR site
+### Forcing a failover to the DR site
 {: #dr_force_failover}
 
-1. To force a failover to the DR site, open the web console for either the primary or the recovery node from the {{site.data.keyword.cloud_notm}} dashboard. 
+1. To force a failover to the DR site, open the web console for the recovery site from the {{site.data.keyword.cloud_notm}} dashboard. 
    ![Recovery node console](images/dr_4_v2.jpg  "Recovery node console"){: caption="Figure 4. Recovery node console" caption-side="bottom"}
 
 2. To initiate a takeover, click **Promote** on the **Disaster recovery** page.
@@ -76,10 +91,10 @@ DR nodes are now available for Enterprise and Standard HADR plans only. DR nodes
 5. A successful takeover by the recovery node is indicated by the **Promotion** button moving to the primary node (now the standby) along with a notification. The recovery site is now **Active**.
    ![Takeover completion](images/dr_8_v2.jpg  "Takeover completion"){: caption="Figure 8. Takeover completion" caption-side="bottom"}
 
-### Forcing failback to primary site
+### Forcing a failback to the primary site
 {: #dr_force_failback}
 
-1. To force a failback to the primary site, open the web console for either the primary (now the standby) or the recovery node from the {{site.data.keyword.cloud_notm}} dashboard.
+1. To force a failback to the primary site, open the web console for the primary site from the {{site.data.keyword.cloud_notm}} dashboard.
    ![Primary node console](images/dr_9_v2.jpg  "Primary node console"){: caption="Figure 9. Primary node console" caption-side="bottom"}
 
 2. To initiate a takeover, click **Promote** on the **Disaster recovery** page. The takeover confirmation screen appears. Click **Promote** on the takeover confirmation screen to initiate the takeover.
