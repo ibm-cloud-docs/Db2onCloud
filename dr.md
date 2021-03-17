@@ -37,6 +37,12 @@ DR nodes are currently available for only Enterprise and Standard HADR plans. DR
 Failover to the DR site is not automatic. You must initiate the failover.
 {: important}
 
+[Creating a DR node](#dr_create_dr_node)
+
+[Forcing a failover to the DR site](#dr_force_failover)
+
+[Forcing a failback to the primary site](#dr_force_failback)
+
 <!--High availability disaster recovery (HADR) provides a high availability solution for both partial and complete site failures. HADR protects against data loss by replicating data changes from a source database, called the primary database, to the target databases, called the standby databases.
 -->
 
