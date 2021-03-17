@@ -37,6 +37,9 @@ DR nodes are currently available for only Enterprise and Standard HADR plans. DR
 Failover to the DR site is not automatic. You must initiate the failover.
 {: important}
 
+Deleting a DR configuration is currently not supported on the IBMCloud dashboard
+{: important}
+
 [Creating a DR node](#dr_create_dr_node)
 
 [Forcing a failover to the DR site](#dr_force_failover)
@@ -102,6 +105,15 @@ DR nodes are now available for Enterprise and Standard HADR plans only. DR nodes
 
 4. A successful takeover by the primary node is indicated by the **Promotion** button moving to the recovery node (now the standby) along with a notification. The primary site is now **Active**.
    ![Takeover completion](images/dr_12_v2.jpg  "Takeover completion"){: caption="Figure 12. Takeover completion" caption-side="bottom"}
+
+
+### Deleting a DR configuration
+{: #dr_delete}
+
+Deleting a DR node is currently not supported on the IBMCloud dashboard.  A support ticket must be opened to delete the DR configuration.
+
+Deleting a DR configuration entails deleting both the Primary and DR sites.
+{: important}
 
 <!--
 ## Legacy Flex plans
