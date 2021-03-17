@@ -37,12 +37,9 @@ DR nodes are currently available for only Enterprise and Standard HADR plans. DR
 Failover to the DR site is not automatic. You must initiate the failover.
 {: important}
 
-<<<<<<< HEAD
 Deleting a DR configuration is currently not supported on the {{site.data.keyword.cloud_notm}} dashboard. To delete the DR configuration, you must open a support ticket. Deleting a DR configuration removes both the primary and DR sites.
 {: important}
  
-=======
->>>>>>> 50ab8b0aed7852899020fff2d73a95128d4fc9b3
 [Creating a DR node](#dr_create_dr_node)
 
 [Forcing a failover to the DR site](#dr_force_failover)
