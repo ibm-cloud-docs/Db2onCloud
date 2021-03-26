@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2021
-lastupdated: "2021-01-19"
+lastupdated: "2021-03-26"
 
 keywords: security compliances, security, compliance, Db2 on Cloud
 
@@ -36,8 +36,8 @@ For details about each of the security compliances, see [Details about security 
 
 | {{site.data.keyword.Db2_on_Cloud_long}} offering plans | HIPAA | ISO | SOC 2 Type 2 | GDPR | Privacy shield |
 |-------------------------------------------------|-------|-----|--------------|------|----------------|
-| Enterprise | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | In Progress | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |
-| Standard | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | In Progress | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |
+| Enterprise | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |
+| Standard | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |
 | Lite |  | ![checkmark](images/checkmark.png) |  | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |
 {: caption="Table 1. Summary of security compliances for the service offering plans" caption-side="top"}
 
