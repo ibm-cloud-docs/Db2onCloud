@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2020
-lastupdated: "2020-08-28"
+  years: 2014, 2021
+lastupdated: "2021-03-31"
 
 keywords: 
 
@@ -24,9 +24,9 @@ subcollection: Db2onCloud
 # Activity Tracker integration
 {: #activity-tracker}
 
-{{site.data.keyword.Db2_on_Cloud_long}} deployments are integrated with Activity Tracker events in [IBM Cloud Activity Tracker with LogDNA](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-getting-started), so you can view service-level events.
+{{site.data.keyword.Db2_on_Cloud_long}} deployments are integrated with Activity Tracker events in [IBM Cloud Activity Tracker with IBM Log Analysis](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-getting-started), so you can view service-level events.
 
-Currently, Activity Tracker with LogDNA integration is available for {{site.data.keyword.Db2_on_Cloud_short}} deployments in the regions according to the following table: 
+Currently, Activity Tracker with IBM Log Analysis integration is available for {{site.data.keyword.Db2_on_Cloud_short}} deployments in the regions according to the following table: 
 
 | Deployment region | Activity Tracker region |
 |----------|-----------|
@@ -39,23 +39,23 @@ Currently, Activity Tracker with LogDNA integration is available for {{site.data
 {: caption="Table 1. Activity Tracker regions" caption-side="top"}
 
 
-## Activity Tracker through LogDNA
-{: #at_logdna}
+## Activity Tracker through Log Analysis
+{: #at_log_analysis}
 
 After you provision the service, events are automatically forwarded from all of your {{site.data.keyword.Db2_on_Cloud_short}} deployments in the same region.
 
 The service can be provisioned from its [catalog page](https://cloud.ibm.com/catalog/services/ibm-cloud-activity-tracker-with-logdna?callback=%2Fobserve%2Factivitytracker%2Fcreate){: external} or from an existing [Observability Dashboard](https://cloud.ibm.com/observe/activitytracker){: external}.
 
-The Activity Tracker with LogDNA service has a Lite plan that is free to use, but it only offers streaming events. To take advantage of the tagging, export, retention, and other features, you need to use one of the [paid plans](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-service_plans)<!-- [paid plans](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_pricing_plans) -->.
+The Activity Tracker with Log Analysis service has a Lite plan that is free to use, but it only offers streaming events. To take advantage of the tagging, export, retention, and other features, you need to use one of the [paid plans](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-service_plans)<!-- [paid plans](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_pricing_plans) -->.
 
-### Using the LogDNA Activity Tracker
+### Using the Log Analysis Activity Tracker
 {: #at_use}
 
-You can access Activity Tracker with LogDNA through the **Observability** tab of your deployment's **Manage** page. The **Manage Activity Tracker** button links to the main list of all Activity Tracker instances in your {{site.data.keyword.cloud_notm}} account. Select the instance where you set your database logs to be forwarded. Click **View Activity Tracker** to view the events.
+You can access Activity Tracker with Log Analysis through the **Observability** tab of your deployment's **Manage** page. The **Manage Activity Tracker** button links to the main list of all Activity Tracker instances in your {{site.data.keyword.cloud_notm}} account. Select the instance where you set your database logs to be forwarded. Click **View Activity Tracker** to view the events.
 
 After the event activity is forwarded to the service, each event can be expanded to a detailed view by clicking the arrow to the left of the time stamp.
 
-The LogDNA service offers [searching](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step6), [filtering](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step5), and [export](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-export#export) of events so you can customize retention for your use case. You can also use it to configure [alerts](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-alerts).
+The Log Analysis service offers [searching](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step6), [filtering](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step5), and [export](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-export#export) of events so you can customize retention for your use case. You can also use it to configure [alerts](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-alerts).
 
 ## Event fields
 {: #at_ev_fields}

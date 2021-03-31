@@ -254,7 +254,7 @@ There are various factors that govern the pace of the upgrade. Some of the facto
 {: faq}
 {: support}
 
-Our new Standard and Enterprise plans run the Db2 11.5 engine. They include self-scheduling of software updates by customers, zero down-time scaling of storage and compute, self-service managed backup with point-in-time restore, and support for several {{site.data.keyword.cloud_notm}} integration features like **Activity Tracker** and **LogDNA**. If you choose a high-availability (HA) option, you get three high-availability nodes spanning multiple availability zones (where supported).
+Our new Standard and Enterprise plans run the Db2 11.5 engine. They include self-scheduling of software updates by customers, zero down-time scaling of storage and compute, self-service managed backup with point-in-time restore, and support for several {{site.data.keyword.cloud_notm}} integration features like **Activity Tracker** and **Log Analysis**. If you choose a high-availability (HA) option, you get three high-availability nodes spanning multiple availability zones (where supported).
 -->
 <!--
 ### What are the plan specs?
