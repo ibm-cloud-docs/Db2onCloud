@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 # Activity Tracker integration
 {: #activity-tracker}
 
-{{site.data.keyword.Db2_on_Cloud_long}} deployments are integrated with Activity Tracker events in [IBM Cloud Activity Tracker with IBM Log Analysis](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-getting-started), so you can view service-level events.
+{{site.data.keyword.Db2_on_Cloud_long}} deployments are integrated with Activity Tracker events in [IBM Cloud Activity Tracker with IBM Log Analysis](/docs/log-analysis?topic=log-analysis-getting-started), so you can view service-level events.
 
 Currently, Activity Tracker with IBM Log Analysis integration is available for {{site.data.keyword.Db2_on_Cloud_short}} deployments in the regions according to the following table: 
 
@@ -44,9 +44,9 @@ Currently, Activity Tracker with IBM Log Analysis integration is available for {
 
 After you provision the service, events are automatically forwarded from all of your {{site.data.keyword.Db2_on_Cloud_short}} deployments in the same region.
 
-The service can be provisioned from its [catalog page](https://cloud.ibm.com/catalog/services/ibm-cloud-activity-tracker-with-logdna?callback=%2Fobserve%2Factivitytracker%2Fcreate){: external} or from an existing [Observability Dashboard](https://cloud.ibm.com/observe/activitytracker){: external}.
+The service can be provisioned from its [catalog page](https://cloud.ibm.com/catalog/services/logdnaat?callback=%2Fobserve%2Factivitytracker%2Fcreate){: external} or from an existing [Observability Dashboard](https://cloud.ibm.com/observe/activitytracker){: external}.
 
-The Activity Tracker with Log Analysis service has a Lite plan that is free to use, but it only offers streaming events. To take advantage of the tagging, export, retention, and other features, you need to use one of the [paid plans](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-service_plans)<!-- [paid plans](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_pricing_plans) -->.
+The Activity Tracker with Log Analysis service has a Lite plan that is free to use, but it only offers streaming events. To take advantage of the tagging, export, retention, and other features, you need to use one of the [paid plans](/docs/log-analysis?topic=log-analysis-service_plans).
 
 ### Using the Log Analysis Activity Tracker
 {: #at_use}
@@ -55,12 +55,12 @@ You can access Activity Tracker with Log Analysis through the **Observability** 
 
 After the event activity is forwarded to the service, each event can be expanded to a detailed view by clicking the arrow to the left of the time stamp.
 
-The Log Analysis service offers [searching](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step6), [filtering](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step5), and [export](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-export#export) of events so you can customize retention for your use case. You can also use it to configure [alerts](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-alerts).
+The Log Analysis service offers [searching](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step6), [filtering](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step5), and [export](/docs/log-analysis?topic=log-analysis-export#export) of events so you can customize retention for your use case. You can also use it to configure [alerts](/docs/log-analysis?topic=log-analysis-alerts).
 
 ## Event fields
 {: #at_ev_fields}
 
-A description of the common fields for an Activity Tracker event is on the [Event fields](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-event) page.
+A description of the common fields for an Activity Tracker event is on the [Event fields](/docs/activity-tracker?topic=activity-tracker-event) page.
 
 ## List of events
 {: #at_list_ev}
