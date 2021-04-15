@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2020
-lastupdated: "2020-11-04"
+  years: 2014, 2021
+lastupdated: "2021-04-15"
 
 keywords: 
 
@@ -99,6 +99,7 @@ create user mapping for user server fed_server OPTIONS (remote_authid '<remote_u
 
 ```
 DB20000I  The SQL command completed successfully.
+```
 
 ## Create a nickname
 {: #fedv2_nick}
