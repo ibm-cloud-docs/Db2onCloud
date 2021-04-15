@@ -132,7 +132,7 @@ Local database alias   = LOCALDB
 Create a wrapper by running the following command:
 
 ```
-db2 "create wrapper "drdawrapper" library 'libdb2drda.so' options(DB2_FENCED 'Y')"
+db2 "create wrapper drdawrapper library 'libdb2drda.so' options(DB2_FENCED 'Y')"
 ```
 {: codeblock}
 
