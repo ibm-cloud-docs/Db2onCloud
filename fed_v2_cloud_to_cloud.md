@@ -66,7 +66,7 @@ Table Name:             TEST1
 Create a wrapper by running the following command from the console of the target database instance:
 
 ```
-create wrapper "drdawrapper" library 'libdb2drda.so' options(DB2_FENCED 'Y')
+create wrapper drdawrapper library 'libdb2drda.so' options(DB2_FENCED 'Y')
 ```
 {: codeblock}
 
