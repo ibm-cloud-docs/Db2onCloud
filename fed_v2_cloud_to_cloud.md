@@ -32,7 +32,6 @@ The following steps are required to configure the federation system:
 1. [Create the wrapper](#fedv2_wrapper)
 1. [Create the server for a remote database](#fedv2_serv_remote_db)
 1. [Create the user mapping](#fedv2_user_map)
-1. [Test the connection](#fedv2_test_conxion)
 1. [Create a nickname](#fedv2_nick)
 
 ## Database and host name layout
@@ -100,44 +99,6 @@ create user mapping for user server fed_server OPTIONS (remote_authid '<remote_u
 
 ```
 DB20000I  The SQL command completed successfully.
-```
-
-## Test the connection
-{: #fedv2_test_conxion}
-
-Test the connection to the new server by running the following commands from the console of the target database instance:
-
-```
-set passthru fed_server
-```
-{: codeblock}
-
-```
-DB20000I  The SQL command completed successfully.
-```
-
-```
-select * from testdb.test1
-```
-{: codeblock}
-
-```
-C1          C2
------------ -----------
-         13          32
-
-1 record(s) selected.
-```
-
-```
-SET PASSTHRU RESET
-```
-{: codeblock}
-
-```
-DB20000I  The SQL command completed successfully.
-```
-
 
 ## Create a nickname
 {: #fedv2_nick}
