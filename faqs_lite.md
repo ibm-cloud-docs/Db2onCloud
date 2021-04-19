@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2020
-lastupdated: "2020-11-19"
+  years: 2014, 2021
+lastupdated: "2021-04-19"
 
 keywords: Lite plan, free plan, faqs
 
@@ -92,10 +92,10 @@ If the Db2 web console does not load or returns an error message, try the follow
 * When you create a Lite instance, be sure to provide an email address so you receive reactivation notices and password reset notices. 
 * If your use of {{site.data.keyword.Db2_on_Cloud_short}} exceeds the purpose provided by a Lite account with free support, upgrade to a paid account with [basic, advanced, or premium support](/docs/get-support?topic=get-support-support-plans){: external} to open cases for technical issues. 
 
-## What options do I have for community support?
+## What options do I have for support?
 {: #fp_faq_support}
 {: faq}
 {: support}
 
-The free Lite plan for {{site.data.keyword.Db2_on_Cloud_short}}, intended for prototyping and demoing applications, has community support. If you need help with a Db2 usage question, for example, query optimization or syntax error, review the available [Communities](/docs/Db2onCloud?topic=Db2onCloud-communities){: external} and the list of [{{site.data.keyword.Db2_on_Cloud_short}} Resources](https://www.ibm.com/cloud/db2-on-cloud/resources){: external}.
+The free Lite plan for {{site.data.keyword.Db2_on_Cloud_short}}, intended for prototyping and demoing applications, has only community support available to help you. You cannot get assistance with your free Lite plan by opening a support ticket. For example, if you need help with a Db2 usage question, query optimization, or a syntax error, review the available [Communities](/docs/Db2onCloud?topic=Db2onCloud-communities){: external} and the list of [{{site.data.keyword.Db2_on_Cloud_short}} Resources](https://www.ibm.com/cloud/db2-on-cloud/resources){: external}. 
 
