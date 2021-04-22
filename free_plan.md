@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2019
-lastupdated: "2019-12-03"
+  years: 2014, 2021
+lastupdated: "2021-04-22"
 
 keywords: Lite, plan, Lite plan, free plan, availability, restrictions, installation
 
@@ -35,7 +35,7 @@ Only community support is available.
 ## Architecture
 {: #fp_architecture}
 
-Unlike other {{site.data.keyword.Db2_on_Cloud_short}} plans, the free {{site.data.keyword.Db2_on_Cloud_short}} Lite plan runs on a multi-tenant system. The Flex and Precise Performance plans run on their own single-tenant virtual machines or bare metal servers.
+Unlike other {{site.data.keyword.Db2_on_Cloud_short}} plans, the free {{site.data.keyword.Db2_on_Cloud_short}} Lite plan runs on a multi-tenant system.
  
 The Lite plan uses one database schema.
 
