@@ -58,7 +58,7 @@ Enter information for the new copy instance:
 1. Select the data center location for the new copy instance under **Datacenter location**.
 1. Enter a name under **Service name**.
 1. Select the resource group of the new instance under **Resource group**.
-1. Select **Yes** for **High availability configuration**.
+1. If you'd like a highly available instance, select **Yes** for **High availability configuration**. Verify that the other options are correct.
 1. Select a **Pricing plan**.
 1. Click **Clone**.
 
