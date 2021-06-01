@@ -163,7 +163,10 @@
     "cannot create a new table nor schema on DB2 for a new project due to lack of authorization",
     "want to create a database db2  with Lite plan, but i got an error",
     "cant add a database to Db2 plan",
-    "can't add new database for Db2"
+    "can't add new database for Db2",
+    "POST /dbapi/v4/schema_discovery - 500 Internal Server Error",
+	  "POST /dbapi/v4/schema_discovery - 500 Internal Server Error while loading data",
+  	"I can't load any table. I get this error POST /dbapi/v4/schema_discovery - 500 Internal Server Error"
   ],
   "fp_faq_console": [
     "Why can’t I open the web console",
@@ -245,5 +248,13 @@
     "when i tried to open Console from IBM cloud DB2. The page is errored out",
     "I have problems with using a Db2 when i wanna open console",
     "issue opening the Db2 console"
+  ],
+  "fp_faq_instance": [
+    "unable to create Db2 lite service",
+	  "error creating Db2 instance",
+	  "500 Internal Server Error The service is under heavy load. Please try again later",
+	  "500 Internal Server Error creating an instance",
+	  "I am trying to setup a db2 lite plan but keep getting an error message about heavy load try again later",
+	  "Unable to provision an instance of IBM Db2 Lite plan"
   ]
 }

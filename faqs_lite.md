@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2021
-lastupdated: "2021-04-19"
+lastupdated: "2021-06-01"
 
 keywords: Lite plan, free plan, faqs
 
@@ -42,7 +42,6 @@ When your plan nears its reactivation date, you will receive a reactivation requ
 ## Will my data be deleted?
 {: #fp_faq_delete}
 {: faq}
-{: support}
 
 After you create a Lite instance, you have 30 days before the next reactivation.
 * After 33 days, your Lite plan is disabled, but {{site.data.keyword.cloud_notm}} still has your data. You can still reactivate.
@@ -62,7 +61,6 @@ Here are two simple options for backing up Lite plan data:
 ## Can I change the email I use for reactivation?
 {: #fp_faq_change_email}
 {: faq}
-{: support}
 
 Create a new Lite instance with the email you want to use going forward. If needed, first back up your data, delete your current Lite plan instance to create a new one, then load your data. You cannot change the email address associated with an existing Db2 Lite instance if you have only a Lite account with community support. 
 
@@ -72,6 +70,13 @@ Create a new Lite instance with the email you want to use going forward. If need
 {: support}
 
 If you have trouble with reactivation of a Lite plan instance, you can delete that faulty instance and create a new one. If needed, first back up your data so you can load it to this new instance.  
+
+## I'm getting an error when creating a new instance. What's the problem?
+{: #fp_faq_instance}
+{: faq}
+{: support}
+
+There's a limit of one instance per Lite plan. You may see an error 500 message if you try to create a second Lite instance. To create a new Lite plan instance, you must first delete your existing one.
 
 ## I'm getting an error when creating a new schema or database. What's the problem?
 {: #fp_faq_schema}
@@ -98,4 +103,3 @@ If the Db2 web console does not load or returns an error message, try the follow
 {: support}
 
 The free Lite plan for {{site.data.keyword.Db2_on_Cloud_short}}, intended for prototyping and demoing applications, has only community support available to help you. You cannot get assistance with your free Lite plan by opening a support ticket. For example, if you need help with a Db2 usage question, query optimization, or a syntax error, review the available [Communities](/docs/Db2onCloud?topic=Db2onCloud-communities){: external} and the list of [{{site.data.keyword.Db2_on_Cloud_short}} Resources](https://www.ibm.com/cloud/db2-on-cloud/resources){: external}. 
-
