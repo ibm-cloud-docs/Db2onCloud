@@ -94,6 +94,7 @@ Db2 on Cloud
 
     {: .navgroup id="help"}
     faqs.md
+    faq_lite_diff.md
     faq_lite_migrate.md
     help.md
     {: .navgroup-end}
