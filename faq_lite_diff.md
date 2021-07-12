@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2021
-lastupdated: "2021-06-16"
+lastupdated: "2021-07-12"
 
 keywords: 
 
@@ -23,7 +23,7 @@ subcollection: Db2oc
 {:support: data-reuse='support'}
 {:faq: data-hd-content-type='faq'}
 
-# FAQ - Changes to the Lite plan (June 2021)
+# Changes to the Lite plan (June/July 2021)
 
 {: #faq_lite_diff}
 

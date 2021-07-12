@@ -12,6 +12,7 @@ Db2 on Cloud
     Free plan
         free_plan.md
         faqs_lite.md
+        faq_lite_diff.md
 
     getting-started.md
 
@@ -94,7 +95,6 @@ Db2 on Cloud
 
     {: .navgroup id="help"}
     faqs.md
-    faq_lite_diff.md
     faq_lite_migrate.md
     help.md
     {: .navgroup-end}
