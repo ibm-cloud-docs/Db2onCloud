@@ -27,6 +27,7 @@ Db2 on Cloud
         connecting/connect_ibm_tools.md
         connecting/connect_3rd_party_tools.md
         connecting/rest_api.md
+        connecting/firewall_allowlist.md
 
     {: .topicgroup}
     Loading your data
