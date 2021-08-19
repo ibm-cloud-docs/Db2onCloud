@@ -37,6 +37,9 @@ As with any public cloud service, you can connect your application by way of a p
 
 The easiest way to connect to your data is by way of the public host name that was provided in your welcome letter. You can also obtain your host name and credentials in the following ways:
 
+Using Hostnames, not IP Addresses, is recommended since the underlying IP address could change.
+{: important}
+
 #### From the console
 {: #pub_console}
 
