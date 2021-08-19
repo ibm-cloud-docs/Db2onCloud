@@ -35,7 +35,9 @@ As with any public cloud service, you can connect your application by way of a p
 ### How to connect to a public endpoint:
 {: #pub_endpt_steps}
 
-The easiest way to connect to your data is by way of the public host name that was provided in your welcome letter. You can also obtain your host name and credentials in the following ways:
+**We recommend using Hostnames and not IP Addresses, since the underlying IP address may change**
+
+You can obtain your hostname, port and credentials in the following ways:
 
 #### From the console
 {: #pub_console}
