@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-09-19"
+lastupdated: "2021-08-23"
 
 keywords:
 
@@ -37,7 +37,7 @@ As with any public cloud service, you can connect your application by way of a p
 
 The easiest way to connect to your data is by way of the public host name that was provided in your welcome letter. You can also obtain your host name and credentials in the following ways:
 
-Using Hostnames, not IP Addresses, is recommended since the underlying IP address could change.
+For application connections, do not use IP addresses to connect to the Db2oC instance, as the IP addresses resolved from the hostname may change. Use hostnames to reference your connection properties where it is available. In cases where hostnames cannot be used such as firewall rules, please see https://cloud.ibm.com/docs/Db2onCloud?topic=Db2onCloud-firewall-allowlist on suggestions for opening firewalls with subnet information
 {: important}
 
 #### From the console
