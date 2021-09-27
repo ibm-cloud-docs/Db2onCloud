@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2021
-lastupdated: "2021-09-01"
+lastupdated: "2021-09-27"
 
 keywords: 
 
@@ -27,7 +27,7 @@ subcollection: Db2oc
 
 {: #faq_lite_diff}
 
-Beginning in June 2021, all new Lite Tier instances are deployed on a new infrastructure. In September 2021, users on the older infrastructure will be migrated to this new infrastructure. For questions about the migration, see [FAQ - Lite plan migration](/docs/Db2onCloud?topic=Db2onCloud-faq-lite-plan-migration). The changes with the new infrastructure are described below.
+Beginning in June 2021, all new Lite Tier instances are deployed on a new infrastructure. In October 2021, users on the older infrastructure will be migrated to this new infrastructure. For questions about the migration, see [FAQ - Lite plan migration](/docs/Db2onCloud?topic=Db2onCloud-faq-lite-plan-migration). The changes with the new infrastructure are described below.
 
 
 {: shortdesc}
@@ -37,7 +37,7 @@ Beginning in June 2021, all new Lite Tier instances are deployed on a new infras
 - The hostname is different.
 - The port number changes from port 50000 or 50001 to a unique customized port number.
 - To encourage data security, less secure connection protocols are disabled. You can only connect to the database using SSL.
-  - If you require a non-SSL connection, you may move to the Standard plan and open a support case.
+- If you require a non-SSL connection, you may move to the Standard plan and open a support case.
 
 ## Credentials
 
@@ -45,9 +45,13 @@ You can obtain credentials in the **Service credentials** tab as soon as you ope
 
 Note that you are only allowed to create one service credential per lite instance. Additionally, for security purposes, changes to your password are not displayed in the service credential information.
 
+Currently, password changes through JDBC and the db2cli are unsupported.
+
 ## VCAP
 
-The VCAP Services JSON file is different. You need to update any applications that consume the VCAP Services JSON file after the migration.
+- The VCAP Services JSON file is different. You need to update any applications that consume the VCAP Services JSON file after the migration.
+- Only one VCAP is available at a time (use of more than one is forbidden).
+- Deleting your service credentials before saving them will cause them to no longer be visible.
 
 ## Console
 
@@ -69,3 +73,4 @@ You may choose to access your data through an external program. If you choose to
 
 1. Hostname and port, obtainable through the created credentials in the above step, or viewable from the console when you click the **Go to UI** button and navigate to the administrative tab.
 1. Certificate, obtainable through the console on the administrative tab by clicking the **Download SSL Certificate** button.
+
