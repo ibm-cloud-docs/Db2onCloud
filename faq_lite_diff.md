@@ -27,7 +27,7 @@ subcollection: Db2oc
 
 {: #faq_lite_diff}
 
-Beginning in June 2021, all new Lite Tier instances are deployed on a new infrastructure. In October 2021, users on the older infrastructure will be migrated to this new infrastructure. For questions about the migration, see [FAQ - Lite plan migration](/docs/Db2onCloud?topic=Db2onCloud-faq_lite). The changes with the new infrastructure are described below.
+Beginning in June 2021, all new Lite Tier instances are deployed on a new infrastructure. In October 2021, users on the older infrastructure will be migrated to this new infrastructure. For questions about the migration, see [FAQ - Lite plan migration](/docs/Db2onCloud?topic=Db2onCloud-faq-lite-plan-migration). The changes with the new infrastructure are described below.
 
 
 {: shortdesc}
