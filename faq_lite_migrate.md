@@ -33,7 +33,7 @@ This is a collection of frequently asked questions (FAQs) about migrating the {{
 ## What do I have to do during the migration?
 {: #q_migrate}
 
-The migration will be done for you. The process requires a 24-hour outage window, during which your instance will be unavailable. Once the migration completes, you will be notified that your instance is ready for use again.
+The migration process requires a 24-hour outage window, during which time your instance on the legacy infrastructure will be unavailable. After the migration completes, you will be notified that your instance on the new infrastructure is ready for use.
 
 ## What's changing with this migration?
 {: #q_changes}
@@ -42,7 +42,7 @@ The migration will be done for you. The process requires a 24-hour outage window
 
 - The hostname is different.
 - The port number changes from port 50001 to a unique customized port number.
-- To encourage data security, less secure connection protcols are disabled. You can only connect to the database using SSL.
+- To encourage data security, less secure connection protocols are disabled. You can only connect to the database using SSL.
 - If you require a non-SSL connection, you may move to the Standard plan and open a support case.
 
 ### Console
