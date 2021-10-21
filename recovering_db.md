@@ -1,7 +1,7 @@
 
-# Recovering a deleted database instance
+# Recovering a deleted service instance
 
-When a service instance is deleted, it is put in a suspend state for 7 days after which its removed.  The deleted instance can be recovered within 7 days of deletion by following these steps
+When a service instance is deleted, it is put in a suspend state for 7 days after which its removed.  The deleted instance can be recovered within 7 days by following these steps
 
 The user must be logged into their IBMCloud account to be able to recover an instance.
 
