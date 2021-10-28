@@ -42,6 +42,7 @@ Db2 on Cloud
         flex_scaling.md
         copy_db.md
         deleting_db.md
+        recovering_db.md
 
         {: .topicgroup}
         Upgrading
