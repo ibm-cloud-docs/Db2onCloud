@@ -44,11 +44,6 @@ Db2 on Cloud
         deleting_db.md
         recovering_db.md
 
-        {: .topicgroup}
-        Upgrading
-            upgrade.md
-            recovery.md
-            wn.md
         
         cdc.md
         rc.md
@@ -97,7 +92,6 @@ Db2 on Cloud
 
     {: .navgroup id="help"}
     faqs.md
-    faq_lite_migrate.md
     help.md
     {: .navgroup-end}
 	
