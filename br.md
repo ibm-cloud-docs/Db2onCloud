@@ -27,7 +27,7 @@ subcollection: Db2onCloud
 ## Backup
 {: #br_backup}
 
-For paid plans, encrypted backups of the database are done daily. A daily backup is kept for each of the last 14 days.
+Daily Encrypted Database Backups are taken for all paid plans.  The Daily backup is kept in a Cross Region CoS bucket for 14 days.
 {: shortdesc}
 
 The following is an example of the manual backup operation in the web console UI:
