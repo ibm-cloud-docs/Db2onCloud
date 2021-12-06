@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2021
-lastupdated: "2021-03-31"
+lastupdated: "2021-11-29"
 
 keywords: 
 
@@ -21,46 +21,19 @@ subcollection: Db2onCloud
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Activity Tracker integration
+# {{site.data.keyword.at_short}} events
 {: #activity-tracker}
 
-{{site.data.keyword.Db2_on_Cloud_long}} deployments are integrated with Activity Tracker events in [IBM Cloud Activity Tracker with IBM Log Analysis](/docs/log-analysis?topic=log-analysis-getting-started), so you can view service-level events.
+As a security officer, auditor, or manager, you can use the {{site.data.keyword.at_full_notm}} service to track how users and applications interact with {{site.data.keyword.Db2_on_Cloud_long}} deployments. 
+{: shortdesc}
 
-Currently, Activity Tracker with IBM Log Analysis integration is available for {{site.data.keyword.Db2_on_Cloud_short}} deployments in the regions according to the following table: 
+On addition to {{site.data.keyword.at_short}} events, you can configure the DB2 audit facility that provides the ability to audit at both the instance and the individual database level. For more information, see [Introduction to the Db2 audit facility](https://www.ibm.com/docs/en/db2/11.5?topic=activities-introduction-db2-audit-facility){: external}.
 
-| Deployment region | Activity Tracker region |
-|----------|-----------|
-| Dallas | us-south |
-| Washington | us-east |
-| Frankfurt | eu-de |
-| London | eu-gb |
-| Sydney | au-syd |
-| Tokyo | jp-tok |
-{: caption="Table 1. Activity Tracker regions" caption-side="top"}
-
-
-## Activity Tracker through Log Analysis
-{: #at_log_analysis}
-
-After you provision the service, events are automatically forwarded from all of your {{site.data.keyword.Db2_on_Cloud_short}} deployments in the same region.
-
-The service can be provisioned from its [catalog page](https://cloud.ibm.com/catalog/services/logdnaat?callback=%2Fobserve%2Factivitytracker%2Fcreate){: external} or from an existing [Observability Dashboard](https://cloud.ibm.com/observe/activitytracker){: external}.
-
-The Activity Tracker with Log Analysis service has a Lite plan that is free to use, but it only offers streaming events. To take advantage of the tagging, export, retention, and other features, you need to use one of the [paid plans](/docs/log-analysis?topic=log-analysis-service_plans).
-
-### Using the Log Analysis Activity Tracker
-{: #at_use}
-
-You can access Activity Tracker with Log Analysis through the **Observability** tab of your deployment's **Manage** page. The **Manage Activity Tracker** button links to the main list of all Activity Tracker instances in your {{site.data.keyword.cloud_notm}} account. Select the instance where you set your database logs to be forwarded. Click **View Activity Tracker** to view the events.
-
-After the event activity is forwarded to the service, each event can be expanded to a detailed view by clicking the arrow to the left of the time stamp.
-
-The Log Analysis service offers [searching](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step6), [filtering](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step5), and [export](/docs/log-analysis?topic=log-analysis-export#export) of events so you can customize retention for your use case. You can also use it to configure [alerts](/docs/log-analysis?topic=log-analysis-alerts).
-
-## Event fields
-{: #at_ev_fields}
-
-A description of the common fields for an Activity Tracker event is on the [Event fields](/docs/activity-tracker?topic=activity-tracker-event) page.
+{{site.data.keyword.at_short}} records service and user initiated activities that change the state of a service in {{site.data.keyword.cloud_notm}}. You can
+use this service to investigate abnormal activity and critical actions and to comply with regulatory audit requirements. In addition, you can be alerted about
+actions as they happen. The events that are collected comply with the Cloud Auditing Data Federation (CADF) standard. 
+- For more information regarding the {{site.data.keyword.at_full_notm}} service, see the [Getting started tutorial for {{site.data.keyword.at_full_notm}}](/docs/activity-tracker?topic=activity-tracker-getting-started).
+- A description of the common fields for an Activity Tracker event is on the [Event fields](/docs/activity-tracker?topic=activity-tracker-event) page.
 
 ## List of events
 {: #at_list_ev}
@@ -69,15 +42,42 @@ The following table lists the events that get sent to Activity Tracker from {{si
 
 | Action | Description |
 |-------|-------|
-| `<service_id>.backup-scheduled.create`| A scheduled backup of your deployment was created. If the backup failed, a "-failure" flag is included in the message. |
-| `<service_id>.user-password.update`| A user's password was updated. A "-failure" flag is included in the message if the attempt to update a user's password failed. |
-| `<service_id>.user.create`| A user was created. A "-failure" flag is included in the message if the attempt to create a user failed. |
-| `<service_id>.user.delete`| A user was deleted. A "-failure" flag is included in the message if the attempt to delete a user failed. |
-| `<service_id>.backup.restore`| A restore from backup was created. If the attempted restore failed, a "-failure" flag is included in the message. |
-| `<service_id>.resources.scale`| A scaling operation was performed. If the scaling operation failed, a "-failure" flag is included in the message. |
-| `<service_id>.whitelisted-ips-list.update`| The allowlist was modified. A "-failure" flag is included in the message if the attempt to modify the allowlist failed. |
-| `<service_id>.serviceendpoints.update`| A change has been made to the service endpoints configuration. If the operation failed, a "-failure" flag is included in the message. |
-{: caption="Table 2. List of events and event descriptions" caption-side="top"}
+| `db2oncloud.backup-scheduled.create`| This event reports when a scheduled backup of your deployment is created. |
+| `db2oncloud.user-password.update`| This event reports when a user's password is updated. |
+| `db2oncloud.user.create`| This event reports when a user is created. |
+| `db2oncloud.user.delete`| This event reports when a user is deleted. |
+| `db2oncloud.backup.restore`| This event reports when the restore from a backup is created.  |
+| `db2oncloud.resources.scale`| This event reports when a scaling operation is performed.  |
+| `db2oncloud.whitelisted-ips-list.update`| This event reports when the allowlist is modified. |
+| `db2oncloud.serviceendpoints.update`| This event reports a change to the service endpoints configuration. |
+{: caption="Table 1. List of events and event descriptions" caption-side="top"}
 
-The `<service_id>` field indicates the type of {{site.data.keyword.databases-for}} deployment. For example, `Db2` or `messages-for-rabbitmq`.
+## Viewing events
+{: #at_viewing}
+
+Events that are generated by an instance of {{site.data.keyword.Db2_on_Cloud_long}} are automatically forwarded to the {{site.data.keyword.at_short}} instance that is available in the same location.
+
+{{site.data.keyword.at_short}} can have only one instance per location. To view events, you must access the web UI of the {{site.data.keyword.at_full_notm}} service in the same location where your {{site.data.keyword.Db2_on_Cloud_long}} instance is available. For more information, see [Navigating to the web UI](/docs/activity-tracker?topic=activity-tracker-launch).
+
+
+ Deployment Region | {{site.data.keyword.at_short}} Region |
+|-----------------|------------------------|
+| Dallas | `us-south` |
+| Washington | `us-east` |
+| Frankfurt | `eu-de` |
+| London | `eu-gb` |
+| Sydney | `au-syd` |
+| Tokyo | `jp-tok` |
+{: caption="Table 2. Activity Tracker regions" caption-side="top"}
+
+
+## Additional DB2 auditing information
+{: #at_other_audit_events}
+
+You can use the Db2 audit facility to generate an audit trail for predefined database events at both the instance and the individual database level.
+- For more information about audit events, see [Audit events](https://www.ibm.com/docs/en/db2/11.5?topic=layouts-audit-events){: external}.
+- The security administrator can create audit policies to control what is audited within an individual database and at an intance level. For more information about  audit policies, see [Audit policies](https://www.ibm.com/docs/en/db2/11.5?topic=facility-audit-policies){: external}.
+
+[Learn more about auditing](/docs/Db2onCloud?topic=Db2onCloud-auditing).
+
 
