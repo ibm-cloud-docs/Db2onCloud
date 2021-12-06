@@ -28,6 +28,8 @@ subcollection: Db2onCloud
 {: #br_backup}
 
 For paid plans, encrypted backups of the database are done daily. A daily backup is kept for each of the last 14 days.
+
+**All paid plans make use of Cross-Regional IBM Cloud Object Storage (COS) to keep backups offsite.**
 {: shortdesc}
 
 The following is an example of the manual backup operation in the web console UI:
@@ -56,7 +58,7 @@ All paid plans have the ability to restore backups to either end-of-backups or t
 
 For information about point-in-time restores, see [Point-in-time restore](#point-in-time).
 
-All paid plans make use of IBM Cloud Object Storage (COS) to keep backups offsite. 
+**All paid plans make use of Cross-Regional IBM Cloud Object Storage (COS) to keep backups offsite.**
 
 <!-- However, Sydney and certain smaller data centers might not support offsite replication with IBM COS at this time. Check the [IBM COS documentation](/docs/cloud-object-storage/basics?topic=cloud-object-storage-endpoints#endpoints) for your region to determine which regions support offsite replication. -->
 
