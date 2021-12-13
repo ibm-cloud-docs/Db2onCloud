@@ -42,7 +42,8 @@ When you create the deployment from the catalog, you need to specify the followi
 1. **Service name** - The name can be any string and is the name that is used on the web and in the command line to identify the new deployment.
 
 1. **Region** - The region in which the deployment resides.
-    Users can optionally set:
+
+1. **Backup Location** - The location of the deployment's backups. Users can choose **Cross Regional** or **Regional** backups. Cross Regional backups can be stored across multiple regions in one zone. Whereas, Regional backups can be stored in one region only.
 
 1. **Resource group** - If you are organizing your services into resource groups, you can specify the resource group in this field. Otherwise, you can leave it at default.
 
