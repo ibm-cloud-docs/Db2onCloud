@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2021
-lastupdated: "2021-05-27"
+lastupdated: "2021-12-29"
 
 keywords: 
 
@@ -24,7 +24,6 @@ subcollection: Db2onCloud
 # Managing users
 {: #user_mgmt}
 
-## Current plans
 {: #um_current_plans}
 
 Access to {{site.data.keyword.Db2_on_Cloud_long}} service instances for users in your account is controlled by [Identity and access management (IAM) on IBM Cloud](/docs/Db2onCloud?topic=Db2onCloud-iam) and database access is provided by standard access controls provided by the database. 
@@ -83,14 +82,5 @@ Service action access is also controlled by IAM Roles. An IAM user can be assign
 | IAM - Platform - Administrator | Yes          |  Yes  | Yes   | Yes     | Yes | Yes     | Yes    |  Yes    | Yes              |
 {: caption="Table 2. Roles and service actions" caption-side="top"} 
 
-## Legacy plans
-{: #um_legacy_plans}
-
-Management of users that were given access to the database is the sole responsibility of the user or users with the administrator role. The administrator has the responsibility to manage how other users in your organization access your database.
-{: shortdesc}
-
-The database administrator role manages the following types of user access: 
-* Web console. From the web console, users can run queries against the database.
-* Database. The administrator can grant granular access permissions to the database, including being able to access only certain tables, schemas, or even rows or columns. 
 
 For more information about user management, see [Database user management](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:external}

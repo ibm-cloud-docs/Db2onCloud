@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2021
-lastupdated: "2021-12-06"
+lastupdated: "2021-12-29"
 
 keywords: 
 
@@ -114,29 +114,3 @@ The following are a selected example of screen captures of the point-in-time res
 
 5. The restore operation completed successfully.
 ![View of the successful completion of the restoration](images/pit_restore_successful_v2.png "Successful completion"){: caption="Figure 13. View of the successful completion of the restoration" caption-side="bottom"}
-
-#### Legacy plans
-{: #br_legacy}
-
-1. Select the **Point in Time** restore strategy and select a point-in-time date to which you want to restore the database. The point-in-time restore process selects the backup closest to your requested point-in-time date out of the pool of retained backups made during the previous 14 days. 
-
-   The point-in-time restore process invalidates any of the previously retained backups with dates after the selected point-in-time date because of a resultant divergence in the timeline.
-   {: note}
-
-   ![View of the highlighted selection of the point-in-time restore strategy](images/pit_restore_1.png "Backup and restore console page"){: caption="Figure 14. View of the highlighted selection of the point-in-time restore strategy" caption-side="bottom"}
-
-2. Confirm that you want to continue with your restore selections. After initiating the restore operation, you cannot change the request.  
-![View of the point-in-time restore confirmation dialog](images/pit_restore_2.png "Confirmation dialog"){: caption="Figure 15. View of the point-in-time restore confirmation dialog" caption-side="bottom"}
-
-3. The restore process is initializing. 
-![View of the point-in-time restore initialization](images/pit_restore_3.png "Initialization of point-in-time restoration"){: caption="Figure 16. View of the point-in-time restore initialization" caption-side="bottom"}
-
-4. Restoring the database to the selected point in time.
-![View of the progress of the point-in-time restore](images/pit_restore_4.png "Progress of restoration"){: caption="Figure 17. View of the progress of the point-in-time restore" caption-side="bottom"}
-
-5. A new backup point is being created. The point-in-time restored database is ready to use.
-![View of the creation of a backup point](images/pit_restore_5.png "Creating a backup point"){: caption="Figure 18. View of the creation of a backup point" caption-side="bottom"}
-
-6. The restore operation completed successfully.
-![View of the successful completion of the restoration](images/pit_restore_6.png "Successful completion"){: caption="Figure 19. View of the successful completion of the restoration" caption-side="bottom"}
-

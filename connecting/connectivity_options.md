@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2020
-lastupdated: "2021-08-23"
+  years: 2014, 2020, 2021
+lastupdated: "2021-12-29"
 
 keywords:
 
@@ -176,28 +176,6 @@ The following VCAP Services json file can be used to make connections to your En
 }
 ```
 
-#### Legacy plans
-{: #pub_endpt_legacy}
-
-The following VCAP Services json file can be used to make connections to your legacy plan database instances:
-
-```
-{
-  "hostname": "dashdb-enterprise-xxxxxxx.services.dal.bluemix.net",
-  "password": "<password>",
-  "https_url": "https://dashdb-enterprise-xxxxxxx.services.dal.bluemix.net",
-  "port": 50000,
-  "ssldsn": "DATABASE=BLUDB;HOSTNAME=dashdb-enterprise-xxxxxx.services.dal.bluemix.net;PORT=50001;PROTOCOL=TCPIP;UID=bluadmin;PWD=DTPY7KXWxhp_pKtjLSt;Security=SSL;",
-  "host": "dashdb-enterprise-xxxxxxx.services.dal.bluemix.net",
-  "jdbcurl": "jdbc:db2://dashdb-enterprise-xxxxxxx.services.dal.bluemix.net:50000/BLUDB",
-  "uri": "db2://bluadmin:DTPY7KXx1p_pKtjLSt@dashdb-enterprise-xxxxxxx.services.dal.bluemix.net:50000/BLUDB",
-  "db": "BLUDB",
-  "dsn": "DATABASE=BLUDB;HOSTNAME=dashdb-enterprise-xxxxxxx.services.dal.bluemix.net;PORT=50000;PROTOCOL=TCPIP;UID=bluadmin;PWD=DTPYZunlWxhp_pKtjLSt;",
-  "username": "bluadmin",
-  "ssljdbcurl": "jdbc:db2://dashdb-enterprise-xxxxxxx.services.dal.bluemix.net:50001/BLUDB:sslConnection=true;"
-}
-```
-
 ![Public network access to {{site.data.keyword.cloud_notm}}](images/public_connection.png "Graphical view of user to cloud connection"){: caption="Figure 1. Public network access to {{site.data.keyword.cloud_notm}}" caption-side="bottom"}
 
 Non-admin users can also use allowlisting available in the {{site.data.keyword.Db2_on_Cloud_short}} web console under **Settings > Manage Users**.
@@ -220,14 +198,6 @@ Enable your {{site.data.keyword.cloud_notm}} account to use virtual routing and 
   3. Select **Private endpoints** or **Public-and-private endpoints** and click **Update** to enable private endpoints.
 
      ![Configuring private endpionts {{site.data.keyword.cloud_notm}}](images/private_endpoints.png "Graphical view of configuring private end points"){: caption="Figure 2. Configuring private endpoints on {{site.data.keyword.Db2_on_Cloud_long}}" caption-side="bottom"}
-
-- For Legacy plans
-
-  Configure your {{site.data.keyword.Db2_on_Cloud_short}} instance for private endpoint connectivity.
-
-  - **If you provisioned your {{site.data.keyword.Db2_on_Cloud_short}} instance through the {{site.data.keyword.cloud_notm}} catalog**: [Create a case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} to request the configuration of your {{site.data.keyword.Db2_on_Cloud_short}} instance for {{site.data.keyword.cloud_notm}} service endpoint connectivity. After this is complete, your {{site.data.keyword.Db2_on_Cloud_short}} instance will be served on a new, non-internet-routable IP address. Information about how to access your {{site.data.keyword.Db2_on_Cloud_short}} instance by using this newly configured private endpoint will be sent to you.
-
-  - **If you purchased your {{site.data.keyword.Db2_on_Cloud_short}} instance through IBM Sales**: If you requested private endpoint connectivity, your {{site.data.keyword.Db2_on_Cloud_short}} instance will be provisioned with {{site.data.keyword.cloud_notm}} service endpoint connectivity. No further action is required.
 
 After you've configured {{site.data.keyword.cloud_notm}} private endpoint connectivity for your {{site.data.keyword.Db2_on_Cloud_short}} instance, it will only be accessible through a private endpoint. You will not be able to access your instance through a public endpoint.
 {: note}

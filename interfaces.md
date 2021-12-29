@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2020
-lastupdated: "2020-02-03"
+  years: 2014, 2020, 2021
+lastupdated: "2021-12-29"
 
 keywords: 
 
@@ -50,7 +50,6 @@ You can access your web console in the following ways:
 {: #int_api}
 
 With {{site.data.keyword.Db2_on_Cloud_short}} service plans, you can do tasks that are related to file management, loading data, and resource scaling by using one of the following REST APIs:
-- [Database management API (Legacy)](https://cloud.ibm.com/apidocs/db2-on-cloud){:external}
 - [Database management API (Standard and Enterprise)](https://cloud.ibm.com/apidocs/db2-on-cloud/db2-on-cloud-v4){: external}
 - [Database resource scaling API](https://cloud.ibm.com/apidocs/db2-on-cloud/db2oc_scale_exp){:external}
 
