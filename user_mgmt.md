@@ -83,4 +83,4 @@ Service action access is also controlled by IAM Roles. An IAM user can be assign
 {: caption="Table 2. Roles and service actions" caption-side="top"} 
 
 
-For more information about user management, see [Database user management](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:external}
+For more information about user management, see [Database user management](https://www.ibm.com/docs/en/db2oc?topic=features-database-user-management){:external}
