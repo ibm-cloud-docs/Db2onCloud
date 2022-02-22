@@ -1,0 +1,122 @@
+#  Name your file `toc.yaml`
+#  Make sure you include all nav file coding requirements, as defined in https://test.cloud.ibm.com/docs/writing?topic=writing-code-nav
+#  Anything with a fully qualified URL with `http` or `https` will get an external link icon added to the nav entry
+---
+toc:
+  properties:
+    subcollection: Db2onCloud
+    category: database
+    audience: service
+    href: /docs/Db2onCloud?topic=Db2onCloud-getting-started
+    console-page: /catalog/services/db2
+    product-page: https://www.ibm.com/cloud/db2-on-cloud
+    path: Db2onCloud
+    label: Db2 on Cloud
+
+#  List your getting started tutorial (getting-started.md) as the first item in the Get started nav group. See https://test.cloud.ibm.com/docs/writing?topic=writing-navigation for more details on the toc design.
+  entries: 
+  - navgroup: 
+      id: learn
+      topics:
+      - about.md
+      - topicgroup: 
+          label: Free Plan
+          topics:
+          - free_plan.md
+          - faqs_lite.md
+          - faq_lite_diff.md
+      - topicgroup: 
+          label: Connecting
+          topics:
+          - connecting/connecting.md
+          - connecting/connectivity_options.md
+          - connecting/credentials.md
+          - connecting/ssl.md
+          - connecting/driver_pkg.md
+          - connecting/connect_programmatically.md
+          - connecting/connect_ibm_tools.md
+          - connecting/connect_3rd_party_tools.md
+          - connecting/rest_api.md
+          - connecting/firewall_allowlist.md
+      - topicgroup: 
+          label: Loading your data
+          topics:
+          - dcw.md
+          - migration.md
+      - topicgroup: 
+          label: Adminstration
+          topics: 
+          - interfaces.md
+          - endpoints.md
+          - advanced_admin.md
+          - flex_scaling.md
+          - copy_db.md
+          - deleting_db.md
+          - recovering_db.md
+          - cdc.md
+          - rc.md
+          - br.md
+          - ha.md
+          - dr.md
+          - log_mon.md
+          - self_serve_update.md
+          - topicgroup: 
+              label: Federation
+              topics: 
+              - federation.md
+              - ederation_v2.md
+              - fed_v2_cloud_to_cloud.md
+          - local_dev_env.md
+              
+      - topicgroup: 
+          label: Security
+          topics:
+          - encryption.md
+          - iam.md
+          - user_mgmt.md
+          - rcac.md
+          - auditing.md
+          - activity_tracker.md
+          - sec_comp_sum.md
+          - key_protect_2.md
+          
+      - communities.md
+      - link: 
+            label: What's new
+            href: https://www.ibm.com/support/pages/whats-new-ibm-db2-cloud
+      - link: 
+            label: IBM Developer Answers
+            href: https://developer.ibm.com/answers/index.html
+          
+
+  - navgroup: 
+      id: howto
+      topics:
+      - provision.md
+      - link: 
+            label: "IBM Demos: Tutorials, videos, and hands-on labs"
+            href: https://www.ibm.com/demos/collection/Db2-on-Cloud/
+
+#  Links to your REST API docs should be included in the Reference navigation group. For details on publishing API docs, see https://test.cloud.ibm.com/docs/api-docs.
+#  Links to your command line reference docs should be included in the Reference navigation group.
+  - navgroup:
+      id: reference
+      topics: 
+      - link: 
+            label: Database management API (Standard and Enterprise)
+            href: https://cloud.ibm.com/apidocs/db2-on-cloud/db2-on-cloud-v4
+      - link: 
+            label: Database resource scaling API
+            href: https://cloud.ibm.com/apidocs/db2-on-cloud/db2oc_scale_exp
+      - link: 
+            label: SQL reference
+            href: https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.sql.ref.doc/doc/c0004100.html
+      - link: 
+            label: Knowledge Center
+            href: https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.kc.doc/welcome.html
+      
+  - navgroup:
+      id: help
+      topics: 
+      - faqs.md
+      - help.md
