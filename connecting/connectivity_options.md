@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020, 2021
-lastupdated: "2021-12-29"
+lastupdated: "2022-02-24"
 
 keywords:
 
@@ -35,10 +35,10 @@ As with any public cloud service, you can connect your application by way of a p
 ### How to connect to a public endpoint:
 {: #pub_endpt_steps}
 
-The easiest way to connect to your data is by way of the public host name that was provided in your welcome letter. You can also obtain your host name and credentials in the following ways:
-
-For application connections, do not use IP addresses to connect to the Db2oC instance, as the IP addresses resolved from the hostname may change. Use hostnames to reference your connection properties where it is available. In cases where hostnames cannot be used such as firewall rules, please see https://cloud.ibm.com/docs/Db2onCloud?topic=Db2onCloud-firewall-allowlist on suggestions for opening firewalls with subnet information
+For application connections, do not use IP addresses to connect to the {{site.data.keyword.Db2_on_Cloud_short}} instance, as the IP addresses resolved from the hostname may change. Use hostnames to reference your connection properties where it is available. In cases where hostnames cannot be used such as firewall rules, please see https://test.cloud.ibm.com/docs/Db2onCloud?topic=Db2onCloud-firewall-allowlist on suggestions for opening firewalls with subnet information.
 {: important}
+
+The easiest way to connect to your data is by way of the public host name that was provided in your welcome letter. You can also obtain your host name and credentials in the following ways:
 
 #### From the console
 {: #pub_console}
@@ -198,6 +198,7 @@ Enable your {{site.data.keyword.cloud_notm}} account to use virtual routing and 
   3. Select **Private endpoints** or **Public-and-private endpoints** and click **Update** to enable private endpoints.
 
      ![Configuring private endpionts {{site.data.keyword.cloud_notm}}](images/private_endpoints.png "Graphical view of configuring private end points"){: caption="Figure 2. Configuring private endpoints on {{site.data.keyword.Db2_on_Cloud_long}}" caption-side="bottom"}
+
 
 After you've configured {{site.data.keyword.cloud_notm}} private endpoint connectivity for your {{site.data.keyword.Db2_on_Cloud_short}} instance, it will only be accessible through a private endpoint. You will not be able to access your instance through a public endpoint.
 {: note}
