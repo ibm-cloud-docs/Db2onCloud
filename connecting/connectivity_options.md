@@ -1,12 +1,12 @@
 ---
 
 copyright:
-  years: 2014, 2020
-lastupdated: "2022-02-24"
+  years: 2014, 2020, 2021
+lastupdated: "2021-12-29"
 
 keywords:
 
-subcollection: Db2whc
+subcollection: Db2onCloud
 
 ---
 
@@ -21,88 +21,202 @@ subcollection: Db2whc
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Connectivity options on IBM Cloud
+# Connectivity options
 {: #connect_options}
 
-{{site.data.keyword.dashdblong}} offers multiple secure connectivity options for your application connection requirements.  
-{: shortdesc} 
-
+{{site.data.keyword.Db2_on_Cloud_long}} offers multiple secure connectivity options that depend on your application connection requirements.  
+{: shortdesc}
 
 ## Connecting to a public endpoint (default option)
 {: #pub_endpt}
 
-As with any public cloud service, you can connect your application by way of a public host name that is provided to you at the time that your service is provisioned. Access to your data is protected by strong authentication, vast Db2 authorization options and access controls, encryption over the wire and at rest, and IBM security and compliance practices for development and operations. Optional IP allowlisting is offered. Create an IBM Support case if you want to enable IP allowlisting.
-
-For application connections, do not use IP addresses to connect to the {{site.data.keyword.dashdbshort_notm}} instance, as the IP addresses resolved from the hostname may change. Use hostnames to reference your connection properties where it is available.
-{: important}
+As with any public cloud service, you can connect your application by way of a public host name that is provided to you at the time that your service is provisioned. Access to your data is protected by strong authentication, vast Db2 authorization options and access controls, encryption over the wire and at rest, and IBM security and compliance practices for development and operations. 
 
 ### How to connect to a public endpoint:
 {: #pub_endpt_steps}
 
-The easiest way to connect to your data warehouse is by way of the public host name that was provided in your welcome letter. You can also obtain your host name and credentials in the following way:
+The easiest way to connect to your data is by way of the public host name that was provided in your welcome letter. You can also obtain your host name and credentials in the following ways:
 
-1. Log in to {{site.data.keyword.cloud_notm}} and click your service instance.
+For application connections, do not use IP addresses to connect to the Db2oC instance, as the IP addresses resolved from the hostname may change. Use hostnames to reference your connection properties where it is available. In cases where hostnames cannot be used such as firewall rules, please see https://cloud.ibm.com/docs/Db2onCloud?topic=Db2onCloud-firewall-allowlist on suggestions for opening firewalls with subnet information
+{: important}
+
+#### From the console
+{: #pub_console}
+
+1. Log in to {{site.data.keyword.Db2_on_Cloud_short}} and click your service instance.
+2. Click **Manage**.
+3. Click **Open Console**, then click **Administration**.
+4. Select **Connections**.
+5. The public and private endpoints will be displayed under **Connection Configuration Resources** by selecting the respective radio button.
+
+#### From service credentials
+{: #pub_sc}
+
+1. Log in to {{site.data.keyword.Db2_on_Cloud_short}} and click your service instance.
 2. Click **Service credentials**.
 3. Click **New credential**, then click **Add**.
-4. After the credentials are created, under the `Actions` column, click **View credentials**.
-5. In the following JSON document example, note the contents of the hostname, password, and username fields. You use these three components to make the public endpoint connection:
+4. After the credentials are created, click the down arrow beside the credential names to view the credentials.
+5. In the following JSON document example, note the contents of the hostname, port, password, and username fields. You use these four components to make the public endpoint connection:
 
-   ```
-   {
-     "hostname": "db2whoc-flex-xxxxxxx.services.dal.bluemix.net",
-     "password": "DTPY7KXxhp_pKtjLSt",
-     "https_url": "https://db2whoc-flex-xxxxxxx.services.dal.bluemix.net",
-     "port": 50000,
-     "ssldsn": "DATABASE=BLUDB;HOSTNAME=db2whoc-flex-xxxxxx.services.dal.bluemix.net;PORT=50001;PROTOCOL=TCPIP;UID=bluadmin;PWD=DTPY7KXWxhp_pKtjLSt;Security=SSL;",
-     "host": "db2whoc-flex-xxxxx.services.dal.bluemix.net",
-     "jdbcurl": "jdbc:db2://db2whoc-flex-xxxx.services.dal.bluemix.net:50000/BLUDB",
-     "uri": "db2://bluadmin:DTPY7KXx1p_pKtjLSt@db2whoc-flex-hyftpsb.services.dal.bluemix.net:50000/BLUDB",
-     "db": "BLUDB",
-     "dsn": "DATABASE=BLUDB;HOSTNAME=db2whoc-flex-xxxxx.services.dal.bluemix.net;PORT=50000;PROTOCOL=TCPIP;UID=bluadmin;PWD=DTPYZunlWxhp_pKtjLSt;",
-     "username": "bluadmin",
-     "ssljdbcurl": "jdbc:db2://db2whoc-flex-xxxx.services.dal.bluemix.net:50001/BLUDB:sslConnection=true;"
-   }
+#### Current plans connection string breakdown
+{: #pub_endpt_current}
 
-   ```
+##### Db2 on Cloud section
+{: #pub_db2oc}
 
-   ![Public network access to {{site.data.keyword.cloud_notm}}](images/public_connection.png "Graphical representation of user to cloud connection"){: caption="Figure 1. Public network access to {{site.data.keyword.cloud_notm}}" caption-side="bottom"}
+The "db2" section contains information that is suited to applications that make connections to {{site.data.keyword.Db2_on_Cloud_short}}.
+
+| Field Name | Index | Description |
+|----------|--------|-----------|
+| `Type` | | Type of connection - "URI" |
+| `Scheme` | | Scheme for a URI - "db2" |
+| `Path` | | Path for a URI - Database name. The default is `bludb`. |
+| `Authentication` | `Username` | The user name that you use to connect |
+| `Authentication` | `Password` | A password for the user |
+| `Authentication` | `Method` | How authentication takes place; "direct" authentication is handled by the driver |
+| `Hosts` | `0...` | A host name and port to connect to |
+| `Composed` | `0...` | A URI combining Scheme, Authentication, Host, and Path |
+| `Certificate` | `Name` | The allocated name for the self-signed certificate for database deployment |
+| `Certificate` | Base64 | A base64 encoded version of the certificate |
+| `Host_ROS` | | A host name and port to connect to read on standby |
+{: caption="Table 1. Db2 on Cloud / URI connection information" caption-side="top"}
+
+`0...` indicates that there might be one or more of these entries in an array.
+
+##### CLI section
+{: #pub_cli}
+
+The "cli" section contains information that is suited for connecting with `db2`.
+
+| Field Name | Index | Description |
+|----------|--------|-----------|
+| `Bin` | | The recommended binary to create a connection; in this case it is `db2` |
+| `Composed` | | A formatted command to establish a connection to your deployment. The command combines the `Bin` executable, `Environment` variable settings, and uses `Arguments` as command line parameters. |
+| `Environment` | | A list of key/values you set as environment variables |
+| `Arguments` | `0...` | The information that is passed as arguments to the command shown in the Bin field |
+| `Certificate` | Base64 | A self-signed certificate that is used to confirm that an application is connecting to the appropriate server. It is base64 encoded. |
+| `Certificate` | Name | The allocated name for the self-signed certificate |
+| `Type` | | The type of package that uses this connection information; in this case `cli` |
+{: caption="Table 2. psql / cli connection information" caption-side="top"}
+
+`0...` indicates that there might be one or more of these entries in an array.
+
+#### Enterprise and Standard plans
+{: #pub_endpt_ent_stand}
+
+The following VCAP Services json file can be used to make connections to your Enterprise and Standard plans database instances:
+
+```
+{
+  "apikey": "<apikey>",
+  "connection": {
+    "cli": {
+      "arguments": [
+        [
+          "-u",
+          "ipa8emxc",
+          "-p",
+          "e2haTt1FJ7m3UQXY",
+          "--ssl",
+          "--sslCAFile",
+          "2ac5a4d3-1307-40f5-99a4-043e278fb084",
+          "--authenticationDatabase",
+          "admin",
+          "--host",
+          "a1d53ce7-166c-42d1-af26-7809dexxxxxx.yyyyyy.databases.appdomain.cloud:32447"
+        ]
+      ],
+      "bin": "db2",
+      "certificate": {
+        "certificate_base64": "<certificate_code>",
+        "name": "2ac5a4d3-1307-40f5-99a4-043e278fb084"
+      },
+      "composed": [
+        "db2 -u ipa8emxc -p e2haTt1FJ7m3UQXY --ssl --sslCAFile 2ac5a4d3-1307-40f5-99a4-043e278fb084 --authenticationDatabase admin --host a1d53ce7-166c-42d1-af26-7809dexxxxxx.yyyyyy.databases.appdomain.cloud:32447"
+      ],
+      "environment": {},
+      "type": "cli"
+    },
+    "db2": {
+      "authentication": {
+        "method": "direct",
+        "password": "<password>",
+        "username": "<user_name>"
+      },
+      "certificate": {
+        "certificate_base64": "<certificate_code>",
+        "name": "2ac5a4d3-1307-40f5-99a4-043e278fb084"
+      },
+      "composed": [
+        "db2://ipa8emxc:e2haTt1FJ7m3UQXY@a1d53ce7-166c-42d1-af26-7809dexxxxxx.yyyyyy.databases.appdomain.cloud:32447/bludb?authSource=admin&replicaSet=replset"
+      ],
+      "database": "bludb",
+      "host_ros": [
+        "a1d53ce7-166c-42d1-af26-7809dexxxxxx.yyyyyy.databases.appdomain.cloud:31196"
+      ],
+      "hosts": [
+        {
+          "hostname": "a1d53ce7-166c-42d1-af26-7809dexxxxxx.yyyyyy.databases.appdomain.cloud",
+          "port": 32447
+        }
+      ],
+      "jdbc_url": [
+        "jdbc:db2://a1d53ce7-166c-42d1-af26-7809dexxxxxx.yyyyyy.databases.appdomain.cloud:32447/bludb:user=<userid>;password=<your_password>;sslConnection=true;"
+      ],
+      "path": "/bludb",
+      "query_options": {
+        "authSource": "admin",
+        "replicaSet": "replset"
+      },
+      "replica_set": "replset",
+      "scheme": "db2",
+      "type": "uri"
+    }
+  },
+}
+```
+
+![Public network access to {{site.data.keyword.cloud_notm}}](images/public_connection.png "Graphical view of user to cloud connection"){: caption="Figure 1. Public network access to {{site.data.keyword.cloud_notm}}" caption-side="bottom"}
+
+Non-admin users can also use allowlisting available in the {{site.data.keyword.Db2_on_Cloud_short}} web console under **Settings > Manage Users**.
 
 ## Connecting to a private endpoint: IBM Cloud service endpoint
 {: #priv_endpt}
 
-{{site.data.keyword.dashdbshort_notm}} supports private connectivity through an [{{site.data.keyword.cloud_notm}} service endpoint](/docs/account?topic=account-service-endpoints-overview). {{site.data.keyword.cloud_notm}} service endpoints securely route network traffic between different {{site.data.keyword.cloud_notm}} services through the {{site.data.keyword.cloud_notm}} private backplane network. When you configure your {{site.data.keyword.dashdbshort_notm}} instance with {{site.data.keyword.cloud_notm}} service endpoint connectivity, traffic between your cloud data warehouse and applications deployed on your {{site.data.keyword.cloud_notm}} account will not traverse any public networks.
+{{site.data.keyword.Db2_on_Cloud_short}} supports private connectivity through an [{{site.data.keyword.cloud_notm}} service endpoint](/docs/account?topic=account-service-endpoints-overview). {{site.data.keyword.cloud_notm}} service endpoints securely route network traffic between different {{site.data.keyword.cloud_notm}} services through the {{site.data.keyword.cloud_notm}} private backplane network. When you configure your {{site.data.keyword.Db2_on_Cloud_short}} instance with {{site.data.keyword.cloud_notm}} service endpoint connectivity, traffic between your cloud database and applications deployed on your {{site.data.keyword.cloud_notm}} account will not traverse any public networks.
 
-### How to configure IBM Cloud service endpoint connectivity
-{: #cfg_endpt}
+### How to configure IBM Cloud private endpoint connectivity
+{: #cfg_priv_endpt}
 
-Complete the following steps to enable {{site.data.keyword.cloud_notm}} service endpoint connectivity for your {{site.data.keyword.dashdbshort_notm}} instance:
+Complete the following steps to enable {{site.data.keyword.cloud_notm}} private endpoint connectivity for your {{site.data.keyword.Db2_on_Cloud_short}} instance:
 
-1. Enable your {{site.data.keyword.cloud_notm}} account to use virtual routing and forwarding (VRF) and {{site.data.keyword.cloud_notm}} service endpoints. To enable both of these items, see [Enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint).
+Enable your {{site.data.keyword.cloud_notm}} account to use virtual routing and forwarding (VRF) and {{site.data.keyword.cloud_notm}} service endpoints. To enable both of these items, see [Enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint).
 
-2. Configure your {{site.data.keyword.dashdbshort_notm}} instance for service endpoint connectivity.
+- For Enterprise and Standard plans
+  1. On the console, click **Administration**.
+  2. Click **Access restriction**.
+  3. Select **Private endpoints** or **Public-and-private endpoints** and click **Update** to enable private endpoints.
 
-   - **If you provisioned your {{site.data.keyword.dashdbshort_notm}} instance through the {{site.data.keyword.cloud_notm}} catalog**: [Create a case](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} to request the configuration of your {{site.data.keyword.dashdbshort_notm}} instance for {{site.data.keyword.cloud_notm}} service endpoint connectivity. After this is complete, your {{site.data.keyword.dashdbshort_notm}} instance will be served on a new, non-internet-routable IP address. Information about how to access your {{site.data.keyword.dashdbshort_notm}} instance by using this newly configured private endpoint will be sent to you.
+     ![Configuring private endpionts {{site.data.keyword.cloud_notm}}](images/private_endpoints.png "Graphical view of configuring private end points"){: caption="Figure 2. Configuring private endpoints on {{site.data.keyword.Db2_on_Cloud_long}}" caption-side="bottom"}
 
-   - **If you purchased your {{site.data.keyword.dashdbshort_notm}} instance through IBM Sales**: If you requested private endpoint connectivity, your {{site.data.keyword.dashdbshort_notm}} instance will be provisioned with {{site.data.keyword.cloud_notm}} service endpoint connectivity. No further action is required.
-
-After you've configured {{site.data.keyword.cloud_notm}} service endpoint connectivity for your {{site.data.keyword.dashdbshort_notm}} instance, it will only be accessible through a private endpoint. You will not be able to access your instance through a public endpoint.
+After you've configured {{site.data.keyword.cloud_notm}} private endpoint connectivity for your {{site.data.keyword.Db2_on_Cloud_short}} instance, it will only be accessible through a private endpoint. You will not be able to access your instance through a public endpoint.
 {: note}
 
-To learn more about the {{site.data.keyword.cloud_notm}} service endpoint service, see [Secure access to services using service endpoints](/docs/account?topic=account-service-endpoints-overview).
+To learn more about the {{site.data.keyword.cloud_notm}} endpoint service, see [Secure access to services using service endpoints](/docs/account?topic=account-service-endpoints-overview).
 
 ## Connecting to a virtual private network (VPN) endpoint
-{: #vpn}
+{: #priv_endpt_vpn}
 
 If you have an application that is deployed on a private network that is outside of the {{site.data.keyword.cloud_notm}} without access to the public internet and you want to connect it to your database over a virtual private network (VPN) connection, you can make the request at the time that you order the service or by opening an IBM Support case. IBM network engineers will assist your network engineers to set up the VPN tunnel between your private network and the {{site.data.keyword.cloud_notm}}.
 
 ### How to connect to a VPN endpoint
 {: #priv_endpt_vpn_steps}
 
-To establish a VPN connection to your cloud data warehouse behind a public endpoint, [create an {{site.data.keyword.cloud_notm}} Support case](https://cloud.ibm.com/unifiedsupport/cases/add){:external} that includes the following details:
+To establish a VPN connection to your cloud database behind a public endpoint, [create an {{site.data.keyword.cloud_notm}} Support case](https://cloud.ibm.com/unifiedsupport/cases/add){:external} that includes the following details:
 
 * **Type of support**: Technical 
 * **Category**: Databases 
-* **Offering**: select your {{site.data.keyword.dashdbshort_notm}} instance 
+* **Offering**: select your {{site.data.keyword.Db2_on_Cloud_short}} instance 
 * **Subject**: VPN Connection Request 
 * **Description**: provide the following required information
   * **Customer-side VPN Peer Address** (your VPN endpoint): `<IP Address>`
@@ -130,6 +244,6 @@ To establish a VPN connection to your cloud data warehouse behind a public endpo
   * **DH-Group** (if using PF-Secrecy): Group 5
   * **Security Association Lifetime (seconds)**: 3600 seconds
 
-After receipt of your request, {{site.data.keyword.cloud_notm}} technicians will open the appropriate firewall ports and allowlist the provided IP address. Communication and resolution to the request is made through the {{site.data.keyword.cloud_notm}} Support case ticket.
+After receipt of your request, {{site.data.keyword.cloud_notm}} technicians will open the appropriate firewall ports and allowlist the provided IP address. Communication and resolution to the request will be made through the {{site.data.keyword.cloud_notm}} Support case ticket.
 
-![Public network access to {{site.data.keyword.cloud_notm}} through a VPN](images/public_connection_vpn.png "Graphical representation of user to cloud connection"){: caption="Figure 2. Public network access to {{site.data.keyword.cloud_notm}} through a VPN" caption-side="bottom"}
+![Public network access to {{site.data.keyword.cloud_notm}} through a VPN](images/public_connection_vpn.png "Graphical view of user to cloud connection"){: caption="Figure 3. Public network access to {{site.data.keyword.cloud_notm}} through a VPN" caption-side="bottom"}
