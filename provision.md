@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2020, 2021
-lastupdated: "2021-12-08"
+  years: 2014, 2020, 2021, 2022
+lastupdated: "2022-03-02"
 
 keywords: provision cloud database, database with terraform, provisioning parameters, db2 on cloud, db2
 
@@ -48,6 +48,8 @@ When you create the deployment from the catalog, you need to specify the followi
 1. **Resource group** - If you are organizing your services into resource groups, you can specify the resource group in this field. Otherwise, you can leave it at default.
 
 1. **Key Protect instance** and **disk encryption key** - If you use Key Protect, an instance and key can be selected to encrypt the deployment's disk. If you do not use your own key, the deployment automatically creates and manages its own disk encryption key.
+
+1. **Backup Encryption Key** - If you use Backup Encyrption Key, you can provide your own KMS instance and key in order to encrypt your backups. This is an optional parameter, and if not provided the default KMS instance and key will be used.
 
 1. **Initial resource allocation** - Specify initial memory and disk sizes for your databases. The minimum sizes of memory and disk are selected by default.
 
@@ -139,6 +141,7 @@ If you use Terraform to manage your infrastructure, the [{{site.data.keyword.clo
 
 - `backup_id` - A CRN of a backup resource to restore from. The backup must have been created by a database deployment with the same service ID. The backup is loaded after provisioning and the new deployment starts up that uses that data. A backup CRN is in the format `crn:v1:<...>:backup:<uuid>`. If omitted, the database is provisioned empty.
 - `version` - The version of the database to be provisioned. If omitted, the database is created with the most recent major and minor version.
+- `backup_location` - The location of the deployment's backups.
 - `disk_encryption_key_crn` - The CRN of a [Key Protect key](), which is then used for disk encryption. A Key Protect CRN is in the format `crn:v1:<...>:key:<id>`.
 - `backup_encryption_key_crn` - The CRN of a [Key Protect key](), which is then used for backup encryption. A Key Protect CRN is in the format `crn:v1:<...>:key:<id>`. 
    To use a key for your backups, you must first enable the [service-to-service delegation]().
