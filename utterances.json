@@ -28,16 +28,6 @@
     "how can I setup for DB2 lite",
     "provision a Lite instance for Db2"
   ],
-  "q_choose_plan": [
-    "help choosing the right Db2 on Cloud plan",
-    "all about Db2 on cloud",
-    "different plans for Db2",
-    "besp pan for me on Db2",
-    "which Db2 configurations meet the workload requirements",
-    "which Db2 configuration to meet the workload",
-    "can I scale Db2",
-    "scale Db2 to meet workload"
-  ],
   "q_creds": [
     "generate credentials for my Db2 instance",
     "generate credential for Db2",
@@ -169,7 +159,6 @@
   	"I can't load any table. I get this error POST /dbapi/v4/schema_discovery - 500 Internal Server Error"
   ],
   "fp_faq_console": [
-    "Why can’t I open the web console",
     "click open console on my instance of db2, it always gets a 502 error",
     "Db2 console brings this error: 502 bad gateway",
     "open the console of  Db2, the pages gives me a 404 error",
