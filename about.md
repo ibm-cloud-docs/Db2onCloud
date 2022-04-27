@@ -93,6 +93,9 @@ The Standard and Enterprise plans are supported in the following data center geo
 - **Sydney** - (Syd01, Syd04, Syd05)
 - **Tokyo** - (Tok02, Tok04, Tok05)
 - **Washington, DC** - (Wdc04, Wdc06, Wdc07)
+- **Sao Paulo** - (Sao01, Sao04, Sao05)
+- **Toronto** - (Tor01, Tor04, Tor05)
+
 
 MZRs support 3 node HA in 3 different data centers in that region
 {: note}
@@ -101,8 +104,6 @@ MZRs support 3 node HA in 3 different data centers in that region
 - **Amsterdam** - (Ams03)
 - **Milan** - (Mil01)
 - **Montréal** - (Mon01)
-- **Sao Paulo** - (Sao01)
-- **Toronto** - (Tor01)
 
 SZRs support 3 node HA in a single data center in that region
 {: note}
