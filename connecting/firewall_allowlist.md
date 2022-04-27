@@ -102,13 +102,18 @@ Subnet | Location
 ### `Sao Paulo` List
 Subnet | Location
 -- | --
-169.57.199.32/29 | Sao 01
+169.57.160.160/29 | Sao 01
+163.107.69.232/29 | Sao 04
+163.109.72.136/29 | Sao 05
+
 
 
 ### `Toronto` List
 Subnet | Location
 -- | --
-169.48.7.8/29 | Tor 01
+169.53.186.200/29 | Tor 01
+163.74.72.240/29 | Tor 04
+163.75.74.240/29 | Tor 05
 
 
 ### `Amsterdam` List
