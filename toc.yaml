@@ -64,7 +64,7 @@ toc:
               label: Federation
               topics: 
               - federation.md
-              - ederation_v2.md
+              - federation_v2.md
               - fed_v2_cloud_to_cloud.md
           - local_dev_env.md
               
