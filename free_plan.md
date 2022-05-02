@@ -41,13 +41,6 @@ The Lite plan uses one database schema.
 
 For more information about the free {{site.data.keyword.Db2_on_Cloud_short}} Lite plan, see the [FAQ](https://ibm.biz/db2oc_free_plan_faq){:external}.
 
-<!-- ## Using the Lite plan outside continental North America
-{: #outside_na}
-
-The Lite plan is accessible without a credit card for continental North America. Outside of continental North America, customers must add a credit card to their IBM Cloud account and then select the "US South - Dallas" region for the Lite plan to be visible for selection.
-
-The Lite plan is always free and your credit card will not be charged.
--->
 
 ## Regional availability
 {: #fp_availability}
@@ -65,7 +58,7 @@ The following table contains {{site.data.keyword.Db2_on_Cloud_short}} Lite plan 
 | Category | Item | Restriction | 
 |----------|------|-------------|
 | Resources | Storage | 200 MB of storage per user |
-|  | Connections | 5 connections per user |
+|  | Connections | 15 connections per user |
 |  | Performance | Performance might fluctuate due to workloads run by other users on the multi-tenant system |
 |  |  |
 | Features & functions | Federation | Not supported |
