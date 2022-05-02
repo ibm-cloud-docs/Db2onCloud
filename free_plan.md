@@ -65,7 +65,7 @@ The following table contains {{site.data.keyword.Db2_on_Cloud_short}} Lite plan 
 | Category | Item | Restriction | 
 |----------|------|-------------|
 | Resources | Storage | 200 MB of storage per user |
-|  | Connections | 5 connections per user |
+|  | Connections | 15 connections per user |
 |  | Performance | Performance might fluctuate due to workloads run by other users on the multi-tenant system |
 |  |  |
 | Features & functions | Federation | Not supported |
