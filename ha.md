@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2021
-lastupdated: "2021-01-19"
+  years: 2014, 2021, 2022
+lastupdated: "2022-05-25"
 
 keywords: HADR, Legacy Flex, legacy, Flex, high availability disaster recovery
 
