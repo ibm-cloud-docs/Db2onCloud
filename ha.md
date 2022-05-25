@@ -21,6 +21,9 @@ subcollection: Db2onCloud
 {:deprecated: .deprecated}
 {:pre: .pre}
 
+
+The **blocknonlogged** parameter must always be set to **YES**.  Changing it to NO will prevent any non-logged operations on the primary database from being replicated onto the standy databases breaking HADR {: important}
+
 # High availability (HA)
 {: #ha}
 
