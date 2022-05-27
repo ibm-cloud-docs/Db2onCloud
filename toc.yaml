@@ -19,6 +19,7 @@ toc:
       id: learn
       topics:
       - about.md
+      - getting-started.md
       - topicgroup: 
           label: Free Plan
           topics:
