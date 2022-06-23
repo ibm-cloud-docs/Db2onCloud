@@ -93,6 +93,7 @@ toc:
       id: howto
       topics:
       - provision.md
+      - monitor.md
       - link: 
             label: "IBM Demos: Tutorials, videos, and hands-on labs"
             href: https://www.ibm.com/demos/collection/Db2-on-Cloud/
