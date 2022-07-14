@@ -28,11 +28,11 @@ subcollection: Db2onCloud
 To deploy an {{site.data.keyword.Db2_on_Cloud_long}} service, you need to create a {{site.data.keyword.Db2_on_Cloud_short}} service instance. 
 {: shortdesc}
 
-You can provision a deployment by visiting the service's catalog page or by specifying the service ID to the command line, to the API, or to Terraform. The deployment type is determined by the service ID, which you must specify when you create a {{site.data.keyword.Db2_on_Cloud_short}} deployment by using the command line, API, or Terraform. 
+You can provision a deployment by visiting the service's catalog page or by specifying the service ID to the command line, or to the API. The deployment type is determined by the service ID, which you must specify when you create a {{site.data.keyword.Db2_on_Cloud_short}} deployment by using the command line or API. 
 
 | Deployment Type | Catalog Page | Service ID | Plan IDs |
 |-----------------|--------------|------------|----------|
-| {{site.data.keyword.Db2_on_Cloud_short}} |[Link](https://cloud.ibm.com/catalog/services/db2){: external} | dashdb-for-transactions | dashDBNebula, standard |
+| {{site.data.keyword.Db2_on_Cloud_short}} |[Link](https://cloud.ibm.com/catalog/services/db2){: external} | dashdb-for-transactions | dashDBNebula, dashDBStandard |
 
 ## Using the catalog
 {: #prov_catalog}
@@ -51,9 +51,11 @@ When you create the deployment from the catalog, you need to specify the followi
 
 1. **Backup Encryption Key** - If you use Backup Encyrption Key, you can provide your own KMS instance and key in order to encrypt your backups. This is an optional parameter, and if not provided the default KMS instance and key will be used.
 
-1. **Initial resource allocation** - Specify initial memory and disk sizes for your databases. The minimum sizes of memory and disk are selected by default.
+<!--
+1. **Initial resource allocation** - The minimum sizes of memory and disk are selected by default.
+-->
 
-1. **CPU allocation** - Choose dedicated compute resources for your deployment. With dedicated cores, your resource group is given a single-tenant host with a guaranteed minimum reserve of cpu shares. Your deployments are then allocated the number of CPUs you specify. This defaults to the minimum allocation if not specified in the provisioning request by using the API or CLI.
+1. **CPU allocation** - Choose dedicated compute resources for your deployment. With dedicated cores, your resource group is given a single-tenant host with a guaranteed minimum reserve of cpu shares. Your deployments are then allocated the number of CPUs you specify. This defaults to the `standard plan` if not specified in the provisioning request by using the API or CLI.
 
 1. **Endpoints** - You can configure the types Service Endpoints on your deployment. The default is that connections to your deployment can be made from the public network.
 
