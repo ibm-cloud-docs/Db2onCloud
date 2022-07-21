@@ -156,9 +156,9 @@ The latency improvement process cannot be completed without contacting the Db2 o
     - this sample defines the db2 connection details for two different formations in preprod - a single node formation that uses the database alias ```singledb``` and an ha formation that uses the database alias ```hadb```
 
 
-### Optional: Test using "db2 ping", compare times
+<!--### Optional: Test using "db2 ping", compare times
 - On the client machine, as user db2inst1:
 
-    db2 ping <db-alias> <# of pings> - ex. ```db2 ping hadb 100```
+    db2 ping <db-alias> <# of pings> - ex. ```db2 ping hadb 100```-->
 
 
