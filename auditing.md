@@ -34,6 +34,9 @@ You can also audit and track changes to your database by using the following met
 * By creating a `CHANGE HISTORY` event monitor, you can query the event monitor table to determine what was done within the database and by whom. For more information, see [`CHANGE HISTORY` event monitor](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.sql.ref.doc/doc/r0059363.html){:external}.
 <!-- * The Time Travel Query gives you the ability to store all of the changes to your data and even query your old data based on a selected point in time. To use this audit method, ensure that you first set up your tables to support Time Travel Query. For more information, see: [Time Travel Query](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl/){:external} -->
 
+{: important}
+Access to SYSCAT.AUDITPOLICIES, SYSIBMADM.PRIVILEGES, and SYSCAT.AUDITUSE will be revoked for PUBLIC. This only impacts clients who have explicitly assigned these privileges to PUBLIC. A client can choose to re-add the privileges to PUBLIC.
+
 For more information about auditing and tracking database changes, see: [How do I audit or track changes?](https://developer.ibm.com/answers/questions/427780/how-can-i-audit-or-track-changes-dropped-tables-to.html){:external}.
 
 
