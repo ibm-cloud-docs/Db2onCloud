@@ -371,7 +371,7 @@ To use your own identity provider such as LDAP, you must first federate your LDA
 The following restrictions are with regard to IAM authentication:
 
 * IAM authentication for a Db2 client that is connecting to a Db2 server is only supported over an SSL connection.
-* IBMid federation is supported to allow custom user management portal or server to be used for authentication. Such support does not include any group federation.
+* IBMid federation is supported to allow custom user management portal or server to be used for authentication. Such support does not include any group federation. Currently, AppID support is not provided although this support will be added in the future
 * IAM authentication for database federation is not supported.
 * Running IDA and user-defined extension (UDX) commands through CLPPlus are not supported.
 * Type 2 JDBC Driver is not supported.
