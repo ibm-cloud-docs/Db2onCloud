@@ -35,7 +35,7 @@ This is a collection of frequently asked questions (FAQ) about the  {{site.data.
 {: faq}
 {: support}
 
-You can continue using the free plan for as long as you need. However, you must reactivate the free plan every 30 days. This reactivation process keeps resources available for other users by turning off inactive usage.  
+You can continue using the free plan for as long as you need. However, you must reactivate the free plan every 45 days. This reactivation process keeps resources available for other users by turning off inactive usage.  
 
 When your plan nears its reactivation date, you will receive a reactivation request at the email address that you provided when creating the instance. Alternatively, you can reactivate in your {{site.data.keyword.Db2_on_Cloud_short}} console.
 
@@ -43,9 +43,9 @@ When your plan nears its reactivation date, you will receive a reactivation requ
 {: #fp_faq_delete}
 {: faq}
 
-After you create a Lite instance, you have 30 days before the next reactivation.
-* After 33 days, your Lite plan is disabled, but {{site.data.keyword.cloud_notm}} still has your data. You can still reactivate.
-* After 60 days have passed, if you haven't reactivated, your data will be deleted.
+After you create a Lite instance, you have 45 days before the next reactivation.
+* If you do not reactivate, your Lite plan will be disabled, but {{site.data.keyword.cloud_notm}} still has your data. You will then have 60 days to reactivate your account.
+* If you don't reactivate within 60 days, your account and data will be deleted.  We will send you multiple emails reminding you to reactivate.
 
 Each time you reactivate, the day counter resets, and you'll have another 30 days before being disabled (and 60 days before deletion).
 
