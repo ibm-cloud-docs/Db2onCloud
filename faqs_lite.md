@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2021
-lastupdated: "2021-06-01"
+lastupdated: "2022-09-07"
 
 keywords: Lite plan, free plan, faqs
 
@@ -35,7 +35,7 @@ This is a collection of frequently asked questions (FAQ) about the  {{site.data.
 {: faq}
 {: support}
 
-You can continue using the free plan for as long as you need. However, you must reactivate the free plan every 30 days. This reactivation process keeps resources available for other users by turning off inactive usage.  
+You can continue using the free plan for as long as you need. However, you must reactivate the free plan every 45 days. This reactivation process keeps resources available for other users by turning off inactive usage.  
 
 When your plan nears its reactivation date, you will receive a reactivation request at the email address that you provided when creating the instance. Alternatively, you can reactivate in your {{site.data.keyword.Db2_on_Cloud_short}} console.
 
@@ -43,11 +43,12 @@ When your plan nears its reactivation date, you will receive a reactivation requ
 {: #fp_faq_delete}
 {: faq}
 
-After you create a Lite instance, you have 30 days before the next reactivation.
-* After 33 days, your Lite plan is disabled, but {{site.data.keyword.cloud_notm}} still has your data. You can still reactivate.
-* After 60 days have passed, if you haven't reactivated, your data will be deleted.
+After you create a Lite instance, you have 45 days before the next reactivation.
+* If you do not reactivate, your Lite plan will be disabled, but {{site.data.keyword.cloud_notm}} still has your data. You will then have 60 days to reactivate your account.
+* If you don't reactivate within 60 days, your account and data will be deleted.  We will send you multiple emails reminding you to reactivate.
 
-Each time you reactivate, the day counter resets, and you'll have another 30 days before being disabled (and 60 days before deletion).
+
+Each time you reactivate, the day counter resets, and you'll have another 45 days before being disabled (and 60 days before deletion).
 
 ## How can I download a backup of my data on the Lite plan?
 {: #fp_faq_backup}
@@ -93,7 +94,7 @@ The free Lite plan does not allow you to create new schemas or databases. There 
 If the Db2 web console does not load or returns an error message, try the following steps:
 * Go to the service page to check whether your Lite instance has expired. The **Open Console** button no longer appears for expired instances. Delete the expired instance and create a new one.
 * Try using the direct URL to open the console to check for errors. Select the **Service credentials** tab from your service page and expand the credentials that you want to view. If there are no existing credentials, click **New credential**. Use the values in the `https_url`, `username`, and `password` to open the web console.
-* If needed, use the **Forgot Password** link at the direct URL to request a password reset. For Lite plans, note that you can only reset your password once within 24 hours.
+*  To reset the password, select the **Service credentials** tab from your service page and then delete the existing service lite-tier service credential.  Then click **New credential** to generate a new password for the existing username. 
 * When you create a Lite instance, be sure to provide an email address so you receive reactivation notices and password reset notices. 
 * If your use of {{site.data.keyword.Db2_on_Cloud_short}} exceeds the purpose provided by a Lite account with free support, upgrade to a paid account with [basic, advanced, or premium support](/docs/get-support?topic=get-support-support-plans){: external} to open cases for technical issues. 
 
