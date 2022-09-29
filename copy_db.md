@@ -31,6 +31,7 @@ The following examples are helpful use cases for using a copy of a database:
 - Run analytics or reports
 - Make a fresh copy of your production database each morning to use for development purposes
 - Make a *template* database for an app, and make a copy of that template as your apps need it
+- Change base plan (e.g. move from a single node instance to an HA instance, or move from a Standard plan to an Enterprise plan)
 
 ## Prerequisites
 {: #cp_prereqs}
