@@ -24,13 +24,19 @@ subcollection: Db2onCloud
 # Copy Database
 {: #cp_db}
 
-The {{site.data.keyword.Db2_on_Cloud_long}} Copy Database feature gives you the ability to copy your existing database with ease. 
+The {{site.data.keyword.Db2_on_Cloud_long}} Copy Database feature gives you the ability to copy your existing database to a new instance or easily change plans and instance types. 
 {: shortdesc}
 
 The following examples are helpful use cases for using a copy of a database:
-- Run analytics or reports
-- Make a fresh copy of your production database each morning to use for development purposes
-- Make a *template* database for an app, and make a copy of that template as your apps need it
+- Run analytics or reports.
+- Make a fresh copy of your production database each morning to use for development purposes.
+- Make a *template* database for an app, and make a copy of that template as your apps need it.
+- Move from a single node instance to a HA instance or vice versa.
+- Move between Standard or Enterprise Plans.
+
+Because the copy instance creates a new instance and restores your existing backup, it’s important to keep the following in mind:
+- Create a full backup of the data you want restored onto the copy.  Any data written after the backup will not be moved across.
+- When moving between plans or instance types, an outage will be required to point your apps to the new hostname and port.
 
 ## Prerequisites
 {: #cp_prereqs}
