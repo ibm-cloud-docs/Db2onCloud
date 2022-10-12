@@ -39,7 +39,6 @@ toc:
           label: Loading your data
           topics:
           - dcw.md
-          - migration.md
       - topicgroup: 
           label: Adminstration
           topics: 
