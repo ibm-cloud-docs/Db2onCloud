@@ -47,7 +47,7 @@ When you create the deployment from the catalog, you need to specify the followi
 
 1. **Resource group** - If you are organizing your services into resource groups, you can specify the resource group in this field. Otherwise, you can leave it at default.
 
-1. **Key Protect instance** and **disk encryption key** - If you use Key Protect, an instance and key can be selected to encrypt the deployment's disk. If you do not use your own key, the deployment automatically creates and manages its own disk encryption key.
+1. **KMS instance** and **disk encryption key** - If you use Key Protect or Hyper Protect Crypto Services, an instance and key can be selected to encrypt the deployment's disk. If you do not use your own key, the deployment automatically creates and manages its own disk encryption key using the Key Protect service. If you would like to use HPCS for encryption, you must [provision an HPCS instance](docs/hs-crypto?topic=hs-crypto-provision&interface=ui) and generate or import a key. Currently, HPCS is not EU-Cloud enabled. 
 
 1. **Backup Encryption Key** - If you use Backup Encyrption Key, you can provide your own KMS instance and key in order to encrypt your backups. This is an optional parameter, and if not provided the default KMS instance and key will be used.
 
@@ -142,8 +142,8 @@ If you use Terraform to manage your infrastructure, the [{{site.data.keyword.clo
 - `backup_id` - A CRN of a backup resource to restore from. The backup must have been created by a database deployment with the same service ID. The backup is loaded after provisioning and the new deployment starts up that uses that data. A backup CRN is in the format `crn:v1:<...>:backup:<uuid>`. If omitted, the database is provisioned empty.
 <!--- `version` - The version of the database to be provisioned. If omitted, the database is created with the most recent major and minor version.-->
 - `backup_location` - The location of the deployment's backups.
-- `disk_encryption_key_crn` - The CRN of a [Key Protect key](), which is then used for disk encryption. A Key Protect CRN is in the format `crn:v1:<...>:key:<id>`.
-- `backup_encryption_key_crn` - The CRN of a [Key Protect key](), which is then used for backup encryption. A Key Protect CRN is in the format `crn:v1:<...>:key:<id>`. 
+- `disk_encryption_key_crn` - The CRN of a [KMS key](), which is then used for disk encryption. A KMS CRN is in the format `crn:v1:<...>:key:<id>`.
+- `backup_encryption_key_crn` - The CRN of a [KMS key](), which is then used for backup encryption. A KMS CRN is in the format `crn:v1:<...>:key:<id>`. 
    To use a key for your backups, you must first enable the [service-to-service delegation]().
    {: note}
 <!--- `members_memory_allocation_mb` - Total amount of memory to be shared between the database members within the database. For example, if the value is "6144", and there are three database members, then the deployment gets 6 GB of RAM total, giving 2 GB of RAM per member. If omitted, the default value for the database type is used.

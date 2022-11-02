@@ -31,6 +31,9 @@ subcollection: Db2onCloud
 Admin functionality is not available on the DR node. Any admin functions must be run on the primary instance while it's **Active**.
 {: important}
 
+DR nodes are currently set up to adopt the KMS instance and disk encrption key of the primary data server in the case that the primary data server uses Hyper Protect Crypto Services for encryption.
+{: important}
+
 DR nodes are currently available for only Enterprise and Standard HADR plans. DR nodes are currently not supported in single node plans or in EU-Cloud.
 {: important}
 
