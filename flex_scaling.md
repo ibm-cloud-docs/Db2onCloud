@@ -36,7 +36,7 @@ Storage cannot be scaled down after it has been increased.
 ## Standard plan
 {: #fs_standard_plan}
 
-The Standard plan deploys with 8 GB of RAM, and 20 GB of disk space. You can then scale your plan up or down with the slider bars in the console. 
+The Standard plan deploys with 8 GB of RAM, and 20 GB of disk space. You can then scale your plan up or down with the drop-down lists in the console. 
 
 Memory can be scaled up or down in the following increments:
 - 8 GB
@@ -44,20 +44,24 @@ Memory can be scaled up or down in the following increments:
 - 32 GB
 - 64 GB
 
-Storage can be scaled up to a maximum of 4 TB. After scaling up, storage cannot be scaled down.
+Storage can be scaled up to a maximum of 4 TB.
 
 To scale memory and storage from within the console, complete the following steps:
 1. Select **Administration** from the left side menu.
 2. Select the **Compute & storage** tab.
-3. Slide the **Shared vCores** (for memory) or **Storage** slider bar to make changes.
-4. Click **Save**.
+3. Select **Edit** under the **Compute & storage resources**.
+4. Select the drop-down list for **vCPU** (for memory) or **Units** for storage to make changes.
+5. Click **Save**.
+6. Select **Confirm** if you are satisfied with the changes.
 
-![Standard plan scaling](images/std_scale.png "Standard plan scaling"){: caption="Figure 1. Standard plan scaling memory and storage" caption-side="bottom"}
+![Standard plan scaling](images/scaling_v1.png "Standard plan scaling"){: caption="Figure 1. Standard plan scaling memory and storage" caption-side="bottom"}
+
+![Confirm_changes](images/scaling_confirmation.png "Confirm scaling changes"){: caption="Figure 2. Confirm scaling changes for standard plan" caption-side="bottom"}
 
 ## Enterprise plan
 {: #fs_enterprise_plan}
 
-Your Enterprise plan initially deploys with 4 cores, 16 GB of RAM, and 20 GB of disk space. You can then scale your plan up or down with slider bars in the {{site.data.keyword.Db2_on_Cloud_short}} console by up to 56 virtual cores and 4 TB of storage. 
+Your Enterprise plan initially deploys with 4 cores, 16 GB of RAM, and 20 GB of disk space. You can then scale your plan up or down with the drop-down lists in the {{site.data.keyword.Db2_on_Cloud_short}} console by up to 56 virtual cores and 4 TB of storage. 
 
 Dedicated cores can be scaled up or down in the following increments with memory changing accordingly:
 
@@ -66,19 +70,75 @@ Dedicated cores can be scaled up or down in the following increments with memory
 | 4     | 16 GB  |
 | 8     | 32 GB  |
 | 16    | 64 GB  |
-| 32    | 126 GB |
+| 32    | 128 GB |
 | 56    | 242 GB |
 {: caption="Table 1. Core/memory scaling increments" caption-side="top"}
 
-Storage can be scaled up to a maximum of 4 TB. After scaling up, storage cannot be scaled down.
+Storage can be scaled up to a maximum of 24 TB.
 
 To scale cores/memory and storage from within the console, complete the following steps:
 1. Select **Administration** from the left side menu.
 2. Select the **Compute & storage** tab.
-3. Slide the **Dedicated vCores** or **Storage** slider bar to make changes.
-4. Click **Save**.
+3. Select **Edit** under the **Compute & storage resources**.
+4. Select the drop-down list for **vCPU** (for memory) or **Units** for storage to make changes.
+5. Click **Save**.
+6. Select **Confirm** if you are satisfied with the changes.
 
-![Enterprise plan scaling](images/enterprise_scale.png "Enterprise plan scaling"){: caption="Figure 2. Enterprise plan scaling cores/memory and storage" caption-side="bottom"}
+![Enterprise plan scaling](images/scaling_v1.png "Enterprise plan scaling"){: caption="Figure 3. Enterprise plan scaling cores/memory and storage" caption-side="bottom"}
+
+![Confirm_changes](images/scaling_confirmation.png "Confirm scaling changes"){: caption="Figure 4. Confirm scaling changes for enterprise plan" caption-side="bottom"}
+
+### Scaling disk storage more than 4 TB
+{: #disk_st_4tb}
+
+There may be an outage when we rebalance tablespaces under the default storage group.
+{: important}
+
+
+The Enterprise Plan allows customers to scale storage past 4TB to a maximum of 24TB.  Storage is scaled in increments of 20GB to 4TB.  From 4TB to 24TB storage is scaled in the following increments:
+- 8TB
+- 12TB
+- 16TB
+- 20TB
+- 24TB
+
+Two new functions, `Rebalance` and `Free space reclamation` are introduced to maximize the benefits of having multipled disk once you scale past 4TB.
+
+
+![Confirm_changes](images/confirm_changes_v2.png "Confirm scaling changes"){: caption="Figure 5. Confirm scaling changes for enterprise plan" caption-side="bottom"}
+#### Rebalance
+{: #rebalance}
+
+The `Rebalance` functionality enables redistributing data which brings with it the benefit of striping data across multiple disks. When scaling storage past 4TB, tablespaces under the default storage group IBMSTOGROUP will be automatically rebalanced.
+
+Customers are given the option to rebalance any tablespaces from non-default storage groups after scaling is completed.  A pop window will be presented to confirm rebalancing.
+
+![Confirm rebalance](images/user_created_tb_prompt.png "Confirm rebalance"){: caption="Figure 6. Confirm rebalance on tablespaces before scaling" caption-side="bottom"}
+
+#### Rebalance Status
+
+To View the Rebalance status of tablespaces:
+- Select **Data** from Left Side
+- Click on the **storage objects** tab on top. 
+
+Customers can also rebalance a tablespace individually on this tab.
+
+
+![Rebalance status](images/rebalance_status_v1.png "Check rebalance status"){: caption="Figure 7. View rebalance status of tablespaces" caption-side="bottom"}
+
+**Rebalance may impact workload performance. If customers find their workload slower than usual, they can pause rebalance temporarily and resume it during off-peak period.** 
+
+![Pause_rebalance](images/pause_rebalance.png "Pause rebalance"){: caption="Figure 8. Pause rebalance" caption-side="bottom"}
+
+![Resume_rebalance](images/resume_reb.png "Resume rebalance"){: caption="Figure 9. Resume rebalance" caption-side="bottom"}
+#### Free space reclamation after rebalance
+{: #reclamation}
+
+Customers can reclaim freed space on disks after rebalancing. Once the space is reclaimed, the reclaimable space will be updated to **0 GB** in the **reclaimable** column.
+
+![Space_reclamation](images/reclaim.png "Reclaim space"){: caption="Figure 10. Reclaim freed disk space" caption-side="bottom"}
+
+![Space_reclaimed](images/reclaim.png "Space reclaimed"){: caption="Figure 11. Freed disk space reclaimed" caption-side="bottom"}
 
 <!--These dynamic adjustments typically take less than 20 minutes to complete. You can also scale CPU and RAM without any downtime by following these [guidelines](https://developer.ibm.com/answers/questions/381931/how-can-i-scale-cpu-up-and-down-without-downtime-o.html){:external}.-->
 
