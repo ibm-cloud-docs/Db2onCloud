@@ -1,8 +1,9 @@
 # Auto-scaling
 
-Autoscaling is designed to respond to the short-to-medium term trends in storage usage on your db2oc deployment. When enabled, your deployment is checked at an interval you specify. If the storage is below the threshold value then the storage is automatically scaled up. To keep an eye on your resources, use the MonitoringIBM Cloud® Monitoring integration, which provides metrics for disk space.
+When you enable autoscaling, the storage on your Db2 on Cloud instance will automatically be scaled up if your storage use exceeds the threshold you specify. For example, you can choose to scale up your storage by 20GB if more than 90% of your storage is in use for a period of 15 minutes.
 
-You can set your db2oc deployment to autoscale **disk**.
+To monitor your storage usage, use the IBM Cloud® Monitoring integration, which provides metrics for disk space.
+
 
 
 ## General Autoscaling Parameters
@@ -19,10 +20,10 @@ You can set your db2oc deployment to autoscale **disk**.
 
 - **Storage cannot be scaled down.**
 - Each increment is 10% of your storage size. The minimum increase is 20GB.
-- Limits:
-    - We support autoscaling up to 4 TB.
-- If you occasionally or rarely increase storage on your deployment, then you can manually scale your deployment.
-- A few scaling operations can be more long running than others. Drastically increasing Disk can take longer than smaller increases to account for provisioning more underlying hardware resources.
+- Storage can be auto-scaled up to a limit of 4 TB.
+- If you rarely increase storage on your deployment, you might want to manually scale your deployment rather than enabling the auto-scaling feature.
+- Some scaling operations can be more long running than others. Significantly increasing the storage size can take longer than increasing it by a small amount because additional underlying hardware resources must be provisioned.
+
 
 
 ## ****Configuring Autoscaling in the UI****
