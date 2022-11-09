@@ -65,6 +65,7 @@ Enter information for the new copy instance:
 1. Enter a name under **Service name**.
 1. Select the resource group of the new instance under **Resource group**.
 1. If you'd like a highly available instance, select **Yes** for **High availability configuration**. Verify that the other options are correct.
+1. Select a KMS instance to use for the new copy instance under **KMS instance**. If not selected, a default Key Protect instance and key will be used.
 1. Select the backup location for the new copy instance under **Backup Location**. If the selected data center location does not support **Backup Location**, the backup location cannot be changed.  
 1. Select a **Pricing plan**.
 1. Click **Clone**.
