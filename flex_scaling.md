@@ -141,7 +141,7 @@ You can also reclaim freed space on disks after rebalancing by choosing the Recl
 
 ![Space_reclamation](images/reclaim.png "Reclaim space"){: caption="Figure 10. Reclaim freed disk space" caption-side="bottom"}
 
-![Space_reclaimed](images/reclaim.png "Space reclaimed"){: caption="Figure 11. Freed disk space reclaimed" caption-side="bottom"}
+![Space_reclaimed](images/reclaimed.png "Space reclaimed"){: caption="Figure 11. Freed disk space reclaimed" caption-side="bottom"}
 
 <!--These dynamic adjustments typically take less than 20 minutes to complete. You can also scale CPU and RAM without any downtime by following these [guidelines](https://developer.ibm.com/answers/questions/381931/how-can-i-scale-cpu-up-and-down-without-downtime-o.html){:external}.-->
 
