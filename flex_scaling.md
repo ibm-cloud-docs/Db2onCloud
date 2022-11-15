@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 # Flexible scaling
 {: #scale}
 
-Independent scaling of storage and compute cores. 
+Db2 on Cloud provides you with the ability to independently scale up compute cores and storage. 
 {: shortdesc}
 
 As the number of cores is increased, memory is also increased.
@@ -38,7 +38,7 @@ Storage cannot be scaled down after it has been increased.
 
 The Standard plan deploys with 8 GB of RAM, and 20 GB of disk space. You can then scale your plan up or down with the drop-down lists in the console. 
 
-Memory can be scaled up or down in the following increments:
+When you scale the number of cores up or down, the memory will automatically be scaled to one of the following values:
 - 8 GB
 - 16 GB
 - 32 GB
@@ -88,21 +88,24 @@ To scale cores/memory and storage from within the console, complete the followin
 
 ![Confirm_changes](images/scaling_confirmation.png "Confirm scaling changes"){: caption="Figure 4. Confirm scaling changes for enterprise plan" caption-side="bottom"}
 
-### Scaling disk storage more than 4 TB
+### Scaling disk storage above 4 TB
 {: #disk_st_4tb}
 
-There may be an outage when we rebalance tablespaces under the default storage group.
+There may be an outage when tablespaces under the default storage group are rebalanced.
+{: important}
+
+Rebalancing tablespaces can take several days to complete and can impact your performance.
 {: important}
 
 
-The Enterprise Plan allows customers to scale storage past 4TB to a maximum of 24TB.  Storage is scaled in increments of 20GB to 4TB.  From 4TB to 24TB storage is scaled in the following increments:
+The Enterprise Plan allows customers to scale storage past 4TB to a maximum of 24TB. Up to 4TB, storage is scaled in increments of 20GB.  From 4TB to 24TB, storage can be set to the following values:
 - 8TB
 - 12TB
 - 16TB
 - 20TB
 - 24TB
 
-Two new functions, `Rebalance` and `Free space reclamation` are introduced to maximize the benefits of having multipled disk once you scale past 4TB.
+Two new functions, `Rebalance` and `Free space reclamation` are introduced to maximize the benefits of having multiple disks once you scale past 4TB.
 
 
 ![Confirm_changes](images/confirm_changes_v2.png "Confirm scaling changes"){: caption="Figure 5. Confirm scaling changes for enterprise plan" caption-side="bottom"}
@@ -126,7 +129,7 @@ Customers can also rebalance a tablespace individually on this tab.
 
 ![Rebalance status](images/rebalance_status_v1.png "Check rebalance status"){: caption="Figure 7. View rebalance status of tablespaces" caption-side="bottom"}
 
-**Rebalance may impact workload performance. If customers find their workload slower than usual, they can pause rebalance temporarily and resume it during off-peak period.** 
+**Rebalance may impact your workload performance. Pause rebalance temporarily and resume it during an off-peak period if the rebalance affects your workload performance.** 
 
 ![Pause_rebalance](images/pause_rebalance.png "Pause rebalance"){: caption="Figure 8. Pause rebalance" caption-side="bottom"}
 
@@ -134,7 +137,7 @@ Customers can also rebalance a tablespace individually on this tab.
 #### Free space reclamation after rebalance
 {: #reclamation}
 
-Customers can reclaim freed space on disks after rebalancing. Once the space is reclaimed, the reclaimable space will be updated to **0 GB** in the **reclaimable** column.
+You can also reclaim freed space on disks after rebalancing by choosing the Reclaim space option as shown in the figure below. After the space is reclaimed, the reclaimable space will be updated to **0 GB** in the **reclaimable** column.
 
 ![Space_reclamation](images/reclaim.png "Reclaim space"){: caption="Figure 10. Reclaim freed disk space" caption-side="bottom"}
 
