@@ -36,13 +36,17 @@ Storage cannot be scaled down after it has been increased.
 ## Standard plan
 {: #fs_standard_plan}
 
-The Standard plan deploys with 8 GB of RAM, and 20 GB of disk space. You can then scale your plan up or down with the drop-down lists in the console. 
+The Standard plan deploys with 8 GB of RAM, and 20 GB of disk space. You can then scale your plan with the drop-down lists in the {{site.data.keyword.Db2_on_Cloud_short}} console.  
 
-When you scale the number of cores up or down, the memory will automatically be scaled to one of the following values:
-- 8 GB
-- 16 GB
-- 32 GB
-- 64 GB
+Dedicated cores can be scaled up or down in the following increments with memory changing accordingly:
+
+| Cores | Memory |
+|-------|--------|
+| 2     |  8 GB  |
+| 4     | 16 GB  |
+| 8     | 32 GB  |
+| 16    | 64 GB  |
+{: caption="Table 1. Core/memory scaling increments" caption-side="top"}
 
 Storage can be scaled up to a maximum of 4 TB.
 
@@ -61,7 +65,7 @@ To scale memory and storage from within the console, complete the following step
 ## Enterprise plan
 {: #fs_enterprise_plan}
 
-Your Enterprise plan initially deploys with 4 cores, 16 GB of RAM, and 20 GB of disk space. You can then scale your plan up or down with the drop-down lists in the {{site.data.keyword.Db2_on_Cloud_short}} console by up to 56 virtual cores and 4 TB of storage. 
+Your Enterprise plan initially deploys with 4 cores, 16 GB of RAM, and 20 GB of disk space. You can then scale your plan with the drop-down lists in the {{site.data.keyword.Db2_on_Cloud_short}} console. 
 
 Dedicated cores can be scaled up or down in the following increments with memory changing accordingly:
 
@@ -72,7 +76,14 @@ Dedicated cores can be scaled up or down in the following increments with memory
 | 16    | 64 GB  |
 | 32    | 128 GB |
 | 56    | 242 GB |
-{: caption="Table 1. Core/memory scaling increments" caption-side="top"}
+{: caption="Table 2. Core/memory scaling increments" caption-side="top"}
+
+When Storage is below 4 TB, it is scaled up in increments of 20 GB. When storage exceeds 4 TB, it will implement multiple disks. Each disk contains 4 TB storage; thus, in total, storage can be scaled up in increments of 4 TB as the following:
+-  8 TB
+- 12 TB
+- 16 TB
+- 20 TB
+- 24 TB
 
 Storage can be scaled up to a maximum of 24 TB.
 
@@ -98,14 +109,7 @@ Rebalancing tablespaces can take several days to complete and can impact your pe
 {: important}
 
 
-The Enterprise Plan allows customers to scale storage past 4TB to a maximum of 24TB. Up to 4TB, storage is scaled in increments of 20GB.  From 4TB to 24TB, storage can be set to the following values:
-- 8TB
-- 12TB
-- 16TB
-- 20TB
-- 24TB
-
-Two new functions, `Rebalance` and `Free space reclamation` are introduced to maximize the benefits of having multiple disks once you scale past 4TB.
+Two new functions, `Rebalance` and `Free space reclamation`, are introduced to maximize the benefits of having multiple disks once you scale past 4TB.
 
 
 ![Confirm_changes](images/confirm_changes_v2.png "Confirm scaling changes"){: caption="Figure 5. Confirm scaling changes for enterprise plan" caption-side="bottom"}
@@ -114,7 +118,7 @@ Two new functions, `Rebalance` and `Free space reclamation` are introduced to ma
 
 The `Rebalance` functionality enables redistributing data which brings with it the benefit of striping data across multiple disks. When scaling storage past 4TB, tablespaces under the default storage group IBMSTOGROUP will be automatically rebalanced.
 
-Customers are given the option to rebalance any tablespaces from non-default storage groups after scaling is completed.  A pop window will be presented to confirm rebalancing.
+Customers are given the option to rebalance any tablespaces from non-default storage groups after scaling is completed.  A pop-up window will be presented to confirm rebalancing.
 
 ![Confirm rebalance](images/user_created_tb_prompt.png "Confirm rebalance"){: caption="Figure 6. Confirm rebalance on tablespaces before scaling" caption-side="bottom"}
 
@@ -129,7 +133,10 @@ Customers can also rebalance a tablespace individually on this tab.
 
 ![Rebalance status](images/rebalance_status_v1.png "Check rebalance status"){: caption="Figure 7. View rebalance status of tablespaces" caption-side="bottom"}
 
-**Rebalance may impact your workload performance. Pause rebalance temporarily and resume it during an off-peak period if the rebalance affects your workload performance.** 
+
+Rebalance may impact your workload performance. Pause rebalance temporarily and resume it during an off-peak period if the rebalance affects your workload performance.
+{: important}
+
 
 ![Pause_rebalance](images/pause_rebalance.png "Pause rebalance"){: caption="Figure 8. Pause rebalance" caption-side="bottom"}
 
