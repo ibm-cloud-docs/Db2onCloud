@@ -46,6 +46,7 @@ toc:
           - endpoints.md
           - advanced_admin.md
           - flex_scaling.md
+          - autoscaling_external.md
           - copy_db.md
           - deleting_db.md
           - recovering_db.md
