@@ -44,7 +44,8 @@ To monitor your storage usage, use the IBM Cloud® Monitoring integration, which
 
 ## ****Autoscaling Considerations****
 
-- **Storage cannot be scaled down.**
+- Storage cannot be scaled down. {: important}
+
 - Each increment is 10% of your storage size. The minimum increase is 20GB.
 - Storage can be auto-scaled up to a limit of 4 TB.
 - You must have the IAM Operator, Editor or Administrator authority in order to use this feature.
