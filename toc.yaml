@@ -21,7 +21,7 @@ toc:
           topics:
           - free_plan.md
           - faqs_lite.md
-          - faq_lite_diff.md
+          
       - topicgroup: 
           label: Connecting
           topics:
