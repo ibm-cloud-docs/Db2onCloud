@@ -4,7 +4,7 @@ copyright:
   years: 2014, 2021
 lastupdated: "2021-03-16"
 
-keywords: system update, plan
+keywords: update, plan, maintenance
 
 subcollection: Db2onCloud
 
@@ -22,7 +22,7 @@ subcollection: Db2onCloud
 {:pre: .pre}
 {:video: .video}
 
-# Self-serve system updates
+# Maintenance Window
 {: #self_serve_update}
 
 Routine maintenance windows are scheduled to ensure that your IBM® Db2® Warehouse on Cloud system receives the latest features, patches, and upgrades. During these maintenance windows, updates are applied automatically without your intervention. For posts of maintenance windows, see [IBM Cloud status: Planned Maintenance.](https://cloud.ibm.com/status/maintenance?component=dashdb) We contact you directly if your system specifically needs maintenance.
