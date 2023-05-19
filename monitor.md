@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2023-03-27"
+lastupdated: "2023-05-18"
 
 keywords: monitoring for code engine, performance metrics, monitor, metrics, requests, pods, application, attributes, jobrun, panic mode
 
@@ -176,7 +176,7 @@ For more information, see [{{site.data.keyword.mon_short}} Getting started tutor
 | Metadata | Description |
 |----------|-------------|
 | `Metric Name` | `ibm_db2_db_commits_time`|
-| `Metric Type` | `gauge` |
+| `Metric Type` | `counter` |
 | `Value Type`  | `none` |
 | `Segment By` | `Service instance`, `Resource` |
 | `Metric Description` | `Indicates the number of applications that are currently connected to the database.` |
@@ -189,7 +189,7 @@ For more information, see [{{site.data.keyword.mon_short}} Getting started tutor
 | Metadata | Description |
 |----------|-------------|
 | `Metric Name` | `ibm_db2_db_rollbacks`|
-| `Metric Type` | `gauge` |
+| `Metric Type` | `counter` |
 | `Value Type`  | `none` |
 | `Segment By` | `Service instance`, `Resource` |
 | `Metric Description` | `Total number of rollback statements issued by the client application and total number of rollbacks initiated internally by the database manager.` |
@@ -259,7 +259,7 @@ For more information, see [{{site.data.keyword.mon_short}} Getting started tutor
 | Metadata | Description |
 |----------|-------------|
 | `Metric Name` | `ibm_db2_log_disk_wait`|
-| `Metric Type` | `gauge` |
+| `Metric Type` | `counter` |
 | `Value Type`  | `none` |
 | `Segment By` | `Service instance`, `Resource` |
 | `Metric Description` | `The number of times agents have to wait for log data to write to disk.` |
@@ -273,7 +273,7 @@ For more information, see [{{site.data.keyword.mon_short}} Getting started tutor
 | Metadata | Description |
 |----------|-------------|
 | `Metric Name` | `ibm_db2_uid_stmts`|
-| `Metric Type` | `gauge` |
+| `Metric Type` | `counter` |
 | `Value Type`  | `none` |
 | `Segment By` | `Service instance`, `Resource` |
 | `Metric Description` | `The number of UPDATE, INSERT, MERGE and DELETE statements that were executed.` |
@@ -287,7 +287,7 @@ For more information, see [{{site.data.keyword.mon_short}} Getting started tutor
 | Metadata | Description |
 |----------|-------------|
 | `Metric Name` | `ibm_db2_rows_deleted`|
-| `Metric Type` | `gauge` |
+| `Metric Type` | `counter` |
 | `Value Type`  | `none` |
 | `Segment By` | `Service instance`, `Resource` |
 | `Metric Description` | `Total of number of row deletions attempted and total number of rows deleted from the database as a result of internal activity.` |
@@ -301,7 +301,7 @@ For more information, see [{{site.data.keyword.mon_short}} Getting started tutor
 | Metadata | Description |
 |----------|-------------|
 | `Metric Name` | `ibm_db2_rows_updated`|
-| `Metric Type` | `gauge` |
+| `Metric Type` | `counter` |
 | `Value Type`  | `none` |
 | `Segment By` | `Service instance`, `Resource` |
 | `Metric Description` | `Total number of row updates attempted and total number of rows updated from the database as a result of internal activity.` |
@@ -315,7 +315,7 @@ For more information, see [{{site.data.keyword.mon_short}} Getting started tutor
 | Metadata | Description |
 |----------|-------------|
 | `Metric Name` | `ibm_db2_rows_inserted`|
-| `Metric Type` | `gauge` |
+| `Metric Type` | `counter` |
 | `Value Type`  | `none` |
 | `Segment By` | `Service instance`, `Resource` |
 | `Metric Description` | `Total number of row insertions attempted and total number of rows inserted  from the database as a result of internal activity.` |
@@ -343,7 +343,7 @@ For more information, see [{{site.data.keyword.mon_short}} Getting started tutor
 | Metadata | Description |
 |----------|-------------|
 | `Metric Name` | `ibm_db2_db_act_aborted`|
-| `Metric Type` | `gauge` |
+| `Metric Type` | `counter` |
 | `Value Type`  | `none` |
 | `Segment By` | `Service instance`, `Resource` |
 | `Metric Description` | `The total number of coordinator activities at any nesting level that completed with errors.` |
@@ -357,7 +357,7 @@ For more information, see [{{site.data.keyword.mon_short}} Getting started tutor
 | Metadata | Description |
 |----------|-------------|
 | `Metric Name` | `ibm_db2_db_act_completed`|
-| `Metric Type` | `gauge` |
+| `Metric Type` | `counter` |
 | `Value Type`  | `none` |
 | `Segment By` | `Service instance`, `Resource` |
 | `Metric Description` | `The total number of coordinator activities at any nesting level that completed successfully.` |
@@ -371,7 +371,7 @@ For more information, see [{{site.data.keyword.mon_short}} Getting started tutor
 | Metadata | Description |
 |----------|-------------|
 | `Metric Name` | `ibm_db2_db_act_rejected`|
-| `Metric Type` | `gauge` |
+| `Metric Type` | `counter` |
 | `Value Type`  | `none` |
 | `Segment By` | `Service instance`, `Resource` |
 | `Metric Description` | `The total number of coordinator activities at any nesting level that were rejected instead of being allowed to execute.` |
@@ -399,7 +399,7 @@ For more information, see [{{site.data.keyword.mon_short}} Getting started tutor
 | Metadata | Description |
 |----------|-------------|
 | `Metric Name` | `ibm_db2_db_num_commits`|
-| `Metric Type` | `gauge` |
+| `Metric Type` | `counter` |
 | `Value Type`  | `none` |
 | `Segment By` | `Service instance` , `Resource` |
 | `Metric Description` | `Total number of commit statements issued by the client application and the total number of commits initiated internally by the database manager.` |
