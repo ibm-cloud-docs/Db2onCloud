@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-10-06"
+lastupdated: "2023-05-05"
 
 keywords:
 
@@ -49,9 +49,8 @@ To verify that the driver package is already on your computer so that you can sk
 ## Downloading
 {: #drvr_dwnldng}
 
-You can download the driver package for your operating system from the {{site.data.keyword.Db2_on_Cloud_short}} web console. From your {{site.data.keyword.Bluemix_notm}} dashboard, open your {{site.data.keyword.Db2_on_Cloud_short}} service. Log in to your {{site.data.keyword.Db2_on_Cloud_short}} web console.
+You can download the driver package for your operating system from the driver download center. Your web console provides a link to the site. In your web console, select **Administration > Connections**. Select the tab for your operating system.
 
-In the {{site.data.keyword.Db2_on_Cloud_short}} web console, select **Connect > Connection info**. Select the tile that represents your operating system to download the appropriate driver.
 
 ## Installing
 {: #drvr_instlng}
