@@ -171,31 +171,35 @@ DB20000I  The SQL command completed successfully.
 
 ## Test the connection
 {: #fed2_test_conxion}
+
 Test the connection to the new server by running the following commands:
+
 ```
 db2 "set passthru fed_server"
-```
-{: codeblock}
-```
+
 DB20000I  The SQL command completed successfully.
 ```
+{: codeblock}
+
 ```
 db2 "select * from db2inst1.test1"
-```
-{: codeblock}
-```
+
+
 C1          C2
 ----------- -----------
          13          32
 1 record(s) selected.
 ```
+{: codeblock}
+
+
 ```
 db2 "SET PASSTHRU RESET"
-```
-{: codeblock}
-```
+
 DB20000I  The SQL command completed successfully.
 ```
+{: codeblock}
+
 
 ## Create a nickname
 {: #fed2_nick}
@@ -203,23 +207,18 @@ DB20000I  The SQL command completed successfully.
 Create a nickname for the remote database and test the nickname by running the following commands:
 ```
 db2 "create nickname db2inst1.rmttest1 FOR fed_server.db2inst1.test1"
-```
-{: codeblock}
 
-```
 DB20000I  The SQL command completed successfully.
 ```
+{: codeblock}
 
 ```
 db2 "select * from db2inst1.rmttest1"
-```
-{: codeblock}
 
-```
 C1          C2
 ----------- -----------
          13          32
 
 1 record(s) selected.
 ```
-
+{: codeblock}
