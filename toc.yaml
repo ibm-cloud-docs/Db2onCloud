@@ -39,6 +39,8 @@ toc:
           label: Loading your data
           topics:
           - dcw.md
+          - load_cos.md
+
       - topicgroup: 
           label: Adminstration
           topics: 
@@ -51,18 +53,19 @@ toc:
           - deleting_db.md
           - recovering_db.md
           - cdc.md
-          - rc.md
           - br.md
           - ha.md
           - acr_setup.md
           - dr.md
+          - main.md
           - log_mon.md
+          - self_serve_update.md
           - topicgroup: 
               label: Federation
               topics: 
               - federation_v2.md
               - fed_v2_cloud_to_cloud.md
-          - local_dev_env.md
+        
               
       - topicgroup: 
           label: Security
