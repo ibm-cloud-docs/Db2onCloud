@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2021
-lastupdated: "2021-01-19"
+  years: 2014, 2023
+lastupdated: "2023-06-09"
 
 keywords: 
 
@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 # About
 {: #about}
 
-{{site.data.keyword.Db2_on_Cloud_long}} is a fully managed public cloud service on {{site.data.keyword.cloud_notm}}. As a relational database, it delivers fast query processing with enterprise-level performance and capabilities for online transactional processing (OLTP). The new Enterprise High Availability plan runs the powerful Db2 11.5 engine, and also provides multizone region support in a three HA node configuration to ensure ultimate redundancy.
+{{site.data.keyword.Db2_on_Cloud_long}} is a fully managed public cloud service on {{site.data.keyword.cloud_notm}}. As a relational database, it delivers fast query processing with enterprise-level performance and capabilities for online transactional processing (OLTP). High availability plans provide multizone region support in a three HA node configuration to ensure ultimate redundancy.
 {: shortdesc}
 
 ## Key features
@@ -49,37 +49,18 @@ You can use the web console to perform many key tasks, such as loading data, wor
 ## Plans and configurations
 {: #ab_plans_cfgs}
 
-### Enterprise High Availability Disaster Recovery (HADR) plan
+Db2 on Cloud offers two elastic configurations to meet your workload requirements. Each plan can be deployed with or without high availability. When high availability is chosen, three nodes are provisioned in multiple availability zones, where available.
 
-- Base instances start at 4 vCPU x 16 GB RAM x 20 GB storage on dedicated compute slices
-- Runs the latest release of Db2, version 11.5
-- Three HADR nodes spanning multiple availability zones
-- 1 TB of free backup storage for up to 14 days of backups
-- Self-service managed backup with point-in-time restore
-
-### Enterprise non-High Availability Disaster Recovery (non-HADR) plan
-
-- Base instances start at 4 vCPU x 16 GB RAM x 20 GB storage on dedicated compute slices
-- Runs the latest release of Db2, version 11.5
-- Single node in one availability zone
-- 1 TB of free backup storage for up to 14 days of backups
-- Self-service managed backup with point-in-time restore
-
-### Standard High Availability Disaster Recovery (HADR) plan
+### Standard Plan
 
 - Base instances start at 8 GB RAM x 20 GB storage on shared compute slices
-- Runs the latest release of Db2, version 11.5
-- Three HADR nodes spanning multiple availability zones
 - 100 GB of free backup storage for up to 14 days of backups
-- Self-service managed backup with point-in-time restore
 
-### Standard non-High Availability Disaster Recovery (non-HADR) plan
+### Enterprise Plan
 
-- Base instances start at 8 GB RAM x 20 GB storage on shared compute slices
-- Runs the latest release of Db2, version 11.5
-- Single node in one availability zone
-- 100 GB of free backup storage for up to 14 days of backups
-- Self-service managed backup with point-in-time restore
+- Base instances start at 4 vCPU x 16 GB RAM x 20 GB storage on dedicated compute slices
+- 1 TB of free backup storage for up to 14 days of backups
+
 
 ## Supported data centers
 {: #ab_sup_dcs}
@@ -106,3 +87,4 @@ MZRs support 3 node HA in 3 different data centers in that region
 
 SZRs support 3 node HA in a single data center in that region
 {: note}
+
