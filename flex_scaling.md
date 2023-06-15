@@ -119,6 +119,9 @@ The `Rebalance` functionality enables redistributing data which brings with it t
 
 You are now given the option to rebalance any tablespaces from non-default storage groups after scaling is completed.  A pop-up window will be presented to confirm rebalancing.
 
+It is highly recommended to rebalance non-default storage groups after scaling past 4TB.
+{: important}
+
 ![Confirm rebalance](images/user_created_tb_prompt.png "Confirm rebalance"){: caption="Figure 6. Confirm rebalance on tablespaces before scaling" caption-side="bottom"}
 
 #### Rebalance Status
