@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2022
-lastupdated: "2022-11-28"
+lastupdated: "2023-06-16"
 
 keywords: 
 
@@ -118,6 +118,9 @@ Two new functions, `Rebalance` and `Free space reclamation`, are introduced to m
 The `Rebalance` functionality enables redistributing data which brings with it the benefit of striping data across multiple disks. When scaling storage past 4TB, tablespaces under the default storage group IBMSTOGROUP will be automatically rebalanced.
 
 You are now given the option to rebalance any tablespaces from non-default storage groups after scaling is completed.  A pop-up window will be presented to confirm rebalancing.
+
+It is highly recommended to rebalance non-default storage groups after scaling past 4TB.
+{: important}
 
 ![Confirm rebalance](images/user_created_tb_prompt.png "Confirm rebalance"){: caption="Figure 6. Confirm rebalance on tablespaces before scaling" caption-side="bottom"}
 
