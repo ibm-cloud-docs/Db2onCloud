@@ -37,7 +37,7 @@ You can load data from IBM Cloud Object Storage (COS) into IBM® Db2® on Cloud 
 
 ![Resource List](images/bucket.png "Resource List"){: caption="Figure 1. Resource List" caption-side="bottom"}
 
-2. Create Credentials on the COS bucket so Db2 Console can access the data.
+### Create Credentials on the COS bucket so Db2 Console can access the data.
 
     1. Select `Service Credentials`
     2. Click on `New Credentials`
@@ -50,7 +50,7 @@ You can load data from IBM Cloud Object Storage (COS) into IBM® Db2® on Cloud 
 
   
 
-3. Get the `Access key` and `Secret access key` from the Credentials 
+### Get the `Access key` and `Secret access key` from the Credentials 
 
     1. Expand the Credential
     2. Note down the `access_key_id` and `secret_access_key`
@@ -60,7 +60,7 @@ You can load data from IBM Cloud Object Storage (COS) into IBM® Db2® on Cloud 
 
   
 
-4. Open the Db2 Console to the load data page
+### Open the Db2 Console to the load data page
 
     1. Click on `Data` on the left menu
     2. Click on `Load Data` on the top tab
