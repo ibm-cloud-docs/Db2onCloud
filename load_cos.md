@@ -56,7 +56,7 @@ You can load data from IBM Cloud Object Storage (COS) into IBM® Db2® on Cloud 
     2. Note down the `access_key_id` and `secret_access_key`
 
 
-![Get Keys](images/bucket.png "Get Access Keys"){: caption="Figure 3. Get Acces Keys" caption-side="bottom"}
+![Get Keys](images/bucket.png "Get Access Keys"){: caption="Figure 3. Get Access Keys" caption-side="bottom"}
 
   
 
