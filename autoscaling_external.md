@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2022
-lastupdated: "2023-05-22"
+lastupdated: "2023-07-18"
 
 keywords: 
 
@@ -37,9 +37,7 @@ To monitor your storage usage, use the IBM Cloud® Monitoring integration, which
 - When to scale, based on usage over time.
 - A hard limit on scaling, your deployment stops autoscaling at the limit.
 
-![paras.png](images/autoscaling_UI.png)
-
-<Figure 1. Example Autoscaling panel>
+![paras.png](images/autoscaling_UI.png){: caption="Figure 1. Example Autoscaling panel" caption-side="bottom"}
 
 
 ## ****Autoscaling Considerations****
