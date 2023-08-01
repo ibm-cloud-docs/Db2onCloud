@@ -73,9 +73,8 @@ toc:
           - encryption.md
           - iam.md
           - user_mgmt.md
-          - rcac.md
           - auditing.md
-          - activity_tracker.md
+          - rcac.md
           - sec_comp_sum.md
           - reference_hpcs.md
           - key_protect_2.md
