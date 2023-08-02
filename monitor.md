@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2023-05-18"
+lastupdated: "2023-08-01"
 
 keywords: monitoring for code engine, performance metrics, monitor, metrics, requests, pods, application, attributes, jobrun, panic mode
 
@@ -140,6 +140,7 @@ For more information, see [{{site.data.keyword.mon_short}} Getting started tutor
 | [Disaster recovery Log Gap](#ibm_db2_dr_log_gap) | 
 | [High Availability Disaster Recovery Log Gap](#ibm_db2_hadr_log_gap) | 
 | [Is disaster recovery connected?](#ibm_db2_is_dr_connected) | 
+| [Is disaster recovery configured?](#ibm_db2_is_dr_configured) |
 | [Last backup duration in minutes](#ibm_db2_last_backup_duration_minutes) | 
 | [Log Disk wait](#ibm_db2_log_disk_wait) | 
 | [Number of Unique ID statements](#ibm_db2_uid_stmts) | 
@@ -237,6 +238,20 @@ For more information, see [{{site.data.keyword.mon_short}} Getting started tutor
 | `Metric Description` | `Availability disaster recovery connection status of the database.` |
 {: caption="Table 6. Disaster recovery status metric" caption-side="top"}
 
+
+### Is disaster recovery configured?
+{: #ibm_db2_is_dr_configured}
+
+
+| Metadata | Description |
+|----------|-------------|
+| `Metric Name` | `ibm_db2_is_dr_configured`|
+| `Metric Type` | `gauge` |
+| `Value Type`  | `none` |
+| `Segment By` | `Service instance`, `Resource` |
+| `Metric Description` | `Is this formation configured with DR.` |
+{: caption="Table 7: Metric metadata" caption-side="top"}
+
 ​
 ### Last backup duration in minutes
 {: #ibm_db2_last_backup_duration_minutes}
@@ -249,7 +264,7 @@ For more information, see [{{site.data.keyword.mon_short}} Getting started tutor
 | `Value Type`  | `none` |
 | `Segment By` | `Service instance`, `Resource` |
 | `Metric Description` | `The duration of the last successful backup.` |
-{: caption="Table 7. Last backup time mteric" caption-side="top"}
+{: caption="Table 8. Last backup time mteric" caption-side="top"}
 
 ​
 ### Log Disk wait
@@ -263,7 +278,7 @@ For more information, see [{{site.data.keyword.mon_short}} Getting started tutor
 | `Value Type`  | `none` |
 | `Segment By` | `Service instance`, `Resource` |
 | `Metric Description` | `The number of times agents have to wait for log data to write to disk.` |
-{: caption="Table 8. Log Disk wait metric" caption-side="top"}
+{: caption="Table 9. Log Disk wait metric" caption-side="top"}
 
 ​
 ### Number of Unique ID statements
@@ -277,7 +292,7 @@ For more information, see [{{site.data.keyword.mon_short}} Getting started tutor
 | `Value Type`  | `none` |
 | `Segment By` | `Service instance`, `Resource` |
 | `Metric Description` | `The number of UPDATE, INSERT, MERGE and DELETE statements that were executed.` |
-{: caption="Table 9. Number of unique ID statements metric" caption-side="top"}
+{: caption="Table 10. Number of unique ID statements metric" caption-side="top"}
 
 ​
 ### Number of rows deleted
@@ -291,7 +306,7 @@ For more information, see [{{site.data.keyword.mon_short}} Getting started tutor
 | `Value Type`  | `none` |
 | `Segment By` | `Service instance`, `Resource` |
 | `Metric Description` | `Total of number of row deletions attempted and total number of rows deleted from the database as a result of internal activity.` |
-{: caption="Table 10. Number of rows deleted metric" caption-side="top"}
+{: caption="Table 11. Number of rows deleted metric" caption-side="top"}
 
 ​
 ### Number of rows updated
@@ -305,7 +320,7 @@ For more information, see [{{site.data.keyword.mon_short}} Getting started tutor
 | `Value Type`  | `none` |
 | `Segment By` | `Service instance`, `Resource` |
 | `Metric Description` | `Total number of row updates attempted and total number of rows updated from the database as a result of internal activity.` |
-{: caption="Table 11. Number of rows updated metric" caption-side="top"}
+{: caption="Table 12. Number of rows updated metric" caption-side="top"}
 
 ​
 ### Numbers of rows inserted
@@ -319,7 +334,7 @@ For more information, see [{{site.data.keyword.mon_short}} Getting started tutor
 | `Value Type`  | `none` |
 | `Segment By` | `Service instance`, `Resource` |
 | `Metric Description` | `Total number of row insertions attempted and total number of rows inserted  from the database as a result of internal activity.` |
-{: caption="Table 12. Number of rows inserted metric" caption-side="top"}
+{: caption="Table 13. Number of rows inserted metric" caption-side="top"}
 
 ​
 ### Time since last backup in hours
@@ -333,7 +348,7 @@ For more information, see [{{site.data.keyword.mon_short}} Getting started tutor
 | `Value Type`  | `none` |
 | `Segment By` | `Service instance`, `Resource` |
 | `Metric Description` | `The number of hours since there was a last successful backup.` |
-{: caption="Table 13. Time since last backup in hours metric" caption-side="top"}
+{: caption="Table 14. Time since last backup in hours metric" caption-side="top"}
 
 ​
 ### Total Activities Aborted
@@ -347,7 +362,7 @@ For more information, see [{{site.data.keyword.mon_short}} Getting started tutor
 | `Value Type`  | `none` |
 | `Segment By` | `Service instance`, `Resource` |
 | `Metric Description` | `The total number of coordinator activities at any nesting level that completed with errors.` |
-{: caption="Table 14. Total activities aborted metric" caption-side="top"}
+{: caption="Table 15. Total activities aborted metric" caption-side="top"}
 
 ​
 ### Total Activities Completed
@@ -361,7 +376,7 @@ For more information, see [{{site.data.keyword.mon_short}} Getting started tutor
 | `Value Type`  | `none` |
 | `Segment By` | `Service instance`, `Resource` |
 | `Metric Description` | `The total number of coordinator activities at any nesting level that completed successfully.` |
-{: caption="Table 15. Total activities completed metric" caption-side="top"}
+{: caption="Table 16. Total activities completed metric" caption-side="top"}
 
 ​
 ### Total Activities Rejected
@@ -375,7 +390,7 @@ For more information, see [{{site.data.keyword.mon_short}} Getting started tutor
 | `Value Type`  | `none` |
 | `Segment By` | `Service instance`, `Resource` |
 | `Metric Description` | `The total number of coordinator activities at any nesting level that were rejected instead of being allowed to execute.` |
-{: caption="Table 16. Total activities rejected metric" caption-side="top"}
+{: caption="Table 17. Total activities rejected metric" caption-side="top"}
 
 ​
 ### Total Connections
@@ -389,7 +404,7 @@ For more information, see [{{site.data.keyword.mon_short}} Getting started tutor
 | `Value Type`  | `none` |
 | `Segment By` | `Service instance`, `Resource` |
 | `Metric Description` | `Indicates the number of applications that are currently connected to the database.` |
-{: caption="Table 17. Total connections metric" caption-side="top"}
+{: caption="Table 18. Total connections metric" caption-side="top"}
 
 ​
 ### Total number of commits
@@ -403,7 +418,7 @@ For more information, see [{{site.data.keyword.mon_short}} Getting started tutor
 | `Value Type`  | `none` |
 | `Segment By` | `Service instance` , `Resource` |
 | `Metric Description` | `Total number of commit statements issued by the client application and the total number of commits initiated internally by the database manager.` |
-{: caption="Table 18. Total number of commits metric" caption-side="top"}
+{: caption="Table 19. Total number of commits metric" caption-side="top"}
 
 ​
 ## Attributes for Segmentation
