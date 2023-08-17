@@ -22,7 +22,7 @@ subcollection: Db2onCloud
 {:pre: .pre}
 
 
-The **blocknonlogged** parameter must always be set to **YES**.  Changing it to NO will cause any non logged transactions on the primary database to fail to be replicated to the standby databases thereby making the data inconsistent in the HADR environment. {: important}
+The **blocknonlogged** parameter must always be set to **YES**.  Changing it to NO will cause any non logged transactions on the primary database to fail to be replicated to the standby databases thereby making the data inconsistent in the HADR environment {: important}
 
 # High availability (HA)
 {: #ha}
