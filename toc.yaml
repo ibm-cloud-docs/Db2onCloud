@@ -79,7 +79,6 @@ toc:
           - reference_hpcs.md
           - key_protect_2.md
           
-      - latency_improvements.md
       - communities.md
       - link: 
             label: What's new
@@ -94,6 +93,7 @@ toc:
       topics:
       - provision.md
       - monitor.md
+      - investigating_latency_events.md
       - link: 
             label: "IBM Demos: Tutorials, videos, and hands-on labs"
             href: https://www.ibm.com/demos/collection/Db2-on-Cloud/
