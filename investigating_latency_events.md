@@ -150,6 +150,7 @@ The latency improvement process cannot be completed without contacting the Db2 o
                 </databases>
             </configuration>    
             
+            
       This configuration assumes the primary is in the dal13 zone and the client is in dal12 (therefore, a minimum of 1 network hop will still be required)
 {: note}
       
