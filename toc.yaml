@@ -59,7 +59,6 @@ toc:
           - dr.md
           - main.md
           - log_mon.md
-          - self_serve_update.md
           - topicgroup: 
               label: Federation
               topics: 
