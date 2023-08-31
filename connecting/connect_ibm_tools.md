@@ -165,14 +165,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
      For details about defining a connection in DataStage, see the following DataStage documentation topics: 
      
      - [Creating a data connection object manually](https://www.ibm.com/support/knowledgecenter/SSZJPZ_11.3.0/com.ibm.swg.im.iis.ds.design.doc/topics/t_ddesref_Creating_a_Data_Connection_Object_Manually.html){:external}
-     - [Configuring access to Db2 databases](https://www.ibm.com/support/knowledgecenter/en/SSZJPZ_11.7.0/com.ibm.swg.im.iis.conn.common.usage.doc/topics/t_configuring_db2conn.html){:external}
-
-### Lift
-{: #tools_lift}
-
-Use Lift to migrate your data into {{site.data.keyword.Db2_on_Cloud_short}}.
-
-[Lift](https://www.lift-cli.cloud.ibm.com/#docs){:external}
+     - [Configuring access to Db2 databases](https://www.ibm.com/support/knowledgecenter/en/SSZJPZ_11.7.0/com.ibm.swg.im.iis.conn.common.usage.doc/topics/t_configuring_db2conn.html){:external} 
 
 ### InfoSphere Data Replication
 {: #idr}
