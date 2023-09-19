@@ -38,9 +38,11 @@ Storage cannot be scaled down after it has been increased.
 
 The Standard plan deploys with 8 GB of RAM, and 20 GB of disk space. You can then scale your plan with the drop-down lists in the {{site.data.keyword.Db2_on_Cloud_short}} console.
 
-Dedicated cores can be scaled up or down in the following increments with memory changing accordingly:
+Memory can be scaled up or down by selecting the number of vCPU.  The standard plan is a multitenaned plan and therefore has dedicated memory only. 
 
-| Cores | Memory |
+Memory can be scaled in the following increments:
+
+| vCPU | Memory |
 |-------|--------|
 | 2     |  8 GB  |
 | 4     | 16 GB  |
