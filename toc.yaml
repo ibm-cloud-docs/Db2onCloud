@@ -73,7 +73,6 @@ toc:
           - iam.md
           - user_mgmt.md
           - auditing.md
-          - aud_events.md
           - rcac.md
           - sec_comp_sum.md
           - reference_hpcs.md
