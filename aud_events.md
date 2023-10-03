@@ -23,9 +23,7 @@ subcollection: Db2whc
 
 
 
-# Auditing events for Db2 Warehouse on Cloud
-
-{{site.data.keyword.at_full_notm}} allows you to forward the Db2 diagnostic log (db2diag.log) from your {{site.data.keyword.cloud_notm}} instances to your own Log Analysis with LogDNA service instance. Choosing to enable log forwarding allows you to use Log Analysis to retain these logs for the time period required by your organization, or to search or analyze the logs.
+# Auditing events for Db2 on Cloud
 
 As a security officer, auditor, or manager, you can use the {{site.data.keyword.at_full}} service to track how users and applications interact with the Db2 Warehouse on Cloud service in {{site.data.keyword.cloud_notm}}. {: shortdesc}
 
