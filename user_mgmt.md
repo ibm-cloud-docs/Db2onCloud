@@ -66,7 +66,7 @@ Console access is controlled by IAM. An IAM user can be assigned access by the I
 | IAM - Platform - Operator          | No                     | No (unless mapped to Db2 user) | Yes             | Yes | Yes |
 | IAM - Platform - Editor            | No                     | No (unless mapped to Db2 user) | Yes             | Yes | Yes |
 | IAM - Platform - Administrator     | Yes                    | No (unless mapped to Db2 user) | Yes             | Yes | Yes |
-| Non-IAM, but autheticate with JDBC | Only "Change password" | Yes | No | No | Yes |
+| Non-IAM, but authenticate with JDBC | Only "Change password" | Yes | No | No | Yes |
 {: caption="Table 1. Roles and console permissions" caption-side="top"}
 
 #### Service action mapping
