@@ -42,7 +42,7 @@ toc:
           - load_cos.md
 
       - topicgroup: 
-          label: Adminstration
+          label: Administration
           topics: 
           - interfaces.md
           - endpoints.md
