@@ -39,7 +39,7 @@ Unlike other {{site.data.keyword.Db2_on_Cloud_short}} plans, the free {{site.dat
  
 The Lite plan uses one database schema.
 
-For more information about the free {{site.data.keyword.Db2_on_Cloud_short}} Lite plan, see the [FAQ](https://ibm.biz/db2oc_free_plan_faq){:external}.
+For more information about the free {{site.data.keyword.Db2_on_Cloud_short}} Lite plan, see the [FAQ](https://cloud.ibm.com/docs/Db2onCloud?topic=Db2onCloud-faq_db2oc_lite){:external}.
 
 
 ## Regional availability
