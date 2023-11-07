@@ -46,9 +46,9 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
   - Add entries to the driver configuration file, `db2dsdriver.cfg`, for your database.
   - Secure Sockets Layer (SSL)
 
-    Connection details, such as which port to use and the connection string, depend on whether you use SSL connections. For Enterprise and Standard plans, SSL is the default connection method. For legacy plans, using SSL is strongly recommended because of the stronger security it provides.
+  <!--  Connection details, such as which port to use and the connection string, depend on whether you use SSL connections. For Enterprise and Standard plans, SSL is the default connection method. For legacy plans, using SSL is strongly recommended because of the stronger security it provides.
 
-    <!-- You can choose to connect with or without SSL. Connection details, such as which port to use and the connection string, depend on whether you use SSL connections. -->
+     You can choose to connect with or without SSL. Connection details, such as which port to use and the connection string, depend on whether you use SSL connections. -->
 
     To use SSL connections, you need a CA certificate:
     - If you use the most recent {{site.data.keyword.Db2_on_Cloud_short}} driver package, the certificate file is bundled with the package and is used for connections.
@@ -56,7 +56,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 
 - Confirm that ports are available
 
-   If your network is behind a firewall, confirm that communications are permitted on the port that is needed to connect to the {{site.data.keyword.Db2_on_Cloud_short}} service. For Enterprise and Standard plans, the port number can be found in the connection information from the **Service credentials** table of the {{site.data.keyword.Db2_on_Cloud_short}} service instance or from the {{site.data.keyword.Db2_on_Cloud_short}} web console. For legacy plans, the connections will occur on port number `50000` for standard protocols or port number `50001` for SSL connections. 
+   If your network is behind a firewall, confirm that communications are permitted on the port that is needed to connect to the {{site.data.keyword.Db2_on_Cloud_short}} service. For Enterprise and Standard plans, the port number can be found in the connection information from the **Service credentials** table of the {{site.data.keyword.Db2_on_Cloud_short}} service instance or from the {{site.data.keyword.Db2_on_Cloud_short}} web console.
 
 <!-- Before you can connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you completed downloading and installing the necessary components on the prerequisites checklist: 
 
