@@ -87,3 +87,8 @@ MZRs support 3 node HA in 3 different data centers in that region
 SZRs support 3 node HA in a single data center in that region
 {: note}
 
+### EU-Supported (MZR)
+- **Frankfurt 02** - (Fra02, Fra04, Fra05)
+
+EU-Supported MZR supports 3 node HA in 3 different data centers in that region
+{: note}
