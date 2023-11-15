@@ -45,7 +45,7 @@ It is advised that you update DataStage to the most recent version so that you c
 
 If you don’t already have a data server client that is installed, download and install the IBM Data Server Client <!--Version 10.5 -->that is appropriate for your client machine’s operating system: [IBM Data Server Client](https://www.ibm.com/marketing/iwm/iwm/web/preLogin.do?source=swg-idsc97){:external}.
 
-To make connections with the SSL protocol, download and install the 32-bit GSKit V8. Click the OS tab that is appropriate for your client machine’s operating system: [GSKit V8 - Install, Uninstall and Upgrade instructions](http://www.ibm.com/support/docview.wss?uid=swg21631462){:external}. For the following operating systems, ensure that you add the GSKit installation directory path to the OS-specific path environment variable:
+To make connections with the SSL protocol, download and install the 32-bit GSKit V8. Click the OS tab that is appropriate for your client machine’s operating system: [GSKit V8 - Install, Uninstall and Upgrade instructions](https://www.ibm.com/docs/en/db2/11.5?topic=gskit-global-installation-instructions){:external}. For the following operating systems, ensure that you add the GSKit installation directory path to the OS-specific path environment variable:
 
 - AIX®: **LIBPATH**
    - `/usr/opt/ibm/gsk8/lib`
@@ -183,7 +183,7 @@ When you use {{site.data.keyword.Db2_on_Cloud_short}} as a connection target, th
 #### Prerequisites
 {: #prereq_5}
 
-If you intend to connect by using the SSL protocol, download and install GSKit V8. See [GSKit V8 - Install, Uninstall and Upgrade instructions](http://www.ibm.com/support/docview.wss?uid=swg21631462){:external}. Click the operating system tab that applies to your client machine’s operating system. If you are installing the GSKit on a Windows computer, ensure that you specify the GSKit installation directory path (`<installation_directory>\gsk8\bin`) for the **`PATH`** environment variable.
+If you intend to connect by using the SSL protocol, download and install GSKit V8. See [GSKit V8 - Install, Uninstall and Upgrade instructions](https://www.ibm.com/docs/en/db2/11.5?topic=gskit-global-installation-instructions){:external}. Click the operating system tab that applies to your client machine’s operating system. If you are installing the GSKit on a Windows computer, ensure that you specify the GSKit installation directory path (`<installation_directory>\gsk8\bin`) for the **`PATH`** environment variable.
 
 Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
