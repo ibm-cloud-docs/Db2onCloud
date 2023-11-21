@@ -31,6 +31,8 @@ For paid plans, encrypted backups of the database are done daily. A daily backup
 
 All paid plans make use of Cross-Regional IBM Cloud Object Storage (COS), by default, to keep backups offsite. {: important}
 
+Changing the backup time can take upto 2 hours to take effect. {: important}
+
 {: shortdesc}
 
 The following is an example of the manual backup operation in the web console UI:
