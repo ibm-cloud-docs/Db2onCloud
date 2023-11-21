@@ -77,7 +77,7 @@ The Standard and Enterprise plans are supported in the following data center geo
 - **Sao Paulo** - (Sao01, Sao04, Sao05)
 - **Toronto** - (Tor01, Tor04, Tor05)
 
-MZRs support 3 node HA in 3 different data centers in that region
+EU-Supported MZR supports 3 node HA in 3 different data centers in that region.
 {: note}
 
 ### Single-zone region (SZR)
