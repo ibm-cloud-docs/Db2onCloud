@@ -77,7 +77,7 @@ If you have trouble with reactivation of a Lite plan instance, you can delete th
 {: faq}
 {: support}
 
-There's a limit of one instance per Lite plan. You may see an error 500 message if you try to create a second Lite instance. To create a new Lite plan instance, you must first delete your existing one.
+There's a limit of one Lite instance per IAM id. You may see an error 500 message if you try to create a second Lite instance. To create a new Lite plan instance, you must first delete your existing one.
 
 ## I'm getting an error when creating a new schema or database. What's the problem?
 {: #fp_faq_schema}
