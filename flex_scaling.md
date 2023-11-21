@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2022
-lastupdated: "2023-06-16"
+  years: 2014, 2023
+lastupdated: "2023-09-21"
 
 keywords: 
 
@@ -27,10 +27,10 @@ subcollection: Db2onCloud
 Db2 on Cloud provides you with the ability to independently scale up compute cores and storage. 
 {: shortdesc}
 
-As the number of cores is increased, memory is also increased.
+As the number of cores is increased, memory is also increased.  The updating of resources can result in an outage that can last up to 20 minutes.
 {: important}
 
-Storage cannot be scaled down after it has been increased.
+Storage cannot be scaled down once it has been increased.
 {: important}
 
 ## Standard plan
@@ -122,7 +122,7 @@ The `Rebalance` functionality enables redistributing data which brings with it t
 You are now given the option to rebalance any tablespaces from non-default storage groups after scaling is completed.  A pop-up window will be presented to confirm rebalancing.
 
 It is highly recommended to rebalance non-default storage groups after scaling past 4TB.
-{: important}
+{: important} 
 
 ![Confirm rebalance](images/user_created_tb_prompt.png "Confirm rebalance"){: caption="Figure 6. Confirm rebalance on tablespaces before scaling" caption-side="bottom"}
 
