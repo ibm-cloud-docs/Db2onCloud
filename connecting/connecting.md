@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-09-15"
+lastupdated: "2020-11-10"
 
 keywords:
 
@@ -46,7 +46,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
   - Add entries to the driver configuration file, `db2dsdriver.cfg`, for your database.
   - Secure Sockets Layer (SSL)
 
-    Connection details, such as which port to use and the connection string, depend on whether you use SSL connections. For Enterprise and Standard plans, SSL is the default connection method. For legacy plans, using SSL is strongly recommended because of the stronger security it provides.
+    <!--Connection details, such as which port to use and the connection string, depend on whether you use SSL connections. For Enterprise and Standard plans, SSL is the default connection method. For legacy plans, using SSL is strongly recommended because of the stronger security it provides.
 
     <!-- You can choose to connect with or without SSL. Connection details, such as which port to use and the connection string, depend on whether you use SSL connections. -->
 
@@ -56,7 +56,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 
 - Confirm that ports are available
 
-   If your network is behind a firewall, confirm that communications are permitted on the port that is needed to connect to the {{site.data.keyword.Db2_on_Cloud_short}} service. For Enterprise and Standard plans, the port number can be found in the connection information from the **Service credentials** table of the {{site.data.keyword.Db2_on_Cloud_short}} service instance or from the {{site.data.keyword.Db2_on_Cloud_short}} web console. For legacy plans, the connections will occur on port number `50000` for standard protocols or port number `50001` for SSL connections. 
+   If your network is behind a firewall, confirm that communications are permitted on the port that is needed to connect to the {{site.data.keyword.Db2_on_Cloud_short}} service. For Enterprise and Standard plans, the port number can be found in the connection information from the **Service credentials** table of the {{site.data.keyword.Db2_on_Cloud_short}} service instance or from the {{site.data.keyword.Db2_on_Cloud_short}} web console.
 
 <!-- Before you can connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you completed downloading and installing the necessary components on the prerequisites checklist: 
 
@@ -118,7 +118,6 @@ You can also connect external applications and tools to {{site.data.keyword.Db2_
 - Connect your {{site.data.keyword.Bluemix_short}} applications that need an analytics database.
 - [DataStage](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ibm#datastage)
 <!-- - [Informatica](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_3rd_party#informatica) -->
-- Only for legacy plans: [Lift](https://www.lift-cli.cloud.ibm.com/#docs){:external}
 - [InfoSphere Data Replication](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ibm#idr)
 - [Segment](https://segment.com/docs/destinations/db2/){:external}
 - [Data Studio](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ibm#data_studio)
