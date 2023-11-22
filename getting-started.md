@@ -30,13 +30,13 @@ subcollection: Db2onCloud
 # Getting started with {{site.data.keyword.Db2_on_Cloud_short}}
 {: #getting-started}
 
-{{site.data.keyword.Db2_on_Cloud_long}} is an SQL database that is provisioned for you in the cloud. You can use {{site.data.keyword.Db2_on_Cloud_short}} just as you would use any database software, but without the time and expense of hardware setup or software installation and maintenance. 
-{: shortdesc}
+You can provision an instance of IBM Db2 on Cloud through the [IBM Cloud catalog](https://cloud.ibm.com/catalog/services/db2). Create a [free account](https://cloud.ibm.com/registration?target=%2Fcatalog%2Fservices%2Fdb2-warehouse) and get an IBM Cloud credit of $200 that you can use towards Db2 on Cloud.
 
-Create credentials. After creating the {{site.data.keyword.Db2_on_Cloud_short}} service on {{site.data.keyword.cloud}}, you must create a user name and password by clicking the **Service credentials** tab on your service page and selecting **New credential**. Technically, you can log in to the web console without credentials, but you will need the user name and password to use many of the Db2 tools. To retrieve your service credentials, select the **Service credentials** tab from your service page and expand the credentials that you want to view.
-{: important}
+After creating the Db2 on Cloud service, you can create a user name and password by clicking the **Service credentials** tab on your service page and selecting **New credential**.
 
-You can also install a local Db2 database by using the [free Db2 Developer Edition download](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:external}. It rapidly installs a ready-to-go developer edition of Db2 with tools inside a Docker container (Docker not required; it automatically installs any necessary components). 
+While logged in as the **IAM** user that provisioned the instance, you can log into the web console by clicking on the **Go to UI** button on the **Manage** tab. 
+
+You can create database/JDBC users, which you will use to connect to the database, by navigating to the **Administration** --> **User Management** panel. Additionally, you may want to give admin access to an IAM user to allow them to use console administration functions such as user management, backup, and restore. Before you can add an IAM user in the console, you must first give the user access to the service in IAM". For more information, see [Identity and access management (IAM) on IBM Cloud](https://cloud.ibm.com/docs/Db2onCloud?topic=Db2onCloud-iam).
 
 <!--
 ## Video: Introducing Db2 on Cloud
