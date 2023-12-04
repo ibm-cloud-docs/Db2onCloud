@@ -45,7 +45,7 @@ It is advised that you update DataStage to the most recent version so that you c
 
 If you don’t already have a data server client that is installed, download and install the IBM Data Server Client <!--Version 10.5 -->that is appropriate for your client machine’s operating system: [IBM Data Server Client](https://www.ibm.com/support/pages/gskit-versions-shipped-db2){:external}.
 
-To make connections with the SSL protocol, download and install the 32-bit GSKit V8. Click the OS tab that is appropriate for your client machine’s operating system: [GSKit V8 - Install, Uninstall and Upgrade instructions]([http://www.ibm.com/support/docview.wss?uid=swg21631462](https://www.ibm.com/docs/en/db2/11.5?topic=gskit-global-installation-instructions)){:external}. For the following operating systems, ensure that you add the GSKit installation directory path to the OS-specific path environment variable:
+To make connections with the SSL protocol, download and install the 32-bit GSKit V8. Click the OS tab that is appropriate for your client machine’s operating system: [GSKit V8 - Install, Uninstall and Upgrade instructions](https://www.ibm.com/docs/en/db2/11.5?topic=gskit-global-installation-instructions){:external}. For the following operating systems, ensure that you add the GSKit installation directory path to the OS-specific path environment variable:
 
 - AIX®: **LIBPATH**
    - `/usr/opt/ibm/gsk8/lib`
