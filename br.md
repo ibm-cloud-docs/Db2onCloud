@@ -27,9 +27,9 @@ subcollection: Db2onCloud
 ## Backup
 {: #br_backup}
 
-For paid plans, encrypted backups of the database are done daily. A daily backup is kept for each of the last 14 days.
+For paid plans, encrypted backups of the database are done daily. By default a daily backup is kept for each of the last 14 days. Archived transaction logs are also backed up in between backups as they fill up.
 
-All paid plans make use of Cross-Regional IBM Cloud Object Storage (COS), by default, to keep backups offsite. {: important}
+All paid plans make use of Cross-Regional IBM Cloud Object Storage (COS), by default, to keep backups and archived transaction logs offsite. {: important}
 
 Changing the backup time can take upto 2 hours to take effect. {: important}
 
@@ -57,7 +57,7 @@ The following is an example of the manual backup operation in the web console UI
 ## Restore
 {: #br_restore}
 
-All paid plans make use of Cross-Regional IBM Cloud Object Storage (COS), by default, to keep backups offsite. {: important}
+All paid plans make use of Cross-Regional IBM Cloud Object Storage (COS), by default, to keep backups and archived transaction logs offsite. {: important}
 
 For information about point-in-time restores, see [Point-in-time restore](#point-in-time).
 
