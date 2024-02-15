@@ -1,33 +1,4 @@
 {
-  "q_sign": [
-    "sign up for Db2 on Cloud",
-    "DB2 sign up",
-    "provision an instance of Db2",
-    "provisioning an instance of Db2",
-    "signing up for DB2 on Cloud",
-    "get started with Db2",
-    "provisioning a free Lite instance of Db2",
-    "get db2 for free",
-    "Provision an instance of IBM Db2 Lite plan",
-    "coursera sql free db2 lite",
-    "sign up for free Db2 lite",
-    "db2 lite plan",
-    "Db2",
-    "Db2 Lite",
-    "ibm db2 page",
-    "I need to create a db2 console",
-    "create a db2 lite",
-    "create a IBM Db2 Lite plan",
-    "trying to create a new service (Db2 Lite)",
-    "create a DB2 lite plan for my Coursera coursework",
-    "creating a DB2 plan",
-    "provision Db2 lite plan instance",
-    "create a new DB2 instance",
-    "would like to use Lite plan for DB2",
-    "how do i provision an instance of ibm db2 lite",
-    "how can I setup for DB2 lite",
-    "provision a Lite instance for Db2"
-  ],
   "q_creds": [
     "generate credentials for my Db2 instance",
     "generate credential for Db2",
@@ -56,17 +27,6 @@
     "how to connect to DB2",
     "create a connection to Db2",
     "access DB2 instance"
-  ],
-  "q_managed": [
-    "whats managed for me with Db2 on Cloud",
-    "what does IBM manage in Db2",
-    "health monitoring in Db2",
-    "do I need to backup Db2",
-    "do you handle Db2 backup",
-    "Db2 operating system updates",
-    "do I have to perform Db2 operating system updates",
-    "health monitoring of the database managed in Db2",
-    "backup Db2 management"
   ],
   "q_info": [
     "more information about Db2 on Cloud",
