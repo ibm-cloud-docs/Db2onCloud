@@ -49,6 +49,8 @@ Deleting a DR configuration is currently not supported on the {{site.data.keywor
 
 [Forcing a failback to the primary site](#dr_force_failback)
 
+[Scaling DR node](#dr_scale_dr_node)
+
 <!--High availability disaster recovery (HADR) provides a high availability solution for both partial and complete site failures. HADR protects against data loss by replicating data changes from a source database, called the primary database, to the target databases, called the standby databases.
 -->
 
@@ -108,6 +110,12 @@ DR nodes are now available for Enterprise and Standard HADR plans only. DR nodes
 
 4. A successful takeover by the primary node is indicated by the **Promotion** button moving to the recovery node (now the standby) along with a notification. The primary site is now **Active**.
    ![Takeover completion](images/dr_12_v2.jpg  "Takeover completion"){: caption="Figure 12. Takeover completion" caption-side="bottom"}
+
+
+### Scaling a DR node
+{: #dr_scale_dr_node}
+
+The DR node is independant of the HA side and therefore must be scaled seperately.  It is always recommended that the DR node's cpu/memory/storage specs match those of the HA side, so forced takeover completes successfully.
 
 <!--
 ## Legacy Flex plans
