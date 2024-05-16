@@ -78,7 +78,7 @@ DR nodes are now available for Enterprise and Standard HADR plans only. DR nodes
 ### Deleting a DR node
 {: #dr_delete_dr_node}
 
-Deleting a DR service instance removes only the DR aspect, leaving the HA configuration intact. Once deleted, you can re-deploy a DR node in any designated location from the HA setup.
+Deleting a DR service instance removes only the DR node, leaving the HA instance intact. Once deleted, you can re-deploy a DR node in any designated location from the HA setup.
 
 The DR node must be in a standby state before you can delete it. If it is not in standby, you must initiate a failback to the primary site. {: important}
 
