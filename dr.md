@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2022
-lastupdated: "2022-11-07"
+  years: 2014, 2024
+lastupdated: "2024-05-28"
 
 keywords: DR, HADR, disaster recovery, Enterprise, Standard, Db2 on Cloud, failover, failback
 
@@ -39,11 +39,10 @@ DR nodes are currently available for only Enterprise and Standard HADR plans. DR
 
 Failover to the DR site is not automatic. You must initiate the failover.
 {: important}
-
-Deleting a DR configuration is currently not supported on the {{site.data.keyword.cloud_notm}} dashboard. To delete the DR configuration, you must open a support ticket. Deleting a DR configuration removes both the primary and DR sites.
-{: important}
  
 [Creating a DR node](#dr_create_dr_node)
+
+[Deleting a DR node](#dr_delete_dr_node)
 
 [Forcing a failover to the DR site](#dr_force_failover)
 
@@ -75,6 +74,13 @@ DR nodes are now available for Enterprise and Standard HADR plans only. DR nodes
 
 3. The new DR node is displayed on the **Disaster recovery** page along with a notification indicating a successful deployment.
    ![DR Deployed](images/dr_3_v2.jpg  "Recovery node created"){: caption="Figure 3. Recovery node sucessfully created" caption-side="bottom"}
+
+### Deleting a DR node
+{: #dr_delete_dr_node}
+
+Deleting a DR service instance removes only the DR node, leaving the HA instance intact. Once deleted, you can re-deploy a DR node in any designated location from the HA setup.
+
+The DR node must be in a standby state before you can delete it. If it is not in standby, you must initiate a failback to the primary site. {: important}
 
 ### Forcing a failover to the DR site
 {: #dr_force_failover}
