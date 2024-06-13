@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020, 2021
-lastupdated: "2021-12-29"
+lastupdated: "2021-12-08"
 
 keywords:
 
@@ -10,7 +10,7 @@ subcollection: Db2onCloud
 
 ---
 
-<!-- Attribute definitions --> 
+ 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -38,10 +38,7 @@ Define a connection between a Java™ application and the {{site.data.keyword.Db
 
 Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
-<!-- Before you can connect to your database, you must perform the following steps:
 
-- [Verify prerequisites](prereqs.html), including installing driver packages, configuring your local environment, and downloading SSL certificates (if needed)
-- Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
 
 ### Procedure
 {: #proc61}
@@ -55,7 +52,6 @@ In each Java application, specify the user ID and password by including the **Dr
 
   `jdbc:db2://<host_name>:<port>/bludb:user=<userid>;password=<your_password>;sslConnection=true;`
 
-
 ## .NET
 {: #con_prog_net}
 
@@ -67,10 +63,7 @@ Define a connection between a .NET application and your {{site.data.keyword.Db2_
 
 Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
-<!-- Before you can connect to your database, you must perform the following steps:
 
-- [Verify prerequisites](prereqs.html), including installing driver packages, configuring your local environment, and downloading SSL certificates (if needed)
-- Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
 
 ### Procedure
 {: #proc71}
@@ -181,10 +174,7 @@ Define a connection between a Microsoft Windows ODBC or CLI application and a {{
 
 Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
-<!-- Before you can connect to your database, you must perform the following steps:
 
-- [Verify prerequisites](prereqs.html), including installing driver packages, configuring your local environment, and downloading SSL certificates (if needed)
-- Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
 
 ### Procedure
 {: #proc81}
@@ -241,10 +231,7 @@ Use the Microsoft ODBC Data Source Administrator tool to define a connection bet
 
 Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
-<!-- Before you can connect to your database, you must perform the following steps:
 
-- [Verify prerequisites](prereqs.html), including installing driver packages, configuring your local environment, and downloading SSL certificates (if needed)
-- Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
 
 ### Procedure
 {: #proc91}
@@ -272,10 +259,7 @@ Define a connection between a PHP application and a {{site.data.keyword.Db2_on_C
 
 Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
-<!-- Before you can connect to your database, you must perform the following steps:
 
-- [Verify prerequisites](prereqs.html), including installing driver packages, configuring your local environment, and downloading SSL certificates (if needed)
-- Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
 
 ### Procedure
 {: #proc101}

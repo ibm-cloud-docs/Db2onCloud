@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2022
-lastupdated: "2022-11-07"
+lastupdated: "2022-09-30"
 
 keywords: 
 
@@ -10,7 +10,7 @@ subcollection: Db2onCloud
 
 ---
 
-<!-- Attribute definitions --> 
+ 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -36,8 +36,7 @@ The following examples are helpful use cases for using a copy of a database:
 
 Because the copy instance creates a new instance and restores your existing backup, it’s important to keep the following in mind:
 - The new instance will have the same amount of resources as the instance it was copied from.
-- Create a full backup of the data you want restored onto the copy
-- Any data written after the backup will not be moved across.
+- Create a full backup of the data you want restored onto the copy.  Any data written after the backup will not be moved across.
 - When moving between plans or instance types, an outage will be required to point your apps to the new hostname and port.
 
 ## Prerequisites

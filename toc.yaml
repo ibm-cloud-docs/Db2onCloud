@@ -9,7 +9,6 @@ toc:
     product-page: https://www.ibm.com/cloud/db2-on-cloud
     path: Db2onCloud
     label: Db2 on Cloud
-
   entries: 
   - navgroup: 
       id: learn
@@ -21,7 +20,6 @@ toc:
           topics:
           - free_plan.md
           - faqs_lite.md
-          
       - topicgroup: 
           label: Connecting
           topics:
@@ -40,7 +38,6 @@ toc:
           topics:
           - dcw.md
           - load_cos.md
-
       - topicgroup: 
           label: Administration
           topics: 
@@ -59,25 +56,25 @@ toc:
           - dr.md
           - main.md
           - log_mon.md
+          - logical_schema.md 
+          - command_syntax.md
           - topicgroup: 
               label: Federation
               topics: 
               - federation_v2.md
               - fed_v2_cloud_to_cloud.md
-        
-              
+          - local_dev_env.md
       - topicgroup: 
           label: Security
           topics:
           - encryption.md
           - iam.md
           - user_mgmt.md
-          - auditing.md
           - rcac.md
+          - auditing.md
           - sec_comp_sum.md
           - reference_hpcs.md
           - key_protect_2.md
-          
       - communities.md
       - link: 
             label: What's new
@@ -85,18 +82,15 @@ toc:
       - link: 
             label: IBM Developer Answers
             href: https://developer.ibm.com/answers/index.html
-          
-
   - navgroup: 
       id: howto
       topics:
       - provision.md
-      - monitor.md
+      - monitor.md 
       - investigating_latency_events.md
       - link: 
             label: "IBM Demos: Tutorials, videos, and hands-on labs"
             href: https://www.ibm.com/demos/collection/Db2-on-Cloud/
-
   - navgroup:
       id: reference
       topics: 
@@ -112,7 +106,6 @@ toc:
       - link: 
             label: Knowledge Center
             href: https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.kc.doc/welcome.html
-      
   - navgroup:
       id: help
       topics: 

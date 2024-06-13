@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2021
-lastupdated: "2021-12-29"
+  years: 2014, 2021, 2022
+lastupdated: "2022-04-26"
 
 keywords: 
 
@@ -10,7 +10,7 @@ subcollection: Db2onCloud
 
 ---
 
-<!-- Attribute definitions --> 
+ 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -24,15 +24,14 @@ subcollection: Db2onCloud
 # Deleting a database
 {: #del_db}
 
-When a service instance is deleted, the database that it provides is also removed. This will delete any online data and logs as well as database backups. The data will not be recoverable after this action.
+When a service instance is deleted, the database that it provides is also removed. This will delete any online data and logs as well as database backups.  
+
+A deleted service intance is put in a suspended state for 7 days after which it's removed. The deleted instance can be recovered within 7 days of deletion.
 
 ## How is the data deleted
 {: #del_db_how}
 
 All data is encrypted at rest to ensure data is protected at all times using encryption keys stored in a key management service called Key Protect. When access to those keys is removed, the data is crypto-shredded and cannot be recovered. When the service instance is deleted, the block storage that is used for the database is wiped to ensure that all of the data is erased. Any data objects in cloud object storage are also deleted and not recoverable.
-
-## When is the data deleted
-{: #del_db_when}
 
 ## Using your own encryption keys to delete data
 {: #del_db_keys}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2022-12-13"
+lastupdated: "2018-05-10"
 
 keywords: 
 
@@ -10,7 +10,7 @@ subcollection: Db2onCloud
 
 ---
 
-<!-- Attribute definitions --> 
+ 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}

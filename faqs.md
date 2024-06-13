@@ -10,7 +10,7 @@ subcollection: Db2onCloud
 
 ---
 
-<!-- Attribute definitions --> 
+ 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -35,7 +35,7 @@ This is a collection of frequently asked questions (FAQ) about the {{site.data.k
 {: faq}
 {: support}
 
-You can provision an instance of {{site.data.keyword.Db2_on_Cloud_short}} directly through the {{site.data.keyword.cloud}} catalog. You can [create a free {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/registration?target=%2Fcatalog%2Fservices%2Fdb2-warehouse){: external} and get an {{site.data.keyword.cloud_notm}} credit of $200 that you can use towards an enterprise {{site.data.keyword.Db2_on_Cloud_short}} plan. Or, you can sign up for a free Lite plan. 
+You can provision an instance of {{site.data.keyword.Db2_on_Cloud_short}} directly through the {{site.data.keyword.cloud}} catalog. You can [create an  {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/registration?target=%2Fcatalog%2Fservices%2Fdb2-warehouse){: external} and get an {{site.data.keyword.cloud_notm}} credit of $200 that you can use towards an enterprise {{site.data.keyword.Db2_on_Cloud_short}} plan. Or, you can sign up for a free Lite plan. 
 
 
 ## How do I choose the Db2 on Cloud plan that's right for me?
@@ -81,7 +81,7 @@ The service includes 24x7 health monitoring of the database and infrastructure.�
 {: faq}
 {: support}
 
-In addition to the {{site.data.keyword.cloud_notm}} documentation site, there is a wide range of information about the underlying Db2 engine functionality in the [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.kc.doc/welcome.html){: external}. Updates to the service are posted on our [What's New](https://www.ibm.com/support/pages/whats-new-ibm-db2-cloud){: external} page. 
+In addition to the {{site.data.keyword.cloud_notm}} documentation site, there is a wide range of information about the underlying Db2 engine functionality in the [IBM Documentation](https://www.ibm.com/docs/en/db2oc){: external}. Updates to the service are posted on our [What's New](https://www.ibm.com/support/pages/whats-new-ibm-db2-cloud){: external} page. 
 
 You can find pricing information and deploy a {{site.data.keyword.Db2_on_Cloud_short}} instance through the {{site.data.keyword.cloud_notm}} [catalog](https://cloud.ibm.com/catalog/services/db2){: external} page for {{site.data.keyword.cloud_notm}}. To learn more, contact [IBM Sales](https://www.ibm.com/contact/us/en/){: external}.
 

@@ -10,7 +10,7 @@ subcollection: Db2onCloud
 
 ---
 
-<!-- Attribute definitions --> 
+ 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -153,15 +153,6 @@ Reclaim freed space on disks after rebalancing by choosing the Reclaim space opt
 
 ![Space_reclaimed](images/reclaimed.png "Space reclaimed"){: caption="Figure 11. Freed disk space reclaimed" caption-side="bottom"}
 
-<!--These dynamic adjustments typically take less than 20 minutes to complete. You can also scale CPU and RAM without any downtime by following these [guidelines](https://developer.ibm.com/answers/questions/381931/how-can-i-scale-cpu-up-and-down-without-downtime-o.html){:external}.-->
 
-<!--
-## Legacy plans
-{: #fs_legacy_plans}
 
-Independent scaling of RAM, storage, and compute cores. 
 
-Your Flex plan initially deploys with 1 core, 4 GB of RAM and 2 GB of disk space. You can then scale your plan up or down with slider bars.
-
-These dynamic adjustments typically take less than 20 minutes to complete. You can even scale CPU and RAM without any downtime by following these [guidelines](https://developer.ibm.com/answers/questions/381931/how-can-i-scale-cpu-up-and-down-without-downtime-o.html){:external}.
--->

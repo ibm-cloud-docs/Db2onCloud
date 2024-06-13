@@ -10,7 +10,7 @@ subcollection: Db2onCloud
 
 ---
 
-<!-- Attribute definitions --> 
+ 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -48,8 +48,7 @@ Failover to the DR site is not automatic. You must initiate the failover.
 
 [Forcing a failback to the primary site](#dr_force_failback)
 
-<!--High availability disaster recovery (HADR) provides a high availability solution for both partial and complete site failures. HADR protects against data loss by replicating data changes from a source database, called the primary database, to the target databases, called the standby databases.
--->
+
 
 ## High Availability vs. Disaster Recovery
 {: #dr_ha_vs_dr}
@@ -115,34 +114,6 @@ The DR node must be in a standby state before you can delete it. If it is not in
 4. A successful takeover by the primary node is indicated by the **Promotion** button moving to the recovery node (now the standby) along with a notification. The primary site is now **Active**.
    ![Takeover completion](images/dr_12_v2.jpg  "Takeover completion"){: caption="Figure 12. Takeover completion" caption-side="bottom"}
 
-<!--
-## Legacy Flex plans
-{: #dr_legacy}
 
-{{site.data.keyword.Db2_on_Cloud_short}} Legacy Flex plans feature disaster recovery (DR) capabilities, where users can add a DR node, which resides in a different region, by using the Db2 High Availability Disaster Recovery (HADR) technology. Promoting to the recovery site gives users the ability to recover data affected by unpredictable circumstances. The Recovery site is always in a different region than the Primary site.
-
-In the case of a disaster, the failover to the recovery site will not be initiated by IBM. For the DR failover, you must initiate the takeover from the UI. In the case of a failure in the primary site, it is important to remember that you will not have access to the primary system to initiate the takeover. 
-
-Bookmark the **Manage Disaster Recovery** page found under the **Manage** menu item in your {{site.data.keyword.Bluemix_notm}} dashboard.
-{: important}
-
-To enable the DR failover, complete the following steps:
-
-1. Select **Manage Disaster Recovery** under the **Manage** menu item in your {{site.data.keyword.Bluemix_notm}} dashboard.
-   ![View of the Manage dashboard page](images/dr_step1.png "Dashboard opens to the Manage page"){: caption="Figure 1. View of the Manage dashboard page" caption-side="bottom"}
-1. Click **Access Recovery Site Console**.
-   ![View of the Manage Disaster Recovery page](images/dr_step2.png "Dashboard opens to the Manage Disaster Recovery page"){: caption="Figure 2. View of the Manage Disaster Recovery page" caption-side="bottom"}
-1. Log in with your `bluadmin` credentials.
-   ![View of the DR login page](images/dr_step3.png "DR login"){: caption="Figure 3. View of the DR login page" caption-side="bottom"}
-1. Click **Initiate Takeover on Recovery Site** to initiate the takeover on the recovery site.
-   ![View of the DR takeover page](images/dr_step4.png "Initiate DR takeover"){: caption="Figure 4. View of the DR takeover page" caption-side="bottom"}
-1. In the case of the primary site connect status being `Disconnected`, you'll have to navigate to the recovery site URL, which is found in the file that was downloaded by clicking on the **Download Disaster Recovery Details** link on the **Manage Disaster Recovery** page. Log in with your credentials and issue a failover.
-
-## Standard and Enterprise plans
-{: #dr_stan_ent}
-
-HADR is available. See [How is the high availability disaster recovery (HADR) feature done in Standard and Enterprise plans?](/docs/Db2onCloud?topic=Db2onCloud-upgrade_plans#q_dr){: external}.
-
--->
 
 

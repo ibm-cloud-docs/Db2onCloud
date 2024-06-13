@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2021
-lastupdated: "2021-04-22"
+  years: 2014, 2019
+lastupdated: "2019-12-03"
 
 keywords: Lite, plan, Lite plan, free plan, availability, restrictions, installation
 
@@ -10,7 +10,7 @@ subcollection: Db2onCloud
 
 ---
 
-<!-- Attribute definitions --> 
+ 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -74,7 +74,7 @@ The following table contains {{site.data.keyword.Db2_on_Cloud_short}} Lite plan 
 | Security compliances | Health Information Portability and Accountability Act of 1996 (HIPAA) | Not supported. Refer to your Service Description. |
 |  | EU General Data Protection Regulation (GDPR) | Not supported. Refer to your Service Description. |
 |  |  |
-| Account management | Reactivation | Reactivation required every 45 days. If not reactivated, Lite plan services are deleted 60 days later.  |
+| Account management | Reactivation | Reactivation required every 30 days. If not reactivated, Lite plan services are deleted 60 days later.  |
 {: caption="Table 1. {{site.data.keyword.Db2_on_Cloud_short}} Lite plan restrictions" caption-side="top"}
 
 

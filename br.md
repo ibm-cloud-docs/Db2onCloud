@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2021
-lastupdated: "2021-12-29"
+lastupdated: "2021-12-08"
 
 keywords: 
 
@@ -10,7 +10,7 @@ subcollection: Db2onCloud
 
 ---
 
-<!-- Attribute definitions --> 
+ 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -52,7 +52,7 @@ The following is an example of the manual backup operation in the web console UI
 4. After backup completion, a new backup entry in the list of backups appears as a **Full (Manual)** type. The new backup is in an available state.
 ![View of completed backup](images/backup_completed_v2.png "Backup and restore console page"){: caption="Figure 4. View of a completed backup" caption-side="bottom"}
 
-<!-- In addition to standard backups, you can use the [Time Travel Query](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:external} to keep historical data for other purposes, such as instantly querying old data or simplified auditing. You can also do your own exports by using IBM Data Studio or any Db2 tool. -->
+
  
 ## Restore
 {: #br_restore}
@@ -62,9 +62,9 @@ All paid plans make use of Cross-Regional IBM Cloud Object Storage (COS), by def
 For information about point-in-time restores, see [Point-in-time restore](#point-in-time).
 
 
-<!-- However, Sydney and certain smaller data centers might not support offsite replication with IBM COS at this time. Check the [IBM COS documentation](/docs/cloud-object-storage/basics?topic=cloud-object-storage-endpoints#endpoints) for your region to determine which regions support offsite replication. -->
 
-<!-- You can also use [IBM Lift CLI](https://www.lift-cli.cloud.ibm.com/){:external} to import data into {{site.data.keyword.Db2_on_Cloud_short}}. -->
+
+
 
 ### End-of-backup restore
 {: #br_eobrestore}
@@ -116,3 +116,5 @@ The following are a selected example of screen captures of the point-in-time res
 
 5. The restore operation completed successfully.
 ![View of the successful completion of the restoration](images/pit_restore_successful_v2.png "Successful completion"){: caption="Figure 13. View of the successful completion of the restoration" caption-side="bottom"}
+
+
