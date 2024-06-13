@@ -10,7 +10,7 @@ subcollection: Db2onCloud
 
 ---
 
-<!-- Attribute definitions --> 
+ 
 {:tsSymptoms: .tsSymptoms} 
 {:tsCauses: .tsCauses} 
 {:tsResolve: .tsResolve} 
@@ -30,8 +30,7 @@ subcollection: Db2onCloud
 You can determine the status of the {{site.data.keyword.Db2_on_Cloud_long}} service in {{site.data.keyword.Bluemix_notm}} by checking the [IBM Cloud: Status](https://cloud.ibm.com/status?selected=status){:external} page. 
 {: tsResolve}
 
-<!--* Status monitoring:
-  * [All regions](https://cloud.ibm.com/status?selected=status){:external} -->
+
 
 ## Getting help and support for Db2 on Cloud
 {: #gettinghelp}

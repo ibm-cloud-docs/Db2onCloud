@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2023-08-21"
+lastupdated: "2023-06-20"
 
 keywords:
 
@@ -10,7 +10,7 @@ subcollection: Db2onCloud
 
 ---
 
-<!-- Attribute definitions --> 
+ 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -69,13 +69,13 @@ The latency improvement process cannot be completed without contacting the Db2 o
         
                 <acr>
                     <parameter name="enableACR" value="true"/>
-                    <!--<parameter name="enableSeamLessACR" value="true"/>-->
+                    
                     <parameter name="maxAcrRetries" value="10"/>
-                    <!--maximum number of connection attempts to each server in the list of alternate servers for ACR-->
+                    
                     <parameter name="acrRetryInterval" value="5"/>
-                    <!--number of seconds to wait between retries-->
+                    
                     <parameter name="affinityFailbackInterval" value="10"/>
-                    <!--number of seconds to wait after the first transaction boundary to fail back to the primary server-->
+                    
                     <alternateserverlist>
                         <server name="dal10" hostname="db2-icd-preprod-us-s-759393.us-south.serviceendpoint.cloud.ibm.com" port="31014">
                         </server>
@@ -93,7 +93,7 @@ The latency improvement process cannot be completed without contacting the Db2 o
                         </list>
                     </affinitylist>
                     <clientaffinitydefined>
-                        <!--this section has specific defined affinities -->
+                        
                         <client name="client1" hostname="localhost" listname="dal10_primary">
                         </client>
                     </clientaffinitydefined>
@@ -117,17 +117,17 @@ The latency improvement process cannot be completed without contacting the Db2 o
                         <parameter name="SSLServerCertificate" value="/home/db2inst1/SSL/db2_ha.crt"/>
                         <acr>
                             <parameter name="enableACR" value="true"/>
-                            <!--<parameter name="enableSeamLessACR" value="true"/>-->
+                            
                             <parameter name="maxAcrRetries" value="10"/>
-                            <!--maximum number of connection attempts to each server in the list of alternate servers for ACR-->
+                            
                             <parameter name="acrRetryInterval" value="5"/>
-                            <!--number of seconds to wait between retries-->
+                            
                             <parameter name="affinityFailbackInterval" value="10"/>
-                            <!--number of seconds to wait after the first transaction boundary to fail back to the primary server-->
+                            
                             <alternateserverlist>
                                 <server name="dal10" hostname="db2-icd-preprod-us-s-759393.us-south.serviceendpoint.cloud.ibm.com" port="31014">
                                 </server>
-                                <server name="dal12" hostname="db2-icd-preprod-us-s-207889.us-south.serviceendpoint.cloud.ibm.com" port="31014"> <!--client is in dal12-->
+                                <server name="dal12" hostname="db2-icd-preprod-us-s-207889.us-south.serviceendpoint.cloud.ibm.com" port="31014"> 
                                 </server>
                                 <server name="dal13" hostname="db2-icd-preprod-us-s-747467.us-south.serviceendpoint.cloud.ibm.com" port="31014"> 
                                 </server>
@@ -137,11 +137,11 @@ The latency improvement process cannot be completed without contacting the Db2 o
                                 </list>
                                 <list name="dal12_primary" serverorder="dal12,dal13,dal10">  
                                 </list>
-                                <list name="dal10_primary" serverorder="dal10,dal12,dal13"> <!--primary-->
+                                <list name="dal10_primary" serverorder="dal10,dal12,dal13"> 
                                 </list>
                  </affinitylist>
                             <clientaffinitydefined>
-                                <!--this section has specific defined affinities -->
+                                
                                 <client name="client1" hostname="localhost" listname="dal13_primary">
                                 </client>
                             </clientaffinitydefined>
@@ -150,16 +150,12 @@ The latency improvement process cannot be completed without contacting the Db2 o
                 </databases>
             </configuration>    
             
-            
       This configuration assumes the primary is in the dal13 zone and the client is in dal12 (therefore, a minimum of 1 network hop will still be required)
 {: note}
       
     - this sample defines the db2 connection details for two different formations in preprod - a single node formation that uses the database alias ```singledb``` and an ha formation that uses the database alias ```hadb```
 
 
-<!--### Optional: Test using "db2 ping", compare times
-- On the client machine, as user db2inst1:
 
-    db2 ping <db-alias> <# of pings> - ex. ```db2 ping hadb 100```-->
 
 

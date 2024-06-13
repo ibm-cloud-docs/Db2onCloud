@@ -4,13 +4,13 @@ copyright:
   years: 2014, 2025
 lastupdated: "2025-04-10"
 
-keywords: 
+keywords:
 
 subcollection: Db2onCloud
 
 ---
 
-<!-- Attribute definitions --> 
+
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 # Copy Database
 {: #cp_db}
 
-The {{site.data.keyword.Db2_on_Cloud_long}} Copy Database feature gives you the ability to copy your existing database to a new instance or easily change plans and instance types. 
+The {{site.data.keyword.Db2_on_Cloud_long}} Copy Database feature gives you the ability to copy your existing database to a new instance or easily change plans and instance types.
 {: shortdesc}
 
 The following examples are helpful use cases for using a copy of a database:
@@ -36,8 +36,7 @@ The following examples are helpful use cases for using a copy of a database:
 
 Because the copy instance creates a new instance and restores your existing backup, it’s important to keep the following in mind:
 - The new instance will have the same amount of resources as the instance it was copied from.
-- Create a full backup of the data you want restored onto the copy
-- Any data written after the backup will not be moved across.
+- Create a full backup of the data you want restored onto the copy.  Any data written after the backup will not be moved across.
 - When moving between plans or instance types, an outage will be required to point your apps to the new hostname and port.
 
 ## Prerequisites
@@ -68,7 +67,7 @@ Enter information for the new copy instance:
 1. Select the resource group of the new instance under **Resource group**.
 1. If you'd like a highly available instance, select **Yes** for **High availability configuration**. Verify that the other options are correct.
 1. Select a KMS instance to use for the new copy instance under **KMS instance**. If not selected, a default Key Protect instance and key will be used.
-1. Select the backup location for the new copy instance under **Backup Location**. If the selected data center location does not support **Backup Location**, the backup location cannot be changed.  
+1. Select the backup location for the new copy instance under **Backup Location**. If the selected data center location does not support **Backup Location**, the backup location cannot be changed.
 1. Select a **Pricing plan**.
 1. Click **Clone**.
 

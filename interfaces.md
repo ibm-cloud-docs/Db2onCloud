@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2020, 2023
+  years: 2014, 2020, 2021
 lastupdated: "2023-06-09"
 
 keywords: 
@@ -10,7 +10,7 @@ subcollection: Db2onCloud
 
 ---
 
-<!-- Attribute definitions --> 
+ 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -38,9 +38,9 @@ You can work with your database in the following ways:
 The web console provides a graphical interface for everything that you need to use your database, including: load facilities, an SQL editor, driver downloads, and more.
 {: shortdesc}
 
-<!-- ![View of the web console dashboard page](images/uc.png "Web console opens to the dashboard page"){: caption="Figure 1. View of the web console dashboard page" caption-side="bottom"} -->
 
-<!-- Click the link to take a tour of the {{site.data.keyword.Db2_on_Cloud_short}} for Analytics web console: [General tour](http://ibm.biz/dashdb-general-quick-tour){:external}. -->
+
+
 
 You can access your web console in the following ways:
    * From your {{site.data.keyword.Bluemix_notm}} dashboard - You can open the web console from the Service Details page for your {{site.data.keyword.Db2_on_Cloud_short}} service.
@@ -51,6 +51,7 @@ You can access your web console in the following ways:
 
 With {{site.data.keyword.Db2_on_Cloud_short}} service plans, you can do tasks that are related to file management, loading data, and resource scaling by using one of the following REST APIs:
 - [Database management API (Standard and Enterprise)](https://cloud.ibm.com/apidocs/db2-on-cloud/db2-on-cloud-v4){: external}
+- [Database resource scaling API](https://cloud.ibm.com/apidocs/db2-on-cloud/db2oc_scale_exp){:external}
 
 ## Connect applications or your favorite tools from your local computer
 {: #connect_apps}

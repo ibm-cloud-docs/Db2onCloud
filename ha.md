@@ -10,7 +10,7 @@ subcollection: Db2onCloud
 
 ---
 
-<!-- Attribute definitions --> 
+
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -21,25 +21,22 @@ subcollection: Db2onCloud
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-
 The **blocknonlogged** parameter must always be set to **YES**.  Changing it to NO will cause any non logged transactions on the primary database to fail to be replicated to the standby databases thereby making the data inconsistent in the HADR environment {: important}
 
 # High availability (HA)
 {: #ha}
 
-{{site.data.keyword.Db2_on_Cloud_short}} high availability plans have excellent availability characteristics with a 99.99% SLA. 
+{{site.data.keyword.Db2_on_Cloud_short}} high availability plans have excellent availability characteristics with a 99.99% SLA.
 {: shortdesc}
-
-## Standard and Enterprise Plans
 
 <!--
 ## Standard and Enterprise plans
 {: #ha_v2_ha}
 -->
 
-High availability disaster recovery (HADR) on {{site.data.keyword.Db2_on_Cloud_short}} Enterprise and Standard plans is provided by leveraging the support of native Db2 HADR. 
+High availability disaster recovery (HADR) on {{site.data.keyword.Db2_on_Cloud_short}} Enterprise and Standard plans is provided by leveraging the support of native Db2 HADR.
 
-- Each HADR system consists of 3 nodes located in different independent availability zones.  
+- Each HADR system consists of 3 nodes located in different independent availability zones.
 
 ![Schematic view of the 3 nodes in different availability zones](images/ha_AZ_small.png "Schematic view of the 3 nodes in different availability zones"){: caption="Figure 1. Schematic view of the 3 nodes in different availability zones" caption-side="bottom"}
 
@@ -54,11 +51,11 @@ High availability disaster recovery (HADR) on {{site.data.keyword.Db2_on_Cloud_s
 
 High availability on {{site.data.keyword.Db2_on_Cloud_short}} performance plan is provided by leveraging the support of native Db2 HADR.
 
-- Each HA system consists of 2 nodes. 
+- Each HA system consists of 2 nodes.
 
 ![Schematic view of the 2 nodes](images/legacy_ha_small.png "Schematic view of the 2 nodes"){: caption="Figure 1. Schematic view of the 2 nodes" caption-side="bottom"}
 
-- The primary node processes read and write transactions while the standby node provides read-only query capability. The standby node is replicated synchronously, which means each transaction is committed on at least 2 nodes before it is successful. This standby node is ready to take over write processing as well should any failure or maintenance event occur. 
+- The primary node processes read and write transactions while the standby node provides read-only query capability. The standby node is replicated synchronously, which means each transaction is committed on at least 2 nodes before it is successful. This standby node is ready to take over write processing as well should any failure or maintenance event occur.
 
 ![Schematic view of primary node failover](images/legacy_ha_fail.png "Schematic view of primary node failover"){: caption="Figure 2. Schematic view of primary node failover" caption-side="bottom"}
 
@@ -69,7 +66,7 @@ High availability on {{site.data.keyword.Db2_on_Cloud_short}} performance plan i
 ### Managing HADR nodes
 {: #ha_v2_manage}
 
-For all HADR plans, the failover is managed for you by IBM. IBM monitors the health of your server, fail over and fail back as needed, including rolling updates and scaling to keep uptime as high as possible.
+For Enterprise and Standard HADR plans, the failover is managed for you by IBM. IBM monitors the health of your server, fail over and fail back as needed, including rolling updates and scaling to keep uptime as high as possible.
 
 <!--
 ## Legacy Flex plans
@@ -77,11 +74,11 @@ For all HADR plans, the failover is managed for you by IBM. IBM monitors the hea
 
 High availability on {{site.data.keyword.Db2_on_Cloud_short}} Legacy Flex plans is provided by leveraging the support of native Db2 HADR.
 
-- Each HA system consists of 2 nodes. 
+- Each HA system consists of 2 nodes.
 
 ![Schematic view of the 2 nodes](images/legacy_ha_small.png "Schematic view of the 2 nodes"){: caption="Figure 1. Schematic view of the 2 nodes" caption-side="bottom"}
 
-- The primary node processes read and write transactions while the standby node is replicated synchronously, which means each transaction is committed on at least 2 nodes before it is successful. This standby node is ready to take over write processing as well should any failure or maintenance event occur. 
+- The primary node processes read and write transactions while the standby node is replicated synchronously, which means each transaction is committed on at least 2 nodes before it is successful. This standby node is ready to take over write processing as well should any failure or maintenance event occur.
 
 ![Schematic view of primary node failover](images/legacy_ha_fail.png "Schematic view of primary node failover"){: caption="Figure 2. Schematic view of primary node failover" caption-side="bottom"}
 

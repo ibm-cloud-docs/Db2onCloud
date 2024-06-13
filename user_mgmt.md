@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2021
-lastupdated: "2021-12-29"
+lastupdated: "2021-12-08"
 
 keywords: 
 
@@ -10,7 +10,7 @@ subcollection: Db2onCloud
 
 ---
 
-<!-- Attribute definitions --> 
+ 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -23,8 +23,6 @@ subcollection: Db2onCloud
 
 # Managing users
 {: #user_mgmt}
-
-{: #um_current_plans}
 
 Access to {{site.data.keyword.Db2_on_Cloud_long}} service instances for users in your account is controlled by [Identity and access management (IAM) on IBM Cloud](/docs/Db2onCloud?topic=Db2onCloud-iam) and database access is provided by standard access controls provided by the database. 
 
@@ -83,4 +81,4 @@ Service action access is also controlled by IAM Roles. An IAM user can be assign
 {: caption="Table 2. Roles and service actions" caption-side="top"} 
 
 
-For more information about user management, see [Database user management](https://www.ibm.com/docs/en/db2oc?topic=features-database-user-management){:external}
+For more information about user management, see [Database user management](https://www.ibm.com/docs/en/db2oc?topic=features-database-user-management){: external}

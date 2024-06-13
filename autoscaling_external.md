@@ -4,13 +4,13 @@ copyright:
   years: 2014, 2025
 lastupdated: "2025-04-10"
 
-keywords: 
+keywords:
 
 subcollection: Db2onCloud
 
 ---
 
-<!-- Attribute definitions --> 
+
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -57,7 +57,7 @@ To monitor your storage usage, use the IBM Cloud® Monitoring integration, which
 The Autoscaling panel is on the Administration tab of your deployment's console page.
 
 ### To enable autoscaling
-1. Click **Edit**  
+1. Click **Edit**
 2. Check **Enable storage autoscaling**
 3. Enter your desired parameter values.
 4. Be sure to click **Save** for your configuration to be saved and your changes to take effect.
@@ -68,7 +68,7 @@ The Autoscaling panel is on the Administration tab of your deployment's conso
 
 
 ### To disable autoscaling
-1. Click **Edit**  
+1. Click **Edit**
 2. Uncheck **Enable storage autoscaling**.
 3. Click **Save Changes** to save the configuration.
 
@@ -85,7 +85,7 @@ curl -X GET https://api.{region}.databases.cloud.ibm.com/v5/ibm/deployments/{id}
 To enable and set the autoscaling parameters for your deployment through the API, send a `PATCH` request to the endpoint.
 
 - Enabling autoscaling works by setting the `scalers` (`capacity`) to `true`.
-- `limit_mb_per_member` value has to be a multiple of 20Gi, eg. 4096000 MB = 4000Gi. The value must also be less than or equal to 4096000 MB.
+- `limit_mb_per_member` value has to be a  multiple of 20Gi, eg. 4096000 MB = 4000Gi. The value must also be less than or equal to 4096000 MB.
 
 ```bash
 curl -X PATCH https://api.{region}.databases.cloud.ibm.com/v5/ibm/deployments/{id}/groups/{group_id}/autoscaling

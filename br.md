@@ -4,13 +4,13 @@ copyright:
   years: 2014, 2025
 lastupdated: "2025-04-02"
 
-keywords: 
+keywords:
 
 subcollection: Db2onCloud
 
 ---
 
-<!-- Attribute definitions --> 
+
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -52,8 +52,8 @@ The following is an example of the manual backup operation in the web console UI
 4. After backup completion, a new backup entry in the list of backups appears as a **Full (Manual)** type. The new backup is in an available state.
 ![View of completed backup](images/backup_completed_v2.png "Backup and restore console page"){: caption="Figure 4. View of a completed backup" caption-side="bottom"}
 
-<!-- In addition to standard backups, you can use the [Time Travel Query](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:external} to keep historical data for other purposes, such as instantly querying old data or simplified auditing. You can also do your own exports by using IBM Data Studio or any Db2 tool. -->
- 
+
+
 ## Restore
 {: #br_restore}
 
@@ -62,9 +62,9 @@ All paid plans make use of Cross-Regional IBM Cloud Object Storage (COS), by def
 For information about point-in-time restores, see [Point-in-time restore](#point-in-time).
 
 
-<!-- However, Sydney and certain smaller data centers might not support offsite replication with IBM COS at this time. Check the [IBM COS documentation](/docs/cloud-object-storage/basics?topic=cloud-object-storage-endpoints#endpoints) for your region to determine which regions support offsite replication. -->
 
-<!-- You can also use [IBM Lift CLI](https://www.lift-cli.cloud.ibm.com/){:external} to import data into {{site.data.keyword.Db2_on_Cloud_short}}. -->
+
+
 
 ### End-of-backup restore
 {: #br_eobrestore}
@@ -92,14 +92,14 @@ The following is an example of the end-of-backup restore operation in the web co
 ### Point-in-time restore
 {: #point-in-time}
 
-{{site.data.keyword.Db2_on_Cloud_short}} added a point-in-time restore capability for systems in {{site.data.keyword.Bluemix_notm}} Public. You can restore to an exact point in time from your backups. 
+{{site.data.keyword.Db2_on_Cloud_short}} added a point-in-time restore capability for systems in {{site.data.keyword.Bluemix_notm}} Public. You can restore to an exact point in time from your backups.
 
 The following are a selected example of screen captures of the point-in-time restore operation in the web console UI:
 
 #### Enterprise and Standard plans
 {: #br_pit_ent_std}
 
-1. Click **Administration** in the left menu and select the **Backups** tab. 
+1. Click **Administration** in the left menu and select the **Backups** tab.
 
 2. Click the down arrow beside the **Run backup** button. Select **Restore (point-in-time)**.
 ![View of the highlighted selection of the point-in-time restore option](images/pit_restore_pick_v2.png "Backup and restore console page"){: caption="Figure 10. View of the selection of the point-in-time restore option" caption-side="bottom"}
@@ -107,7 +107,7 @@ The following are a selected example of screen captures of the point-in-time res
 3. Select a point-in-time date to which you want to restore the database. The point-in-time restore process selects the backup closest to your requested point-in-time date out of the pool of retained backups made during the previous 14 days.
 
    The point-in-time restore process invalidates any of the previously retained backups with dates after the selected point-in-time date because of a resultant divergence in the timeline.
-   {: note} 
+   {: note}
 
    ![View of date and time selection for point-in-time restore](images/pit_restore_date_v2.png "Backup and restore console page"){: caption="Figure 11. View of date and time selection for point-in-time restore" caption-side="bottom"}
 
@@ -116,3 +116,5 @@ The following are a selected example of screen captures of the point-in-time res
 
 5. The restore operation completed successfully.
 ![View of the successful completion of the restoration](images/pit_restore_successful_v2.png "Successful completion"){: caption="Figure 13. View of the successful completion of the restoration" caption-side="bottom"}
+
+

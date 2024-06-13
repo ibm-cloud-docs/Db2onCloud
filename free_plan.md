@@ -10,7 +10,7 @@ subcollection: Db2onCloud
 
 ---
 
-<!-- Attribute definitions --> 
+
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -30,13 +30,13 @@ The {{site.data.keyword.Db2_on_Cloud_long}} Lite plan provides basic resources f
 
 There is no time limit on the Lite plan, but users must re-extend their Lite plan every 30 days.
 
-Only community support is available. 
- 
+Only community support is available.
+
 ## Architecture
 {: #fp_architecture}
 
 Unlike other {{site.data.keyword.Db2_on_Cloud_short}} plans, the free {{site.data.keyword.Db2_on_Cloud_short}} Lite plan runs on a multi-tenant system.
- 
+
 The Lite plan uses one database schema.
 
 For more information about the free {{site.data.keyword.Db2_on_Cloud_short}} Lite plan, see the [FAQ](https://cloud.ibm.com/docs/Db2onCloud?topic=Db2onCloud-faq_db2oc_lite){:external}.
@@ -50,12 +50,12 @@ The Lite plan is available in the Dallas and London regions. If you do not see t
 ## Restrictions
 {: #fp_restrictions}
 
-It is recommended that you use an enterprise-level service plan rather than a Lite service plan for mission-critical or performance-sensitive workloads. 
+It is recommended that you use an enterprise-level service plan rather than a Lite service plan for mission-critical or performance-sensitive workloads.
 {: important}
 
 The following table contains {{site.data.keyword.Db2_on_Cloud_short}} Lite plan restrictions:
 
-| Category | Item | Restriction | 
+| Category | Item | Restriction |
 |----------|------|-------------|
 | Resources | Storage | 200 MB of storage per user |
 |  | Connections | 15 connections per user |
@@ -74,7 +74,7 @@ The following table contains {{site.data.keyword.Db2_on_Cloud_short}} Lite plan 
 | Security compliances | Health Information Portability and Accountability Act of 1996 (HIPAA) | Not supported. Refer to your Service Description. |
 |  | EU General Data Protection Regulation (GDPR) | Not supported. Refer to your Service Description. |
 |  |  |
-| Account management | Reactivation | Reactivation required every 45 days. If not reactivated, Lite plan services are deleted 60 days later.  |
+| Account management | Reactivation | Reactivation required every 30 days. If not reactivated, Lite plan services are deleted 60 days later.  |
 {: caption="Table 1. {{site.data.keyword.Db2_on_Cloud_short}} Lite plan restrictions" caption-side="top"}
 
 

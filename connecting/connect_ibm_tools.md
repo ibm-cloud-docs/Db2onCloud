@@ -10,7 +10,7 @@ subcollection: Db2onCloud
 
 ---
 
-<!-- Attribute definitions --> 
+ 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -34,7 +34,7 @@ You can connect IBM command-line interfaces, applications, and tools to your {{s
 ### InfoSphere DataStage
 {: #datastage}
 
-These instructions explain how to define a connection without SSL between IBM® InfoSphere® DataStage® <!--version 9.1 and later -->and a {{site.data.keyword.Db2_on_Cloud_short}} database by cataloging the database and defining a connection object, or how to create a connection with SSL by using a digital certificate that is issued by a third party.
+These instructions explain how to define a connection without SSL between IBM® InfoSphere® DataStage® and a {{site.data.keyword.Db2_on_Cloud_short}} database by cataloging the database and defining a connection object, or how to create a connection with SSL by using a digital certificate that is issued by a third party.
 {: shortdesc}
 
 #### Prerequisites
@@ -43,9 +43,9 @@ These instructions explain how to define a connection without SSL between IBM® 
 It is advised that you update DataStage to the most recent version so that you can take advantage of external tables to load your data into {{site.data.keyword.Db2_on_Cloud_short}}.
 {: important}
 
-If you don’t already have a data server client that is installed, download and install the IBM Data Server Client <!--Version 10.5 -->that is appropriate for your client machine’s operating system: [IBM Data Server Client](https://www.ibm.com/support/pages/gskit-versions-shipped-db2){:external}.
+If you don’t already have a data server client that is installed, download and install the IBM Data Server Client that is appropriate for your client machine’s operating system: [IBM Data Server Client](https://www.ibm.com/support/pages/gskit-versions-shipped-db2){:external}.
 
-To make connections with the SSL protocol, download and install the 32-bit GSKit V8. Click the OS tab that is appropriate for your client machine’s operating system: [GSKit V8 - Install, Uninstall and Upgrade instructions](https://www.ibm.com/docs/en/db2/11.5?topic=gskit-global-installation-instructions){:external}. For the following operating systems, ensure that you add the GSKit installation directory path to the OS-specific path environment variable:
+To make connections with the SSL protocol, download and install the 32-bit GSKit V8. Click the OS tab that is appropriate for your client machine’s operating system: [GSKit V8 - Install, Uninstall and Upgrade instructions]([http://www.ibm.com/support/docview.wss?uid=swg21631462](https://www.ibm.com/docs/en/db2/11.5?topic=gskit-global-installation-instructions)){:external}. For the following operating systems, ensure that you add the GSKit installation directory path to the OS-specific path environment variable:
 
 - AIX®: **LIBPATH**
    - `/usr/opt/ibm/gsk8/lib`
@@ -170,7 +170,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 ### InfoSphere Data Replication
 {: #idr}
 
-You can connect IBM® InfoSphere® Data Replication <!--version 11.3.3.3-36 or later -->to a {{site.data.keyword.Db2_on_Cloud_short}} database. <!-- This capability applies to both SMP and MPP environments. --> 
+You can connect IBM® InfoSphere® Data Replication to a {{site.data.keyword.Db2_on_Cloud_short}} database.  
 {: shortdesc}
 
 #### Overview
@@ -328,7 +328,7 @@ Define a subscription and perform data replication. For information, see:
 ### Data Studio
 {: #data_studio}
 
-These instructions explain how to create a connection from IBM® Data Studio <!--version 4.1.x -->to a {{site.data.keyword.Db2_on_Cloud_short}} database.
+These instructions explain how to create a connection from IBM® Data Studio to a {{site.data.keyword.Db2_on_Cloud_short}} database.
 {: shortdesc}
 
 #### Prerequisites
@@ -368,8 +368,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 #### Procedure
 {: #procedure_7}
 
-<!--The connection procedure was tested on Data Server Manager version 1.1. The same procedure applies to all of the other versions of the Data Server Manager software.
--->
+
 To create a connection, complete the following steps:
 
 1. Log in to your Data Server Manager web console.
@@ -399,7 +398,7 @@ To create a connection, complete the following steps:
 ### InfoSphere Data Architect
 {: #ida}
 
-These instructions explain how to create a connection from InfoSphere® Data Architect <!--version 9.1.x -->to a {{site.data.keyword.Db2_on_Cloud_short}} database.
+These instructions explain how to create a connection from InfoSphere® Data Architect to a {{site.data.keyword.Db2_on_Cloud_short}} database.
 {: shortdesc}
 
 #### Prerequisites
@@ -571,21 +570,7 @@ BRANCH_CODE CITY
 29 rows were retrieved.
 ```
 
-<!--## Data visualization & BI
-{: #ibm_vis_bi}
 
-### Cognos Analytics
-{: #cognos}
-
-You can run your IBM Cognos® reports against data in the cloud rather than the data in an on-premises database. After you load your data to a {{site.data.keyword.Db2_on_Cloud_short}} database, you set up the JDBC driver, and then use the Cognos administration tools to create the database connection. These instructions explain how to connect to the database from Cognos version 10.2.1.
-{: shortdesc}
-
-Watch this video to see how to create a connection.
-
-<iframe class="embed-responsive-item" id="youtubeplayer" title="Creating a connection from Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
-
-For more information, see [Connecting Cognos Analytics](https://www.ibm.com/support/knowledgecenter/en/SSEP7J_11.0.0/com.ibm.swg.ba.cognos.ug_cra.doc/c_create_ds.html#create_ds){:external}
--->
 
 ## Data science
 {: #ibm_sci}
@@ -614,7 +599,7 @@ Watch this video to see how to create a connection and add connected data to a p
 
 ![Create a connection and add connected data to a project](https://www.youtube.com/embed/YV-5zSczhH4?rel=0){: video output="iframe" data-script="none" id="youtubeplayer1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
 
-<!-- <iframe class="embed-responsive-item" id="youtubeplayer" title="Create a connection and add connected data to a project" type="text/html" width="640" height="390" src="//www.youtube.com/embed/YV-5zSczhH4?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe> -->
+
 
 #### To create a new connection in a legacy project:
 

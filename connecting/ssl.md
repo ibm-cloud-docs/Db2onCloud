@@ -10,7 +10,7 @@ subcollection: Db2onCloud
 
 ---
 
-<!-- Attribute definitions --> 
+ 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -33,12 +33,9 @@ However, if your application has its own driver, you might need to download the 
 
 Secure Sockets Layer (SSL) is a security protocol that provides communication privacy. SSL enables client and server applications to communicate in a way that is designed to prevent eavesdropping, tampering, and message forgery. SSL-enabled client applications use standard encryption techniques to help ensure secure communication.
 
-<!-- Configuring your applications to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database with SSL is strongly recommended. You should use only non-SSL connections if your are using legacy applications that cannot connect using an SSL connection.
 
-To enforce SSL connections, log in to the {{site.data.keyword.Db2_on_Cloud_short}} web console as an administrator, navigate to the **About** page, and select the **Enforce SSL connections** setting.
-{: important} -->
 
-<!-- SSL connections to {{site.data.keyword.Db2_on_Cloud_short}} are enforced by default. To enable a non-SSL port on your {{site.data.keyword.cloud_notm}} system, open a [support case](https://cloud.ibm.com/unifiedsupport/cases/add){:external} to make that request. -->
+
 
 ## Configuring your Db2 client
 {: #ssl_cfg_client}
@@ -75,19 +72,14 @@ The IBM [Global Security Kit (GSkit) ships with Db2 release 9.5 and later](https
    ```
    {: codeblock}
 
-<!--
-   On Windows, `Program Files` must use `PROGRA~1`.
-   {: note}
--->
+
 
 ## Connecting to your database
 {: #ssl_conn_db}
 
 The hostname, port, user_name, and password of the `<BLUDB_database_server>` can be found in the [**Service credentials**](/docs/Db2onCloud?topic=Db2onCloud-connect_options){: external} for the service in the {{site.data.keyword.cloud_notm}} Console.
 
-<!--
-1. [Optional] If you use Data Studio, you can now connect to the database by selecting port `50001` and `sslConnection=true`.
--->
+
 
 1. Catalog the node and database. The following example commands pertain to Linux:
    ```

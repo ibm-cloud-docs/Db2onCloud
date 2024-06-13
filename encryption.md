@@ -4,13 +4,13 @@ copyright:
   years: 2014, 2025
 lastupdated: "2025-03-20"
 
-keywords: 
+keywords:
 
 subcollection: Db2onCloud
 
 ---
 
-<!-- Attribute definitions --> 
+
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -29,7 +29,7 @@ The {{site.data.keyword.Db2_on_Cloud_long}} service has security built into all 
 
 The following methods are used to secure your data:
 - By default, VPC volumes are encrypted at rest with IBM-managed encryption. Bring-your-own-key [(BYOK)](/docs/Db2onCloud?topic=Db2onCloud-key-protect-v2) for encryption is also available through [Key Protect](/docs/key-protect?topic=key-protect-importing-keys) integration.
-- Backups are encrypted. 
+- Backups are encrypted.
 - Data in motion is encrypted through SSL/TLS. The current supported version of this encryption is TLS 1.3.
 - All {{site.data.keyword.Db2_on_Cloud_short}} storage is provided on storage encrypted by using AES-256 encryption.
 - Backplane network connectivity is supported through {{site.data.keyword.cloud}} Service Endpoints

@@ -10,7 +10,7 @@ subcollection: Db2onCloud
 
 ---
 
-<!-- Attribute definitions --> 
+ 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -29,19 +29,7 @@ Identity and access management (IAM) enables you to securely authenticate users 
 
 IAM is enabled for all {{site.data.keyword.Db2_on_Cloud_short}} plans except for **Lite** plan instances.
 
-<!--
-## Is IAM enabled on your instance?
-{: #enabled}
 
-Over a period of time, the {{site.data.keyword.Db2_on_Cloud_long}} managed database instances on {{site.data.keyword.Bluemix_notm}} will be enabled to use IAM for access control. To check that IAM is enabled on your instance, run the following query:
-
-```
-SELECT CASE WHEN VALUE = 'IBMIAMauth' THEN 1 ELSE 0 END AS IAM_ENABLED FROM SYSIBMADM.DBMCFG WHERE NAME = 'srvcon_gssplugin_list'
-```
-{:codeblock}
-
-If the returned value of **IAM_ENABLED** is 1, then IAM is enabled on your instance.
--->
 
 ## Features of {{site.data.keyword.Bluemix_notm}} IAM
 {: #features}

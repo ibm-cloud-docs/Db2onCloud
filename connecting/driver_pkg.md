@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2023-05-05"
+lastupdated: "2020-10-06"
 
 keywords:
 
@@ -10,7 +10,7 @@ subcollection: Db2onCloud
 
 ---
 
-<!-- Attribute definitions --> 
+ 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -49,8 +49,9 @@ To verify that the driver package is already on your computer so that you can sk
 ## Downloading
 {: #drvr_dwnldng}
 
-You can download the driver package for your operating system from the driver download center. Your web console provides a link to the site. In your web console, select **Administration > Connections**. Select the tab for your operating system.
+You can download the driver package for your operating system from the {{site.data.keyword.Db2_on_Cloud_short}} web console. From your {{site.data.keyword.Bluemix_notm}} dashboard, open your {{site.data.keyword.Db2_on_Cloud_short}} service. Log in to your {{site.data.keyword.Db2_on_Cloud_short}} web console.
 
+In the {{site.data.keyword.Db2_on_Cloud_short}} web console, select **Connect > Connection info**. Select the tile that represents your operating system to download the appropriate driver.
 
 ## Installing
 {: #drvr_instlng}
@@ -71,7 +72,7 @@ You can install the {{site.data.keyword.Db2_on_Cloud_short}} driver package on L
 
 Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
-<!-- Download the Db2 driver package for your operating system from the web console and install it. -->
+
 
 **On PowerLinux only**, complete the following steps to install the XL C/C++ compiler runtime package:
 
@@ -121,7 +122,7 @@ You can install the {{site.data.keyword.Db2_on_Cloud_short}} driver package on M
 
 Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
-<!-- Download the Db2 driver package for your operating system from the web console and install it. -->
+
 
 #### Procedure
 {: #drvr_proc41}
@@ -173,7 +174,7 @@ You can install the {{site.data.keyword.Db2_on_Cloud_short}} driver package on W
 
 Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
-<!-- Download the driver package for your operating system from the web console and install it. -->
+
 
 #### Procedure
 {: #drvr_proc51}
@@ -189,9 +190,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 To be able to connect your local applications or client tools to your {{site.data.keyword.Db2_on_Cloud_short}} database, [configure your local environment](#cfg_loc_env).
 
 
-<!-- ## Configuring
 
-To connect local applications or client tools to your {{site.data.keyword.Db2_on_Cloud_short}} database, [configure your environment for your Db2 database](driver_pkg_cfg.html). -->
 
 ## Configuring your local environment
 {: #drvr_cfg_loc_env}
@@ -204,13 +203,7 @@ To connect local applications and tools to your {{site.data.keyword.Db2_on_Cloud
 
 Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
-<!-- 1. Install the Db2 driver package for your operating system.
 
-   - [Installing on Windows](install_win.html)
-   - [Installing on Linux or PowerLinux](install_linux.html)
-   - [Installing on Mac OS X](install_mac.html)
-2. Decide whether or not you will be using Secure Sockets Layer (SSL) to connect to your database.
-3. Collect database details and connect credentials, including the host name of your server, and your database user ID and password. -->
 
 ### Procedure
 {: #drvr_proc21}
