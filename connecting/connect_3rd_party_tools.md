@@ -81,7 +81,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 | Step 3: Enter a database on the server | Database name |
 | Username | User ID |
 | Password | Password |
-{: caption="Table 1. Fields in Tableau for connection information" caption-side="top"}
+{: caption="Fields in Tableau for connection information" caption-side="top"}
 
 ### Microsoft Excel
 {: #excel}
@@ -138,7 +138,3 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 
 For steps on how to connect from SAS to a {{site.data.keyword.Db2_on_Cloud_short}} database, see the SAS documentation:
 - [SAS/ACCESS Interface to DB2 under UNIX and PC Hosts](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){: external}
-
-
-
-

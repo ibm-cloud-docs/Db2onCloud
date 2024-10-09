@@ -65,7 +65,7 @@ Console access is controlled by IAM. An IAM user can be assigned access by the I
 | IAM - Platform - Editor            | No                     | No (unless mapped to Db2 user) | Yes             | Yes | Yes |
 | IAM - Platform - Administrator     | Yes                    | No (unless mapped to Db2 user) | Yes             | Yes | Yes |
 | Non-IAM, but authenticate with JDBC | Only "Change password" | Yes | No | No | Yes |
-{: caption="Table 1. Roles and console permissions" caption-side="top"}
+{: caption="Roles and console permissions" caption-side="top"}
 
 #### Service action mapping
 {: @um_serv_act_map}
@@ -78,7 +78,7 @@ Service action access is also controlled by IAM Roles. An IAM user can be assign
 | IAM - Platform - Operator      | No           |  Yes  | No    | Yes     | Yes | Yes     | Yes    |  Yes    | Yes              |
 | IAM - Platform - Editor        | No           |  Yes  | Yes   | Yes     | Yes | Yes     | Yes    |  Yes    | Yes              |
 | IAM - Platform - Administrator | Yes          |  Yes  | Yes   | Yes     | Yes | Yes     | Yes    |  Yes    | Yes              |
-{: caption="Table 2. Roles and service actions" caption-side="top"} 
+{: caption="Roles and service actions" caption-side="top"} 
 
 
 For more information about user management, see [Database user management](https://www.ibm.com/docs/en/db2oc?topic=features-database-user-management){: external}

@@ -34,5 +34,4 @@ For details about each of the security compliances, see [Details about security 
 | Enterprise | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |
 | Standard | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |
 | Lite |  | ![checkmark](images/checkmark.png) |  | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |
-{: caption="Table 1. Summary of security compliances for the service offering plans" caption-side="top"}
-
+{: caption="Summary of security compliances for the service offering plans" caption-side="top"}

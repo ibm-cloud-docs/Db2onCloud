@@ -48,7 +48,7 @@ Memory can be scaled in the following increments:
 | 4     | 16 GB  |
 | 8     | 32 GB  |
 | 16    | 64 GB  |
-{: caption="Table 1. Core/memory scaling increments" caption-side="top"}
+{: caption="Core/memory scaling increments" caption-side="top"}
 
 Storage can be scaled up to a maximum of 4 TB.
 
@@ -60,9 +60,9 @@ To scale memory and storage from within the console, complete the following step
 5. Click **Save**.
 6. Select **Confirm** if you are satisfied with the changes.
 
-![Standard plan scaling](images/scaling_v1.png "Standard plan scaling"){: caption="Figure 1. Standard plan scaling memory and storage" caption-side="bottom"}
+![Standard plan scaling](images/scaling_v1.png "Standard plan scaling"){: caption="Standard plan scaling memory and storage" caption-side="bottom"}
 
-![Confirm_changes](images/scaling_confirmation.png "Confirm scaling changes"){: caption="Figure 2. Confirm scaling changes for standard plan" caption-side="bottom"}
+![Confirm_changes](images/scaling_confirmation.png "Confirm scaling changes"){: caption="Confirm scaling changes for standard plan" caption-side="bottom"}
 
 ## Enterprise plan
 {: #fs_enterprise_plan}
@@ -78,7 +78,7 @@ Dedicated cores can be scaled up or down in the following increments with memory
 | 16    | 64 GB  |
 | 32    | 128 GB |
 | 56    | 242 GB |
-{: caption="Table 2. Core/memory scaling increments" caption-side="top"}
+{: caption="Core/memory scaling increments" caption-side="top"}
 
 When Storage is below 4 TB, it is scaled up in increments of 20 GB. When storage exceeds 4 TB, it will implement multiple disks. Each disk contains 4 TB storage; thus, in total, storage can be scaled up in increments of 4 TB as shown in the following example:
 -  8 TB
@@ -97,9 +97,9 @@ To scale cores/memory and storage from within the console, complete the followin
 5. Click **Save**.
 6. Select **Confirm** if you are satisfied with the changes.
 
-![Enterprise plan scaling](images/scaling_v1.png "Enterprise plan scaling"){: caption="Figure 3. Enterprise plan scaling cores/memory and storage" caption-side="bottom"}
+![Enterprise plan scaling](images/scaling_v1.png "Enterprise plan scaling"){: caption="Enterprise plan scaling cores/memory and storage" caption-side="bottom"}
 
-![Confirm_changes](images/scaling_confirmation.png "Confirm scaling changes"){: caption="Figure 4. Confirm scaling changes for enterprise plan" caption-side="bottom"}
+![Confirm_changes](images/scaling_confirmation.png "Confirm scaling changes"){: caption="Confirm scaling changes for enterprise plan" caption-side="bottom"}
 
 ### Scaling disk storage more than 4 TB
 {: #disk_st_4tb}
@@ -112,7 +112,7 @@ Rebalancing tablespaces can take several days to complete and can impact your pe
 
 Two new functions, `Rebalance` and `Free space reclamation`, are introduced to maximize the benefits of having multiple disks once you scale past 4TB.
 
-![Confirm_changes](images/confirm_changes_v2.png "Confirm scaling changes"){: caption="Figure 5. Confirm scaling changes for enterprise plan" caption-side="bottom"}
+![Confirm_changes](images/confirm_changes_v2.png "Confirm scaling changes"){: caption="Confirm scaling changes for enterprise plan" caption-side="bottom"}
 
 #### Rebalance
 {: #rebalance}
@@ -124,7 +124,7 @@ You are now given the option to rebalance any tablespaces from non-default stora
 It is highly recommended to rebalance non-default storage groups after scaling past 4TB.
 {: important} 
 
-![Confirm rebalance](images/user_created_tb_prompt.png "Confirm rebalance"){: caption="Figure 6. Confirm rebalance on tablespaces before scaling" caption-side="bottom"}
+![Confirm rebalance](images/user_created_tb_prompt.png "Confirm rebalance"){: caption="Confirm rebalance on tablespaces before scaling" caption-side="bottom"}
 
 #### Rebalance Status
 
@@ -135,24 +135,20 @@ To View the Rebalance status of tablespaces:
 You can rebalance a tablespace individually on this tab.
 
 
-![Rebalance status](images/rebalance_status_v1.png "Check rebalance status"){: caption="Figure 7. View rebalance status of tablespaces" caption-side="bottom"}
+![Rebalance status](images/rebalance_status_v1.png "Check rebalance status"){: caption="View rebalance status of tablespaces" caption-side="bottom"}
 
 Rebalance may impact your workload performance. Pause rebalance temporarily and resume it during an off-peak period if the rebalance affects your workload performance.
 {: important}
 
-![Pause_rebalance](images/pause_rebalance.png "Pause rebalance"){: caption="Figure 8. Pause rebalance" caption-side="bottom"}
+![Pause_rebalance](images/pause_rebalance.png "Pause rebalance"){: caption="Pause rebalance" caption-side="bottom"}
 
-![Resume_rebalance](images/resume_reb.png "Resume rebalance"){: caption="Figure 9. Resume rebalance" caption-side="bottom"}
+![Resume_rebalance](images/resume_reb.png "Resume rebalance"){: caption="Resume rebalance" caption-side="bottom"}
 
 #### Free space reclamation after rebalance
 {: #reclamation}
 
 Reclaim freed space on disks after rebalancing by choosing the Reclaim space option as shown in the figure below. After the space is reclaimed, the reclaimable space will be updated to **0 GB** in the **reclaimable** column.
 
-![Space_reclamation](images/reclaim.png "Reclaim space"){: caption="Figure 10. Reclaim freed disk space" caption-side="bottom"}
+![Space_reclamation](images/reclaim.png "Reclaim space"){: caption="Reclaim freed disk space" caption-side="bottom"}
 
-![Space_reclaimed](images/reclaimed.png "Space reclaimed"){: caption="Figure 11. Freed disk space reclaimed" caption-side="bottom"}
-
-
-
-
+![Space_reclaimed](images/reclaimed.png "Space reclaimed"){: caption="Freed disk space reclaimed" caption-side="bottom"}

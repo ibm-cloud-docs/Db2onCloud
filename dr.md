@@ -66,13 +66,13 @@ DR nodes are now available for Enterprise and Standard HADR plans only. DR nodes
 {: #dr_create_dr_node}
 
 1. Select **Administration** from the left menu, then select the **Disaster recovery** tab.
-   ![View of the Disaster Recovery page](images/dr_1_v2.jpg  "Console opens to DR Page"){: caption="Figure 1. View of the DR page" caption-side="bottom"}
+   ![View of the Disaster Recovery page](images/dr_1_v2.jpg  "Console opens to DR Page"){: caption="View of the DR page" caption-side="bottom"}
 
 2. Select a data center for the DR node and click **Enable disaster recovery**.
-   ![Select a DR data center](images/dr_2_v2.jpg  "Select a data center for the DR node"){: caption="Figure 2. Select a data center for the recovery node" caption-side="bottom"}
+   ![Select a DR data center](images/dr_2_v2.jpg  "Select a data center for the DR node"){: caption="Select a data center for the recovery node" caption-side="bottom"}
 
 3. The new DR node is displayed on the **Disaster recovery** page along with a notification indicating a successful deployment.
-   ![DR Deployed](images/dr_3_v2.jpg  "Recovery node created"){: caption="Figure 3. Recovery node sucessfully created" caption-side="bottom"}
+   ![DR Deployed](images/dr_3_v2.jpg  "Recovery node created"){: caption="Recovery node sucessfully created" caption-side="bottom"}
 
 ### Deleting a DR node
 {: #dr_delete_dr_node}
@@ -85,35 +85,31 @@ The DR node must be in a standby state before you can delete it. If it is not in
 {: #dr_force_failover}
 
 1. To force a failover to the DR site, open the web console for the recovery site from the {{site.data.keyword.cloud_notm}} dashboard. 
-   ![Recovery node console](images/dr_4_v2.jpg  "Recovery node console"){: caption="Figure 4. Recovery node console" caption-side="bottom"}
+   ![Recovery node console](images/dr_4_v2.jpg  "Recovery node console"){: caption="Recovery node console" caption-side="bottom"}
 
 2. To initiate a takeover, click **Promote** on the **Disaster recovery** page.
-   ![Recovery node takeover](images/dr_5_v2.jpg  "Recovery node takeover"){: caption="Figure 5. Recovery node takeover" caption-side="bottom"}
+   ![Recovery node takeover](images/dr_5_v2.jpg  "Recovery node takeover"){: caption="Recovery node takeover" caption-side="bottom"}
 
 3. Click **Promote** to confirm takeover.
-   ![Takeover confirmation](images/dr_6_v2.jpg  "Takeover confirmation"){: caption="Figure 6. Takeover confirmation" caption-side="bottom"}
+   ![Takeover confirmation](images/dr_6_v2.jpg  "Takeover confirmation"){: caption="Takeover confirmation" caption-side="bottom"}
 
 4. Takeover can take up to 30 minutes, depending on the size of the database.
-   ![Takeover progress](images/dr_7_v2.jpg  "Takeover progress"){: caption="Figure 7. Takeover progress bar" caption-side="bottom"}
+   ![Takeover progress](images/dr_7_v2.jpg  "Takeover progress"){: caption="Takeover progress bar" caption-side="bottom"}
 
 5. A successful takeover by the recovery node is indicated by the **Promotion** button moving to the primary node (now the standby) along with a notification. The recovery site is now **Active**.
-   ![Takeover completion](images/dr_8_v2.jpg  "Takeover completion"){: caption="Figure 8. Takeover completion" caption-side="bottom"}
+   ![Takeover completion](images/dr_8_v2.jpg  "Takeover completion"){: caption="Takeover completion" caption-side="bottom"}
 
 ### Forcing a failback to the primary site
 {: #dr_force_failback}
 
 1. To force a failback to the primary site, open the web console for the primary site from the {{site.data.keyword.cloud_notm}} dashboard.
-   ![Primary node console](images/dr_9_v2.jpg  "Primary node console"){: caption="Figure 9. Primary node console" caption-side="bottom"}
+   ![Primary node console](images/dr_9_v2.jpg  "Primary node console"){: caption="Primary node console" caption-side="bottom"}
 
 2. To initiate a takeover, click **Promote** on the **Disaster recovery** page. The takeover confirmation screen appears. Click **Promote** on the takeover confirmation screen to initiate the takeover.
-   ![Primary node takeover](images/dr_10_v2.jpg  "Primary node takeover"){: caption="Figure 10. Priamry node takeover" caption-side="bottom"}
+   ![Primary node takeover](images/dr_10_v2.jpg  "Primary node takeover"){: caption="Priamry node takeover" caption-side="bottom"}
 
 3. The takeover can take up to 30 minutes, depending on the size of the database.
-   ![Takeover progress](images/dr_11_v2.jpg  "Takeover progress"){: caption="Figure 11. Takeover progress bar" caption-side="bottom"}
+   ![Takeover progress](images/dr_11_v2.jpg  "Takeover progress"){: caption="Takeover progress bar" caption-side="bottom"}
 
 4. A successful takeover by the primary node is indicated by the **Promotion** button moving to the recovery node (now the standby) along with a notification. The primary site is now **Active**.
-   ![Takeover completion](images/dr_12_v2.jpg  "Takeover completion"){: caption="Figure 12. Takeover completion" caption-side="bottom"}
-
-
-
-
+   ![Takeover completion](images/dr_12_v2.jpg  "Takeover completion"){: caption="Takeover completion" caption-side="bottom"}

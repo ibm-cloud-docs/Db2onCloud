@@ -56,7 +56,7 @@ To copy your instance to a new service instance:
 1. Select a backup to copy to a new instance.
 1. Click **Clone**.
 
-![Select a backup to Copy](images/cloning_select.png "Select a backup to copy"){: caption="Figure 1. Select a backup to copy to a new instance" caption-side="bottom"}
+![Select a backup to Copy](images/cloning_select.png "Select a backup to copy"){: caption="Select a backup to copy to a new instance" caption-side="bottom"}
 
 ### Creating the copy instance
 {: #cp_create_inst}
@@ -71,19 +71,18 @@ Enter information for the new copy instance:
 1. Select a **Pricing plan**.
 1. Click **Clone**.
 
-![Create the new copy](images/cloning_new_instance.png "Create the new copy"){: caption="Figure 2. Create a new copy instance" caption-side="bottom"}
+![Create the new copy](images/cloning_new_instance.png "Create the new copy"){: caption="Create a new copy instance" caption-side="bottom"}
 
 ### Progress
 {: #cp_prog}
 
 The **Notifications** icon of the console shows the progress of the copy process.
 
-![Copy progress](images/cloning_progress.png "Copy progress"){: caption="Figure 3. Copy progress" caption-side="bottom"}
+![Copy progress](images/cloning_progress.png "Copy progress"){: caption="Copy progress" caption-side="bottom"}
 
 ### Copy completion
 {: #cp_fin}
 
 After successful completion of the copy process, the **Notifications** icon displays a success message.
 
-![Copy successfully completed](images/cloning_success.png "Copy success"){: caption="Figure 4. Copy successfully completed" caption-side="bottom"}
-
+![Copy successfully completed](images/cloning_success.png "Copy success"){: caption="Copy successfully completed" caption-side="bottom"}

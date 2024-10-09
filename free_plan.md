@@ -75,7 +75,4 @@ The following table contains {{site.data.keyword.Db2_on_Cloud_short}} Lite plan 
 |  | EU General Data Protection Regulation (GDPR) | Not supported. Refer to your Service Description. |
 |  |  |
 | Account management | Reactivation | Reactivation required every 30 days. If not reactivated, Lite plan services are deleted 60 days later.  |
-{: caption="Table 1. {{site.data.keyword.Db2_on_Cloud_short}} Lite plan restrictions" caption-side="top"}
-
-
-
+{: caption="{{site.data.keyword.Db2_on_Cloud_short}} Lite plan restrictions" caption-side="top"}
