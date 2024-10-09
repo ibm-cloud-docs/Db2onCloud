@@ -39,7 +39,7 @@ Activity Tracker with LogDNA integration is available for {{site.data.keyword.Db
 | Tokyo | jp-tok |
 | São Paulo | br-sao |
 | Toronto | ca-tor |
-{: caption="Table 1. Activity Tracker regions" caption-side="top"}
+{: caption="Activity Tracker regions" caption-side="top"}
 
 
 ## Activity Tracker with LogDNA provisioning

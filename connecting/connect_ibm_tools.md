@@ -288,35 +288,35 @@ If you intend to connect by using the SSL protocol, download the `DigiCertGlobal
         
    a. Add a source instance to point to your source database by using the **Instance Configuration** tab:
 
-   ![IIDR New Instance - Source instance](images/IIDR_source_instance.jpg "Source instance configuration"){: caption="Figure 1. IIDR New Instance - Source instance" caption-side="bottom"}
+   ![IIDR New Instance - Source instance](images/IIDR_source_instance.jpg "Source instance configuration"){: caption="IIDR New Instance - Source instance" caption-side="bottom"}
 
    b. Add a target instance to point to your target Db2 database by using the **Instance Configuration** tab. If you are not using IBM InfoSphere Data Replication 11.3.3.3-50 or later, do not select the **Specify refresh loader path** check box.
 
-   ![IIDR New Instance - Target instance](images/IIDR_target_instance.jpg "Target instance configuration"){: caption="Figure 2. IIDR New Instance - Target instance" caption-side="bottom"}
+   ![IIDR New Instance - Target instance](images/IIDR_target_instance.jpg "Target instance configuration"){: caption="IIDR New Instance - Target instance" caption-side="bottom"}
 
    c. Start each instance:
 
-   ![IIDR Configuration Tool](images/IIDR_instances.jpg "IIDR Configuration Tool listing source and target instances"){: caption="Figure 3. IIDR Configuration Tool" caption-side="bottom"}
+   ![IIDR Configuration Tool](images/IIDR_instances.jpg "IIDR Configuration Tool listing source and target instances"){: caption="IIDR Configuration Tool" caption-side="bottom"}
 
 3. Launch the InfoSphere Data Replication management console and use Access Manager to complete the following steps:
         
    a. Create a datastore to connect to your source instance by using the **Datastore** tab. Because a Db2 database was not originally supported as a source database, you must provide user and password information for the source database by clicking **Connection Parameters**.
 
-   ![Datastore Properties - Source](images/IIDR_source_datastore.jpg "Source datastore properties"){: caption="Figure 4. View of source datastore properties" caption-side="bottom"}
+   ![Datastore Properties - Source](images/IIDR_source_datastore.jpg "Source datastore properties"){: caption="View of source datastore properties" caption-side="bottom"}
 
    b. Create a datastore to connect to your target instance by using the **Datastore** tab. You must provide user and password information by clicking **Connection Parameters**.
 
-   ![Datastore Properties - Target](images/IIDR_target_datastore.jpg "Target datastore properties"){: caption="Figure 5. View of target datastore properties" caption-side="bottom"}
+   ![Datastore Properties - Target](images/IIDR_target_datastore.jpg "Target datastore properties"){: caption="View of target datastore properties" caption-side="bottom"}
 
    c. If the user (for example, admin) that connects to the Access Server does not exist, create that user:
 
-   ![New User](images/IIDR_management_user.jpg "New User creation tool"){: caption="Figure 6. View of New User creation tool" caption-side="bottom"}
+   ![New User](images/IIDR_management_user.jpg "New User creation tool"){: caption="View of New User creation tool" caption-side="bottom"}
 
    d. Click the **Access Manager** tab.
         
    e. On the **Datastore Management** tab, assign the user to both the source and target datastores by right-clicking each datastore and then clicking **Assign User**. Ensure that the credentials for accessing each instance are correct.
 
-   ![IIDR Management Console - Access Manager](images/IIDR_management_assign_user.jpg "Access Manager console"){: caption="Figure 7. IIDR Management Console - Access Manager" caption-side="bottom"}
+   ![IIDR Management Console - Access Manager](images/IIDR_management_assign_user.jpg "Access Manager console"){: caption="IIDR Management Console - Access Manager" caption-side="bottom"}
 
 #### What to do next
 {: #what2}
@@ -678,5 +678,3 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
    - If the connection is successful, click **OK** to return to the ODBC Data Source Administrator window, and then click **OK** to exit the window.
             
    - If the connection is not successful, note and correct any errors before you test the connection again.
-
-

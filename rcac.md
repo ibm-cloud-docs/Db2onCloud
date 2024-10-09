@@ -36,20 +36,15 @@ RCAC can be used to ensure that your database users can access only the portions
 | Alice | Aa BB cc | Smith |
 | Bob | aA Bb CC | Chan |
 | Charlie | AA BB CC | Morton |
-{: caption="Table 1. Patient data table" caption-side="top"}
+{: caption="Patient data table" caption-side="top"}
 
 Dr. Smith is restricted to seeing only Alice's data, as depicted in the following table view:
 
 | Patient name | Chart | Doctor name |
 |--------------|-------|-------------|
 | Alice | Aa BB cc | Smith |
-{: caption="Table 2. Dr. Smith's view of the patient data table" caption-side="top"}
+{: caption="Dr. Smith's view of the patient data table" caption-side="top"}
 
 You can apply RCAC rules to your {{site.data.keyword.Db2_on_Cloud_short}} instance to enforce the hospital's policy.
 
 For more information about RCAC, see [RCAC overview](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/rcac_overview.html){: external}.
-
-
-
-
-

@@ -10,7 +10,7 @@ subcollection: Db2onCloud
 
 ---
 
- 
+
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -24,13 +24,13 @@ subcollection: Db2onCloud
 # Connectivity options
 {: #connect_options}
 
-{{site.data.keyword.Db2_on_Cloud_long}} offers multiple secure connectivity options that depend on your application connection requirements.  
+{{site.data.keyword.Db2_on_Cloud_long}} offers multiple secure connectivity options that depend on your application connection requirements.
 {: shortdesc}
 
 ## Connecting to a public endpoint (default option)
 {: #pub_endpt}
 
-As with any public cloud service, you can connect your application by way of a public host name that is provided to you at the time that your service is provisioned. Access to your data is protected by strong authentication, vast Db2 authorization options and access controls, encryption over the wire and at rest, and IBM security and compliance practices for development and operations. 
+As with any public cloud service, you can connect your application by way of a public host name that is provided to you at the time that your service is provisioned. Access to your data is protected by strong authentication, vast Db2 authorization options and access controls, encryption over the wire and at rest, and IBM security and compliance practices for development and operations.
 
 ### How to connect to a public endpoint:
 {: #pub_endpt_steps}
@@ -79,7 +79,7 @@ The "db2" section contains information that is suited to applications that make 
 | `Certificate` | `Name` | The allocated name for the self-signed certificate for database deployment |
 | `Certificate` | Base64 | A base64 encoded version of the certificate |
 | `Host_ROS` | | A host name and port to connect to read on standby |
-{: caption="Db2 on Cloud / URI connection information" caption-side="top"}
+{: caption="Table 1. Db2 on Cloud / URI connection information" caption-side="top"}
 
 `0...` indicates that there might be one or more of these entries in an array.
 

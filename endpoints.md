@@ -37,7 +37,7 @@ The Standard and Enterprise plans offer the choice of Public, Private, or both P
 
 At the time of instance creation, you can select your choice of endpoint from the **Service Endpoints** box on {{site.data.keyword.cloud_notm}}.
 
-![Instance creation endpoints](images/creation_endpoint.png "Endpoint choice"){: caption="Figure 1. Endpoint choice at instance creation" caption-side="bottom"}
+![Instance creation endpoints](images/creation_endpoint.png "Endpoint choice"){: caption="Endpoint choice at instance creation" caption-side="bottom"}
 
 ### Changing endpoints after creation
 {: #ep_chg_epts_after_creation}
@@ -52,7 +52,7 @@ To change endpoints, complete the following steps:
 - Select either **Public endpoints**, **Private endpoints**, or **Public-and-private endpoints**.
 - Click **Update**. The change occurs immediately.
 
-![Change endpoints](images/change_endpoint.png "Endpoint choice"){: caption="Figure 2. Change endpoint after instance creation" caption-side="bottom"}
+![Change endpoints](images/change_endpoint.png "Endpoint choice"){: caption="Change endpoint after instance creation" caption-side="bottom"}
 
 ### View endpoints
 {: #ep_view_endpoints}
@@ -63,5 +63,4 @@ To view your endpoints:
 - Select **Administration** from the left side menu.
 - Select the **Connections** tab. Endpoint information will be displayed in **Connection configuration resources**.
 
-![Endpoint information](images/endpoint_info.png "Endpoint information"){: caption="Figure 3. Viewing endpoint information" caption-side="bottom"}
-
+![Endpoint information](images/endpoint_info.png "Endpoint information"){: caption="Viewing endpoint information" caption-side="bottom"}

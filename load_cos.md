@@ -35,7 +35,7 @@ You can load data from IBM Cloud Object Storage (COS) into IBM® Db2® as a Serv
 
 1. Access the COS Bucket on the IBM Cloud Dashboard by clicking on the name
 
-![Resource List](images/load.png "Resource List"){: caption="Figure 1. Resource List" caption-side="bottom"}
+![Resource List](images/load.png "Resource List"){: caption="Resource List" caption-side="bottom"}
 
 ### Create Credentials on the COS bucket so Db2 Console can access the data.
 
@@ -46,7 +46,7 @@ You can load data from IBM Cloud Object Storage (COS) into IBM® Db2® as a Serv
 5. Ensure `Include HMAC Credential` is enabled
 
 
- ![Create Service Credentials](images/credential.png "Create Service Credentials"){: caption="Figure 2. Create Service Credentials" caption-side="bottom"}
+ ![Create Service Credentials](images/credential.png "Create Service Credentials"){: caption="Create Service Credentials" caption-side="bottom"}
 
   
 
@@ -56,7 +56,7 @@ You can load data from IBM Cloud Object Storage (COS) into IBM® Db2® as a Serv
 2. Note down the `access_key_id` and `secret_access_key`
 
 
-![Get Keys](images/bucket.png "Get Access Keys"){: caption="Figure 3. Get Access Keys" caption-side="bottom"}
+![Get Keys](images/bucket.png "Get Access Keys"){: caption="Get Access Keys" caption-side="bottom"}
 
   
 
@@ -70,7 +70,7 @@ You can load data from IBM Cloud Object Storage (COS) into IBM® Db2® as a Serv
 6. Enter the `secret_access_key` from above for `Secret access key`
 7. Click on `Browse Files` to select the file you want to load from
 
-![Load Data page](images/key.png "Load COS Data"){: caption="Figure 4. Load COS Data" caption-side="bottom"}
+![Load Data page](images/key.png "Load COS Data"){: caption="Load COS Data" caption-side="bottom"}
 
 ## External Tables
 {: #external}
@@ -89,5 +89,3 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
      )
   )
 ```
-
-
