@@ -1,0 +1,52 @@
+{
+    "version": 2,
+    "title": "IBM Db2 on Cloud",
+    "introduction": "BM® Db2® on Cloud is a fully managed public cloud service on IBM Cloud. As a relational database, it delivers fast query processing with enterprise-level performance and capabilities for online transactional processing (OLTP). ",
+    "product_page": "https://www.ibm.com/products/db2-database",
+    "console_page": "/relative/console/path",
+    "section_topics": {
+      "links": [
+        {
+          "title": "Getting started with Db2 on Cloud",
+          "href": "/docs/Db2onCloud?topic=Db2onCloud-getting-started"
+        },
+        {
+          "title": "Connecting overview",
+          "href": "/docs/Db2onCloud?topic=Db2onCloud-connect_ov"
+        },
+        {
+          "title": "Connectivity options on IBM Cloud",
+          "href": "/docs/Db2onCloud?topic=Db2onCloud-connect_options"
+        },
+        {
+          "title": "Connecting to IBM tools",
+          "href": "/docs/Db2onCloud?topic=Db2onCloud-connect_ibm"
+        },
+        {
+          "title": "Connecting with third-party tools",
+          "href": "/docs/Db2onCloud?topic=Db2onCloud-connect_3rd_party"
+        }
+      ]
+    },
+    "section_highlights": [
+      {
+        "title": "Demos, Tutorials, Videos",
+        "description": "Learn How",
+        "href": "https://www.ibm.com/products/db2-database",
+        "type": "training"
+      },
+      {
+        "title": "SQL Reference",
+        "description": "Procedures",
+        "href": "https://www.ibm.com/docs/en/db2woc?topic=reference-sql",
+        "type": "training",
+        "recommended": true
+      }
+    ]
+
+    
+
+}
+
+  
+  
