@@ -77,8 +77,10 @@ toc:
           - sec_comp_sum.md
           - reference_hpcs.md
           - key_protect_2.md
-          
+
+      - db2-database-assistant.md    
       - communities.md
+     
       - link: 
             label: What's new
             href: https://www.ibm.com/support/pages/whats-new-ibm-db2-cloud
