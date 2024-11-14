@@ -4,7 +4,7 @@ copyright:
   years: 2024
 lastupdated: "2024-11-14"
 
-subcollection: Db2whc
+subcollection: Db2onCloud
 
 ---
 
