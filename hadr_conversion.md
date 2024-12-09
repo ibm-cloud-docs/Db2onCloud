@@ -29,6 +29,15 @@ With {{site.data.keyword.Db2_on_Cloud_short}} Performance plan, administrators c
 - Downtime during any maintenance will increase as rolling updates/maintenance cannot be performed if going from a high available instance to single node instance.
 - If you are configuring from high availability to single, note that there will be bit of downtime at the end of the configuration to restart the orchestrator to recognize the availability configuration has changed.
 - If you are configuring from single node to high, note that there will be a small blip in the connection as the orchestrator needs to restart to take into account of the new pod coming in. 
+- Deployments which have a Disaster Recovery configured can not switch to single node without unconfiguring the diasaster recovery settings.
+
+## ****Configuring Availability in the UI****
+
+The High Availability panel is on the Adminstration tab of your deployment's console page.
+
+You can choose the desired availability and click **Save**.
+
+![high_availability_page.png](images/high_availability_page.png)
 
 
 ## ****Configuring High Availability using the API**** 
