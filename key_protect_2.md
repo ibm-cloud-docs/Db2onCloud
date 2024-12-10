@@ -42,7 +42,7 @@ To add a key in {{site.data.keyword.hscrypto}}, navigate to your instance of {{s
 ## Granting service authorization
 {: #kp-grant}
 
-Authorize {{site.data.keyword.keymanagementserviceshort}} for use with Db2 on Cloud deployments:
+Authorize {{site.data.keyword.keymanagementserviceshort}} for use with Db2 as a Service deployments:
 
 1. Open your {{site.data.keyword.cloud_notm}} dashboard.
 1. From the menu bar, select **Manage > Access (IAM)**.
