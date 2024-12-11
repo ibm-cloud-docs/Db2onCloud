@@ -129,7 +129,7 @@ curl -X POST \
 
 The parameters `name`, `target`, `resource_group`, and `resource_plan_id` are all required. If needed, you can send [additional parameters](#prov_add_parms) in the request body.
 
-More information on the Resource Controller API is found in its [API Reference]().
+More information on the Resource Controller API is found in its [API Reference](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#create-resource-instance).
 
 <!-- ## Provisioning with Terraform
 {: #prov_terraform}
@@ -151,9 +151,10 @@ If you use Terraform to manage your infrastructure, the [{{site.data.keyword.clo
 <!--
 - `members_memory_allocation_mb` - Total amount of memory to be allocated to the instance. For example, if the value is "6144", and there are three database members, then the deployment gets 6 GB of RAM total, giving 2 GB of RAM per member. If omitted, the default value for the database type is used.
 - `members_disk_allocation_mb` - Total amount of disk to be shared between the database members within the database. For example, if the value is "30720", and there are three members, then the deployment gets 30 GB of disk total, giving 10 GB of disk per member. If omitted, the default value for the database type is used.
--->
 - `members_cpu_allocation_count` - Enables and allocates the number of specified dedicated cores to your deployment. For example, to use two dedicated cores per member, use `"members_cpu_allocation_count":"2"`. If omitted, the default value "Shared CPU" uses compute resources on shared hosts.  
+-->
 - `service-endpoints` - Selects the types [Service Endpoints]() supported on your deployment. Options are `public`, `private`, or `public-and-private`. If omitted, the default is `public`. Note that in the CLI, `service-endpoints` is a flag, and not a parameter.
+- `instance_type` - The deployment's machine type. If omitted, the default is `bx2.4x16`.
 <!-- - `{"remote_leader_id": "crn:v1:..."}` - parameter only for {{site.data.keyword.Db2_on_Cloud_long}}.-->
 
 
