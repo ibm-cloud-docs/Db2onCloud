@@ -154,7 +154,7 @@ If you use Terraform to manage your infrastructure, the [{{site.data.keyword.clo
 - `members_cpu_allocation_count` - Enables and allocates the number of specified dedicated cores to your deployment. For example, to use two dedicated cores per member, use `"members_cpu_allocation_count":"2"`. If omitted, the default value "Shared CPU" uses compute resources on shared hosts.  
 -->
 - `service-endpoints` - Selects the types [Service Endpoints]() supported on your deployment. Options are `public`, `private`, or `public-and-private`. If omitted, the default is `public`. Note that in the CLI, `service-endpoints` is a flag, and not a parameter.
-- `instance_type` - The deployment's machine type. If omitted, the default is `bx2.4x16`.
+- `instance_type` - The deployment's machine type. If omitted, the default is `bx2.4x16`. Note that this option is only available with the Performance plan.
 <!-- - `{"remote_leader_id": "crn:v1:..."}` - parameter only for {{site.data.keyword.Db2_on_Cloud_long}}.-->
 
 
