@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2021
-lastupdated: "2024-11-26"
+lastupdated: "2024-12-14"
 
 keywords: db2, Db2 on Cloud, bring your own key, byok, crypto-shredding, kyok, keep your own key
 

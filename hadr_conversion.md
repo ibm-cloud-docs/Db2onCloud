@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-09-16"
+lastupdated: "2024-12-14"
 
 keywords: HADR, high availability disaster recovery, performance
 
