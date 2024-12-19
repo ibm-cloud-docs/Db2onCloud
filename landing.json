@@ -1,13 +1,13 @@
 {
     "version": 2,
-    "title": "IBM Db2 as a Service",
-    "introduction": "IBM Db2 as a Service is a fully managed public cloud service on IBM Cloud. As a relational database, it delivers fast query processing with enterprise-level performance and capabilities for online transactional processing (OLTP). ",
+    "title": "IBM Db2 SaaS",
+    "introduction": "IBM Db2 SaaS is a fully managed public cloud service on IBM Cloud. As a relational database, it delivers fast query processing with enterprise-level performance and capabilities for online transactional processing (OLTP). ",
     "product_page": "https://www.ibm.com/products/db2-database",
     "console_page": "/relative/console/path",
     "section_topics": {
       "links": [
         {
-          "title": "Getting started with Db2 as a Service",
+          "title": "Getting started",
           "href": "/docs/Db2onCloud?topic=Db2onCloud-getting-started"
         },
         {
@@ -44,9 +44,8 @@
       }
     ]
 
-    
+
 
 }
 
-  
-  
+
