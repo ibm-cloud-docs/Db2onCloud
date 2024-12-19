@@ -59,7 +59,7 @@ When you create the deployment from the catalog, you need to specify the followi
 
 1. **Oracle compatibility** - whether the service instance should have Oracle compatibility enabled
 
-1. **Machine Type** -  Choose machine type resource for your deployment based on your CPU and memory requirements. This option is only available with the Performance plan.
+1. **Instance Profile** -  Choose machine type resource for your deployment based on your CPU and memory requirements. This option is only available with the Performance plan.
 
 After selecting the appropriate settings, click **Create** to start the provisioning process.
 
