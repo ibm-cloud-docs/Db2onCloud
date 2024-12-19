@@ -28,7 +28,7 @@ subcollection: Db2onCloud
 ## Using Console
 {: #console}
 
-You can load data from IBM Cloud Object Storage (COS) into IBM® Db2® on Cloud by using the Console.
+You can load data from IBM Cloud Object Storage (COS) into IBM® Db2® as a Service by using the Console.
 
 ### Create the necessary credentials on the COS bucket to allow Console to access the data
 {: #bucket}
@@ -75,7 +75,7 @@ You can load data from IBM Cloud Object Storage (COS) into IBM® Db2® on Cloud 
 ## External Tables
 {: #external}
 
-You can load data from IBM Cloud Object Storage (COS) into IBM® Db2® on Cloud by using the built-in External Tables functionality.
+You can load data from IBM Cloud Object Storage (COS) into IBM® Db2® as a Service by using the built-in External Tables functionality.
 
 
 Here's an example SQL statement that inserts COS data into a {{site.data.keyword.dashdbshort_notm}} table by using External Tables:

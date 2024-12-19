@@ -26,7 +26,7 @@ subcollection: Db2onCloud
 # Auto-scaling
 
 
-When you enable autoscaling, the storage on your Db2 on Cloud instance will automatically be scaled up if your storage use exceeds the threshold you specify. For example, you can choose to scale up your storage by 20GB if more than 90% of your storage is in use for a period of 15 minutes.
+When you enable autoscaling, the storage on your IBM® Db2® as a Service instance will automatically be scaled up if your storage use exceeds the threshold you specify. For example, you can choose to scale up your storage by 20GB if more than 90% of your storage is in use for a period of 15 minutes.
 
 To monitor your storage usage, use the IBM Cloud® Monitoring integration, which provides metrics for disk space.
 

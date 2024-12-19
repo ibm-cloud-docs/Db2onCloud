@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2022-08-17"
+lastupdated: "2024-05-14"
 
 keywords: 
 
@@ -69,8 +69,8 @@ For information about the exact actions mapped to each role, see [IAM roles and 
 ## Prerequisites
 {: #iam_prereqs}
 
-- Db2 Client V11.1 FP3 or later.
-- Must use SSL connections through port 50001.
+- Db2 Client 11.5 and FP 9 or later.
+- Must use SSL connections through port (SSL port) specified in the [**Service credentials**](/docs/Db2onCloud?topic=Db2onCloud-connect_options){: external} .
 - [Configure your Db2 client](/docs/Db2onCloud?topic=Db2onCloud-ssl_support#ssl_cfg_client){: external}. 
 - Catalog your database. See [Connecting to your database: step 2](/docs/Db2onCloud?topic=Db2onCloud-ssl_support#ssl_conn_db){: external}.
 
@@ -122,7 +122,7 @@ The following database client interfaces are supported:
 For an ODBC application or a command-line client (CLP, CLPPLUS) to connect to a Db2 server by using IAM authentication, a data source name (DSN) needs to be configured first in a `db2dsdriver.cfg` configuration file by running the following command:
 
 ```
-db2cli writecfg add -dsn <dsn_alias> -database <database_name> -host <host_name_or_IP_address> -port 50001 -parameter "Authentication=GSSPLUGIN;SecurityTransportMode=SSL"
+db2cli writecfg add -dsn <dsn_alias> -database <database_name> -host <host_name_or_IP_address> -port <ssl_port> -parameter "Authentication=GSSPLUGIN;SecurityTransportMode=SSL"
 ```
 {: codeblock}
 
@@ -134,13 +134,13 @@ The following example of a `db2dsdriver.cfg` configuration file shows the config
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <configuration>
         <dsncollection>
-        <dsn alias="<data_source_name>" name="bludb" host="<host_name_or_IP_address>" port="50001">
+        <dsn alias="<data_source_name>" name="bludb" host="<host_name_or_IP_address>" port="<ssl_port>">
             <parameter name="Authentication" value="GSSPLUGIN"/>
             <parameter name="SecurityTransportMode" value="SSL"/>
         </dsn>
         </dsncollection>
         <databases>
-            <database name="bludb" host="<host_name_or_IP_address>" port="50001"/>
+            <database name="bludb" host="<host_name_or_IP_address>" port="<ssl_port>"/>
         </databases>
 </configuration>
 ```
@@ -230,7 +230,7 @@ The following examples show connection snippets for the three methods:
   dataSource.setDriverType( 4 );
   dataSource.setDatabaseName( "BLUDB" );
   dataSource.setServerName( "<host_name_or_IP_address>" );
-  dataSource.setPortNumber( 50001 );
+  dataSource.setPortNumber( <ssl_port> );
   dataSource.setSecurityMechanism( com.ibm.db2.jcc.DB2BaseDataSource.PLUGIN_SECURITY );
   dataSource.setPluginName( "IBMIAMauth" );
   dataSource.setAccessToken( "<access_token>" );
@@ -241,7 +241,7 @@ The following examples show connection snippets for the three methods:
   or
 
   ```
-  Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:accessToken=<access_token>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+  Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:<ssl_port>/BLUDB:accessToken=<access_token>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
   ```
   {: codeblock}
 
@@ -253,7 +253,7 @@ The following examples show connection snippets for the three methods:
   dataSource.setDriverType( 4 );
   dataSource.setDatabaseName( "BLUDB" );
   dataSource.setServerName( "<host_name_or_IP_address>" );
-  dataSource.setPortNumber( 50001 );
+  dataSource.setPortNumber( <ssl_port> );
   dataSource.setSecurityMechanism( com.ibm.db2.jcc.DB2BaseDataSource.PLUGIN_SECURITY );
   dataSource.setPluginName( "IBMIAMauth" );
   dataSource.setApiKey( "<api_key>" );
@@ -264,7 +264,7 @@ The following examples show connection snippets for the three methods:
   or
 
   ```
-  Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:apiKey=<api_key>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+  Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:<ssl_port>/BLUDB:apiKey=<api_key>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
   ```
   {: codeblock}
 
@@ -276,7 +276,7 @@ The following examples show connection snippets for the three methods:
   dataSource.setDriverType( 4 );
   dataSource.setDatabaseName( "BLUDB" );
   dataSource.setServerName( "<host_name_or_IP_address>" );
-  dataSource.setPortNumber( 50001 );
+  dataSource.setPortNumber( <ssl_port>);
   dataSource.setSecurityMechanism( com.ibm.db2.jcc.DB2BaseDataSource.PLUGIN_SECURITY );
   dataSource.setPluginName( "IBMIAMauth" );
   Connection conn = dataSource.getConnection( "<IBMid>", "<password>" );
@@ -286,7 +286,7 @@ The following examples show connection snippets for the three methods:
   or
 
   ```
-  Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:user=<IBMid>;password=<password>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+  Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:<ssl_port>/BLUDB:user=<IBMid>;password=<password>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
   ```
   {: codeblock}
 
@@ -371,7 +371,7 @@ To use your own identity provider such as LDAP, you must first federate your LDA
 The following restrictions are with regard to IAM authentication:
 
 * IAM authentication for a Db2 client that is connecting to a Db2 server is only supported over an SSL connection.
-* IBMid federation is supported to allow custom user management portal or server to be used for authentication. Such support does not include any group federation. Currently, AppID support is not provided although this support will be added in the future.
+* IBMid federation is supported to allow custom user management portal or server to be used for authentication. Such support does not include any group federation. Currently AppID support is not provided although this support will be added in the future.
 * IAM authentication for database federation is not supported.
 * Running IDA and user-defined extension (UDX) commands through CLPPlus are not supported.
 * Type 2 JDBC Driver is not supported.
