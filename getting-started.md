@@ -30,7 +30,7 @@ subcollection: Db2onCloud
 # Getting started with {{site.data.keyword.Db2_on_Cloud_short}}
 {: #getting-started}
 
-You can provision an instance of IBM Db2 on Cloud through the [IBM Cloud catalog](https://cloud.ibm.com/catalog/services/db2). Create a [free account](https://cloud.ibm.com/registration?target=%2Fcatalog%2Fservices%2Fdb2-warehouse) and get an IBM Cloud credit of $200 that you can use towards Db2 on Cloud.
+You can provision an instance of IBM Db2 as a Service through the [IBM Cloud catalog](https://cloud.ibm.com/catalog/services/db2). Create a [free account](https://cloud.ibm.com/registration?target=%2Fcatalog%2Fservices%2Fdb2-warehouse) and get an IBM Cloud credit of $200 that you can use towards Db2 on Cloud.
 
 After creating the Db2 on Cloud service, you can create a user name and password by clicking the **Service credentials** tab on your service page and selecting **New credential**.
 
