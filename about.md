@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2024
-lastupdated: "2024-12-07"
+  years: 2014, 2023
+lastupdated: "2024-12-20"
 
 keywords: 
 
@@ -30,7 +30,7 @@ subcollection: Db2onCloud
 
 For information about the plans and configurations supported on IBM Cloud, see [here](https://cloud.ibm.com/docs/Db2onCloud?topic=Db2onCloud-about). 
 
-This set of documentation covers the detailed commands and reference topics for the Db2 engine that powers Db2 on Cloud. To find the IBM Cloud documentation for the offering, see [here](https://cloud.ibm.com/docs/Db2onCloud?topic=Db2onCloud-about). The IBM Cloud documentation covers the high-level functionality for the cloud offering, and refers back to this set of documentation where appropriate.{: warning}
+This set of documentation covers the detailed commands and reference topics for the Db2 engine that powers Db2 SaaS. To find the IBM Cloud documentation for the offering, see [here](https://cloud.ibm.com/docs/Db2onCloud?topic=Db2onCloud-about). The IBM Cloud documentation covers the high-level functionality for the cloud offering, and refers back to this set of documentation where appropriate.{: warning}
 
 ### Standard Plan
 
@@ -69,3 +69,21 @@ The Standard and Enterprise plans are supported in the following data center geo
 - **Tokyo** - (Tok02, Tok04, Tok05)
 - **Washington, DC** - (Wdc04, Wdc06, Wdc07)
 - **Sao Paulo** - (Sao01, Sao04, Sao05)
+- **Toronto** - (Tor01, Tor04, Tor05)
+
+MZRs support 3 node HA in 3 different data centers in that region.
+{: note}
+
+### Single-zone region (SZR)
+- **Amsterdam** - (Ams03)
+- **Milan** - (Mil01)
+- **Montréal** - (Mon01)
+
+SZRs support 3 node HA in a single data center in that region.
+{: note}
+
+### EU-Supported (MZR)
+- **Frankfurt 02** - (Fra02, Fra04, Fra05)
+
+EU-Supported MZR supports 3 node HA in 3 different data centers in that region.
+{: note}
