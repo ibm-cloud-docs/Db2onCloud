@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2020, 2021, 2022, 2024
-lastupdated: "2024-12-14"
+  years: 2014, 2020, 2021, 2022
+lastupdated: "2025-01-29"
 
 keywords: provision cloud database, database with terraform, provisioning parameters, db2 on cloud, db2
 
@@ -32,7 +32,7 @@ You can provision a deployment by visiting the service's catalog page or by spec
 
 | Deployment Type | Catalog Page | Service ID | Plan IDs |
 |-----------------|--------------|------------|----------|
-| {{site.data.keyword.Db2_on_Cloud_short}} |[Link](https://cloud.ibm.com/catalog/services/db2){: external} | dashdb-for-transactions | dashDBNebula, dashDBStandard, Performance |
+| {{site.data.keyword.Db2_on_Cloud_short}} |[Link](https://cloud.ibm.com/catalog/services/db2){: external} | dashdb-for-transactions | dashDBNebula, dashDBStandard |
 
 ## Using the catalog
 {: #prov_catalog}
@@ -58,8 +58,6 @@ When you create the deployment from the catalog, you need to specify the followi
 1. **High Availability** - whether the services should be Highly Available
 
 1. **Oracle compatibility** - whether the service instance should have Oracle compatibility enabled
-
-1. **Machine Type** -  Choose machine type resource for your deployment based on your CPU and memory requirements. This option is only available with the Performance plan.
 
 After selecting the appropriate settings, click **Create** to start the provisioning process.
 
@@ -129,7 +127,7 @@ curl -X POST \
 
 The parameters `name`, `target`, `resource_group`, and `resource_plan_id` are all required. If needed, you can send [additional parameters](#prov_add_parms) in the request body.
 
-More information on the Resource Controller API is found in its [API Reference](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#create-resource-instance).
+More information on the Resource Controller API is found in its [API Reference]().
 
 <!-- ## Provisioning with Terraform
 {: #prov_terraform}
@@ -140,24 +138,27 @@ If you use Terraform to manage your infrastructure, the [{{site.data.keyword.clo
 {: #prov_add_parms}
 
 - `backup_id` - A CRN of a backup resource to restore from. The backup must have been created by a database deployment with the same service ID. The backup is loaded after provisioning and the new deployment starts up that uses that data. A backup CRN is in the format `crn:v1:<...>:backup:<uuid>`. If omitted, the database is provisioned empty.
-<!--
-- `version` - The version of the database to be provisioned. If omitted, the database is created with the most recent major and minor version.
--->
 - `backup_location` - The location of the deployment's backups.
 - `disk_encryption_key_crn` - The CRN of a [KMS key](), which is then used for disk encryption. A KMS CRN is in the format `crn:v1:<...>:key:<id>`.
 - `backup_encryption_key_crn` - The CRN of a [KMS key](), which is then used for backup encryption. A KMS CRN is in the format `crn:v1:<...>:key:<id>`. 
    To use a key for your backups, you must first enable the [service-to-service delegation]().
-   {: note}
+- `members_cpu_allocation_count` - Enables and allocates the number of specified dedicated cores to your deployment. For example, to use two dedicated cores per member, use `"members_cpu_allocation_count":"2"`. If omitted, the default value "Shared CPU" uses compute resources on shared hosts.  
+- `service-endpoints` - Selects the types [Service Endpoints]() supported on your deployment. Options are `public`, `private`, or `public-and-private`. If omitted, the default is `public`. Note that in the CLI, `service-endpoints` is a flag, and not a parameter.
+
+
+## List of additional parameters (for performance plans only)
+
+- `timezone` - the timezone that your database and the underlying operating system should use. Any timezone identifier accepted by Linux (e.g. `America/Toronto`) will be accepted here. If omitted, the default is UTC.
+
+<!--
+- `version` - The version of the database to be provisioned. If omitted, the database is created with the most recent major and minor version.
+-->
+
+
 <!--
 - `members_memory_allocation_mb` - Total amount of memory to be allocated to the instance. For example, if the value is "6144", and there are three database members, then the deployment gets 6 GB of RAM total, giving 2 GB of RAM per member. If omitted, the default value for the database type is used.
 - `members_disk_allocation_mb` - Total amount of disk to be shared between the database members within the database. For example, if the value is "30720", and there are three members, then the deployment gets 30 GB of disk total, giving 10 GB of disk per member. If omitted, the default value for the database type is used.
-- `members_cpu_allocation_count` - Enables and allocates the number of specified dedicated cores to your deployment. For example, to use two dedicated cores per member, use `"members_cpu_allocation_count":"2"`. If omitted, the default value "Shared CPU" uses compute resources on shared hosts.  
 -->
-- `service-endpoints` - Selects the types [Service Endpoints]() supported on your deployment. Options are `public`, `private`, or `public-and-private`. If omitted, the default is `public`. Note that in the CLI, `service-endpoints` is a flag, and not a parameter.
-- `instance_type` - The deployment's machine type. If omitted, the default is `bx2.4x16`. Note that this option is only available with the Performance plan.
+
+
 <!-- - `{"remote_leader_id": "crn:v1:..."}` - parameter only for {{site.data.keyword.Db2_on_Cloud_long}}.-->
-
-
-
-
-
