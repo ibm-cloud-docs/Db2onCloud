@@ -145,6 +145,7 @@ If you use Terraform to manage your infrastructure, the [{{site.data.keyword.clo
 - `members_cpu_allocation_count` - Enables and allocates the number of specified dedicated cores to your deployment. For example, to use two dedicated cores per member, use `"members_cpu_allocation_count":"2"`. If omitted, the default value "Shared CPU" uses compute resources on shared hosts.  
 - `service-endpoints` - Selects the types [Service Endpoints]() supported on your deployment. Options are `public`, `private`, or `public-and-private`. If omitted, the default is `public`. Note that in the CLI, `service-endpoints` is a flag, and not a parameter.
 
+- `backup_encryption_key_crn` is NOT applicable to performance plans.  For performance plans, backup will be encrypted with the same key as disk_encryption_key_crn.  If disk_encryption_key_crn is not specified, it'll use the default provider managed key. {: note}
 
 ## List of additional parameters (for performance plans only)
 
