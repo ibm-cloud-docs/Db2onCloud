@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2021
-lastupdated: "2023-06-20"
+lastupdated: "2024-12-14"
 
 keywords: db2, Db2 on Cloud, bring your own key, byok, crypto-shredding, kyok, keep your own key
 
@@ -51,7 +51,7 @@ Authorize {{site.data.keyword.keymanagementserviceshort}} for use with Db2 on Cl
 1. In the _Source service instance_ menu, select **All service instances**.
 1. In the _Target service_ menu, select **Key Protect** or **Hyper Protect Crypto Services**.
 1. In the _Target service instance_ menu, select the service instance to authorize.
-1. Enable the `Reader` role. Click **Authorize**.
+1. Enable the **Reader** role, and check the box that says **Enable authorizations to be delegated by the source and dependent services**. Click **Authorize**.
 
 ## Using the key encryption key
 {: #kp-use}

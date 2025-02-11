@@ -9,6 +9,7 @@ toc:
     product-page: https://www.ibm.com/cloud/db2-on-cloud
     path: Db2onCloud
     label: IBM Db2 SaaS
+
   entries: 
   - navgroup: 
       id: learn
@@ -46,6 +47,7 @@ toc:
           - advanced_admin.md
           - flex_scaling.md
           - autoscaling_external.md
+          - hadr_conversion.md
           - copy_db.md
           - deleting_db.md
           - recovering_db.md
@@ -75,6 +77,9 @@ toc:
           - sec_comp_sum.md
           - reference_hpcs.md
           - key_protect_2.md
+
+      - db2-database-assistant.md
+
       - communities.md
       - link: 
             label: What's new

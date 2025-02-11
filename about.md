@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2023
-lastupdated: "2023-06-09"
+lastupdated: "2024-12-20"
 
 keywords: 
 
@@ -30,7 +30,9 @@ subcollection: Db2onCloud
 
 For information about the plans and configurations supported on IBM Cloud, see [here](https://cloud.ibm.com/docs/Db2onCloud?topic=Db2onCloud-about). 
 
+
 This set of documentation covers the detailed commands and reference topics for the Db2 engine that powers Db2 on Cloud. To find the IBM Cloud documentation for the offering, see [here](https://cloud.ibm.com/docs/Db2onCloud?topic=Db2onCloud-about). The IBM Cloud documentation covers the high-level functionality for the cloud offering, and refers back to this set of documentation where appropriate.{: warning}
+=======
 
 ### Standard Plan
 
@@ -42,8 +44,21 @@ This set of documentation covers the detailed commands and reference topics for 
 - Base instances start at 4 vCPU x 16 GB RAM x 20 GB storage on dedicated compute slices
 - 1 TB of free backup storage for up to 14 days of backups
 
+### Performance Plan
 
-## Supported data centers
+- Base configuration start at 4vCPU x 16GB RAM x 50GB Storage on dedicated compute slices
+- 2-node High Availability
+- Customizable IOPS Scaling
+
+## Supported data centers (Performance)
+
+The Performance plan is supported in the following data center geographies:
+
+- **Dallas** - (us-south-1, us-south-2, us-south-3)
+- **Washington** - (us-east-1, us-east-2, us-east-3)
+
+
+## Supported data centers (Standard and Enterprise)
 {: #ab_sup_dcs}
 
 The Standard and Enterprise plans are supported in the following data center geographies:
