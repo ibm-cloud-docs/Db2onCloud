@@ -33,7 +33,7 @@ You can load data from IBM Cloud Object Storage (COS) into IBM® Db2® as a Serv
 ### Create the necessary credentials on the COS bucket to allow Console to access the data
 {: #bucket}
 
-1. Access the COS Bucket on the IBMCloud Dashboard by clicking on the name
+1. Access the COS Bucket on the IBM Cloud Dashboard by clicking on the name
 
 ![Resource List](images/load.png "Resource List"){: caption="Figure 1. Resource List" caption-side="bottom"}
 
