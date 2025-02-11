@@ -8,7 +8,7 @@ toc:
     console-page: /catalog/services/db2
     product-page: https://www.ibm.com/cloud/db2-on-cloud
     path: Db2onCloud
-    label: Db2 on Cloud
+    label: Db2 as a Service
   entries: 
   - navgroup: 
       id: learn
