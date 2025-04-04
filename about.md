@@ -75,7 +75,6 @@ MZRs support 3 node HA in 3 different data centers in that region.
 {: note}
 
 ### Single-zone region (SZR)
-- **Amsterdam** - (Ams03)
 - **Milan** - (Mil01)
 - **Montréal** - (Mon01)
 
