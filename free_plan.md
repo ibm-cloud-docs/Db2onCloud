@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2021
-lastupdated: "2021-04-22"
+  years: 2014, 2025
+lastupdated: "2025-03-20"
 
 keywords: Lite, plan, Lite plan, free plan, availability, restrictions, installation
 
