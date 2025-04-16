@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2025
-lastupdated: "2025-04-20"
+lastupdated: "2025-04-01"
 
 subcollection: Db2onCloud
 
