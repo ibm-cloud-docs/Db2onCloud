@@ -29,10 +29,7 @@ The **blocknonlogged** parameter must always be set to **YES**.  Changing it to 
 {{site.data.keyword.Db2_on_Cloud_short}} high availability plans have excellent availability characteristics with a 99.99% SLA.
 {: shortdesc}
 
-<!--
-## Standard and Enterprise plans
-{: #ha_v2_ha}
--->
+
 
 High availability disaster recovery (HADR) on {{site.data.keyword.Db2_on_Cloud_short}} Enterprise and Standard plans is provided by leveraging the support of native Db2 HADR.
 
@@ -46,47 +43,7 @@ High availability disaster recovery (HADR) on {{site.data.keyword.Db2_on_Cloud_s
 
 - During failover events, you can expect between 10-20 seconds during which transactions are restricted. Your client can seamlessly fail over by using [automatic client reroute (ACR)](https://www.ibm.com/support/knowledgecenter/SSEPGG_11.5.0/com.ibm.db2.luw.admin.ha.doc/doc/r0023392.html){: external} along with appropriate retry logic for any failed transactions.
 
-## Performance Plans
-{: #ha_performance}
-
-High availability on {{site.data.keyword.Db2_on_Cloud_short}} performance plan is provided by leveraging the support of native Db2 HADR.
-
-- Each HA system consists of 2 nodes.
-
-![Schematic view of the 2 nodes](images/legacy_ha_small.png "Schematic view of the 2 nodes"){: caption="Figure 1. Schematic view of the 2 nodes" caption-side="bottom"}
-
-- The primary node processes read and write transactions while the standby node provides read-only query capability. The standby node is replicated synchronously, which means each transaction is committed on at least 2 nodes before it is successful. This standby node is ready to take over write processing as well should any failure or maintenance event occur.
-
-![Schematic view of primary node failover](images/legacy_ha_fail.png "Schematic view of primary node failover"){: caption="Figure 2. Schematic view of primary node failover" caption-side="bottom"}
-
-- During failover events, you can expect between 10-20 seconds during which transactions are restricted. Your client can seamlessly fail over by using [automatic client reroute (ACR)](https://www.ibm.com/docs/en/db2/12.1?topic=server-automatic-client-reroute){: external} along with appropriate application retry logic for any failed transactions in the case of a failure or maintenance event.
-
-## General
-
 ### Managing HADR nodes
 {: #ha_v2_manage}
 
 For Enterprise and Standard HADR plans, the failover is managed for you by IBM. IBM monitors the health of your server, fail over and fail back as needed, including rolling updates and scaling to keep uptime as high as possible.
-
-<!--
-## Legacy Flex plans
-{: #ha_legacy}
-
-High availability on {{site.data.keyword.Db2_on_Cloud_short}} Legacy Flex plans is provided by leveraging the support of native Db2 HADR.
-
-- Each HA system consists of 2 nodes.
-
-![Schematic view of the 2 nodes](images/legacy_ha_small.png "Schematic view of the 2 nodes"){: caption="Figure 1. Schematic view of the 2 nodes" caption-side="bottom"}
-
-- The primary node processes read and write transactions while the standby node is replicated synchronously, which means each transaction is committed on at least 2 nodes before it is successful. This standby node is ready to take over write processing as well should any failure or maintenance event occur.
-
-![Schematic view of primary node failover](images/legacy_ha_fail.png "Schematic view of primary node failover"){: caption="Figure 2. Schematic view of primary node failover" caption-side="bottom"}
-
-The standard high availability plans without a disaster recovery (DR) node provide seamless failover and rolling updates. They are managed for you by using [automatic client reroute (ACR)](https://www.ibm.com/support/knowledgecenter/SSEPGG_11.5.0/com.ibm.db2.luw.admin.ha.doc/doc/r0023392.html){: external} and portable IPs.
-
-### Managing high availability nodes
-{: #ha_manage}
-
-For standard HA nodes, which are not offsite, the failover is managed for you by IBM. IBM monitors the health of your server, fail over and fail back as needed, including rolling updates and scaling to keep uptime as high as possible.
--->
-

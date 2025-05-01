@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020, 2021, 2022
-lastupdated: "2025-02-05"
+lastupdated: "2022-11-07"
 
 keywords: provision cloud database, database with terraform, provisioning parameters, db2 on cloud, db2
 
@@ -138,28 +138,17 @@ More information on the Resource Controller API is found in its [API Reference](
 
 
 
+
+
+
 - `backup_location` - The location of the deployment's backups.
 - `disk_encryption_key_crn` - The CRN of a [KMS key](), which is then used for disk encryption. A KMS CRN is in the format `crn:v1:<...>:key:<id>`.
 - `backup_encryption_key_crn` - The CRN of a [KMS key](), which is then used for backup encryption. A KMS CRN is in the format `crn:v1:<...>:key:<id>`.
    To use a key for your backups, you must first enable the [service-to-service delegation]().
+   {: note}
+
+
+
 - `members_cpu_allocation_count` - Enables and allocates the number of specified dedicated cores to your deployment. For example, to use two dedicated cores per member, use `"members_cpu_allocation_count":"2"`. If omitted, the default value "Shared CPU" uses compute resources on shared hosts.
+
 - `service-endpoints` - Selects the types [Service Endpoints]() supported on your deployment. Options are `public`, `private`, or `public-and-private`. If omitted, the default is `public`. Note that in the CLI, `service-endpoints` is a flag, and not a parameter.
-
-`backup_encryption_key_crn` is NOT applicable to performance plans.  For performance plans, backup will be encrypted with the same key as disk_encryption_key_crn.  If disk_encryption_key_crn is not specified, it'll use the default provider managed key. {: note}
-
-## List of additional parameters (for performance plans only)
-
-- `timezone` - the timezone that your database and the underlying operating system should use. Any timezone identifier accepted by Linux (e.g. `America/Toronto`) will be accepted here. If omitted, the default is UTC.
-
-<!--
-- `version` - The version of the database to be provisioned. If omitted, the database is created with the most recent major and minor version.
--->
-
-
-<!--
-- `members_memory_allocation_mb` - Total amount of memory to be allocated to the instance. For example, if the value is "6144", and there are three database members, then the deployment gets 6 GB of RAM total, giving 2 GB of RAM per member. If omitted, the default value for the database type is used.
-- `members_disk_allocation_mb` - Total amount of disk to be shared between the database members within the database. For example, if the value is "30720", and there are three members, then the deployment gets 30 GB of disk total, giving 10 GB of disk per member. If omitted, the default value for the database type is used.
--->
-
-
-<!-- - `{"remote_leader_id": "crn:v1:..."}` - parameter only for {{site.data.keyword.Db2_on_Cloud_long}}.-->
