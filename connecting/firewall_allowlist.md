@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2024-12-02"
+lastupdated: "2023-06-13"
 
 keywords:
 
@@ -134,6 +134,8 @@ Subnet | Location
 Subnet | Location
 -- | --
 169.57.160.160/29 | sao01
+169.57.160.136/29 | sao01
+169.57.199.32/29 | sao01
 169.57.208.24/29 | sao01
 163.107.69.232/29 | sao04
 163.107.71.232/29 | sao04

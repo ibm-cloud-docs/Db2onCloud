@@ -30,20 +30,10 @@ subcollection: Db2onCloud
 # Getting started with {{site.data.keyword.Db2_on_Cloud_short}}
 {: #getting-started}
 
-You can provision an instance of IBM Db2 as a Service through the [IBM Cloud catalog](https://cloud.ibm.com/catalog/services/db2). Create a [free account](https://cloud.ibm.com/registration?target=%2Fcatalog%2Fservices%2Fdb2-warehouse) and get an IBM Cloud credit of $200 that you can use towards Db2 on Cloud.
+You can provision an instance of IBM Db2 on Cloud through the [IBM Cloud catalog](https://cloud.ibm.com/catalog/services/db2). Create a [free account](https://cloud.ibm.com/registration?target=%2Fcatalog%2Fservices%2Fdb2-warehouse) and get an IBM Cloud credit of $200 that you can use towards Db2 on Cloud.
 
-After creating the Db2 SaaS service, you can create a user name and password by clicking the **Service credentials** tab on your service page and selecting **New credential**.
+After creating the Db2 on Cloud service, you can create a user name and password by clicking the **Service credentials** tab on your service page and selecting **New credential**.
 
 While logged in as the **IAM** user that provisioned the instance, you can log into the web console by clicking on the **Go to UI** button on the **Manage** tab. 
 
 You can create database/JDBC users, which you will use to connect to the database, by navigating to the **Administration** --> **User Management** panel. Additionally, you may want to give admin access to an IAM user to allow them to use console administration functions such as user management, backup, and restore. Before you can add an IAM user in the console, you must first give the user access to the service in IAM". For more information, see [Identity and access management (IAM) on IBM Cloud](https://cloud.ibm.com/docs/Db2onCloud?topic=Db2onCloud-iam).
-
-
-
-
-
-
-
-
-
-

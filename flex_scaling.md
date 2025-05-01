@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 # Flexible scaling
 {: #scale}
 
-IBM® Db2® as a Service provides you with the ability to independently scale up compute cores and storage. 
+Db2 on Cloud provides you with the ability to independently scale up compute cores and storage. 
 {: shortdesc}
 
 As the number of cores is increased, memory is also increased.  The updating of resources can result in an outage that can last up to 20 minutes.
