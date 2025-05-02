@@ -34,31 +34,31 @@ The following user password policy options are supported. These can be configure
 
 ## Supported Policy Options
 
-### **minimum_length**
+### `minimum_length`
 
 Specifies the minimum number of characters required for a valid password.
 
-### **max_attempts**
+### `max_attempts`
 
 Defines the maximum number of failed login attempts allowed before the user is locked out.
 
-### **Password Expiration**
+### Password Expiration
 
 `pwd_expiration_time` Specifies the number of days after which a password will expire and require the user to set a new one.
 
-### **Lock Duration**
+### Lock Duration
 
 `lock_duration` Specifies the duration (in minutes) a user remains locked out before being automatically unlocked, based on the time the account was locked.
 
-### **Password Failure Interval**
+### Password Failure Interval
 
 `pwd_count_interval` Defines the time window (in minutes) for tracking failed login attempts. If the user's last failed attempt falls outside this interval, the failure count is reset.
 
-### **Password History**
+### Password History
 
 `pwd_history` Specifies the number of previously used passwords that cannot be reused by the user.
 
-### User Management Changes
+### **User Management Changes**
 
 ### `UM_GET_USERS`
 
