@@ -76,7 +76,7 @@ toc:
           - sec_comp_sum.md
           - reference_hpcs.md
           - key_protect_2.md
-          - password-policies.md
+          - password_policies.md
       - communities.md
       - link:
             label: What's new
