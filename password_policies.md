@@ -58,9 +58,9 @@ Defines the maximum number of failed login attempts allowed before the user is l
 
 `pwd_history` Specifies the number of previously used passwords that cannot be reused by the user.
 
-# User Management Changes
+### User Management Changes
 
-## `UM_GET_USERS`
+### `UM_GET_USERS`
 
 An additional field for password expiration has been added to the user table output.
 
@@ -72,7 +72,7 @@ An additional field for password expiration has been added to the user table out
 
 ---
 
-## `UM_MODIFY_USER`
+### `UM_MODIFY_USER`
 
 Adds a new optional field `policyname` to assign a new policy to an existing user.
 
@@ -83,7 +83,7 @@ $ db2 "call um_modify_user(username => 'testuser3', policyname => 'maxpolicy')"
 # Return Status = 0
 ```
 
-## `UM_GET_POLICIES`
+### `UM_GET_POLICIES`
 
 Returns a list of all defined password policies and their respective settings.
 
@@ -96,7 +96,7 @@ Returns a list of all defined password policies and their respective settings.
 
 ---
 
-## `UM_CREATE_POLICY`
+### `UM_CREATE_POLICY`
 
 Creates a new password policy. You only need to specify the attributes you wish to define.
 
@@ -114,7 +114,7 @@ $ db2 "call um_create_policy(name => 'maxpolicy', min_length => 8, lock_duration
   Return Status = 0
 ```
 
-## `UM_MODIFY_POLICY`
+### `UM_MODIFY_POLICY`
 
 Modifies the specified attributes of an existing password policy. Only the attributes to be changed need to be specified.
 
@@ -124,7 +124,7 @@ $ db2 "call um_modify_policy(name => 'testpolicy', min_length => 10)"
   Return Status = 0
 ```
 
-## `UM_DELETE_POLICY`
+### `UM_DELETE_POLICY`
 
 Deletes an existing policy. If there are users with the policy you want to delete, those users will have their policies reverted back to the default policy defined by us in the `users.json`
 
