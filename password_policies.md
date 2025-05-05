@@ -57,3 +57,20 @@ Defines the time window (in minutes) for tracking failed login attempts. If the 
 ### Password History
 
 Specifies the number of previously used passwords that cannot be reused by the user. Previously used passwords are not tracked unless `Password History` is enabled.
+
+## User Examples
+
+### Creating New Policy
+
+- The following image shows when a user creates a new policy
+![title](images/creating_policy.png)
+
+### Policy Showing in the List
+
+- The following image shows when the new policy is displayed in the list
+![title](images/policy_list.png)
+
+### Create User with New Policy
+
+- The following image shows when a new user is created and is placed under the new policy
+![title](images/create_user_new_policy.png)
