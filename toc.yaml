@@ -9,18 +9,18 @@ toc:
     product-page: https://www.ibm.com/cloud/db2-on-cloud
     path: Db2onCloud
     label: IBM Db2 as a Service
-  entries: 
-  - navgroup: 
+  entries:
+  - navgroup:
       id: learn
       topics:
       - about.md
       - getting-started.md
-      - topicgroup: 
+      - topicgroup:
           label: Free Plan
           topics:
           - free_plan.md
           - faqs_lite.md
-      - topicgroup: 
+      - topicgroup:
           label: Connecting
           topics:
           - connecting/connecting.md
@@ -33,14 +33,14 @@ toc:
           - connecting/connect_3rd_party_tools.md
           - connecting/rest_api.md
           - connecting/firewall_allowlist.md
-      - topicgroup: 
+      - topicgroup:
           label: Loading your data
           topics:
           - dcw.md
           - load_cos.md
-      - topicgroup: 
+      - topicgroup:
           label: Administration
-          topics: 
+          topics:
           - interfaces.md
           - endpoints.md
           - advanced_admin.md
@@ -57,15 +57,15 @@ toc:
           - dr.md
           - main.md
           - log_mon.md
-          - logical_schema.md 
+          - logical_schema.md
           - command_syntax.md
-          - topicgroup: 
+          - topicgroup:
               label: Federation
-              topics: 
+              topics:
               - federation_v2.md
               - fed_v2_cloud_to_cloud.md
           - local_dev_env.md
-      - topicgroup: 
+      - topicgroup:
           label: Security
           topics:
           - encryption.md
@@ -76,40 +76,41 @@ toc:
           - sec_comp_sum.md
           - reference_hpcs.md
           - key_protect_2.md
+          - password_policies.md
       - db2-database-assistant.md
       - communities.md
-      - link: 
+      - link:
             label: What's new
             href: https://www.ibm.com/support/pages/whats-new-ibm-db2-cloud
-      - link: 
+      - link:
             label: IBM Developer Answers
             href: https://developer.ibm.com/answers/index.html
-  - navgroup: 
+  - navgroup:
       id: howto
       topics:
       - provision.md
-      - monitor.md 
+      - monitor.md
       - investigating_latency_events.md
-      - link: 
+      - link:
             label: "IBM Demos: Tutorials, videos, and hands-on labs"
             href: https://www.ibm.com/demos/collection/Db2-on-Cloud/
   - navgroup:
       id: reference
-      topics: 
-      - link: 
+      topics:
+      - link:
             label: Database management API (Standard and Enterprise)
             href: https://cloud.ibm.com/apidocs/db2-on-cloud/db2-on-cloud-v4
-      - link: 
+      - link:
             label: Database resource scaling API
             href: https://cloud.ibm.com/apidocs/db2-on-cloud/db2oc_scale_exp
-      - link: 
+      - link:
             label: SQL reference
             href: https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.sql.ref.doc/doc/c0004100.html
-      - link: 
+      - link:
             label: Knowledge Center
             href: https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.kc.doc/welcome.html
   - navgroup:
       id: help
-      topics: 
+      topics:
       - faqs.md
       - help.md
