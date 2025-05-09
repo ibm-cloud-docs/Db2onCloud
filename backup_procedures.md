@@ -1,5 +1,5 @@
-# backup-procedures
-stored procedures for backup related functionality for db2
+# Backup Procedures
+Stored procedures for backup related functionality for db2
 
 These stored procedures are used to mark backups that we would like to retain and moving them in COS to prevent them from being deleted by the automated cleanup process.
 
