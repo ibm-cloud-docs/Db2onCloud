@@ -39,7 +39,7 @@ The parts field will be used to help the customer determine if the backup they c
 
 `db2 "call SAVE_BACKUP(20240313215333);"`
 
-**REMOVE_SAVED_BACUP**:
+**REMOVE_SAVED_BACKUP**:
 
 `db2 "call REMOVE_SAVED_BACKUP(20240313215333);"`
 
