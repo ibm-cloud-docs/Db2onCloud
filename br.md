@@ -173,8 +173,7 @@ The following are a selected example of screen captures of the point-in-time res
 ## Backup Retention Management
 Stored procedures used to keep backups beyond the regular retention period
 
-Restoring from these retained backups requires opening a support ticket. Users cannot perform self-service restores from these backups.
-   {: note}
+Restoring from these retained backups requires opening a support ticket. Users cannot perform self-service restores from these backups.{: note}
 
 These stored procedures are used to mark backups that we would like to retain and moving them in COS to prevent them from being deleted by the automated cleanup process.
 
