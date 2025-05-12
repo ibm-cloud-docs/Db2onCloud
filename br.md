@@ -54,7 +54,7 @@ The following is an example of the manual backup operation in the web console UI
 
 
 
-## Backup Procedures
+## Backup Retention Management
 Stored procedures for backup related functionality for db2
 
 These stored procedures are used to mark backups that we would like to retain and moving them in COS to prevent them from being deleted by the automated cleanup process.
@@ -170,8 +170,11 @@ The following are a selected example of screen captures of the point-in-time res
 5. The restore operation completed successfully.
 ![View of the successful completion of the restoration](images/pit_restore_successful_v2.png "Successful completion"){: caption="View of the successful completion of the restoration" caption-side="bottom"}
 
-## Backup Procedures
-Stored procedures for backup related functionality for db2
+## Backup Retention Management
+Stored procedures used to keep backups beyond the regular retention period
+
+Restoring from these retained backups requires opening a support ticket. Users cannot perform self-service restores from these backups.
+   {: note}
 
 These stored procedures are used to mark backups that we would like to retain and moving them in COS to prevent them from being deleted by the automated cleanup process.
 
