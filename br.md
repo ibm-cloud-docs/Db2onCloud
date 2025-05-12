@@ -55,16 +55,15 @@ The following is an example of the manual backup operation in the web console UI
 
 
 ## Backup Retention Management
-Stored procedures for backup related functionality for db2
 
 Restoring from these retained backups requires opening a support ticket. Users cannot perform self-service restores from these backups.
 {: note}
 
-These stored procedures are used to mark backups that we would like to retain and moving them in COS to prevent them from being deleted by the automated cleanup process.
+The `SAVE_BACKUP` call is used to mark backups that need to be retained for longer than the retention period.
 
-Inversely, functionality is also added to unmark these backups as well in case we realize we don't want them.
+The `REMOVE_SAVED_BACKUP` call is used to unmark a retained back so it can be deleted by the automated cleanup process.
 
-Listing functionality is also added to show backups which we have available to us as well as which ones we have marked for retention, a sample output is shown below.
+The `LIST_BACKUP` functionality shows the complete list of backups along with the ones marked for retention, a sample output is shown below.
 
 ```
 BACKUP         PARTS       RETAIN
