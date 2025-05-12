@@ -92,7 +92,7 @@ BACKUP         PARTS       RETAIN
 
 The parts field will be used to help the customer determine if the backup they created was complete or not.
 
-## Usage
+### Usage
 
 **SAVE_BACKUP**:
 
@@ -106,7 +106,7 @@ The parts field will be used to help the customer determine if the backup they c
 
 `db2 "select * from table(LIST_BACKUPS());"`
 
-## Restrictions
+### Restrictions
 
 Any backup which is within 24 hours of being removed (i.e. 1 day or less from exceeding the retention period) will not be saved. This is done as a fail safe to avoid saving large backups which might get removed within the saving process. If this were to happen, this would create garbage/unuseable data into the customers COS, and would require manual cleanup from us.
 
