@@ -56,14 +56,32 @@ The following is an example of the manual backup operation in the web console UI
 
 ## Backup Retention Management
 
+This feature allows Users to run procedures that modify the retention period for db2 backups.
+
 Restoring from these retained backups requires opening a support ticket. Users cannot perform self-service restores from these backups.
 {: note}
 
-The `SAVE_BACKUP` call is used to mark backups that need to be retained for longer than the retention period.
+### Procedures and Usages
 
-The `REMOVE_SAVED_BACKUP` call is used to unmark a retained back so it can be deleted by the automated cleanup process.
+***SAVE_BACKUP***:
 
-The `LIST_BACKUP` functionality shows the complete list of backups along with the ones marked for retention, a sample output is shown below.
+- The `SAVE_BACKUP` call is used to mark backups that need to be retained beyond the standard retention period. This call creates a duplicate entry in the table, where the retained backup is indicated by a `1` in the `RETAIN` column. Both the original and saved entries will appear on the list until the original backup reaches the end of its retention period and is deleted through the regular cleanup process, and only the saved backup will show on the list.
+
+`db2 "call SAVE_BACKUP(20240313215333);"`
+
+***REMOVE_SAVED_BACKUP***:
+
+- The `REMOVE_SAVED_BACKUP` call is used to unmark a retained back so it can be deleted by the automated cleanup process.
+
+If the original backup is no longer available and the saved copy is removed, that backup becomes unrecoverable and cannot be marked for retention again. Therefore, this call should only be used when the User is absolutely certain the backup is no longer needed. {: important}
+
+`db2 "call REMOVE_SAVED_BACKUP(20240313215333);"`
+
+***LIST_BACKUP***:
+
+- The `LIST_BACKUP` functionality shows the complete list of backups along with the ones marked for retention, a sample output is shown below.
+
+`db2 "select * from table(LIST_BACKUPS());"`
 
 ```
 BACKUP         PARTS       RETAIN
@@ -89,25 +107,14 @@ BACKUP         PARTS       RETAIN
 20240312215333           6           1
 ```
 
-The parts field will be used to help the customer determine if the backup they created was complete or not.
+The `PARTS` field shows how many parts a backup is composed of after running the procedure to save it beyond its retention period. In this example, the backup contains 6 parts. Since both the original and the saved backup entries appear in the list, users should ensure the parts count matches between them. This helps confirm that all parts of the backup were saved properly. If the parts count on the saved entry is lower than the original, the `SAVE_BACKUP` call should be run again until all parts are saved successfully.
 
-### Usage
-
-**SAVE_BACKUP**:
-
-`db2 "call SAVE_BACKUP(20240313215333);"`
-
-**REMOVE_SAVED_BACKUP**:
-
-`db2 "call REMOVE_SAVED_BACKUP(20240313215333);"`
-
-**LIST_BACKUP**:
-
-`db2 "select * from table(LIST_BACKUPS());"`
+A `1` in the Retain Column indicates that the backup is saved until it's marked for deletion.
 
 ### Restrictions
 
-Any backup which is within 24 hours of being removed (i.e. 1 day or less from exceeding the retention period) will not be saved. This is done as a fail safe to avoid saving large backups which might get removed within the saving process. If this were to happen, this would create garbage/unuseable data into the customers COS, and would require manual cleanup from us.
+Any backup which is within 24 hours of being removed (i.e. 1 day or less from exceeding the retention period) cannot use the `SAVE_BACKUP` process.
+{: note}
 
 ## Restore
 {: #br_restore}
