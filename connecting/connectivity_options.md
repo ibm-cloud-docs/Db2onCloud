@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020, 2021, 2022
-lastupdated: "2023-09-08"
+lastupdated: "2025-01-11"
 
 keywords:
 
@@ -10,7 +10,7 @@ subcollection: Db2onCloud
 
 ---
 
- 
+
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -24,13 +24,13 @@ subcollection: Db2onCloud
 # Connectivity options
 {: #connect_options}
 
-{{site.data.keyword.Db2_on_Cloud_long}} offers multiple secure connectivity options that depend on your application connection requirements.  
+{{site.data.keyword.Db2_on_Cloud_long}} offers multiple secure connectivity options that depend on your application connection requirements.
 {: shortdesc}
 
 ## Connecting to a public endpoint (default option)
 {: #pub_endpt}
 
-As with any public cloud service, you can connect your application by way of a public host name that is provided to you at the time that your service is provisioned. Access to your data is protected by strong authentication, vast Db2 authorization options and access controls, encryption over the wire and at rest, and IBM security and compliance practices for development and operations. 
+As with any public cloud service, you can connect your application by way of a public host name that is provided to you at the time that your service is provisioned. Access to your data is protected by strong authentication, vast Db2 authorization options and access controls, encryption over the wire and at rest, and IBM security and compliance practices for development and operations.
 
 ### How to connect to a public endpoint:
 {: #pub_endpt_steps}
@@ -180,17 +180,21 @@ The following VCAP Services json file can be used to make connections to your En
 
 Non-admin users can also use allowlisting available in the {{site.data.keyword.Db2_on_Cloud_short}} web console under **Settings > Manage Users**.
 
-## Connecting to a private endpoint: IBM Cloud service endpoint
+## Connecting to a private endpoint: IBM Cloud service endpoint (Enterprise/Standard plans)
 {: #priv_endpt}
 
 {{site.data.keyword.Db2_on_Cloud_short}} supports private connectivity through an [{{site.data.keyword.cloud_notm}} service endpoint](/docs/account?topic=account-service-endpoints-overview). {{site.data.keyword.cloud_notm}} service endpoints securely route network traffic between different {{site.data.keyword.cloud_notm}} services through the {{site.data.keyword.cloud_notm}} private backplane network. When you configure your {{site.data.keyword.Db2_on_Cloud_short}} instance with {{site.data.keyword.cloud_notm}} service endpoint connectivity, traffic between your cloud database and applications deployed on your {{site.data.keyword.cloud_notm}} account will not traverse any public networks.
+
+## Connecting to a private VPE endpoint (Performance plans)
+
+{{site.data.keyword.Db2_on_Cloud_short}} supports private connectivity through [Virtual Private Endpoints](/docs/account?topic=overview-endpoints-support). IBM Virtual Private Endpoints securely route network traffic between different IBM Cloud services through the IBM Cloud private backplane network. When you configure your Db2 SaaS instance with Virtual Private Endpoints connectivity, traffic between your cloud database and applications deployed on your IBM Cloud account will not traverse any public networks.
 
 ### How to configure IBM Cloud private endpoint connectivity
 {: #cfg_priv_endpt}
 
 Complete the following steps to enable {{site.data.keyword.cloud_notm}} private endpoint connectivity for your {{site.data.keyword.Db2_on_Cloud_short}} instance:
 
-Enable your {{site.data.keyword.cloud_notm}} account to use virtual routing and forwarding (VRF) and {{site.data.keyword.cloud_notm}} service endpoints. To enable both of these items, see [Enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint).
+Enable your {{site.data.keyword.cloud_notm}} account to use virtual routing and forwarding (VRF) and {{site.data.keyword.cloud_notm}} service endpoints. To enable both of these items, see [Enabling VRF and service endpoints](/docs/overview?topic=overview-endpoints-support).
 
 - For Enterprise and Standard plans
   1. On the console, click **Administration**.
@@ -204,3 +208,5 @@ After you've configured {{site.data.keyword.cloud_notm}} private endpoint connec
 {: note}
 
 To learn more about the {{site.data.keyword.cloud_notm}} endpoint service, see [Secure access to services using service endpoints](/docs/account?topic=account-service-endpoints-overview).
+
+To complete the setup of virtual private endpoints, see [Virtual Private Endpoint Gateways](/docs/vpc?topic=vpc-ordering-endpoint-gateway&interface).

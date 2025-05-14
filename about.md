@@ -1,16 +1,16 @@
 ---
 
 copyright:
-  years: 2014, 2023
-lastupdated: "2023-06-09"
+  years: 2014, 2025
+lastupdated: "2025-04-20"
 
-keywords: 
+keywords:
 
 subcollection: Db2onCloud
 
 ---
 
- 
+
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -28,9 +28,9 @@ subcollection: Db2onCloud
 ## Plans and configurations
 {: #ab_plans_cfgs}
 
-For information about the plans and configurations supported on IBM Cloud, see [here](https://cloud.ibm.com/docs/Db2onCloud?topic=Db2onCloud-about). 
+For information about the plans and configurations supported on IBM Cloud, see [here](https://cloud.ibm.com/docs/Db2onCloud?topic=Db2onCloud-about).
 
-This set of documentation covers the detailed commands and reference topics for the Db2 engine that powers Db2 on Cloud. To find the IBM Cloud documentation for the offering, see [here](https://cloud.ibm.com/docs/Db2onCloud?topic=Db2onCloud-about). The IBM Cloud documentation covers the high-level functionality for the cloud offering, and refers back to this set of documentation where appropriate.{: warning}
+This set of documentation covers the detailed commands and reference topics for the Db2 engine that powers Db2 SaaS. To find the IBM Cloud documentation for the offering, see [here](https://cloud.ibm.com/docs/Db2onCloud?topic=Db2onCloud-about). The IBM Cloud documentation covers the high-level functionality for the cloud offering, and refers back to this set of documentation where appropriate.{: warning}
 
 ### Standard Plan
 
@@ -42,13 +42,25 @@ This set of documentation covers the detailed commands and reference topics for 
 - Base instances start at 4 vCPU x 16 GB RAM x 20 GB storage on dedicated compute slices
 - 1 TB of free backup storage for up to 14 days of backups
 
+### Performance Plan
+
+- Base configuration start at 4vCPU x 16GB RAM x 50GB Storage on dedicated compute slices
+- 2-node High Availability
+- Customizable IOPS Scaling
+
+## Supported data centers (Performance)
+
+The Performance plan is supported in the following data center geographies:
+
+- **Dallas** - (us-south-1, us-south-2, us-south-3)
+- **Washington** - (us-east-1, us-east-2, us-east-3)
 
 ## Supported data centers
 {: #ab_sup_dcs}
 
 The Standard and Enterprise plans are supported in the following data center geographies:
 
-### Multi-zone region (MZR) 
+### Multi-zone region (MZR)
 - **Dallas** - (Dal10, Dal12, Dal13)
 - **Frankfurt** - (Fra02, Fra04, Fra05)
 - **London** - (Lon04, Lon05, Lon06)

@@ -1,16 +1,16 @@
 ---
 
 copyright:
-  years: 2014, 2023
-lastupdated: "2023-09-21"
+  years: 2014, 2025
+lastupdated: "2025-04-20"
 
-keywords: 
+keywords:
 
 subcollection: Db2onCloud
 
 ---
 
- 
+
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 # Flexible scaling
 {: #scale}
 
-Db2 on Cloud provides you with the ability to independently scale up compute cores and storage. 
+Db2 on Cloud provides you with the ability to independently scale up compute cores and storage.
 {: shortdesc}
 
 As the number of cores is increased, memory is also increased.  The updating of resources can result in an outage that can last up to 20 minutes.
@@ -38,7 +38,7 @@ Storage cannot be scaled down once it has been increased.
 
 The Standard plan deploys with 8 GB of RAM, and 20 GB of disk space. You can then scale your plan with the drop-down lists in the {{site.data.keyword.Db2_on_Cloud_short}} console.
 
-Memory can be scaled up or down by selecting the number of vCPU.  The standard plan is a multitenaned plan and therefore has dedicated memory only. 
+Memory can be scaled up or down by selecting the number of vCPU.  The standard plan is a multitenaned plan and therefore has dedicated memory only.
 
 Memory can be scaled in the following increments:
 
@@ -122,7 +122,7 @@ The `Rebalance` functionality enables redistributing data which brings with it t
 You are now given the option to rebalance any tablespaces from non-default storage groups after scaling is completed.  A pop-up window will be presented to confirm rebalancing.
 
 It is highly recommended to rebalance non-default storage groups after scaling past 4TB.
-{: important} 
+{: important}
 
 ![Confirm rebalance](images/user_created_tb_prompt.png "Confirm rebalance"){: caption="Confirm rebalance on tablespaces before scaling" caption-side="bottom"}
 
@@ -130,7 +130,7 @@ It is highly recommended to rebalance non-default storage groups after scaling p
 
 To View the Rebalance status of tablespaces:
 - Select **Data** from Left Side
-- Click on the **storage objects** tab on top. 
+- Click on the **storage objects** tab on top.
 
 You can rebalance a tablespace individually on this tab.
 
