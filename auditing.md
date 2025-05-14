@@ -4,13 +4,13 @@ copyright:
   years: 2014, 2025
 lastupdated: "2025-04-15"
 
-keywords: 
+keywords:
 
 subcollection: Db2onCloud
 
 ---
 
- 
+
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -21,13 +21,13 @@ subcollection: Db2onCloud
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Auditing 
+# Auditing
 
 As a security officer, auditor, or manager, you can use the {{site.data.keyword.at_full}} service to track how users and applications interact with the Db2 on Cloud service in {{site.data.keyword.cloud_notm}}. {: shortdesc}
 
 {{site.data.keyword.at_full_notm}} records user-initiated activities that change the state of a service in {{site.data.keyword.cloud_notm}}. You can use this service to investigate abnormal activity and critical actions and to comply with regulatory audit requirements. In addition, you can be alerted about actions as they happen. The events that are collected comply with the Cloud Auditing Data Federation (CADF) standard. For more information, see the getting started tutorial for {{site.data.keyword.at_full_notm}}.
 
-Activity Tracker with LogDNA integration is available for {{site.data.keyword.Db2_on_Cloud_long}}deployments in the regions according to the following table: 
+Activity Tracker with LogDNA integration is available for {{site.data.keyword.Db2_on_Cloud_long}}deployments in the regions according to the following table:
 
 | Deployment region | Activity Tracker region |
 |----------|-----------|

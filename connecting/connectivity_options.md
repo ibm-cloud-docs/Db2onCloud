@@ -11,6 +11,7 @@ subcollection: Db2onCloud
 ---
 
 
+
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -180,8 +181,6 @@ The following VCAP Services json file can be used to make connections to your En
 
 Non-admin users can also use allowlisting available in the {{site.data.keyword.Db2_on_Cloud_short}} web console under **Settings > Manage Users**.
 
-
-
 ## Connecting to a private endpoint: IBM Cloud service endpoint (Enterprise/Standard plans)
 {: #priv_endpt}
 
@@ -210,5 +209,9 @@ After you've configured {{site.data.keyword.cloud_notm}} private endpoint connec
 {: note}
 
 To learn more about the {{site.data.keyword.cloud_notm}} endpoint service, see [Secure access to services using service endpoints](/docs/account?topic=account-service-endpoints-overview).
+
+To complete the setup of virtual private endpoints, see [Virtual Private Endpoint Gateways](/docs/vpc?topic=vpc-ordering-endpoint-gateway&interface).
+
+To complete the setup of virtual private endpoints, see [Virtual Private Endpoint Gateways](/docs/vpc?topic=vpc-ordering-endpoint-gateway&interface).
 
 To complete the setup of virtual private endpoints, see [Virtual Private Endpoint Gateways](/docs/vpc?topic=vpc-ordering-endpoint-gateway&interface).

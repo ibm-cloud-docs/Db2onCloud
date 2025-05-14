@@ -4,13 +4,13 @@ copyright:
   years: 2014, 2025
 lastupdated: "2025-04-09"
 
-keywords: 
+keywords:
 
 subcollection: Db2onCloud
 
 ---
 
- 
+
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -28,4 +28,3 @@ There are many ways to connect a Db2 database to {{site.data.keyword.Db2_on_Clou
 {: shortdesc}
 
 To synchronize your on-premises data in real time to your {{site.data.keyword.Db2_on_Cloud_short}} database with InfoSphere CDC, see this tutorial: [How to stay online while moving data to Db2 on Cloud](https://cloudcontent.mybluemix.net/cloud/garage/dte/producttour/how-stay-online-while-moving-data-db2-cloud){: external}.
-

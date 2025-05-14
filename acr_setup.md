@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2022
-lastupdated: "2022-03-10"
+  years: 2014, 2025
+lastupdated: "2025-04-20"
 
 keywords: HADR, Automatic Client Reroute Setup, ACR, high availability disaster recovery
 
@@ -10,7 +10,7 @@ subcollection: Db2onCloud
 
 ---
 
- 
+
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -35,7 +35,7 @@ This ACR workaround is intended for use on Db2 On Cloud High Availibility (HA) i
     enableClientAffinitiesList=1
     clientRerouteAlternateServerName=hostname,hostname (hostname is the same as the primary host)
     clientRerouteAlternatePortNumber=port,port (port is the same SSL port)
-    enableSeamlessFailover=1 
+    enableSeamlessFailover=1
     loginTimeout=30 (can vary based on application)
     blockingReadConnectionTimeout=30 (can vary based on application)
     maxRetriesForClientReroute=100 (can vary based on application)

@@ -2,13 +2,14 @@
 
 copyright:
   years: 2014, 2020, 2021, 2022
-lastupdated: "2022-11-07"
+lastupdated: "2025-02-05"
 
 keywords: provision cloud database, database with terraform, provisioning parameters, db2 on cloud, db2
 
 subcollection: Db2onCloud
 
 ---
+
 
 
 {:external: target="_blank" .external}
@@ -26,8 +27,10 @@ subcollection: Db2onCloud
 {: #provisioning}
 
 To deploy an {{site.data.keyword.Db2_on_Cloud_long}} service, you need to create a {{site.data.keyword.Db2_on_Cloud_short}} service instance.
+To deploy an {{site.data.keyword.Db2_on_Cloud_long}} service, you need to create a {{site.data.keyword.Db2_on_Cloud_short}} service instance.
 {: shortdesc}
 
+You can provision a deployment by visiting the service's catalog page or by specifying the service ID to the command line, or to the API. The deployment type is determined by the service ID, which you must specify when you create a {{site.data.keyword.Db2_on_Cloud_short}} deployment by using the command line or API.
 You can provision a deployment by visiting the service's catalog page or by specifying the service ID to the command line, or to the API. The deployment type is determined by the service ID, which you must specify when you create a {{site.data.keyword.Db2_on_Cloud_short}} deployment by using the command line or API.
 
 | Deployment Type | Catalog Page | Service ID | Plan IDs |
@@ -135,12 +138,6 @@ More information on the Resource Controller API is found in its [API Reference](
 {: #prov_add_parms}
 
 - `backup_id` - A CRN of a backup resource to restore from. The backup must have been created by a database deployment with the same service ID. The backup is loaded after provisioning and the new deployment starts up that uses that data. A backup CRN is in the format `crn:v1:<...>:backup:<uuid>`. If omitted, the database is provisioned empty.
-
-
-
-
-
-
 - `backup_location` - The location of the deployment's backups.
 - `disk_encryption_key_crn` - The CRN of a [KMS key](), which is then used for disk encryption. A KMS CRN is in the format `crn:v1:<...>:key:<id>`.
 - `backup_encryption_key_crn` - The CRN of a [KMS key](), which is then used for backup encryption. A KMS CRN is in the format `crn:v1:<...>:key:<id>`.
@@ -152,3 +149,9 @@ More information on the Resource Controller API is found in its [API Reference](
 - `members_cpu_allocation_count` - Enables and allocates the number of specified dedicated cores to your deployment. For example, to use two dedicated cores per member, use `"members_cpu_allocation_count":"2"`. If omitted, the default value "Shared CPU" uses compute resources on shared hosts.
 
 - `service-endpoints` - Selects the types [Service Endpoints]() supported on your deployment. Options are `public`, `private`, or `public-and-private`. If omitted, the default is `public`. Note that in the CLI, `service-endpoints` is a flag, and not a parameter.
+
+`backup_encryption_key_crn` is NOT applicable to performance plans.  For performance plans, backup will be encrypted with the same key as disk_encryption_key_crn.  If disk_encryption_key_crn is not specified, it'll use the default provider managed key. {: note}
+
+## List of additional parameters (for performance plans only)
+
+- `timezone` - the timezone that your database and the underlying operating system should use. Any timezone identifier accepted by Linux (e.g. `America/Toronto`) will be accepted here. If omitted, the default is UTC.
