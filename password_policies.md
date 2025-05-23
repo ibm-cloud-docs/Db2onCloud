@@ -29,7 +29,6 @@ The following user password policy options are supported. These can be configure
 >
 > - `minimum_length`: 8 characters
 > - `max_attempts`: 3 attempts
-
 ---
 
 ## Supported Policy Options
@@ -52,7 +51,7 @@ Specifies the duration (in minutes) a user remains locked out before being autom
 
 ### Password Failure Interval
 
-Defines the time window (in minutes) for tracking failed login attempts. If the user's last failed attempt falls outside this interval, the failure count is reset.
+Defines the time window (in minutes) for tracking failed login attempts. If the user's last failed attempt falls outside this interval, the failure count is reset. The failure count does not reset if the user is locked out and requires admin intervention to unlock the user.
 
 ### Password History
 
