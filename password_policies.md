@@ -10,7 +10,6 @@ subcollection: Db2onCloud
 
 ---
 
-<!-- Attribute definitions -->
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -29,7 +28,6 @@ The following user password policy options are supported. These can be configure
 >
 > - `minimum_length`: 8 characters
 > - `max_attempts`: 3 attempts
-
 ---
 
 ## Supported Policy Options

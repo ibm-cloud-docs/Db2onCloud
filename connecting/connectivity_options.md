@@ -11,7 +11,6 @@ subcollection: Db2onCloud
 ---
 
 
-
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -80,7 +79,7 @@ The "db2" section contains information that is suited to applications that make 
 | `Certificate` | `Name` | The allocated name for the self-signed certificate for database deployment |
 | `Certificate` | Base64 | A base64 encoded version of the certificate |
 | `Host_ROS` | | A host name and port to connect to read on standby |
-{: caption="Table 1. Db2 on Cloud / URI connection information" caption-side="top"}
+{: caption="Db2 on Cloud / URI connection information" caption-side="top"}
 
 `0...` indicates that there might be one or more of these entries in an array.
 
@@ -210,8 +209,5 @@ After you've configured {{site.data.keyword.cloud_notm}} private endpoint connec
 
 To learn more about the {{site.data.keyword.cloud_notm}} endpoint service, see [Secure access to services using service endpoints](/docs/account?topic=account-service-endpoints-overview).
 
-To complete the setup of virtual private endpoints, see [Virtual Private Endpoint Gateways](/docs/vpc?topic=vpc-ordering-endpoint-gateway&interface).
-
-To complete the setup of virtual private endpoints, see [Virtual Private Endpoint Gateways](/docs/vpc?topic=vpc-ordering-endpoint-gateway&interface).
 
 To complete the setup of virtual private endpoints, see [Virtual Private Endpoint Gateways](/docs/vpc?topic=vpc-ordering-endpoint-gateway&interface).
