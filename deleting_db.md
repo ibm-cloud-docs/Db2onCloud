@@ -4,13 +4,13 @@ copyright:
   years: 2014, 2021, 2022
 lastupdated: "2022-04-26"
 
-keywords: 
+keywords:
 
 subcollection: Db2onCloud
 
 ---
 
- 
+
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 # Deleting a database
 {: #del_db}
 
-When a service instance is deleted, the database that it provides is also removed. This will delete any online data and logs as well as database backups.  
+When a service instance is deleted, the database that it provides is also removed. This will delete any online data and logs as well as database backups.
 
 A deleted service intance is put in a suspended state for 7 days after which it's removed. The deleted instance can be recovered within 7 days of deletion.
 

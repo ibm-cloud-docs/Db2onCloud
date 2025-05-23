@@ -209,4 +209,5 @@ After you've configured {{site.data.keyword.cloud_notm}} private endpoint connec
 
 To learn more about the {{site.data.keyword.cloud_notm}} endpoint service, see [Secure access to services using service endpoints](/docs/account?topic=account-service-endpoints-overview).
 
+
 To complete the setup of virtual private endpoints, see [Virtual Private Endpoint Gateways](/docs/vpc?topic=vpc-ordering-endpoint-gateway&interface).

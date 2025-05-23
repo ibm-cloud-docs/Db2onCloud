@@ -10,7 +10,6 @@ subcollection: Db2onCloud
 
 ---
 
-
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}

@@ -21,6 +21,7 @@ subcollection: Db2onCloud
 {:deprecated: .deprecated}
 {:pre: .pre}
 {:warning .warning}
+{:warning .warning}
 
 # About
 {: #about}
