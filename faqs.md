@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2025
-lastupdated: "2025-03-20"
+  years: 2014, 2020
+lastupdated: "2020-02-10"
 
 keywords: 
 
@@ -43,7 +43,7 @@ You can provision an instance of {{site.data.keyword.Db2_on_Cloud_short}} direct
 {: faq}
 {: support}
 
-{{site.data.keyword.Db2_on_Cloud_short}} offers multiple configurations to meet your workload requirements. The Flex plan is recommended because it allows you to dynamically scale RAM/CPU and storage as your requirements change. Other plans with fixed resources are also available. For more information, see [About](/docs/Db2onCloud?topic=Db2onCloud-about).
+{{site.data.keyword.Db2_on_Cloud_short}} offers several configurations to meet your workload requirements. The Flex plan is recommended because it allows you to dynamically scale RAM/CPU and storage as your requirements change. Other plans with fixed resources are also available. For more information, see [About](/docs/Db2onCloud?topic=Db2onCloud-about).
 
 ## How do I generate credentials for my instance?
 {: #q_creds}

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2025
-lastupdated: "2025-03-20"
+  years: 2014, 2021
+lastupdated: "2022-09-07"
 
 keywords: Lite plan, free plan, faqs
 

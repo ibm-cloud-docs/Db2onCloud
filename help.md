@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2025
-lastupdated: "2025-03-20"
+  years: 2014, 2020
+lastupdated: "2020-11-19"
 
 keywords: 
 
@@ -43,5 +43,3 @@ You can review [Stack Overflow](https://stackoverflow.com/search?q=ibm-cloud){: 
 See [Getting help](/docs/get-support?topic=get-support-using-avatar#asking-a-question){:external} for more details about using the forums.
 
 For information about opening an IBM support case, or about support levels and case severities, see: [Working with support cases](/docs/get-support?topic=get-support-open-case#open-case){:external}.
-
-
