@@ -158,6 +158,7 @@ Reclaim freed space on disks after rebalancing by choosing the Reclaim space opt
 
 
 ## Db2 on Cloud Azure
+
 {: #fs_azure_plan}
 
 Each {{site.data.keyword.Db2_on_Cloud_short}} Azure instance deploys with 50 GB of disk space and 12,000 IOPS by default. Storage can be scaled up to a maximum of 262,110 GB (approximately 256 TB) in increments of 20 GB starting at 50 GB, while IOPS can be scaled up to a maximum of 320,000 in increments of 100. In addition, the instance comes with a default throughput of 500 MB/s, and can be scaled up to a maximum of 4,800 MB/s.
@@ -170,6 +171,7 @@ IOPS scaling is only enabled when disk size is at least 690 GB.
 The max throughput that can be scaled to also depends on the IOPS set on the instance. The limit for a particular instance is IOPS * 0.25, and it cannot exceed 4,800 MB/s.
 
 To scale storage from within the console, complete the following steps:
+
 1. Select **Administration** from the left side menu.
 2. Select the **Compute & storage** tab.
 3. Select **Edit** under the **Compute & storage resources**.
@@ -185,6 +187,7 @@ To scale storage from within the console, complete the following steps:
 In this documentation, we refer to storage capacity by using the unit GB (Gigabytes) to align with the industry standard terminology. However, the actual provisioning and billing of storage are based on GiB (Gibibytes).
 
 The difference between GB and GiB lies in their numerical representation:
+
 - GB (Gigabyte) is a decimal unit, where 1 GB equals 1,000,000,000 bytes
 - GiB (Gibibyte), is a binary unit, where 1 GiB equals 1,073,741,824 bytes
 
