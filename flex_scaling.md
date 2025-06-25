@@ -177,6 +177,10 @@ To scale storage from within the console, complete the following steps:
 5. Click **Save**.
 6. Select **Confirm** if you are satisfied with the changes.
 
+![Azure Scaling](images/azure_scale_page.png "Azure Scaling"){: caption="Azure scaling memory and storage" caption-side="bottom"}
+
+![Azure Confirm Changes](images/scaling_confirmation.png "Azure Confirm Changes"){: caption="Confirm scaling changes for Azure" caption-side="bottom"}
+
 {: note}
 In this documentation, we refer to storage capacity by using the unit GB (Gigabytes) to align with the industry standard terminology. However, the actual provisioning and billing of storage are based on GiB (Gibibytes).
 

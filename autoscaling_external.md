@@ -37,7 +37,8 @@ To monitor your storage usage, use the IBM Cloud® Monitoring integration, which
 - When to scale, based on usage over time.
 - A hard limit on scaling, your deployment stops autoscaling at the limit.
 
-![paras.png](images/autoscaling_UI.png){: caption="Example Autoscaling panel" caption-side="bottom"}
+
+![paras.png](images/azure_autoscaling_UI.png){: caption="Example Autoscaling panel" caption-side="bottom"}
 
 
 ## ****Autoscaling Considerations****
@@ -62,9 +63,11 @@ The Autoscaling panel is on the Administration tab of your deployment's console 
 3. Enter your desired parameter values.
 4. Be sure to click **Save** for your configuration to be saved and your changes to take effect.
 
-![autoscaling_step1.png](images/autoscaling_step1.png)
+
+
+![autoscaling_step1.png](images/azure_autoscaling_step1.png)
 <br>
-![autoscaling_step2.png](images/autoscaling_step2.png)
+![autoscaling_step2.png](images/azure_autoscaling_step2.png)
 
 
 ### To disable autoscaling
