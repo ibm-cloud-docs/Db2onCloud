@@ -36,7 +36,8 @@ To begin migrating your Db2 on Cloud deployment to a newer system version, follo
 
 ![Create Instance Confirm](images/migration_create_confirm.png){: caption="Confirm location and create new instance." caption-side="bottom"}
 
-Any autoscale settings in **Classic** will need to be recreated in the **Performance** plan after the migration is complete. {: Note}
+Any autoscale settings in **Classic** will need to be recreated in the **Performance** plan after the migration is complete.
+{: important}
 
 5. When the new formation is created, the migration process begins automatically. To track the migration progress:
 
