@@ -67,6 +67,10 @@ toc:
               - fed_v2_cloud_to_cloud.md
           - local_dev_env.md
       - topicgroup:
+          label: Migration
+          topics:
+          - migration_setup.md
+      - topicgroup:
           label: Security
           topics:
           - encryption.md
