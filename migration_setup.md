@@ -22,7 +22,10 @@ subcollection: Db2onCloud
 # Migration Initialization
 {: #migration_initialization}
 
-To begin migrating your Db2 on Cloud deployment to a newer system version, follow these steps:
+Upgrading your Db2 on Cloud deployment from the **Classic plan** to the **MCSP Performance plan** provides improved scalability, enhanced reliability, and a modern management experience. After you initiate the upgrade, the system automatically provisions a new instance and migrates your data with minimal downtime. The system keeps your two instances in sync until you decide to finalize your upgrade.
+
+Follow these steps to begin the migration:
+
 
 1. Provision your Db2 on Cloud resource from the IBM Cloud catalog if you haven't already.
 2. In the **IBM Cloud console**, navigate to your list of resources and click the instance you want to upgrade.
@@ -47,3 +50,5 @@ Any autoscale settings in **Classic** will need to be recreated in the **Perform
 ![Migration view details button](images/migration_view_details.png){: caption="Click View Details button." caption-side="bottom"}
 
 ![Migration track migration process](images/migration_complete_restore.png){: caption="Track migration process." caption-side="bottom"}
+
+6.
