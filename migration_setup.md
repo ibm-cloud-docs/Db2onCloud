@@ -26,47 +26,31 @@ Upgrading your Db2 on Cloud deployment from the **Classic plan** to the **MCSP P
 
 Follow these steps to begin the migration:
 
-<ol>
-<li>
-Provision your Db2 on Cloud resource from the IBM Cloud catalog if you haven't already.
-</li>
+1. Provision your Db2 on Cloud resource from the IBM Cloud catalog if you haven't already.
 
-<li>
-In the **IBM Cloud console**, navigate to your list of resources and click the instance you want to upgrade.
-</li>
+2. In the **IBM Cloud console**, navigate to your list of resources and click the instance you want to upgrade.
 
-<li>
-At the top of the instance page, look for the notification banner that says **System upgrade available**, on the right-hand side of the banner, click **Learn More**.
+3. At the top of the instance page, look for the notification banner that says **System upgrade available**, on the right-hand side of the banner, click **Learn More**.
 
-![System upgrade notification banner example](images/migration_learn_more.png){: caption="Example of the upgrade notification banner in the console." caption-side="bottom"}
-</li>
+   ![System upgrade notification banner example](images/migration_learn_more.png){: caption="Example of the upgrade notification banner in the console." caption-side="bottom"}
 
-<li>
-You will be redirected to the **Upgrade Db2 Systems** page. In the upgrade interface, click **Create Instance**. A popup will show showing the parent formation and the new formation's name. Select the location you'd like your instance to be provisioned in. Click **Create** to start provisioning your new upgraded environment.
+4. You will be redirected to the **Upgrade Db2 Systems** page. In the upgrade interface, click **Create Instance**. A popup will show showing the parent formation and the new formation's name. Select the location you'd like your instance to be provisioned in. Click **Create** to start provisioning your new upgraded environment.
 
-![Upgrade Db2 Systems page example](images/migration_create_new_instance.png){: caption="Example of the Upgrade Db2 Systems page where you create the new instance." caption-side="bottom"}
+   ![Upgrade Db2 Systems page example](images/migration_create_new_instance.png){: caption="Example of the Upgrade Db2 Systems page where you create the new instance." caption-side="bottom"}
 
-![Create Instance Confirm](images/migration_create_confirm.png){: caption="Confirm location and create new instance." caption-side="bottom"}
+   ![Create Instance Confirm](images/migration_create_confirm.png){: caption="Confirm location and create new instance." caption-side="bottom"}
 
-Any autoscale settings in **Classic** will need to be recreated in the **Performance** plan after the migration is complete.{: important}
-</li>
+   Any autoscale settings in **Classic** will need to be recreated in the **Performance** plan after the migration is complete.{: important}
 
-<li>
-When the new formation is created, the migration process begins automatically. To track the migration progress:
+5. When the new formation is created, the migration process begins automatically. To track the migration progress:
 
-<ul>
-<li>Click the new formation you created.</li>
-<li>Click the **View Details** button to see the current status and progress of the migration.</li>
-</ul>
+   - Click the new formation you created.
+   - Click the **View Details** button to see the current status and progress of the migration.
 
-![Migration view details button](images/migration_view_details.png){: caption="Click View Details button." caption-side="bottom"}
+   ![Migration view details button](images/migration_view_details.png){: caption="Click View Details button." caption-side="bottom"}
 
-![Migration track migration process](images/migration_complete_restore.png){: caption="Track migration process." caption-side="bottom"}
-</li>
+   ![Migration track migration process](images/migration_complete_restore.png){: caption="Track migration process." caption-side="bottom"}
 
-<li>
-When the migration is complete, your deployment is now available in the **Performance** plan.
+6. When the migration is complete, your deployment is now available in the **Performance** plan.
 
-Keeping both the Classic and Performance instances active will result in billing for each environment until the Classic instance is deleted.{: important}
-</li>
-</ol>
+   Keeping both the Classic and Performance instances active will result in billing for each environment until the Classic instance is deleted.{: important}
