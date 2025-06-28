@@ -1,24 +1,3 @@
----
-copyright:
-  years: 2025
-lastupdated: "2025-06-26"
-
-keywords:
-
-subcollection: Db2onCloud
----
-
-
-{:external: target="_blank" .external}
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:important: .important}
-{:note: .note}
-{:deprecated: .deprecated}
-{:pre: .pre}
-
 # Migration Initialization
 {: #migration_initialization}
 
@@ -26,39 +5,51 @@ Upgrading your Db2 on Cloud deployment from the **Classic plan** to the **MCSP P
 
 Follow these steps to begin the migration:
 
-1. Provision your Db2 on Cloud resource from the IBM Cloud catalog if you haven't already.
+<ol>
+<li>
+Provision your Db2 on Cloud resource from the IBM Cloud catalog if you haven't already.
+</li>
 
-2. In the **IBM Cloud console**, navigate to your list of resources and click the instance you want to upgrade.
+<li>
+In the **IBM Cloud console**, navigate to your list of resources and click the instance you want to upgrade.
+</li>
 
-3. At the top of the instance page, look for the notification banner that says **System upgrade available**, on the right-hand side of the banner, click **Learn More**.
+<li>
+At the top of the instance page, look for the notification banner that says **System upgrade available**, on the right-hand side of the banner, click **Learn More**.
 
 ![System upgrade notification banner example](images/migration_learn_more.png){: caption="Example of the upgrade notification banner in the console." caption-side="bottom"}
+</li>
 
-{:start="4"}
-
-4. You will be redirected to the **Upgrade Db2 Systems** page. In the upgrade interface, click **Create Instance**. A popup will show showing the parent formation and the new formation's name. Select the location you'd like your instance to be provisioned in. Click **Create** to start provisioning your new upgraded environment.
+<li>
+You will be redirected to the **Upgrade Db2 Systems** page. In the upgrade interface, click **Create Instance**. A popup will show showing the parent formation and the new formation's name. Select the location you'd like your instance to be provisioned in. Click **Create** to start provisioning your new upgraded environment.
 
 ![Upgrade Db2 Systems page example](images/migration_create_new_instance.png){: caption="Example of the Upgrade Db2 Systems page where you create the new instance." caption-side="bottom"}
 
 ![Create Instance Confirm](images/migration_create_confirm.png){: caption="Confirm location and create new instance." caption-side="bottom"}
+</li>
+</ol>
 
 {:important}
 Any autoscale settings in **Classic** will need to be recreated in the **Performance** plan after the migration is complete.
 
-{:start="5"}
+<ol start="5">
+<li>
+When the new formation is created, the migration process begins automatically. To track the migration progress:
 
-5. When the new formation is created, the migration process begins automatically. To track the migration progress:
-
-   - Click the new formation you created.
-   - Click the **View Details** button to see the current status and progress of the migration.
+<ul>
+<li>Click the new formation you created.</li>
+<li>Click the **View Details** button to see the current status and progress of the migration.</li>
+</ul>
 
 ![Migration view details button](images/migration_view_details.png){: caption="Click View Details button." caption-side="bottom"}
 
 ![Migration track migration process](images/migration_complete_restore.png){: caption="Track migration process." caption-side="bottom"}
+</li>
 
-{:start="6"}
-
-6. When the migration is complete, your deployment is now available in the **Performance** plan.
+<li>
+When the migration is complete, your deployment is now available in the **Performance** plan.
 
 {:important}
 Keeping both the Classic and Performance instances active will result in billing for each environment until the Classic instance is deleted.
+</li>
+</ol>
