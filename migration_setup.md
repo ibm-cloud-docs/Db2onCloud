@@ -55,4 +55,4 @@ Any autoscale settings in **Classic** will need to be recreated in the **Perform
 6. When the migration is complete, your deployment is now available in the **Performance** plan.
 
 {:important}
-Keeping both the Classic and Performance instances active will result in billing for each environment until you delete the Classic instance.
+Keeping both the Classic and Performance instances active will result in billing for each environment until the Classic instance is deleted.
