@@ -34,7 +34,8 @@ Follow these steps to begin the migration:
 
 4. You will be redirected to the **Upgrade Db2 Systems** page. In the upgrade interface, click **Create Instance**. A popup will show showing the parent formation and the new formation's name. Select the location you'd like your instance to be provisioned in. Click **Create** to start provisioning your new upgraded environment.
 
-Any autoscale settings in **Classic** will need to be recreated in the **Performance** plan after the migration is complete.{: important}
+   Any autoscale settings in **Classic** will need to be recreated in the **Performance** plan after the migration is complete.{: important}
+
 
 5. When the new formation is created, the migration process begins automatically. To track the migration progress:
 
