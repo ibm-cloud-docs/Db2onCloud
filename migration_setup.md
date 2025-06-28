@@ -32,16 +32,15 @@ Follow these steps to begin the migration:
 
 2. In the **IBM Cloud console**, navigate to your list of resources and click the instance you want to upgrade.
 
-3. At the top of the instance page, look for the notification banner that says **System upgrade available**, on the right-hand side of the banner, click **Learn More**.
+3. At the top of the instance page, look for the notification banner that says **System upgrade available**, on the right-hand side of the banner, click **Learn More**. (Figure 1)
 
-4. You will be redirected to the **Upgrade Db2 Systems** page. In the upgrade interface, click **Create Instance**. A popup will show showing the parent formation and the new formation's name. Select the location you'd like your instance to be provisioned in. Click **Create** to start provisioning your new upgraded environment.
+4. You will be redirected to the **Upgrade Db2 Systems** page. In the upgrade interface, click **Create Instance** (Figure 2).
 
-5. When the new formation is created, the migration process begins automatically. To track the migration progress:
+5. A popup will show showing the parent formation and the new formation's name. Select the location you'd like your instance to be provisioned in. Click **Create** to start provisioning your new upgraded environment. (Figure 3)
 
-   - Click the new formation you created.
-   - Click the **View Details** button to see the current status and progress of the migration.
+6. When the new formation is created, the migration process begins automatically. To track the migration progress, click the new formation you created, then the **View Details** button to see the current status and progress of the migration (Figure 4 & 5).
 
-6. When the migration is complete, your deployment is now available in the **Performance** plan.
+7. When the migration is complete, your deployment is now available in the **Performance** plan.
 
 Keeping both the Classic and Performance instances active will result in billing for each environment until the Classic instance is deleted.{: important}
 
