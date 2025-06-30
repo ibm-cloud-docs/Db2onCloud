@@ -32,7 +32,7 @@ You can provision a deployment by visiting the service's catalog page or by spec
 
 | Deployment Type | Catalog Page | Service ID | Plan IDs |
 |-----------------|--------------|------------|----------|
-| {{site.data.keyword.Db2_on_Cloud_short}} |[Link](https://cloud.ibm.com/catalog/services/db2){: external} | dashdb-for-transactions | dashDBNebula, dashDBStandard |
+| {{site.data.keyword.Db2_on_Cloud_short}} |[Link](https://cloud.ibm.com/catalog/services/db2){: external} | dashdb-for-transactions | dashDBNebula, dashDBStandard, Perfomance|
 
 ## Using the catalog
 {: #prov_catalog}
@@ -58,6 +58,9 @@ When you create the deployment from the catalog, you need to specify the followi
 1. **High Availability** - whether the services should be Highly Available
 
 1. **Oracle compatibility** - whether the service instance should have Oracle compatibility enabled
+
+2. **Instance Profile** -  Choose machine type resource for your deployment based on your CPU and memory requirements. This option is only available with the Performance plan.
+
 
 After selecting the appropriate settings, click **Create** to start the provisioning process.
 
