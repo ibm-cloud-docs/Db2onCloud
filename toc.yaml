@@ -53,7 +53,6 @@ toc:
           - recovering_db.md
           - cdc.md
           - br.md
-          - ha.md
           - acr_setup.md
           - dr.md
           - main.md
