@@ -46,13 +46,13 @@ toc:
           - advanced_admin.md
           - flex_scaling.md
           - autoscaling_external.md
+          - ha.md
           - hadr_conversion.md
           - copy_db.md
           - deleting_db.md
           - recovering_db.md
           - cdc.md
           - br.md
-          - ha.md
           - acr_setup.md
           - dr.md
           - main.md
@@ -66,6 +66,7 @@ toc:
               - federation_v2.md
               - fed_v2_cloud_to_cloud.md
           - local_dev_env.md
+      - migration_setup.md
       - topicgroup:
           label: Security
           topics:
