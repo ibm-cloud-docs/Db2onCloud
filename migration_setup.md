@@ -38,15 +38,25 @@ Follow these steps to begin the migration:
 
 5. A popup will show showing the parent formation and the new formation's name. Select the location you'd like your instance to be provisioned in. Click **Create** to start provisioning your new upgraded environment. (Figure 3)
 
-6. When the new formation is created, the migration process begins automatically. To track the migration progress, click the new formation you created, then the **View Details** button to see the current status and progress of the migration (Figure 4 & 5).
+6. When the new instance has been created, there will be a link to go to the new system to complete the upgrade. Click on **Go to new system to complete upgrade**
 
-7. When the migration is complete, your deployment is now available in the **Performance** plan.
+7. On the new instance page, there will be a header titled **Action Required** to complete the upgrade. Click the **View Details** button to see the current status and progress of the migration (Figure 4 & 5).
 
-8. To finalize the migration process, go to your newly created instance in the **IBM Cloud console** and click **Upgrade**. This action upgrades your instance to version 12, takes a backup, and converts it to high availability if source instance is also high availability.
+    The UI is unavailable for the new instance until the upgrade is completed {: Note}
 
-At the point of finalizing the migration update after clicking **Upgrade**, you have the option to disable your source database. If you disable it, IBM does not charge for that source instance for 14 days. After 14 days, storage charges will begin automatically. {: important}
+8. When the process has completed, click the **Complete Upgrade** button (Figure 6)
+
+9. There will be a popup to finalize and complete the upgrade (Figure 7). There will be an option to keep the prior system running without synchronization with the new system or disable the prior instance.
 
 Keeping both the Standard/Enterprise and Performance plan instances active will result in billing for each environment until the Standard/Enterprise plan instance is deleted.{: important}
+
+If you disable the prior instance, IBM does not charge for that source instance for 14 days. After 14 days, storage charges will begin automatically. {: important}
+
+10. When the migration is complete, your deployment is now available in the **Performance** plan.
+
+
+
+
 
 ![System upgrade notification banner example](images/migration_learn_more.png){: caption="Example of the upgrade notification banner in the console." caption-side="bottom"}
 
@@ -57,3 +67,7 @@ Keeping both the Standard/Enterprise and Performance plan instances active will 
 ![Migration view details button](images/migration_view_details.png){: caption="Click View Details button." caption-side="bottom"}
 
 ![Migration track migration process](images/migration_complete_restore.png){: caption="Track migration process." caption-side="bottom"}
+
+![complete upgrade button](images/upgrade_system_complete_upgrade.png){: caption="Click complete upgrade button." caption-side="bottom"}
+
+![Confirm upgrade button](images/confirm_complete_upgrade.png){: caption="Select what to do with source option and complete upgrade" caption-side="bottom"}
