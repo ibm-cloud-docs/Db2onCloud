@@ -22,9 +22,9 @@ subcollection: Db2onCloud
 # Migration Initialization
 {: #migration_initialization}
 
-Upgrading your Db2 on Cloud deployment from the **Classic plan** to the **MCSP Performance plan** provides improved scalability, enhanced reliability, and a modern management experience. After you initiate the upgrade, the system automatically provisions a new instance and migrates your data with minimal downtime. The system keeps your two instances in sync until you decide to finalize your upgrade.
+Upgrading your Db2 on Cloud deployment from the **Standard/Enterprise Plan** to the **Performance plan** provides improved scalability, enhanced reliability, and a modern management experience. After you initiate the upgrade, the system automatically provisions a new instance and migrates your data with minimal downtime. The system keeps your two instances in sync until you decide to finalize your upgrade.
 
-Any autoscale settings in **Classic** will need to be recreated in the **Performance** plan after the migration is complete.{: important}
+Any autoscale settings in **Standard/Enterprise Plan** will need to be recreated in the **Performance** plan after the migration is complete.{: important}
 
 Follow these steps to begin the migration:
 
@@ -42,7 +42,11 @@ Follow these steps to begin the migration:
 
 7. When the migration is complete, your deployment is now available in the **Performance** plan.
 
-Keeping both the Classic and Performance instances active will result in billing for each environment until the Classic instance is deleted.{: important}
+8. To finalize the migration process, go to your newly created instance in the **IBM Cloud console** and click **Upgrade**. This action upgrades your instance to version 12, takes a backup, and converts it to high availability if source instance is also high availability.
+
+At the point of finalizing the migration update after clicking **Upgrade**, you have the option to disable your source database. If you disable it, IBM does not charge for that source instance for 14 days. After 14 days, storage charges will begin automatically. {: important}
+
+Keeping both the Standard/Enterprise and Performance plan instances active will result in billing for each environment until the Standard/Enterprise plan instance is deleted.{: important}
 
 ![System upgrade notification banner example](images/migration_learn_more.png){: caption="Example of the upgrade notification banner in the console." caption-side="bottom"}
 
