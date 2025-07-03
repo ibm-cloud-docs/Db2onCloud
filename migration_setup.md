@@ -28,12 +28,11 @@ Any autoscale settings in **Standard/Enterprise Plan** will need to be recreated
 
 Follow these steps to begin the migration:
 
-Provision your Db2 on Cloud resource from the IBM Cloud catalog if you haven't already.
+1. Provision your Db2 on Cloud resource from the IBM Cloud catalog if you haven't already.
 
-In the **IBM Cloud console**, navigate to your list of resources and click the instance you want to upgrade.
+2. In the **IBM Cloud console**, navigate to your list of resources and click the instance you want to upgrade.
 
-At the top of the instance page, look for the notification banner that says **System upgrade available**, on the right-hand side of the banner, click **Learn More**. (Figure 1)
-
+3. At the top of the instance page, look for the notification banner that says **System upgrade available**, on the right-hand side of the  banner, click **Learn More**. (Figure 1)
 ![System upgrade notification banner example](images/migration_learn_more.png){: caption="Example of the upgrade notification banner in the console." caption-side="bottom"}
 
 You will be redirected to the **Upgrade Db2 Systems** page. In the upgrade interface, click **Create Instance** (Figure 2).
