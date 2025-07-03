@@ -41,27 +41,23 @@ Follow these steps to begin the migration:
 5. A popup will show showing the parent formation and the new formation's name. Select the location you'd like your instance to be provisioned in. Click **Create** to start provisioning your new upgraded environment. (Figure 3)
 ![Create Instance Confirm](images/migration_create_confirm.png){: caption="Confirm location and create new instance." caption-side="bottom"}
 
-When the new instance has been created, there will be a link to go to the new system to complete the upgrade. Click on **Go to new system to complete upgrade**
+6. When the new instance has been created, there will be a link to go to the new system to complete the upgrade. Click on **Go to new system to complete upgrade**
 
-On the new instance page, there will be a header titled **Action Required** to complete the upgrade. Click the **View Details** button to see the current status and progress of the migration (Figure 4 & 5).
+7. On the new instance page, there will be a header titled **Action Required** to complete the upgrade. Click the **View Details** button to see the current status and progress of the migration (Figure 4 & 5).
+![Migration view details button](images/migration_view_details.png){: caption="Click View Details button." caption-side="bottom"}
+![Migration track migration process](images/migration_complete_restore.png){: caption="Track migration process." caption-side="bottom"}
 
 The UI is unavailable for the new instance until the upgrade is completed
 {: note}
 
-![Migration view details button](images/migration_view_details.png){: caption="Click View Details button." caption-side="bottom"}
-
-![Migration track migration process](images/migration_complete_restore.png){: caption="Track migration process." caption-side="bottom"}
-
-When the process has completed, click the **Complete Upgrade** button (Figure 6)
-
+8. When the process has completed, click the **Complete Upgrade** button (Figure 6)
 ![complete upgrade button](images/upgrade_system_complete_upgrade.png){: caption="Click complete upgrade button." caption-side="bottom"}
 
-There will be a popup to finalize and complete the upgrade (Figure 7). There will be an option to keep the prior system running without synchronization with the new system or disable the prior instance.
+9. There will be a popup to finalize and complete the upgrade (Figure 7). There will be an option to keep the prior system running without synchronization with the new system or disable the prior instance.
+![Confirm upgrade button](images/confirm_complete_upgrade.png){: caption="Select what to do with source option and complete upgrade" caption-side="bottom"}
 
 Keeping both the Standard/Enterprise and Performance plan instances active will result in billing for each environment until the Standard/Enterprise plan instance is deleted.{: important}
 
 If you disable the prior instance, IBM does not charge for that source instance for 14 days. After 14 days, storage charges will begin automatically. {: important}
 
-![Confirm upgrade button](images/confirm_complete_upgrade.png){: caption="Select what to do with source option and complete upgrade" caption-side="bottom"}
-
-When the migration is complete, your deployment is now available in the **Performance** plan.
+10. When the migration is complete, your deployment is now available in the **Performance** plan.
