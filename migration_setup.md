@@ -35,12 +35,10 @@ Follow these steps to begin the migration:
 3. At the top of the instance page, look for the notification banner that says **System upgrade available**, on the right-hand side of the  banner, click **Learn More**. (Figure 1)
 ![System upgrade notification banner example](images/migration_learn_more.png){: caption="Example of the upgrade notification banner in the console." caption-side="bottom"}
 
-You will be redirected to the **Upgrade Db2 Systems** page. In the upgrade interface, click **Create Instance** (Figure 2).
-
+4. You will be redirected to the **Upgrade Db2 Systems** page. In the upgrade interface, click **Create Instance** (Figure 2).
 ![Upgrade Db2 Systems page example](images/migration_create_new_instance.png){: caption="Example of the Upgrade Db2 Systems page where you create the new instance." caption-side="bottom"}
 
-A popup will show showing the parent formation and the new formation's name. Select the location you'd like your instance to be provisioned in. Click **Create** to start provisioning your new upgraded environment. (Figure 3)
-
+5. A popup will show showing the parent formation and the new formation's name. Select the location you'd like your instance to be provisioned in. Click **Create** to start provisioning your new upgraded environment. (Figure 3)
 ![Create Instance Confirm](images/migration_create_confirm.png){: caption="Confirm location and create new instance." caption-side="bottom"}
 
 When the new instance has been created, there will be a link to go to the new system to complete the upgrade. Click on **Go to new system to complete upgrade**
