@@ -58,6 +58,6 @@ The UI is unavailable for the new instance until the upgrade is completed
 
 Keeping both the Standard/Enterprise and Performance plan instances active will result in billing for each environment until the Standard/Enterprise plan instance is deleted.{: important}
 
-If you disable the prior instance, IBM does not charge for that source instance for 14 days. After 14 days, storage charges will begin automatically. {: important}
+If you disable the prior instance, IBM does not charge for that source instance for 14 days. After 14 days, storage charges will begin automatically.{: important}
 
 10. When the migration is complete, your deployment is now available in the **Performance** plan.
