@@ -24,7 +24,8 @@ subcollection: Db2onCloud
 
 Upgrading your Db2 on Cloud deployment from the **Standard/Enterprise Plan** to the **Performance plan** provides improved scalability, enhanced reliability, and a modern management experience. After you initiate the upgrade, the system automatically provisions a new instance and migrates your data with minimal downtime. The system keeps your two instances in sync until you decide to finalize your upgrade.
 
-Any autoscale settings in **Standard/Enterprise Plan** will need to be recreated in the **Performance** plan after the migration is complete.{: important}
+Any autoscale settings in **Standard/Enterprise Plan** will need to be recreated in the **Performance** plan after the migration is complete.
+{: important}
 
 Follow these steps to begin the migration:
 
@@ -56,8 +57,10 @@ Follow these steps to begin the migration:
 1. There will be a popup to finalize and complete the upgrade (Figure 7). There will be an option to keep the prior system running without synchronization with the new system or disable the prior instance.
    ![Confirm upgrade button](images/confirm_complete_upgrade.png){: caption="Select what to do with source option and complete upgrade" caption-side="bottom"}
 
-{: important}Keeping both the Standard/Enterprise and Performance plan instances active will result in billing for each environment until the Standard/Enterprise plan instance is deleted.
+   Keeping both the Standard/Enterprise and Performance plan instances active will result in billing for each environment until the Standard/Enterprise plan instance is deleted.
+   {: important}
 
-{: important}If you disable the prior instance, IBM does not charge for that source instance for 14 days. After 14 days, storage charges will begin automatically.
+   If you disable the prior instance, IBM does not charge for that source instance for 14 days. After 14 days, storage charges will begin automatically.
+   {: important}
 
 1. When the migration is complete, your deployment is now available in the **Performance** plan.
