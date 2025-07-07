@@ -46,7 +46,6 @@ Follow these steps to begin the migration:
 7. On the new instance page, there will be a header titled **Action Required** to complete the upgrade. Click the **View Details** button to see the current status and progress of the migration (Figure 4 & 5).
 ![Migration view details button](images/migration_view_details.png){: caption="Click View Details button." caption-side="bottom"}
 ![Migration track migration process](images/migration_complete_restore.png){: caption="Track migration process." caption-side="bottom"}
-
 The UI is unavailable for the new instance until the upgrade is completed
 {: note}
 
