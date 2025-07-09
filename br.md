@@ -54,20 +54,7 @@ The following is an example of the manual backup operation in the web console UI
 
 
 
-### Performance plans
-1. Click **Administration** in the left menu and select the **Backups** tab. Click the **Run backup** button.
-![View of the highlighted selection of the backup option](images/performance_backup.png "Backup and restore console page"){: caption="Selection of the backup option" caption-side="bottom"}
-
-2. Click **Run** to run an on demand backup.
-![View of Run Backup page option](images/performance_backup_run.png "Backup and restore console page"){: caption="View of Run backup" caption-side="bottom"}
-
-3. When the backup starts, some features might not be available until the backup is completed.
-![View of the backup initiation](images/performance_backup_initiated.png "Backup and restore console page"){: caption="View of the backup initiation" caption-side="bottom"}
-
-4. After backup completion, a new backup entry in the list of snapshot backups appears as a **on_demand** type. The new backup is in an available state.
-![View of completed backup](images/performance_backup_completed.png "Backup and restore console page"){: caption="View of a completed backup" caption-side="bottom"}
-
-## Backup retention management
+## Backup Retention Management
 
 This feature allows Users to run procedures that modify the retention period for db2 backups.
 
@@ -164,25 +151,6 @@ The following is an example of the end-of-backup restore operation in the web co
 5. Notifications show a **Restore success!** message after the restore is completed.
 ![Successful completion of end-of-backup restore](images/eobrestore_success_v2.png "Backup and restore console page"){: caption="Successful completion of end-of-backup restore" caption-side="bottom"}
 
-#### Performance plans
-
-The following is an example of the end-of-backup restore operation in the web console UI for performance plan:
-
-1. Click **Administration** in the left menu and select the **Backups** tab. Select a backup that you want to restore to end-of-backup and click **Restore**.
-![View of the highlighted selection of the end-of-backup restore option](images/performance_restore.png "Backup and restore console page"){: caption="View of the selection of the end-of-backup restore option" caption-side="bottom"}
-
-2. Click **Restore** to initiate the restore.
-![View of Restore backup screen option](images/performance_restore_run.png "Backup and restore console page"){: caption="View of Restore backup" caption-side="bottom"}
-
-3. An information message appears when restore has started. Some features might not be available until restore is completed.
-
-4. A progress bar indicates the progress of the restore process.
-![Progress of the end-of-backup restore](images/performance_restore_progress.png "Backup and restore console page"){: caption="Progress of the end-of-backup restore" caption-side="bottom"}
-
-5. Notifications show a **Restore success!** message after the restore is completed. Click the **Restore** tab at the top to view your restores.
-![Successful completion of end-of-backup restore](images/performance_restore_complete.png "Backup and restore console page"){: caption="Successful completion of end-of-backup restore" caption-side="bottom"}
-
-
 ### Point-in-time restore
 {: #point-in-time}
 
@@ -210,5 +178,3 @@ The following are a selected example of screen captures of the point-in-time res
 
 5. The restore operation completed successfully.
 ![View of the successful completion of the restoration](images/pit_restore_successful_v2.png "Successful completion"){: caption="View of the successful completion of the restoration" caption-side="bottom"}
-
-#### Performance plans
