@@ -54,7 +54,7 @@ Follow these steps to begin the migration:
 1. When the process has completed, click the **Complete Upgrade** button
 ![complete upgrade button](images/upgrade_system_complete_upgrade.png){: caption="Click complete upgrade button." caption-side="bottom"}
 
-1. There will be a popup to finalize and complete the upgrade. There will be an option to keep the prior system running without synchronization with the new system or disable the prior instance.
+1. There will be a popup to finalize and complete the upgrade. There will be an option to keep the prior system running without synchronization with the new system **or** disable the prior instance.
    ![Confirm upgrade button](images/confirm_complete_upgrade.png){: caption="Select what to do with source option and complete upgrade" caption-side="bottom"}
 
    Keeping both the Standard/Enterprise and Performance plan instances active will result in billing for each environment until the Standard/Enterprise plan instance is deleted.
