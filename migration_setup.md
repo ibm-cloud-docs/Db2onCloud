@@ -54,7 +54,15 @@ Follow these steps to begin the migration:
 1. When the process has completed, click the **Complete Upgrade** button
 ![complete upgrade button](images/upgrade_system_complete_upgrade.png){: caption="Click complete upgrade button." caption-side="bottom"}
 
-1. There will be a popup to finalize and complete the upgrade. There will be an option to keep the prior system running without synchronization with the new system **or** disable the prior instance.
+1. There will be a popup to finalize and complete the upgrade.
+   - Create a Copy in the Performance Plan for Testing Purposes
+
+       Selecting the `Keep the prior system running without synchronization with the new system` option will keep the Standard/Enterprise instance running, stop ongoing synchronization with the Performance instance thereby making a **copy** in the Performance Plan.  Both the Standard/Enterprise and Performance instances will be available for connections.
+   
+   -  Complete Migration to the Performance Plan
+
+      Select `Disable the prior system` to complete the migration to the Performance instance.  This will terminate synchronization, upgrade to v12 and pause the Standard/Enterprise instance.   The customer can delete the Standard/Enterprise instance within 2 weeks to avoid charges
+      
    ![Confirm upgrade button](images/confirm_complete_upgrade.png){: caption="Select what to do with source option and complete upgrade" caption-side="bottom"}
 
    Keeping both the Standard/Enterprise and Performance plan instances active will result in billing for each environment until the Standard/Enterprise plan instance is deleted.
