@@ -79,6 +79,7 @@ toc:
           - reference_hpcs.md
           - key_protect_2.md
           - password_policies.md
+      - db2-database-assistant.md
       - communities.md
       - link:
             label: What's new
