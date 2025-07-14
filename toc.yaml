@@ -56,10 +56,7 @@ toc:
           - acr_setup.md
           - dr.md
           - main.md
-          - ins_db2_terraform.md
           - log_mon.md
-          - logical_schema.md
-          - command_syntax.md
           - topicgroup:
               label: Federation
               topics:
