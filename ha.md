@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2021
-lastupdated: "2023-08-17"
+  years: 2014, 2021, 2025
+lastupdated: "2025-07-17"
 
 keywords: HADR, Legacy Flex, legacy, Flex, high availability disaster recovery
 
@@ -10,16 +10,29 @@ subcollection: Db2onCloud
 
 ---
 
+# High availability (HA)
 
+{: #ha}
+
+<!-- Attribute definitions -->
+{:external: target="_blank" .external}
+{:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
+{:pre: .pre} 
 
 
 The **blocknonlogged** parameter must always be set to **YES**.  Changing it to NO will cause any non logged transactions on the primary database to fail to be replicated to the standby databases thereby making the data inconsistent in the HADR environment {: important}
 
-# High availability (HA)
 
+{{site.data.keyword.Db2_on_Cloud_short}} high availability plans have excellent availability characteristics with a 99.99% SLA.
+{: shortdesc} 
 
-
-
+## Standard and Enterprise plans
 
 High availability disaster recovery (HADR) on {{site.data.keyword.Db2_on_Cloud_short}} Enterprise and Standard plans is provided by leveraging the support of native Db2 HADR.
 
@@ -37,7 +50,27 @@ High availability disaster recovery (HADR) on {{site.data.keyword.Db2_on_Cloud_s
 
 along with appropriate retry logic for any failed transactions.
 
+## Perfomance Plan
+
+{: #ha_perfomance}
+
+High availability on {{site.data.keyword.Db2_on_Cloud_short}} Legacy Flex plans is provided by leveraging the support of native Db2 HADR.
+
+- Each HA system consists of 2 nodes.
+
+![Schematic view of primary node failover](images/legacy_ha_small.png "Schematic view of primary node failover"){: caption="Figure 2. Schematic view of primary node failover" caption-side="bottom"}
+
+
+- The primary node processes read and write transactions while the standby node is replicated synchronously, which means each transaction is committed on at least 2 nodes before it is successful. This standby node is ready to take over write processing as well should any failure or maintenance event occur.
+
+![Schematic view of primary node failover](/images/legacy_ha_fail.png) {: caption="Schematic view of primary node failover" caption-side="bottom"}
+
+During failover events, you can expect between 10-20 seconds during which transactions are restricted. Your client can seamlessly fail over by using [automatic client reroute (ACR)](https://www.ibm.com/support/knowledgecenter/SSEPGG_11.5.0/com.ibm.db2.luw.admin.ha.doc/doc/r0023392.html){: external} along with appropriate retry logic for any failed transactions.
+
+## General
+
 ### Managing HADR nodes
 
 
 For Enterprise and Standard HADR plans, the failover is managed for you by IBM. IBM monitors the health of your server, fail over and fail back as needed, including rolling updates and scaling to keep uptime as high as possible.
+
