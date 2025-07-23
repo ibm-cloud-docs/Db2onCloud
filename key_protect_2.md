@@ -10,7 +10,7 @@ subcollection: Db2onCloud
 
 ---
 
- 
+
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -21,7 +21,7 @@ subcollection: Db2onCloud
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Integrating your data and keys 
+# Integrating your data and keys
 {: #key-management-services}
 
 The data that you store in Db2 when using the Standard or Enterprise plan is encrypted by default by using randomly generated keys. If you need to control the encryption keys, you can use [{{site.data.keyword.keymanagementservicelong_notm}}](/docs/key-protect?topic=key-protect-integrate-services) or [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-get-started)to create, add, and manage encryption keys. Then, you can associate those keys with your Db2 on Cloud deployment to encrypt your Db2 databases.
@@ -44,6 +44,9 @@ To add a key in {{site.data.keyword.hscrypto}}, navigate to your instance of {{s
 
 Authorize {{site.data.keyword.keymanagementserviceshort}} for use with Db2 on Cloud deployments:
 
+### Standard and Enterprise plans
+{: #kp-grant-standard-enterprise}
+
 1. Open your {{site.data.keyword.cloud_notm}} dashboard.
 1. From the menu bar, select **Manage > Access (IAM)**.
 1. In the side navigation, select **Authorizations**. Click **Create**.
@@ -52,6 +55,18 @@ Authorize {{site.data.keyword.keymanagementserviceshort}} for use with Db2 on Cl
 1. In the _Target service_ menu, select **Key Protect** or **Hyper Protect Crypto Services**.
 1. In the _Target service instance_ menu, select the service instance to authorize.
 1. Enable the `Reader` role. Click **Authorize**.
+
+### Performance plans
+{: #kp-grant-performance}
+
+1. Open your {{site.data.keyword.cloud_notm}} dashboard.
+1. From the menu bar, select **Manage > Access (IAM)**.
+1. In the side navigation, select **Authorizations**. Click **Create**.
+1. In the _Source service_ menu, select the service of the deployment. For example, **Db2**.
+1. In the _Source service instance_ menu, select **All service instances**.
+1. In the _Target service_ menu, select **Key Protect** or **Hyper Protect Crypto Services**.
+1. In the _Target service instance_ menu, select the service instance to authorize.
+1. Enable the **Reader** role, and check the box that says **Enable authorizations to be delegated by the source and dependent services**. Click **Authorize**.
 
 ## Using the key encryption key
 {: #kp-use}
@@ -64,7 +79,7 @@ If you provision a deployment through the CLI or API, the key needs to be identi
 ## Deleting the deployment
 {: #kp-delete}
 
-If you delete a deployment that is protected with a key, the deployment remains registered against the key for the duration of the soft-deletion period (up to 9 days). If you need to delete the key in the soft-deletion period, you have to force delete the key using  [{{site.data.keyword.keymanagementserviceshort}}](/docs/key-protect?topic=key-protect-delete-keys) or  [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-delete-keys). After the soft-deletion period the key can be deleted without the force. 
+If you delete a deployment that is protected with a key, the deployment remains registered against the key for the duration of the soft-deletion period (up to 9 days). If you need to delete the key in the soft-deletion period, you have to force delete the key using  [{{site.data.keyword.keymanagementserviceshort}}](/docs/key-protect?topic=key-protect-delete-keys) or  [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-delete-keys). After the soft-deletion period the key can be deleted without the force.
 
 You can check the [association between the key and your deployment](/docs/key-protect?topic=key-protect-view-protected-resources) to determine when you can delete the key.
 
