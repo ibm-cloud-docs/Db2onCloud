@@ -21,12 +21,12 @@ subcollection: Db2onCloud
 # Hyper Protect Crypto Services Integration
 {: #hpcs}
 
-The data that you store in {{site.data.keyword.cloud}} Databases is encrypted by default by using randomly generated keys. If you need to control the encryption keys, you can Bring Your Own Key (BYOK) through [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-get-started), and use one of your own keys to encrypt your databases. Take note that {{site.data.keyword.hscrypto}} for {{site.data.keyword.cloud}} Databases backups is not currently supported. 
+The data that you store in {{site.data.keyword.cloud}} Databases is encrypted by default by using randomly generated keys. If you need to control the encryption keys, you can Bring Your Own Key (BYOK) through [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-get-started), and use one of your own keys to encrypt your databases. Take note that {{site.data.keyword.hscrypto}} for {{site.data.keyword.cloud}} Databases backups is not currently supported.
 
 This document covers the integration of {{site.data.keyword.hscrypto}} (HPCS) with Db2 on Cloud
 {: .note}
 
-To get started, you need [{{site.data.keyword.hscrypto}}](/catalog/services/hyper-protect-crypto-services) provisioned on your {{site.data.keyword.cloud_notm}} account. 
+To get started, you need [{{site.data.keyword.hscrypto}}](/catalog/services/hyper-protect-crypto-services) provisioned on your {{site.data.keyword.cloud_notm}} account.
 
 ## Creating or adding a key in {{site.data.keyword.hscrypto}}
 {: #create-key}
@@ -38,6 +38,9 @@ Navigate to your instance of {{site.data.keyword.hscrypto}} and [generate or ent
 
 Authorize {{site.data.keyword.hscrypto}} for use with {{site.data.keyword.databases-for}} deployments:
 
+### Standard and Enterprise plans
+{: #grant-auth-standard-enterprise}
+
 1. Open your {{site.data.keyword.cloud_notm}} dashboard.
 2. From the menu bar, click **Manage** &gt; **Access (IAM)**.
 3. In the side navigation, click **Authorizations**.
@@ -48,6 +51,21 @@ Authorize {{site.data.keyword.hscrypto}} for use with {{site.data.keyword.databa
 8. Select or retain the default value **`Account`** as the resource group for the **Target Service**
 9. In the Target service **Instance ID** menu, select the service instances to authorize.
 10. Enable the **Reader** role.
+11. Click **Authorize**.
+
+### Performance plans
+{: #grant-auth-performance}
+
+1. Open your {{site.data.keyword.cloud_notm}} dashboard.
+2. From the menu bar, click **Manage** &gt; **Access (IAM)**.
+3. In the side navigation, click **Authorizations**.
+4. Click **Create**.
+5. In the **Source service** menu, select **Db2**.
+6. In the **Source service instance** menu, select **All instances**.
+7. In the **Target service** menu, select **HPCS**.
+8. Select or retain the default value **`Account`** as the resource group for the **Target Service**
+9. In the Target service **Instance ID** menu, select the service instances to authorize.
+10. Enable the Reader role, and check the box that says **Enable authorizations to be delegated by the source and dependent services**.
 11. Click **Authorize**.
 
 If the service authorization is not present before provisioning your deployment with a key, the provision fails.
@@ -65,7 +83,6 @@ ibmcloud resource service-instance-create example-database <service-name> standa
 -p \ '{
   "disk_encryption_key_crn": "crn:v1:<...>:key:<id>"
 }'
-```
 
 In the API, use the `disk-encryption-key` parameter in the body of the request.
 ```curl
