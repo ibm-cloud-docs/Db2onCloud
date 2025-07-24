@@ -64,7 +64,9 @@ If you provision a deployment through the CLI or API, the key needs to be identi
 ## Deleting the deployment
 {: #kp-delete}
 
-If you delete a deployment that is protected with a key, the deployment remains registered against the key for the duration of the soft-deletion period (up to 9 days). If you need to delete the key in the soft-deletion period, you have to force delete the key using  [{{site.data.keyword.keymanagementserviceshort}}](/docs/key-protect?topic=key-protect-delete-keys) or  [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-delete-keys). After the soft-deletion period the key can be deleted without the force. You can check the [association between the key and your deployment](/docs/key-protect?topic=key-protect-view-protected-resources) to determine when you can delete the key.
+If you delete a deployment that is protected with a key, the deployment remains registered against the key for the duration of the soft-deletion period (up to 9 days). If you need to delete the key in the soft-deletion period, you have to force delete the key using  [{{site.data.keyword.keymanagementserviceshort}}](/docs/key-protect?topic=key-protect-delete-keys) or  [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-delete-keys). After the soft-deletion period the key can be deleted without the force. 
+
+You can check the [association between the key and your deployment](/docs/key-protect?topic=key-protect-view-protected-resources) to determine when you can delete the key.
 
 ## Cryptoshredding
 {: #kp-cryptoshred}
