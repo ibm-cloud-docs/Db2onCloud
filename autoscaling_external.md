@@ -71,3 +71,37 @@ The Autoscaling panel is on the Administration tab of your deployment's conso
 1. Click **Edit**
 2. Uncheck **Enable storage autoscaling**.
 3. Click **Save Changes** to save the configuration.
+
+## Perfomance Plan
+
+![paras.png](images/autoscaling_img1.png){: caption="Example Autoscaling panel" caption-side="bottom"}
+
+### ****Autoscaling Considerations****
+
+- **Storage cannot be scaled down.**
+- Each increment is 10% of your storage size. The minimum increase is 20GB.
+- Storage can be auto-scaled up to a limit of 39950 TB.
+- You must have the IAM Operator, Editor or Administrator authority in order to use this feature.
+- If you rarely increase storage on your deployment, you might want to manually scale your deployment rather than enabling the auto-scaling feature.
+- Scaling is an online operation.
+- Some scaling operations can be more long running than others. Significantly increasing the storage size can take longer than increasing it by a small amount because additional underlying hardware resources must be provisioned.
+-  IOPS value will be maintained during auto scale in most cases. However, if the current IOPS is less than the minimum IOPS required for the new storage, it will be automatically increased to the minimum value required.
+
+### ****Configuring Autoscaling in the UI****
+
+The Autoscaling panel is on the Administration tab of your deployment's console page.
+
+### To enable autoscaling
+1. Click **Edit**
+2. Check **Enable storage autoscaling**
+3. Enter your desired parameter values.
+4. Be sure to click **Save** for your configuration to be saved and your changes to take effect.
+
+![autoscaling_step1.png](images/autoscaling_step1.png)
+<br>
+![autoscaling_step2.png](images/as_img2.png)
+
+### To disable autoscaling
+1. Click **Edit**
+2. Uncheck **Enable storage autoscaling**.
+3. Click **Save Changes** to save the configuration.
