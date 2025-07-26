@@ -149,4 +149,14 @@ More information on the Resource Controller API is found in its [API Reference](
 
 ## List of additional parameters (for performance plans only)
 
-- `timezone` - the timezone that your database and the underlying operating system should use. Any timezone identifier accepted by Linux (e.g. `America/Toronto`) will be accepted here. If omitted, the default is UTC.
+- `timezone` - The timezone that your database and the underlying operating system should use. Any timezone identifier accepted by Linux will be valid. Example:`"timezone": "America/Toronto"`. 
+  
+  This example will be accepted here. If omitted, the default is UTC. For a complete list of valid timezone identifiers, refer to [Wikipedia’s tz database time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+
+- `custom_db` , `custom_dbm`, `custom_registry` - This allows you to set custom Db2 DB, DBM, and registry settings. The value should be a JSON array.
+Example:
+  ``` 
+  "custom_registry": { "DB2_SELECTIVITY": "ALL", "DB2_ANTIJOIN": "EXTEND" }
+   ```
+    The [Db2 REST API](https://cloud.ibm.com/apidocs/db2-on-cloud/db2-on-cloud-v4#introduction) can be used to query a full list of changeable Db2 parameters and update Db2 settings on an existing instance.
+
