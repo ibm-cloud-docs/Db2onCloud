@@ -152,3 +152,46 @@ Reclaim freed space on disks after rebalancing by choosing the Reclaim space opt
 ![Space_reclamation](images/reclaim.png "Reclaim space"){: caption="Reclaim freed disk space" caption-side="bottom"}
 
 ![Space_reclaimed](images/reclaimed.png "Space reclaimed"){: caption="Freed disk space reclaimed" caption-side="bottom"}
+
+## Perfomance Plan
+{: #fs_perfomance_plan}
+
+Each Db2 on Cloud Performance Plan instance deploys with 50 GB of disk space and 400 IOPS by default. Storage can be scaled up to a maximum of 39,950 GB in increments of 20 GB starting at 50 GB, while IOPS can be scaled up to a maximum of 192,000 in increments of 100.
+
+The following table shows the available IOPS ranges based on storage capacity.
+{: shortdesc}
+
+| Total Size (GB) |          | Total IOPS |          |
+|-----------------|----------|------------|----------|
+| min             | max      | min        | max      |
+| 50              | 150      | 400        | 4,000    |
+| 170             | 310      | 400        | 8,000    |
+| 330             | 390      | 400        | 16,000   |
+| 410             | 1,990    | 400        | 24,000   |
+| 2,010           | 3,990    | 400        | 40,000   |
+| 4,010           | 7,990    | 800        | 80,000   |
+| 8,010           | 31,990   | 2,000      | 160,000  |
+| 32,010          | 39,950   | 2,000      | 192,000  |
+{: caption="Storage/IOPS scaling ranges" caption-side="top"}
+
+## Scaling Storage from the Console
+
+To scale storage from within the console, complete the following steps:
+
+1. Select **Administration** from the left side menu.
+2. Select the **Compute & storage** tab.
+3. Select **Edit** under the Compute & storage resources.
+4. Select the desired **Units** for storage and IOPS to make changes.
+5. Click **Save**.
+6. Select **Confirm** if you are satisfied with the changes.
+
+![IOPS Scaling](images/IOPS_scaling.png "IOPS Scaling"){: caption="Perfomance Plan memory and storage" caption-side="bottom"}
+
+> **Note:** In this documentation, we refer to storage capacity using the unit **GB (Gigabytes)** to align with industry standard terminology. However, the actual provisioning and billing of storage are based on **GiB (Gibibytes)**.
+
+### GB vs GiB
+
+- **GB (Gigabyte)** is a decimal unit, where
+  **1 GB = 1,000,000,000 bytes**
+- **GiB (Gibibyte)** is a binary unit, where
+  **1 GiB = 1,073,741,824 bytes**
