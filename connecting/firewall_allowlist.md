@@ -23,7 +23,7 @@ subcollection: Db2onCloud
 
 # Firewall Allowlist
 
-If you use allowlists to control connections in your environment, you can use the following IP lists to allowlist Db2 on Cloud deployments. You should allowlist all of the subnet ranges for the _entire_ region that your deployments live in.
+If you use allowlists to control connections in your environment, you can use the following IP lists to allowlist {{site.data.keyword.Db2_on_Cloud_long}} deployments. You should allowlist all of the subnet ranges for the _entire_ region that your deployments live in.
 
 As new clusters in a region are created, there will be additional IP ranges that will be added. If an existing Db2oC customer adds a new instance, it may be necessary to add these new IP ranges into the firewall rules.
 {:important}

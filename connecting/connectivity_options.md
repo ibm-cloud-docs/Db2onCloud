@@ -61,7 +61,7 @@ The easiest way to connect to your data is by way of the public host name that w
 #### Current plans connection string breakdown
 {: #pub_endpt_current}
 
-##### Db2 on Cloud section
+##### {{site.data.keyword.Db2_on_Cloud_long} section
 {: #pub_db2oc}
 
 The "db2" section contains information that is suited to applications that make connections to {{site.data.keyword.Db2_on_Cloud_short}}.
