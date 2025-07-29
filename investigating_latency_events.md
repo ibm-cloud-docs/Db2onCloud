@@ -23,11 +23,11 @@ subcollection: Db2onCloud
 
 # Investigating latency events
 
-For users facing latency issues when migrating from on-premise applications to on-cloud services please contact the Db2 on Cloud team and then complete the following steps to improve latency. To begin the latency improvement process, please open a support case. 
+For users facing latency issues when migrating from on-premise applications to on-cloud services please contact the {{site.data.keyword.Db2_on_Cloud_long}}  team and then complete the following steps to improve latency. To begin the latency improvement process, please open a support case. 
 
 For information about opening an IBM support case, or about support levels and case severities, see: [Working with support cases](/docs/get-support?topic=get-support-open-case#open-case){:external}
 
-The latency improvement process cannot be completed without contacting the Db2 on Cloud team at this time. 
+The latency improvement process cannot be completed without contacting the {{site.data.keyword.Db2_on_Cloud_short}}  team at this time. 
 {: important}
 
 ### Steps

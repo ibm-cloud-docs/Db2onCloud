@@ -22,14 +22,14 @@ subcollection: Db2onCloud
 # Migration
 {: #migration}
 
-Upgrading your Db2 on Cloud deployment from the **Standard/Enterprise Plan** to the **Performance plan** provides improved scalability, enhanced reliability, and a modern management experience. After you initiate the upgrade, the system automatically provisions a new instance and migrates your data with minimal downtime. The system keeps your two instances in sync until you decide to finalize your upgrade.
+Upgrading your {{site.data.keyword.Db2_on_Cloud_long}}  deployment from the **Standard/Enterprise Plan** to the **Performance plan** provides improved scalability, enhanced reliability, and a modern management experience. After you initiate the upgrade, the system automatically provisions a new instance and migrates your data with minimal downtime. The system keeps your two instances in sync until you decide to finalize your upgrade.
 
 Any autoscale settings in **Standard/Enterprise Plan** will need to be recreated in the **Performance** plan after the migration is complete.
 {: important}
 
 Follow these steps to begin the migration:
 
-1. Provision your Db2 on Cloud resource from the IBM Cloud catalog if you haven't already.
+1. Provision your {{site.data.keyword.Db2_on_Cloud_short}}  resource from the IBM Cloud catalog if you haven't already.
 
 1. In the **IBM Cloud console**, navigate to your list of resources and click the instance you want to upgrade.
 

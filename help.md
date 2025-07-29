@@ -32,7 +32,7 @@ You can determine the status of the {{site.data.keyword.Db2_on_Cloud_long}} serv
 
 
 
-## Getting help and support for Db2 on Cloud
+## Getting help and support for {{site.data.keyword.Db2_on_Cloud_short}} 
 {: #gettinghelp}
 
 If you have problems or questions when using {{site.data.keyword.Db2_on_Cloud_short}}, you can get help by searching for information or by asking questions through a forum. You can also open a support case.

@@ -4,7 +4,7 @@ copyright:
   years: 2014, 2021
 lastupdated: "2023-06-20"
 
-keywords: db2, Db2 on Cloud, bring your own key, byok, crypto-shredding, kyok, keep your own key
+keywords: db2, {{site.data.keyword.Db2_on_Cloud_short}} , bring your own key, byok, crypto-shredding, kyok, keep your own key
 
 subcollection: Db2onCloud
 
@@ -42,7 +42,7 @@ To add a key in {{site.data.keyword.hscrypto}}, navigate to your instance of {{s
 ## Granting service authorization
 {: #kp-grant}
 
-Authorize {{site.data.keyword.keymanagementserviceshort}} for use with Db2 on Cloud deployments:
+Authorize {{site.data.keyword.keymanagementserviceshort}} for use with {{site.data.keyword.Db2_on_Cloud_short}}  deployments:
 
 ### Standard and Enterprise plans
 {: #kp-grant-standard-enterprise}
@@ -71,7 +71,7 @@ Authorize {{site.data.keyword.keymanagementserviceshort}} for use with Db2 on Cl
 ## Using the key encryption key
 {: #kp-use}
 
-After you grant your Db2 on Cloud deployments permission to use your keys, you supply the key name or CRN in  [{{site.data.keyword.keymanagementserviceshort}}](/docs/key-protect?topic=key-protect-view-keys) or [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-view-keys) when you provision a deployment. The deployment uses your encryption key to encrypt your data.
+After you grant your {{site.data.keyword.Db2_on_Cloud_short}}  deployments permission to use your keys, you supply the key name or CRN in  [{{site.data.keyword.keymanagementserviceshort}}](/docs/key-protect?topic=key-protect-view-keys) or [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-view-keys) when you provision a deployment. The deployment uses your encryption key to encrypt your data.
 
 If you provision a deployment through the CLI or API, the key needs to be identified by its full CRN, not just its ID. A CRN is in the format `crn:v1:<...>:key:<id>`.
 {: tip}

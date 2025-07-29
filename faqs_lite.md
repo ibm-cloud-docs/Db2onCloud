@@ -37,7 +37,7 @@ This is a collection of frequently asked questions (FAQ) about the  {{site.data.
 
 You can continue using the free plan for as long as you need. However, you must reactivate the free plan every 45 days. This reactivation process keeps resources available for other users by turning off inactive usage.  
 
-When your plan nears its reactivation date, you will receive a reactivation request at the email address that you provided when creating the instance. Alternatively, you can reactivate in your {{site.data.keyword.Db2_on_Cloud_short}} console.
+When your plan nears its reactivation date, you will receive a reactivation request at the email address that you provided when creating the instance. Alternatively, you can reactivate in your {{site.data.keyword.Db2_on_Cloud_long_notm}} console.
 
 ## Will my data be deleted?
 {: #fp_faq_delete}
@@ -96,11 +96,11 @@ If the Db2 web console does not load or returns an error message, try the follow
 * Try using the direct URL to open the console to check for errors. Select the **Service credentials** tab from your service page and expand the credentials that you want to view. If there are no existing credentials, click **New credential**. Use the values in the `https_url`, `username`, and `password` to open the web console.
 *  To reset the password, select the **Service credentials** tab from your service page and then delete the existing service lite-tier service credential.  Then click **New credential** to generate a new password for the existing username. 
 * When you create a Lite instance, be sure to provide an email address so you receive reactivation notices and password reset notices. 
-* If your use of {{site.data.keyword.Db2_on_Cloud_short}} exceeds the purpose provided by a Lite account with free support, upgrade to a paid account with [basic, advanced, or premium support](/docs/get-support?topic=get-support-support-plans){: external} to open cases for technical issues. 
+* If your use of {{site.data.keyword.Db2_on_Cloud_long_notm}} exceeds the purpose provided by a Lite account with free support, upgrade to a paid account with [basic, advanced, or premium support](/docs/get-support?topic=get-support-support-plans){: external} to open cases for technical issues. 
 
 ## What options do I have for support?
 {: #fp_faq_support}
 {: faq}
 {: support}
 
-The free Lite plan for {{site.data.keyword.Db2_on_Cloud_short}}, intended for prototyping and demoing applications, has only community support available to help you. You cannot get assistance with your free Lite plan by opening a support ticket. For example, if you need help with a Db2 usage question, query optimization, or a syntax error, review the available [Communities](/docs/Db2onCloud?topic=Db2onCloud-communities){: external} and the list of [{{site.data.keyword.Db2_on_Cloud_short}} Resources](https://www.ibm.com/cloud/db2-on-cloud/resources){: external}. 
+The free Lite plan for {{site.data.keyword.Db2_on_Cloud_long_notm}}, intended for prototyping and demoing applications, has only community support available to help you. You cannot get assistance with your free Lite plan by opening a support ticket. For example, if you need help with a Db2 usage question, query optimization, or a syntax error, review the available [Communities](/docs/Db2onCloud?topic=Db2onCloud-communities){: external} and the list of [{{site.data.keyword.Db2_on_Cloud_short}} Resources](https://www.ibm.com/cloud/db2-on-cloud/resources){: external}. 

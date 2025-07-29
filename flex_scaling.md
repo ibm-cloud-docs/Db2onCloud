@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 # Flexible scaling
 {: #scale}
 
-Db2 on Cloud provides you with the ability to independently scale up compute cores and storage.
+{{site.data.keyword.Db2_on_Cloud_long}}  provides you with the ability to independently scale up compute cores and storage.
 {: shortdesc}
 
 As the number of cores is increased, memory is also increased.  The updating of resources can result in an outage that can last up to 20 minutes.

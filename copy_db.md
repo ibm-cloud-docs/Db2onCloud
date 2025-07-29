@@ -42,7 +42,7 @@ Because the copy instance creates a new instance and restores your existing back
 ## Prerequisites
 {: #cp_prereqs}
 
-The Copy Database feature in the {{site.data.keyword.Db2_on_Cloud_short}} service copies a database from one service instance to a new service instance. To use this feature, a backup of the current database must exist.
+The Copy Database feature in the {{site.data.keyword.Db2_on_Cloud_long_notm}} service copies a database from one service instance to a new service instance. To use this feature, a backup of the current database must exist.
 
 ## Copying a running instance
 {: #cp_running_inst}

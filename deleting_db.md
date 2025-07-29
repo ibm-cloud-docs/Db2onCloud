@@ -38,7 +38,7 @@ All data is encrypted at rest to ensure data is protected at all times using enc
 
 You can use your own encryption keys to delete data. This is called crypto-shredding. After the key is deleted, your data is unrecoverable and unreadable by anyone.
 
-Key Protect allows you to initiate a force delete of a key that is in use by various {{site.data.keyword.cloud}} services, including your {{site.data.keyword.Db2_on_Cloud_short}} service instances. Deleting a key that is in use on your deployment locks the disks containing your data when the key is requested again. You can have this occur right away by contacting IBM Support or by deleting your service instance. Key deletion is sent to the Log Analysis Activity Tracker as kms.secrets.delete.
+Key Protect allows you to initiate a force delete of a key that is in use by various {{site.data.keyword.cloud}} services, including your {{site.data.keyword.Db2_on_Cloud_long}} service instances. Deleting a key that is in use on your deployment locks the disks containing your data when the key is requested again. You can have this occur right away by contacting IBM Support or by deleting your service instance. Key deletion is sent to the Log Analysis Activity Tracker as kms.secrets.delete.
 
 If you delete a deployment that is protected with your Key Protect key, the deployment remains registered against the key for the duration of the soft-deletion period (up to 9 days). If you need to delete the key during the soft-deletion period, you have to force delete the key. After the soft-deletion period, the key can be deleted without the force. You can check the association between the key and your deployment to determine when you can delete the key.
 
