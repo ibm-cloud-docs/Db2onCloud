@@ -23,7 +23,7 @@ subcollection: Db2onCloud
 
 # HADR Conversion
 
-With {{site.data.keyword.Db2_on_Cloud_short}} Performance plans, administrators can change their high availability configuration. Administrator's can convert their {{site.data.keyword.Db2_on_Cloud_short}} instance from high availability, to a single node instance and vice versa.
+With {{site.data.keyword.Db2_on_Cloud_long}} Performance plans, administrators can change their high availability configuration. Administrator's can convert their {{site.data.keyword.Db2_on_Cloud_short}} instance from high availability, to a single node instance and vice versa.
 
 ## Considerations
 - Downtime during any maintenance will increase as rolling updates/maintenance cannot be performed if going from a high available instance to single node instance.

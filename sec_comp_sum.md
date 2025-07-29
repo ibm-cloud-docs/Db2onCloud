@@ -4,7 +4,7 @@ copyright:
   years: 2014, 2021
 lastupdated: "2021-03-26"
 
-keywords: security compliances, security, compliance, Db2 on Cloud
+keywords: security compliances, security, compliance, {{site.data.keyword.Db2_on_Cloud_short}} 
 
 subcollection: Db2onCloud
 

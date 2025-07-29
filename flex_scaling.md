@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 # Flexible scaling
 {: #scale}
 
-Db2 on Cloud provides you with the ability to independently scale up compute cores and storage.
+{{site.data.keyword.Db2_on_Cloud_long}}  provides you with the ability to independently scale up compute cores and storage.
 {: shortdesc}
 
 As the number of cores is increased, memory is also increased.  The updating of resources can result in an outage that can last up to 20 minutes.
@@ -156,7 +156,7 @@ Reclaim freed space on disks after rebalancing by choosing the Reclaim space opt
 ## Perfomance Plan
 {: #fs_perfomance_plan}
 
-Each Db2 on Cloud Performance Plan instance deploys with 50 GB of disk space and 400 IOPS by default. Storage can be scaled up to a maximum of 39,950 GB in increments of 20 GB starting at 50 GB, while IOPS can be scaled up to a maximum of 192,000 in increments of 100.
+Each {{site.data.keyword.Db2_on_Cloud_long}} Performance Plan instance deploys with 50 GB of disk space and 400 IOPS by default. Storage can be scaled up to a maximum of 39,950 GB in increments of 20 GB starting at 50 GB, while IOPS can be scaled up to a maximum of 192,000 in increments of 100.
 
 The following table shows the available IOPS ranges based on storage capacity.
 {: shortdesc}

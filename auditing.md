@@ -23,11 +23,11 @@ subcollection: Db2onCloud
 
 # Auditing
 
-As a security officer, auditor, or manager, you can use the {{site.data.keyword.at_full}} service to track how users and applications interact with the Db2 on Cloud service in {{site.data.keyword.cloud_notm}}. {: shortdesc}
+As a security officer, auditor, or manager, you can use the {{site.data.keyword.at_full}} service to track how users and applications interact with the {{site.data.keyword.Db2_on_Cloud_long}} in {{site.data.keyword.cloud_notm}}. {: shortdesc}
 
 {{site.data.keyword.at_full_notm}} records user-initiated activities that change the state of a service in {{site.data.keyword.cloud_notm}}. You can use this service to investigate abnormal activity and critical actions and to comply with regulatory audit requirements. In addition, you can be alerted about actions as they happen. The events that are collected comply with the Cloud Auditing Data Federation (CADF) standard. For more information, see the getting started tutorial for {{site.data.keyword.at_full_notm}}.
 
-Activity Tracker with LogDNA integration is available for {{site.data.keyword.Db2_on_Cloud_long}}deployments in the regions according to the following table:
+Activity Tracker with LogDNA integration is available for {{site.data.keyword.Db2_on_Cloud_short}} deployments in the regions according to the following table:
 
 | Deployment region | Activity Tracker region |
 |----------|-----------|
@@ -60,7 +60,7 @@ A description of the common fields for an Activity Tracker event is on the [Even
 ## List of events
 {: #at_list_ev}
 
-The following table lists the events that get sent to Activity Tracker from {{site.data.keyword.Db2_on_Cloud_long}} deployments:
+The following table lists the events that get sent to Activity Tracker from {{site.data.keyword.Db2_on_Cloud_long_notm}} deployments:
 
 | Action | Description |
 |-------|-------|
@@ -95,10 +95,10 @@ The Activity Tracker with LogDNA service offers [searching](/docs/log-analysis?t
 ## Database Auditing
 {: #database_auditing}
 
-You can monitor data access in your {{site.data.keyword.Db2_on_Cloud_long}} instance with the built-in Db2 audit facility. Use the Db2 audit facility to generate and maintain an audit trail for a series of predefined database events, including attempts to access or manipulate database objects, user authentication, SQL statement execution, and even access to the audit log. Use the audit log to reveal usage patterns that would identify system misuse, and in turn, take action to eliminate such misuse.
+You can monitor data access in your {{site.data.keyword.Db2_on_Cloud_long_notm}} instance with the built-in Db2 audit facility. Use the Db2 audit facility to generate and maintain an audit trail for a series of predefined database events, including attempts to access or manipulate database objects, user authentication, SQL statement execution, and even access to the audit log. Use the audit log to reveal usage patterns that would identify system misuse, and in turn, take action to eliminate such misuse.
 {: shortdesc}
 
-For more information about auditing for {{site.data.keyword.Db2_on_Cloud_short}}, see [Audit policy guidelines](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html){: external}.
+For more information about auditing for {{site.data.keyword.Db2_on_Cloud_long_notm}}, see [Audit policy guidelines](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html){: external}.
 
 
 You can also audit and track changes to your database by using the following method:

@@ -186,7 +186,7 @@ The following is an example of the end-of-backup restore operation in the web co
 ### Point-in-time restore
 {: #point-in-time}
 
-{{site.data.keyword.Db2_on_Cloud_short}} added a point-in-time restore capability for systems in {{site.data.keyword.Bluemix_notm}} Public. You can restore to an exact point in time from your backups.
+{{site.data.keyword.Db2_on_Cloud_long}} added a point-in-time restore capability for systems in {{site.data.keyword.Bluemix_notm}} Public. You can restore to an exact point in time from your backups.
 
 The following are a selected example of screen captures of the point-in-time restore operation in the web console UI:
 

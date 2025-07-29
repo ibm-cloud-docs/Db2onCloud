@@ -66,7 +66,7 @@ Configure your local environment to connect to your {{site.data.keyword.Db2_on_C
    - [Installing on Windows](/docs/Db2onCloud/connecting?topic=Db2onCloud-drvr_pkg#drvr_install_windows)
 3. [Configure the driver files](/docs/Db2onCloud/connecting?topic=Db2onCloud-drvr_pkg#drvr_cfg_loc_env) for your {{site.data.keyword.Db2_on_Cloud_short}} database.
 
-## Use Db2 on Cloud as a data source for your {{site.data.keyword.Bluemix_notm}} apps or services
+## Use {{site.data.keyword.Db2_on_Cloud_short}}  as a data source for your {{site.data.keyword.Bluemix_notm}} apps or services
 {: #data_src}
 
 Apps that are hosted on {{site.data.keyword.Bluemix_notm}} can connect to your {{site.data.keyword.Db2_on_Cloud_short}} database the same way as your local applications connect to your {{site.data.keyword.Db2_on_Cloud_short}} database.

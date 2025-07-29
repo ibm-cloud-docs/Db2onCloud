@@ -23,7 +23,7 @@ subcollection: Db2onCloud
 
 # Automatic Client Reroute Setup (ACR)
 
-This ACR workaround is intended for use on Db2 On Cloud High Availibility (HA) instances with private CSE enabled. It should not be used for any HA instances that are connecting to Db2 over public endpoints.
+This ACR workaround is intended for use on {{site.data.keyword.Db2_on_Cloud_long}} High Availibility (HA) instances with private CSE enabled. It should not be used for any HA instances that are connecting to Db2 over public endpoints.
 
 ### Client-side Setup
 
