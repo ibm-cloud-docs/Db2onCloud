@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 # Integrating your data and keys
 {: #key-management-services}
 
-The data that you store in Db2 when using the Standard or Enterprise plan is encrypted by default by using randomly generated keys. If you need to control the encryption keys, you can use [{{site.data.keyword.keymanagementservicelong_notm}}](/docs/key-protect?topic=key-protect-integrate-services) or [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-get-started)to create, add, and manage encryption keys. Then, you can associate those keys with your {{site.data.keyword.Db2_on_Cloud_long} deployment to encrypt your Db2 databases.
+The data that you store in Db2 when using the Standard or Enterprise plan is encrypted by default by using randomly generated keys. If you need to control the encryption keys, you can use [{{site.data.keyword.keymanagementservicelong_notm}}](/docs/key-protect?topic=key-protect-integrate-services) or [{{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-get-started)to create, add, and manage encryption keys. Then, you can associate those keys with your {{site.data.keyword.Db2_on_Cloud_long}} deployment to encrypt your Db2 databases.
 
 {{site.data.keyword.keymanagementservicelong_notm}} helps you provision encrypted keys for apps across {{site.data.keyword.cloud_notm}} services. As you manage the lifecycle of your keys, you can benefit from knowing that your keys are secured by FIPS 140-2 Level 3 certified cloud-based hardware security modules (HSMs) that protect against the theft of information.
 
