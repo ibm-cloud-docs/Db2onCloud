@@ -153,6 +153,8 @@ More information on the Resource Controller API is found in its [API Reference](
   
   This example will be accepted here. If omitted, the default is UTC. For a complete list of valid timezone identifiers, refer to [Wikipedia’s tz database time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
 
+When you configure a custom timezone on your system, any disaster recovery (DR) instances provisioned afterwards will automatically use the same timezone setting. {: note}
+
 - `custom_db` , `custom_dbm`, `custom_registry` - This allows you to set custom Db2 DB, DBM, and registry settings. The value should be a JSON array.
 Example:
   ``` 
