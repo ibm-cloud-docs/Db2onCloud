@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020, 2021, 2022
-lastupdated: "2025-02-05"
+lastupdated: "2025-10-12"
 
 keywords: provision cloud database, database with terraform, provisioning parameters, db2 on cloud, db2
 
@@ -162,3 +162,4 @@ Example:
    ```
     The [Db2 REST API](https://cloud.ibm.com/apidocs/db2-on-cloud/db2-on-cloud-v4#introduction) can be used to query a full list of changeable Db2 parameters and update Db2 settings on an existing instance.
 
+<!-- adding a comment>

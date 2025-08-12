@@ -595,9 +595,9 @@ How you add data and from where you can add data differs between legacy and IBM 
     
 5. Click **Create**. The connection appears on the **Assets** page.
 
-Watch this video to see how to create a connection and add connected data to a project.
+<!-- Watch this video to see how to create a connection and add connected data to a project.
 
-![Create a connection and add connected data to a project](https://www.youtube.com/embed/YV-5zSczhH4?rel=0){: video output="iframe" data-script="none" id="youtubeplayer1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
+![Create a connection and add connected data to a project](https://www.youtube.com/embed/YV-5zSczhH4?rel=0){: video output="iframe" data-script="none" id="youtubeplayer1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen} -->
 
 
 
