@@ -87,14 +87,14 @@ After successful completion of the copy process, the **Notifications** icon disp
 
 ![Copy successfully completed](images/cloning_success.png "Copy success"){: caption="Copy successfully completed" caption-side="bottom"}
 
-### Performance plans
+## Performance plans
 1. Select the data center location for the new copy instance under **Datacenter location**.
 1. Enter a name under **Service name**.
 1. Select the resource group of the new instance under **Resource group**.
 1. If you'd like a highly available instance, select **Yes** for **High availability configuration**. Verify that the other options are correct.
 1. Select a KMS instance to use for the new copy instance under **KMS instance**. If the source system is originally provisioned with default key, encryption key selection will not be available. Default key will be used on the clone system.
 
-   **Important:** Encryption key selection on the clone will only be available if the source system is originally provisioned with a custom key. Default key cannot be chosen in this case.
+   Encryption key selection on the clone will only be available if the source system is originally provisioned with a custom key. Default key cannot be chosen in this case.
    {: .important}
 1. Select the backup location for the new copy instance under **Backup Location**. If the selected data center location does not support **Backup Location**, the backup location cannot be changed.
 1. Select a **Pricing plan**.
