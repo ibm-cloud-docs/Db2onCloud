@@ -101,11 +101,11 @@ After successful completion of the copy process, the **Notifications** icon disp
 1. Click **Clone**.
 
 ### Clone in Performance when instance was created with a default key
-{: #cp_prog}
+{: #cp_perf_def}
 
 ![clone created with default key](images/perf_clone_default_key.png "default key"){: caption="clone with default key" caption-side="bottom"}
 
 ### Clone in Performance when instance created with a custom key
-{: #cp_prog}
+{: #cp_perf_custom}
 
 ![clone created with custom key](images/perf_clone_custom_key.png "default key"){: caption="clone with custom key" caption-side="bottom"}
