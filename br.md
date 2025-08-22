@@ -80,7 +80,7 @@ Restoring from these retained backups requires opening a support ticket. Users c
 
 - The `SAVE_BACKUP` call is used to mark backups that need to be retained beyond the standard retention period. This call creates a duplicate entry in the table, where the retained backup is indicated by a `1` in the `RETAIN` column. Both the original and saved entries will appear on the list until the original backup reaches the end of its retention period and is deleted through the regular cleanup process, and only the saved backup will show on the list.
 
-`db2 "call SAVE_BACKUP(20240313215333);"`
+`db2 "call db2inst1.SAVE_BACKUP(20240313215333);"`
 
 ***REMOVE_SAVED_BACKUP***:
 
@@ -88,13 +88,13 @@ Restoring from these retained backups requires opening a support ticket. Users c
 
 If the original backup is no longer available and the saved copy is removed, that backup becomes unrecoverable and cannot be marked for retention again. Therefore, this call should only be used when the User is absolutely certain the backup is no longer needed. {: important}
 
-`db2 "call REMOVE_SAVED_BACKUP(20240313215333);"`
+`db2 "call db2inst1.REMOVE_SAVED_BACKUP(20240313215333);"`
 
 ***LIST_BACKUP***:
 
 - The `LIST_BACKUP` functionality shows the complete list of backups along with the ones marked for retention, a sample output is shown below.
 
-`db2 "select * from table(LIST_BACKUPS());"`
+`db2 "select * from table(db2inst1.LIST_BACKUPS());"`
 
 ```
 BACKUP         PARTS       RETAIN
