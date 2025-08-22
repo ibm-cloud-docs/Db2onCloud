@@ -52,8 +52,15 @@ This set of documentation covers the detailed commands and reference topics for 
 
 The Performance plan is supported in the following data center geographies:
 
-- **Dallas** - (us-south-1, us-south-2, us-south-3)
-- **Washington** - (us-east-1, us-east-2, us-east-3)
+- **Dallas** - (us-south)
+- **Washington** - (us-east)
+- **Sydney** - (au-syd)
+- **Sao Paulo** - (br-sao)
+- **Toronto** - (ca-tor)
+- **Frankfurt** - (eu-de)
+- **Madrid** - (eu-es)
+- **London** - (eu-gb)
+- **Tokyo** - (jp-tok)
 
 ## Supported data centers
 {: #ab_sup_dcs}
